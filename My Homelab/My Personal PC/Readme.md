@@ -15,3 +15,12 @@
 
 ### Graphics
 - [EVGA NVIDIA GeForce GTX 1080 Superclocked]
+
+### Keyboard
+- [Razer Huntsman Elite Gaming Keyboard](https://www.razer.com/gaming-keyboards/Razer-Huntsman-Elite/RZ03-01870200-R3U1)
+
+### Mouse
+- [Razer Basilisk Ultimate Hyperspeed](https://www.razer.com/gaming-mice/Razer-Basilisk-Ultimate/RZ01-03170100-R3U1)
+
+### Mouse Mat
+- [Razer Firefly Hard Mouse Mat V2](https://www.razer.com/gaming-mouse-mats/razer-firefly-v2)
