@@ -14,7 +14,7 @@
 - [1 TB Samsung SSD](https://www.amazon.com/Samsung-Factor-Intelligent-Magician-Software/dp/B08PC5DKZQ/ref=sr_1_5?crid=1L7Y0MNSPEQN2&keywords=samsung+1tb+ssd&qid=1701922702&sprefix=samsung+1tb%2Caps%2C166&sr=8-5&ufe=app_do%3Aamzn1.fos.17d9e15d-4e43-4581-b373-0e5c1a776d5d)
 
 ### Graphics
-- [EVGA NVIDIA GeForce GTX 1080 Superclocked]
+- EVGA NVIDIA GeForce GTX 1080 Superclocked
 
 ### Keyboard
 - [Razer Huntsman Elite Gaming Keyboard](https://www.razer.com/gaming-keyboards/Razer-Huntsman-Elite/RZ03-01870200-R3U1)
