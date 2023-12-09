@@ -11,3 +11,6 @@ This repository will have all files that I allow to be accessed publicly.
 - Download Git+ from Your Mobile Store
 - Point it to the url of this site https://gitlab.lazymedia.media
 - Create an Access token from your GitLab account and input it into the Mobile app
+
+### How to use the rest of the services provided at the domain 'lazymedia.media'
+
