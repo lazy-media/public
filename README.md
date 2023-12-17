@@ -18,9 +18,9 @@ This repository will have all files that I allow to be accessed publicly.
 
 Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials to view any apps or services you have access to.
 
-If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests). ***Currently Only Plex Logins are accepted.***
+If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests). ***Only Plex Logins are accepted. Recommended way to sign up.***
 
-If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/wFmWWBMEH9). But this Login method does not allow access to the Media Server. Very Limited options.
+If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/wFmWWBMEH9). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
 
 After the form has been approved you will recieve multiple emails with further instructions.
 
