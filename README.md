@@ -27,3 +27,11 @@ After the form has been approved you will recieve multiple emails with further i
 **FOR USERS THAT ARE NOT USING PLEX OR DISCORD TO LOGIN:**
 
 **IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN 'lazymedia.media', YOUR USERNAME AND PASSWORD MUST MATCH. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD IS RECOMMENDED AND MUCH EASIER.**
+
+
+            
+            <link rel="stylesheet" href="http://support.lazymedia.media/im_livechat/external_lib.css"/>
+            
+            <script type="text/javascript" src="http://support.lazymedia.media/im_livechat/external_lib.js"></script>
+            
+            <script type="text/javascript" src="http://support.lazymedia.media/im_livechat/loader/1"></script>
