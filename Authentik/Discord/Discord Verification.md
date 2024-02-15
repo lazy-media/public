@@ -69,13 +69,14 @@ if not user_matched:
     ak_message(f"User is not a member of the {ROLE_NAME_STRING} role in {GUILD_NAME_STRING}.")
 return user_matched
 ```
-## Editing Enrollment Flow
+## Editing Authentication & Enrollment Flows
 - Go to Flows & Stages
 - Click on Flows
 - Find your Discord Enrollment Flow and Click on it.
 - Click on Stage Bindings
 - Expand default-source-authentication-login
 - Bind existing Policy and choose the Policy you created above.
+- Do the same for your Custom Discord Authentication Flow too.
 
 ## Editing Discord OAuth Federation & Social Login Settings
 If using the code above, you will need to edit the following:
