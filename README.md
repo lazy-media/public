@@ -14,7 +14,7 @@ This repository will have all files that I allow to be accessed publicly.
 
 ## How to use the rest of the services provided at the domain 'lazymedia.media'
 
-***The best way to login to services is with the Lazy Media - Authentik button presented on any login pages. When Authentik loads, login with your Plex Credentials.***
+***The best way to login to services is with the "Lazy Media - Authentik" button presented on any login pages. When Authentik loads, login with your Plex Credentials.***
 
 Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials to view any apps or services you have access to.
 
@@ -26,4 +26,4 @@ After the form has been approved you will recieve multiple emails with further i
 
 **FOR USERS THAT ARE NOT USING PLEX OR DISCORD TO LOGIN:**
 
-**IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN 'lazymedia.media', YOUR USERNAME AND PASSWORD MUST MATCH. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD IS RECOMMENDED AND MUCH EASIER.**
+**IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN 'lazymedia.media', YOUR USERNAME AND PASSWORD MUST MATCH. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD IS RECOMMENDED AND MUCH EASIER. IT IS NOT RECOMMENDED TO CHANGE YOUR PROFILE INFORMATION ON ANY SERVICE, EVEN IF ALLOWED. THIS IS DUE TO HOW THE AUTHENTICATION METHOD WORKS CURRENTLY. IT COULD POSSIBLY BREAK YOUR ACCOUNTS TO OTHER SERVICES.**
