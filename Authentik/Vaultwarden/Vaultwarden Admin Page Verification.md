@@ -13,6 +13,5 @@
 ^/images/.*
 ^/identity/.*
 ^/app/.*
-^/*.js
 ^/locales/.*
 ```
