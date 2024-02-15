@@ -77,5 +77,13 @@ return user_matched
 - Expand default-source-authentication-login
 - Bind existing Policy and choose the Policy you created above.
 
+## Editing Discord OAuth Federation & Social Login Settings
+If using the code above, you will need to edit the following:
+- Go to Authentik Admin Panel
+- Go to Directory
+- Go to Federation & Social Login
+- Click the edit button on the right side of your Discord OAuth
+- Under SCOPES, add ```guilds guilds.members.read```
+
 ## Explanation
 This will at least verify a user against your Discord Server and the Role you selected. If they are not authenticated on your Discord Server, Authentik will toss the user back to the Authentik Login screen. This does not display a message to the user saying they need to join the Discord Server in order to gain access (still trying to figure this out). This will also create an Authentik user too but not allow login until verified on Discord.
