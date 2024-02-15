@@ -2,6 +2,8 @@
 
 ## PLEASE BE AWARE THAT WITH GAINING ACCESS TO THIS SERVER, YOU WILL BE REQUIRED TO MAKE A MONTHLY PAYMENT TO CONTINUE ACCESS. THIS PAYMENT IS TO HELP WITH SERVER MAINTENANCE.
 
+### Visit the [Lazy Media Support Site](https://support.lazymedia.media) for More Information
+
 ## Main Login Method (Recommended)
 ### Please note that most accounts / requests are restricted to Family or Friends only.
 ### Due to how the server is currently setup, a Plex Account is required as that is the main authentication method currently setup. In order to have access using your Plex account, I must have you in my Plex Friends List.
