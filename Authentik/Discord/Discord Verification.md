@@ -10,14 +10,22 @@ This is assuming you have followed the guide from [Federation & Social Login Flo
 - Create and Bind an Existing Policy
 - Create an Expression Policy
 - I named mine Discord Guild and Role Verification
-- Copy and paste the last Expression from the Authentik Docs making sure to change the fields that are required.
+- Copy and paste the code below or the last Expression from the Authentik Docs making sure to change the fields that are required.
 - Click Save.
 - This should put a Policy Under the default-source-authentication-login.
+
 ## Authentik Docs & Discord Code
 [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
 ---
 **MAKE SURE TO CHANGE THE FIRST 4 UNCOMMENTED (#) LINES WITHIN THE PARENTHESIS ("") TO MATCH YOUR DISCORD INFORMATION!**
-
+---
+These lines should look like:
+```
+ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
+ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
+GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
+ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
+```
 - Guild ID = Server ID
 - Role ID = Role ID
 ```
