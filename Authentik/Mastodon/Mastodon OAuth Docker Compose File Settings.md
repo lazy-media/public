@@ -1,9 +1,41 @@
-## TO BE CLEAR, I AM RUNNING MASTODON IN A DOCKER COMPOSE FILE. I AM RUNNING SEPERATE DOCKER CONTAINERS FOR THE DATABASE AND REDIS. I AM ALSO USING PORTAINER TO MANAGE THIS STACK AND OTHER CONTAINERS.
+# TO BE CLEAR
 
-### My Mastodon Docker Compose FILE
+I AM RUNNING MASTODON IN A DOCKER COMPOSE FILE USING THE LINUX.IO IMAGE. I AM RUNNING SEPERATE DOCKER CONTAINERS FOR THE DATABASE AND REDIS. I AM ALSO USING PORTAINER TO MANAGE THIS STACK AND OTHER CONTAINERS.
+
+YOU MUST BE RUNNING MASTODON IN DOCKER or DOCKER COMPOSE or ADAPT TO YOUR SITUATION.
+
+THE LINES I NEEDED TO ADD TO MY COMPOSE FILE IN ORDER TO GET OAUTH TO WORK WITH AUTHENTIK ARE:
+
+Only change what is needed to be changed.
 
 ```
+OIDC_ENABLED=true
+OIDC_DISPLAY_NAME=DISPLAY-NAME-FOR-OAUTH-ON-MASTODON-LOGIN-PAGE
+OIDC_DISCOVERY=true
+OIDC_ISSUER=https://YOUR-AUTHENTIK-DOMAIN/application/o/mastodon-oauth/
+OIDC_AUTH_ENDPOINT=https://YOUR-AUTHENTIK-DOMAIN/application/o/authorize/
+OIDC_SCOPE=openid,profile,email
+OIDC_UID_FIELD=sub
+OIDC_CLIENT_ID=AUTHENTIK-PROVIDER-CLIENT-ID
+OIDC_CLIENT_SECRET=AUTHENTIK-PROVIDER-CLIENT-SECRET
+OIDC_REDIRECT_URI=https://YOUR-MASTODON-DOMAIN/auth/auth/openid_connect/callback
+OIDC_SECURITY_ASSUME_EMAIL_IS_VERIFIED=true
+```
 
+## Key Generation for Mastodon Docker Compose File
+
+Key Generation for ```SECRET_KEY_BASE``` & ```OTP_SECRET```. Need to run 2 times. Once for each.
+```
+docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/mastodon generate-secret
+```
+Key Generation for ```VAPID_PRIVATE_KEY``` & ```VAPID_PUBLIC_KEY```. Need to run once. Will generate both.
+
+```
+docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/mastodon generate-vapid
+```
+
+# My Mastodon Docker Compose File
+```
 ---
 version: "2.1"
 services:
