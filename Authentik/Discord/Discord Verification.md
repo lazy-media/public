@@ -27,10 +27,10 @@ This is assuming you have followed the guide from [Authentik OAuth Setup](/Authe
 # Right-click on the server/guild title and select server settings > roles, right click on the role and click
 # "Copy ID" to get the role ID.
 
-ACCEPTED_ROLE_ID = "123456789123456789"
-ACCEPTED_GUILD_ID = "123456789123456789"
-GUILD_NAME_STRING = "The desired server/guild name in the error message."
-ROLE_NAME_STRING = "The desired role name in the error message."
+ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
+ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
+GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
+ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 
 # Only change below here if you know what you are doing.
 GUILD_API_URL = f"https://discord.com/api/users/@me/guilds/{ACCEPTED_GUILD_ID}/member"
