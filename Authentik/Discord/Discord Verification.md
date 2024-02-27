@@ -28,6 +28,8 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 ```
 - Guild ID = Server ID
 - Role ID = Role ID
+---
+Full Code to Copy:
 ```
 # To get the role and guild ID numbers for the parameters, open Discord, go to Settings > Advanced and
 # enable developer mode.
