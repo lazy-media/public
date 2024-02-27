@@ -1,5 +1,5 @@
 # Discord Verification Flow Setup
-This is assuming you have followed the guide from [Authentik OAuth Setup](https://gitlab.lazymedia.media/lazymedia/authentik/-/blob/9236f51bc5693c6812d89e5000ae9487e0fdc96e/Flows%20Setup/OAuth%20Flow%20Setup.md) and have setup separate Authentication and Enrollment Flows for Discord.
+This is assuming you have followed the guide from [Authentik OAuth Setup](Authentik/Federation & Social Login/Discord, Plex, Twitch Social Login Flow Setup.md) and have setup separate Authentication and Enrollment Flows for Discord.
 ## Discord Guild & Role Verification Setup
 ## Editing Authentication Flow
 - Go to Flows & Stages
