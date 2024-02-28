@@ -108,3 +108,11 @@ gitlab_rails['omniauth_providers'] = [
   }
 ]
 ```
+
+### Update GitLab Config to apply Changes
+
+Enter the following to update Gitlab Rails Config and apply the changes
+```
+gitlab-ctl reconfigure
+```
+Your new SAML Provider should now show up on your Gitlab Login Page or Automatically login.
