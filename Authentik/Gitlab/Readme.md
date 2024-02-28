@@ -8,6 +8,12 @@
 - [Gitlab Installation](https://docs.gitlab.com/omnibus/installation/index.html)
 - [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
+
+# OAUTH SETUP
+## Redirect URL for Authentik
+```
+https://YOUR-GITLAB-URL/users/auth/openid_connect/callback
+```
 ## Adding OAuth to Gitlab Config File
 
 Login and edit the Gitlab Ruby Config File
@@ -69,7 +75,10 @@ Your new OpenID / OAuth2 Provider should now show up on your Gitlab Login Page o
 
 
 ## Add SAML to GitLab
-
+## Redirect URL for Authentik
+```
+https://YOUR-GITLAB-URL/users/auth/saml/callback
+```
 Login and edit your GitLab Ruby Config File
 ```
 nano /etc/gitlab/gitlab.rb
