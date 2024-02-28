@@ -1,5 +1,5 @@
 # Discord Verification Flow Setup
-This is assuming you have followed the guide from [Federation & Social Login Flow Setup](/Authentik/Federation & Social Login/Readme.md) and have setup separate Authentication and Enrollment Flows for Discord.
+This is assuming you have followed the guide from [Federation & Social Login Flow Setup](/Authentik/Federation & Social Login/Discord Social Login Setup.md) and have setup separate Authentication and Enrollment Flows for Discord.
 ## Discord Guild & Role Verification Setup
 ## Adding a Deny Message
 This allows for a message to appear to users that are not part of your Discord Server.
