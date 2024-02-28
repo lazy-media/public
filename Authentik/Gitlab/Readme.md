@@ -5,8 +5,8 @@
 
 # Original documentation
 
-[Gitlab Installation](https://docs.gitlab.com/omnibus/installation/index.html)
-[Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
+- [Gitlab Installation](https://docs.gitlab.com/omnibus/installation/index.html)
+- [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
 ## Adding OAuth to Gitlab Config File
 
