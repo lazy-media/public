@@ -1,5 +1,9 @@
 # Nextcloud OAuth / OpenID Setup with Authentik
 
+## Documentation
+
+- [Authentik Documentation](https://docs.goauthentik.io/integrations/services/nextcloud/)
+
 ## Assumptions
 
 - This guide assumes you have Nextcloud setup and running. Depening on your Nextcloud Setup and instance, your URL might be different.
@@ -31,3 +35,6 @@
     Use Group Provisioning = True / Checked
     Send ID Token hint on logout = True / Checked
 ```
+
+## Authentik Setup for Nextcloud Quota
+
