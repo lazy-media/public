@@ -74,7 +74,7 @@ gitlab-ctl reconfigure
 Your new OpenID / OAuth2 Provider should now show up on your Gitlab Login Page or Automatically login.
 
 
-## Add SAML to GitLab
+# SAML Setup
 ## Redirect URL for Authentik
 ```
 https://YOUR-GITLAB-URL/users/auth/saml/callback
