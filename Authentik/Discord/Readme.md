@@ -1,12 +1,21 @@
 # Discord Verification Flow Setup
 This is assuming you have followed the guide from [Federation & Social Login Flow Setup](/Authentik/Federation & Social Login/Discord, Plex, Twitch Social Login Flow Setup.md) and have setup separate Authentication and Enrollment Flows for Discord.
 ## Discord Guild & Role Verification Setup
+## Adding a Deny Message
+This allows for a message to appear to users that are not part of your Discord Server.
+- Go to Flows & Stages
+- Click on Stages
+- Create a new stage
+- Select Deny Stage
+- Enter your preferred name and deny message and save
 ## Editing Authentication Flow
 - Go to Flows & Stages
 - Click on Flows
 - Find your Discord Authentication Flow and Click on it.
 - Click on Stage Bindings
-- Expand default-source-authentication-login
+- Select the Deny Stage you just created above
+- Make sure Order Number is 0 or highest in your list and save
+- Expand the Deny Stage you just added
 - Create and Bind an Existing Policy
 - Create an Expression Policy
 - I named mine Discord Guild and Role Verification
@@ -16,9 +25,10 @@ This is assuming you have followed the guide from [Federation & Social Login Flo
 
 ## Authentik Docs & Discord Code
 [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
----
+
+## Discord Code
 **MAKE SURE TO CHANGE THE FIRST 4 UNCOMMENTED (#) LINES WITHIN THE PARENTHESIS ("") TO MATCH YOUR DISCORD INFORMATION!**
----
+
 These lines should look like:
 ```
 ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
@@ -84,7 +94,7 @@ return user_matched
 - Click on Flows
 - Find your Discord Enrollment Flow and Click on it.
 - Click on Stage Bindings
-- Expand default-source-authentication-login
+- Expand your Deny Stage
 - Bind existing Policy and choose the Policy you created above.
 - Do the same for your Custom Discord Authentication Flow too.
 
