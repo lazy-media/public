@@ -91,8 +91,8 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Create a new Flow and Name it Discord Enrollment
 - Click on the Flow and click Stage Bindings.
 - Bind an existing stage and select your Discord Verification Deny Stage created above.
-- Expand the Deny Stage and add existing Policy.
-- Add your Discord Verification Policy and set binding same as above.
+- Expand the Deny Stage.
+- Add your Discord Verification Policy.
 - Create and Bind a New Stage
 - Choose User Write Stage
 - Name it Discord Enrollment Writes
@@ -100,16 +100,18 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Uncheck "Create new users as inactive".
 - Leave User Path Template empty (autofilled later by Authentik)
 - Select the group you want users to go into when enrolled
-- Click Done or Update
-- Bind an existing stage and bind "default-source-authentication-login"
 - Increment your order
-- Click Done or Update
+- Click Finish or Update
+- Bind another existing stage and bind "default-source-authentication-login"
+- Increment your order
+- Click Finsih or Update
 - Go to the Policy Section of the same Flow and add "default-source-enrollment-if-sso"
 
 ## Federation & Social Login Creation + Flows Attachment
+- Navigate to Directory > Federation & Social Login
 - Create your Federation & Social Login Provider (i.e. Plex, Discord, Twitch)
 - At the very bottom of your Federation & Social Login Provider, expand Flow Settings
-- Select your respective flows for Authentication and Enrollment
+- Select your Discord flows for Authentication and Enrollment
 - Under this OAuth Settings Page, I personally also made sure that the USER MATCHING MODE is set to "Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses." SET TO MATCH YOUR PREFERENCE.
 
 ## Add SSO & Flow to Login Page
