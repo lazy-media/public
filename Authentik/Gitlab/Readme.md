@@ -109,6 +109,8 @@ gitlab_rails['omniauth_providers'] = [
 ]
 ```
 
+Save and exit with CTRL + O then CTRL + X or CTRL + X, Then 'Y', Then ENTER
+
 ### Update GitLab Config to apply Changes
 
 Enter the following to update Gitlab Rails Config and apply the changes
