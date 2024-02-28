@@ -2,6 +2,10 @@
 ### Original Documentation
 - [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
 
+### Explanation of Flow
+
+This flow allows the use of Discord Login with Authentik. This explains how to create a deny stage to display a message to users if they are not part of your Discord Server. This flow creation will allow Authentik to verify a user against your Discord Server based on Server ID and Role ID, Assign them to an Authentik Group, and Add the Discord Login to the Main Authentik Login Page. Authentik will handle user creation upon a user's first login.
+
 ## Group Creation
 - Login to Authentik Admin Panel
 - Navigate to Directory > Groups
@@ -109,7 +113,11 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 
 ## Federation & Social Login Creation + Flows Attachment
 - Navigate to Directory > Federation & Social Login
-- Create your Federation & Social Login Provider (i.e. Plex, Discord, Twitch)
+- Create your Discord Federation & Social Login Provider
+- Under the Scopes Section, enter the following:
+```
+guilds guilds.members.read
+```
 - At the very bottom of your Federation & Social Login Provider, expand Flow Settings
 - Select your Discord flows for Authentication and Enrollment
 - Under this OAuth Settings Page, I personally also made sure that the USER MATCHING MODE is set to "Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses." SET TO MATCH YOUR PREFERENCE.
