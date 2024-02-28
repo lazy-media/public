@@ -93,7 +93,7 @@ gitlab_rails['omniauth_providers'] = [
     name: 'saml',
     args: {
       assertion_consumer_service_url: 'https://YOUR-GITLAB-URL/users/auth/saml/callback',
-      # Shown when navigating to certificates in authentik
+      # Login to Authentik Admin Panel > Navigate to System > Certificates > Expand Your Cert > Copy SHA1 > Paste Below
       idp_cert_fingerprint: 'YOUR-AUTHENTIK-CERTIFICATE-FINGERPRINT',
       idp_sso_target_url: 'https://YOUR-AUTHENTIK-URL/application/saml/YOUR-AUTHENTIK-SAML-PROVIDER-SLUG/sso/binding/redirect/',
       issuer: 'https://YOUR-GITLAB-URL',
