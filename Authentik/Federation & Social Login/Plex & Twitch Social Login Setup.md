@@ -1,4 +1,4 @@
-# Plex, Discord, Twitch - OAuth Authentication, Enrollment, & User Group Assignment Setup
+# Plex & Twitch - OAuth Authentication, Enrollment, & User Group Assignment Setup
 
 ## Group Creation
 - Create respective User Groups
