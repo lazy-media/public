@@ -19,15 +19,15 @@
 - Add a New Provider by click the Plus Icon
 - Fill out the Form as Follows:
 ```
-    Identifier = ```YOUR DISPLAY NAME SHOWN ON NEXTCLOUD LOGIN```
-    Client ID = ```YOUR AUTHENTIK PROVIDER CLIENTID```
-    Client Secret = ```YOUR AUTHENTIK PROVIDER SECRET KEY```
-    Discover Endpoint = ```https://YOUR-AUTHENTIK-URL/application/o/YOUR-PROVIDER-SLUG/.well-known/openid-configuration```
-    Scope = ```email profile openid ak_proxy```
-    User ID Mapping = ```sub```
-    Quota Mapping = ```quota```
-    Groups Mapping = ```groups```
-    Use Unique User ID = ```False / Unchecked```
-    Use Group Provisioning = ```True / Checked```
-    Send ID Token hint on logout = ```True / Checked```
+    Identifier = YOUR DISPLAY NAME SHOWN ON NEXTCLOUD LOGIN
+    Client ID = YOUR AUTHENTIK PROVIDER CLIENTID
+    Client Secret = YOUR AUTHENTIK PROVIDER SECRET KEY
+    Discover Endpoint = https://YOUR-AUTHENTIK-URL/application/o/YOUR-PROVIDER-SLUG/.well-known/openid-configuration
+    Scope = email profile openid ak_proxy
+    User ID Mapping = sub
+    Quota Mapping = quota
+    Groups Mapping = groups
+    Use Unique User ID = False / Unchecked
+    Use Group Provisioning = True / Checked
+    Send ID Token hint on logout = True / Checked
 ```
