@@ -10,6 +10,11 @@ YOU MUST BE RUNNING MASTODON IN DOCKER or DOCKER COMPOSE or ADAPT TO YOUR SITUAT
 
 THE LINES I NEEDED TO ADD TO MY COMPOSE FILE IN ORDER TO GET OAUTH TO WORK WITH AUTHENTIK ARE:
 
+## Redirect URL for Authentik
+```
+https://YOUR-MASTODON-URL/auth/auth/openid_connect/callback
+```
+## DOCKER LINES TO ADD
 Only change what is needed to be changed.
 
 ```
@@ -38,7 +43,7 @@ Key Generation for ```VAPID_PRIVATE_KEY``` & ```VAPID_PUBLIC_KEY```. Need to run
 docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/mastodon generate-vapid
 ```
 
-# My Mastodon Docker Compose File
+# Mastodon Docker Compose File with OpenID
 ```
 ---
 version: "2.1"
