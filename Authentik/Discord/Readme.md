@@ -1,45 +1,33 @@
-# Discord Verification Flow Setup
-This is assuming you have followed the guide from [Federation & Social Login Flow Setup](/Authentik/Federation & Social Login/Discord Social Login Setup.md) and have setup separate Authentication and Enrollment Flows for Discord.
-## Discord Guild & Role Verification Setup
-## Adding a Deny Message
-This allows for a message to appear to users that are not part of your Discord Server.
-- Go to Flows & Stages
-- Click on Stages
+# Discord - OAuth Authentication, Enrollment, & User Group Assignment Setup
+### Original Documentation
+- [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
+
+### Explanation of Flow
+
+This flow allows the use of Discord Login with Authentik. This explains how to create a deny stage to display a message to users if they are not part of your Discord Server. This flow creation will allow Authentik to verify a user against your Discord Server based on Server ID and Role ID, Assign them to an Authentik Group, and Add the Discord Login to the Main Authentik Login Page. Authentik will handle user creation upon a user's first login.
+
+## Group Creation
+- Login to Authentik Admin Panel
+- Navigate to Directory > Groups
+- Create a group for Discord Users
+
+## Create a Deny Stage
+- Navigate to Flows and Stages > Stages
 - Create a new stage
 - Select Deny Stage
-- Enter your preferred name and deny message and save
-## Editing Authentication Flow
-- Go to Flows & Stages
-- Click on Flows
-- Find your Discord Authentication Flow and Click on it.
-- Click on Stage Bindings
-- Select the Deny Stage you just created above
-- Make sure Order Number is 0 or highest in your list and save
-- Expand the Deny Stage you just added
-- Create and Bind an Existing Policy
+- Enter your name as Discord Verification and enter the message of your choosing.
+- Select Finish to save
+
+## Authentication Flow Creation
+- Navigate to Flows and Stages > Flows
+- Create a new flow and name it Discord Authentication
+- Designation is set as Authentication
+- Click Finish
+- Clicked on the new Discord Authentication flow and go to Stage Bindings
+- Bind an existing stage and select the Deny Stage you just created. Binding order should be 0. Click Finish to save.
+- Click the Expand arrow for the Discord Verification Deny Stage you just added, click Create and Bind Policy.
 - Create an Expression Policy
-- I named mine Discord Guild and Role Verification
-- Copy and paste the code below or the last Expression from the Authentik Docs making sure to change the fields that are required.
-- Click Save.
-- This should put a Policy Under the default-source-authentication-login.
-
-## Authentik Docs & Discord Code
-[Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
-
-## Discord Code
-**MAKE SURE TO CHANGE THE FIRST 4 UNCOMMENTED (#) LINES WITHIN THE PARENTHESIS ("") TO MATCH YOUR DISCORD INFORMATION!**
-
-These lines should look like:
-```
-ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
-ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
-GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
-ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
-```
-- Guild ID = Server ID
-- Role ID = Role ID
----
-Full Code to Copy:
+- Add the following:
 ```
 # To get the role and guild ID numbers for the parameters, open Discord, go to Settings > Advanced and
 # enable developer mode.
@@ -89,25 +77,55 @@ if not user_matched:
     ak_message(f"User is not a member of the {ROLE_NAME_STRING} role in {GUILD_NAME_STRING}.")
 return user_matched
 ```
-## Editing Authentication & Enrollment Flows
-- Go to Flows & Stages
-- Click on Flows
-- Find your Discord Enrollment Flow and Click on it.
-- Click on Stage Bindings
-- Expand your Deny Stage
-- Bind existing Policy and choose the Policy you created above.
-- Do the same for your Custom Discord Authentication Flow too.
+CHANGE THE FOLLOWING LINES WITHIN THE QUOTES IN THE CODE ABOVE BEFORE SAVING AND CONTINUING:
+```
+ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
+ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
+GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
+ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
+```
+- Click Next to Save the Policy
+- Create the binding with **NEGATE RESULT ENABLED** and **FAILURE RESULT is set to PASS**.
+- Click Finish to Save
+- Bind a second Existing Stage 
+- Bind the "default-source-authentication-login"
+- Go to Policies for the same Flow and add "default-source-authentication-if-sso"
 
-## Editing Discord OAuth Federation & Social Login Settings
-If using the code above, you will need to edit the following:
-- Go to Authentik Admin Panel
-- Go to Directory
-- Go to Federation & Social Login
-- Click the edit button on the right side of your Discord OAuth
-- Under SCOPES, add ```guilds guilds.members.read```
+## Enrollment Flow Creation
+- Create a new Flow and Name it Discord Enrollment
+- Click on the Flow and click Stage Bindings.
+- Bind an existing stage and select your Discord Verification Deny Stage created above.
+- Expand the Deny Stage.
+- Add your Discord Verification Policy.
+- Create and Bind a New Stage
+- Choose User Write Stage
+- Name it Discord Enrollment Writes
+- Checked the box next to Create Users when Required
+- Uncheck "Create new users as inactive".
+- Leave User Path Template empty (autofilled later by Authentik)
+- Select the group you want users to go into when enrolled
+- Increment your order
+- Click Finish or Update
+- Bind another existing stage and bind "default-source-authentication-login"
+- Increment your order
+- Click Finsih or Update
+- Go to the Policy Section of the same Flow and add "default-source-enrollment-if-sso"
+
+## Federation & Social Login Creation + Flows Attachment
+- Navigate to Directory > Federation & Social Login
+- Create your Discord Federation & Social Login Provider
+- Under the Scopes Section, enter the following:
 ```
 guilds guilds.members.read
 ```
+- At the very bottom of your Federation & Social Login Provider, expand Flow Settings
+- Select your Discord flows for Authentication and Enrollment
+- Under this OAuth Settings Page, I personally also made sure that the USER MATCHING MODE is set to "Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses." SET TO MATCH YOUR PREFERENCE.
 
-## Explanation
-This will at least verify a user against your Discord Server and the Role you selected. If they are not authenticated on your Discord Server, Authentik will toss the user back to the Authentik Login screen. This does not display a message to the user saying they need to join the Discord Server in order to gain access (still trying to figure this out). This will also create an Authentik user too but not allow login until verified on Discord.
+## Add SSO & Flow to Login Page
+- Go back to Flows
+- Click on "default-authentication-flow"
+- Go to "stage bindings"
+- Edit stage for "default-authentication-identification"
+- Expand Source Settings at the bottom
+- Select your SSO providers that you setup. Hold CTRL + CLICK for multiple.
