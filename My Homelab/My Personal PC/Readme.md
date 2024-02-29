@@ -6,6 +6,9 @@
 ### Motherboard
 - [ASRock Z270 Taichi](https://www.asrock.com/mb/intel/Z270%20Taichi/index.asp)
 
+### Processor
+- [Intel Core i5-6600K](https://www.intel.com/content/www/us/en/products/sku/88191/intel-core-i56600k-processor-6m-cache-up-to-3-90-ghz/specifications.html)
+
 ### RAM
 - [Corsair Vengeance RGB Pro 32GB (2x16GB)](https://www.corsair.com/us/en/p/memory/cmw32gx4m2e3200c16/vengeancea-rgb-pro-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-a-black-cmw32gx4m2e3200c16)
 
