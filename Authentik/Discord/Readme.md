@@ -96,7 +96,8 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Click on the Flow and click Stage Bindings.
 - Bind an existing stage and select your Discord Verification Deny Stage created above.
 - Expand the Deny Stage.
-- Add your Discord Verification Policy.
+- Add your Discord Verification Policy
+- Make sure the binding has **NEGATE RESULT ENABLED** and **FAILURE RESULT is set to PASS**.
 - Create and Bind a New Stage
 - Choose User Write Stage
 - Name it Discord Enrollment Writes
