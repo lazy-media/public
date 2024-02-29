@@ -14,17 +14,30 @@ This repository will have all files that I allow to be accessed publicly.
 
 ## How to use the rest of the services provided at the domain 'lazymedia.media'
 
+Easiest way to learn how to use the services and login method at Lazy Media, create an account and take the course at the Lazy Media Support Site.
+- [Lazy Media Course](https://support.lazymedia.media/slides/using-lazy-media-1)
+---
 ***The best way to login to services is with the "Lazy Media - Authentik" button presented on any login pages. When Authentik loads, login with your Plex Credentials.***
+
+---
 
 Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials to view any apps or services you have access to.
 
+---
+
 If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests). ***Only Plex Logins are accepted. Recommended way to sign up.***
+
+After the form has been approved you will recieve multiple emails with further instructions.
+
+---
 
 If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/wFmWWBMEH9). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
 
+---
+
 Anyone can login with a Twitch Account but this does not give access to anything. Twitch Logins can only access basic sites that everyone can access.
 
-After the form has been approved you will recieve multiple emails with further instructions.
+---
 
 **FOR USERS THAT ARE NOT USING PLEX OR DISCORD OR TWITCH TO LOGIN:**
 
