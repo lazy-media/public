@@ -5,6 +5,7 @@ To be clear, I have Authentik Setup in Docker with the Authentik Docker Compose 
 ### Authentik Setup
 
 - I currently have Authentik installed alone on a Proxmox LXC container using Ubuntu 22.04, and separate from any other services.
+- My Authentik Ports get set to 443 and 80 within the Docker Environment Variables File, but set to the standard ports in the Docker Compose File as 9443:9443 and 9000:9000.
 - I currently ONLY run Authentik as my Reverse Proxy, no middle man like NPM, Traefik, Caddy, etc.
 - I use Cloudflare Certificates installed into Authentik, not provided by any other reverse proxy or created by Let's Encrypt.
 - I do not use Cloudflare Tunnels, I use other security measures provided by Cloudflare to protect my domain.
