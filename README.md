@@ -17,11 +17,11 @@ This repository will have all files that I allow to be accessed publicly.
 Easiest way to learn how to use the services and login method at Lazy Media, create an account and take the course at the Lazy Media Support Site.
 - [Lazy Media Course](https://support.lazymedia.media/slides/using-lazy-media-1)
 ---
-***The best way to login to services is with the "Lazy Media - Authentik" button presented on any login pages. When Authentik loads, login with your Plex Credentials.***
+***The best way to login to services is with the "Lazy Media - Authentik" button presented on any login pages. When Authentik loads, login with your Plex Credentials using the PLEX OAUTH button.***
 
 ---
 
-Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials to view any apps or services you have access to.
+Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials using the *PLEX OAUTH* to view any apps or services you have access to.
 
 ---
 
