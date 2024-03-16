@@ -59,14 +59,14 @@ echo "PG_PASS=$(pwgen -s 40 1)" >> .env
 ```
 echo "AUTHENTIK_SECRET_KEY=$(pwgen -s 50 1)" >> .env
 ```
-## Creating Authentik Docker Compose, .env, and GeoIP Override Files
+# Authentik Docker Compose, .env, and GeoIP Override Files
 
-Make sure you are still in the folder ```docker/authentik```
+Make sure you are still in the folder `docker/authentik`
 You should be since we have only created folders above.
 
 ## Example Docker Compose File to persist data in the directories created above
 
-Create this file if needed, with ```nano docker-compose.yml``` and paste the following into this file.
+Create this file if needed, with `nano docker-compose.yml` and paste the following into this file.
 
 ```
 version: "3.4"
@@ -159,7 +159,7 @@ volumes:
 ```
 
 ## EXAMPLE Docker Environment Variables File (.env)
-This is the ```.env``` file
+This is the `.env` file
 ```
 # Authentik Postgres Settings
 # Uncomment any lines below to match your Postgres Server
@@ -245,11 +245,63 @@ Run the following command to download and launch Authentik
 docker-compose up -d
 ```
 
+
+# Cloudflare Setup
+
+1. Login to your Cloudflare Account.
+2. Navigate to the DNS Records section of your domain you want attached to Authentik.
+3. Create 3 DNS records.
+    - Set one `DNS A Record` that is set for your domain to your `Public IP Address`.
+    - Set one CNAME Record with an `*` for a wildcard with the destination of `@` for root domain.
+    - Set the last one as a CNAME Record for `auth` and destination of `@` for root domain.
+4. In your Cloudflare Account, navigate to SSL/TLS > Overview
+    - Set your `Encryption Mode` to `Full (Strict)`
+    - (Optional) Enable `SSL/TLS Recommender`
+5. Navigate to SSL/TLS > Edge Certificates
+    - (Optional) Enable `Always Use HTTPS`
+    - Configure `HTTP Strict Transport Security (HSTS)`
+        - (Recommended) **Enable** `HSTS`
+        - (Recommended) `Set Max Age Header` to `6 Months`
+        - (Recommended) **Enable** `Apply HSTS Policy to subdomains`
+        - (Recommended) **Disable** `Preload`
+        - (Recommended) **Enable** `No-Sniff Header`
+    - Set `Minimum TLS Version` to `TLS 1.3`
+    - (Optional) **Enable** `Opportunistic Encryption`
+    - **Enable** `TLS 1.3`
+    - (Optional) **Enable** `Automatic HTTPS Rewrites`
+6. Navigate to SSL/TLS > Origin Server
+    - Create an `Origin Certificate` if one does not exist already.
+        - If one exists, `Revoke` and `Create` a new one.
+    - Create your Certificate with `RSA (2048)`
+    - Your hostnames should include the wildcard ( * ) entry and the root domain name at least.
+    - Choose your `Certificate Validity` Length
+    - Copy the contents of both boxes on the next screen into a word or text document temporarily. There should be a `Certificate Key` and a `Private Key`. **DO NOT EVER SHARE THIS INFORMATION WITH ANYONE, IT IS THE KEY TO YOUR DOMAIN CONNECTED TO CLOUDFLARE**
+
+# Authentik Certificate Setup
+
+1. Login to your Authentik Admin Account
+2. Navigate to `System > Certificates`
+    - Click on `Create` to Import the Cloudflare Origin Certificate we just created.
+    - Name the Certificate whatever you want
+    - Paste the `Certificate Key` into the `Certificate` box
+    - Paste the `Private Key` into the `Private Key` box
+    - Click `Create`
+3. Navigate to `System > Brands`
+    - Click the `Edit` button under `Actions`
+    - Scroll to the bottom of the Window and `Expand Other Global Settings`
+    - Under `Web Certificate`, choose your Cloudflare Certificate we just imported.
+    - Click `Update`
+4. Navigate to `Applications > Outposts`
+    - Click the `Edit` button under `Actions`
+    - Scroll to the bottom and `Expand Advanced Settings`
+        - Make sure your `authentik_host:` is set to the CNAME you created in Cloudflare. (i.e. `https://auth.domain.example`)
+    - Click `Update`
+
 ## Conclusion
 
 With this setup method, the container will create folders under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis` and persist data into these folders.
 
-When updating Authentik, you just need to edit the `docker-compose.yml` file and update the server tag for authentik server and authentik worker, and then run `docker-compose up -d` again.
+When updating Authentik, you edit the `docker-compose.yml` file and update the server tag for authentik server and authentik worker, and then run `docker-compose down && docker-compose up -d` again.
 
 ## Application and Provider Setup
 
