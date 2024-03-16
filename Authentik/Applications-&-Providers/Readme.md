@@ -29,7 +29,10 @@
     - Click `Update`.
 
 ## Expanded Application & Provider Setup
-Coming soon
+Coming Soon
+
+## Application Group Permissions
+Coming Soon
 
 ### Conclusion
 
