@@ -8,25 +8,25 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 
 ## Group Creation
 - Login to Authentik Admin Panel
-- Navigate to Directory > Groups
-- Create a group for Discord Users
+    - Navigate to `Directory > Groups`
+    - Create a group for `Discord Users`
 
 ## Create a Deny Stage
-- Navigate to Flows and Stages > Stages
+- Navigate to `Flows and Stages > Stages`
 - Create a new stage
 - Select Deny Stage
-- Enter your name as `Discord Deny Verification` and enter a message of your choosing.
+    - Enter your name as `Discord Deny Verification` and enter a message of your choosing.
 - Select `Finish` to save
 
 ## Authentication Flow Creation
-- Navigate to Flows and Stages > Flows
-- Create a new flow and name it Discord Authentication
-- Designation is set as Authentication
-- Click Finish
-- Click on the new Discord Authentication flow and go to Stage Bindings
-- Bind an existing stage and select the Deny Stage you just created. Binding order should be 0. Click Finish to save.
-- Click the Expand arrow for the Discord Verification Deny Stage you just added, click Create and Bind Policy.
-- Create an Expression Policy
+- Navigate to `Flows and Stages > Flows`
+- Create a new flow and name it `Discord Authentication`
+- `Designation` is set as `Authentication`
+- Click `Finish`
+- Click on the new `Discord Authentication` flow and go to `Stage Bindings`
+- `Bind an existing stage` and select the `Deny Stage` you just created. `Binding order should be 0`. Click `Finish` to save.
+- Click the `Expand arrow` for the `Discord Verification Deny Stage` you just added, click `Create and Bind Policy`.
+- Create an `Expression Policy`
 - Add the following:
 ```
 # To get the role and guild ID numbers for the parameters, open Discord, go to Settings > Advanced and
@@ -84,50 +84,51 @@ ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
 GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
 ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 ```
-- Click Next to Save the Policy
-- Create the binding with **NEGATE RESULT ENABLED** and **FAILURE RESULT is set to PASS**.
-- Click Finish to Save
+- Click `Next` to Save the Policy
+- Create the binding with `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `PASS`.
+- Click `Finish` to Save
 - Bind a second Existing Stage 
-- Bind the "default-source-authentication-login"
-- Increment your Order
-- Go to Policies for the same Flow and add "default-source-authentication-if-sso"
+- Bind the `default-source-authentication-login`
+- Increment your Order to `10`
+- Click `Finish` or `Update`
+- Go to `Policies` for the same Flow and add `default-source-authentication-if-sso`
 
 ## Enrollment Flow Creation
-- Create a new Flow and Name it Discord Enrollment
-- Click on the Flow and click Stage Bindings.
-- Bind an existing stage and select your Discord Verification Deny Stage created above.
-- Expand the Deny Stage.
-- Add your Discord Verification Policy
-- Make sure the binding has **NEGATE RESULT ENABLED** and **FAILURE RESULT is set to PASS**.
+- Create a new Flow and Name it `Discord Enrollment`
+- Click on the Flow and click `Stage Bindings`.
+- Bind an existing stage and select your `Discord Verification Deny Stage` created above.
+- Expand the `Deny Stage`.
+- Add your `Discord Verification Policy`
+- Make sure the binding has `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `PASS`.
 - Create and Bind a New Stage
-- Choose User Write Stage
-- Name it Discord Enrollment Writes
-- Checked the box next to Create Users when Required
-- Uncheck "Create new users as inactive".
-- Leave User Path Template empty (autofilled later by Authentik)
+- Choose `User Write Stage`
+- Name it `Discord Enrollment Writes`
+- Checked the box next to `Create Users when Required`
+- Uncheck `Create new users as inactive`.
+- Leave `User Path Template empty` (autofilled later by Authentik)
 - Select the group you want users to go into when enrolled
-- Increment your order
-- Click Finish or Update
-- Bind another existing stage and bind "default-source-authentication-login"
-- Increment your order
-- Click Finsih or Update
-- Go to the Policy Section of the same Flow and add "default-source-enrollment-if-sso"
+- Increment your order to `10`
+- Click `Finish` or `Update`
+- Bind another existing stage and bind `default-source-authentication-login`
+- Increment your order to `20`
+- Click `Finish` or `Update`
+- Go to the `Policy Section` of the same Flow and add `default-source-enrollment-if-sso`
 
 ## Federation & Social Login Creation + Flows Attachment
-- Navigate to Directory > Federation & Social Login
-- Create your Discord Federation & Social Login Provider
-- Under the Scopes Section, enter the following:
+- Navigate to `Directory > Federation & Social Login`
+- Create your `Discord Federation & Social Login Provider`
+- Under the `Scopes Section`, enter the following:
 ```
 guilds guilds.members.read
 ```
-- At the very bottom of your Federation & Social Login Provider, expand Flow Settings
-- Select your Discord flows for Authentication and Enrollment
-- Under this OAuth Settings Page, I personally also made sure that the USER MATCHING MODE is set to "Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses." SET TO MATCH YOUR PREFERENCE.
+- At the very bottom of your Federation & Social Login Provider, **Expand** `Flow Settings`
+- Select your Discord flows we just created above for `Authentication` and `Enrollment`
+- Under this OAuth Settings Page, I personally also made sure that the `USER MATCHING MODE` is set to `Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses.` CHANGE TO MATCH YOUR PREFERENCE.
 
 ## Add SSO & Flow to Login Page
-- Go back to Flows
-- Click on "default-authentication-flow"
-- Go to "stage bindings"
-- Edit stage for "default-authentication-identification"
-- Expand Source Settings at the bottom
+- Navigate to `Flows & Stage > Flows`
+- Click on `default-authentication-flow`
+- Go to `Stage Bindings`
+- Edit stage for `default-authentication-identification`
+- **Expand** `Source Settings` at the bottom
 - Select your SSO providers that you setup. Hold CTRL + CLICK for multiple.
