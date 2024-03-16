@@ -1,5 +1,9 @@
 # Installation Process
 
+# Original Documentation / Website
+
+- [Paperless NGX](https://docs.paperless-ngx.com)
+
 ## Login
 
 Login as root user
