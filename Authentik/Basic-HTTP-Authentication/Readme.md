@@ -4,7 +4,7 @@
 A Good Video to follow for this is:
 [Cooptonian - Send HTTP Basic Authentication](https://youtu.be/S-CIGno0cdw?si=36sEQMOnsDihrd2z)
 
-## Origianl Documentation
+## Original Documentation
 
 [Authentik Documentation](https://docs.goauthentik.io/docs/providers/proxy/header_authentication)
 
