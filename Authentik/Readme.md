@@ -16,3 +16,7 @@ Please do not ask for support on a product or service that you are trying to use
 ### Support
 
 For further support, please visit the [Authentik Discord Server](https://goauthentik.io/discord). Please do a thorough search of the Discord Server before posting an issue, as I am sure the issue has been asked and solved. If not, feel free to post. Everyone is there to help each other. I am also pretty active on this Discord Server if you are looking for personal help.
+
+### Best Videos to watch to get started
+
+[Cooptonian - Authentik Setup Playlist](https://youtube.com/playlist?list=PLH73rprBo7vSkDq-hAuXOoXx2es-1ExOP&si=Y0byly0a4PmfdxkR)
