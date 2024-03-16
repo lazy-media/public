@@ -73,3 +73,8 @@ bash -c "$(curl --location --silent --show-error https://raw.githubusercontent.c
 ```
 
 Fill out the information as told in the setup steps.
+
+
+# Authentik OAuth / OpenID Setup
+
+Please visit [Paperless-NGX OAuth Setup](Authentik/Paperless-NGX/Readme.md)
