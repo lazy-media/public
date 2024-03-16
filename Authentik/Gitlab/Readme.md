@@ -9,7 +9,7 @@
 - [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
 
-# OAUTH SETUP
+# OPENID / OAUTH SETUP
 ## Redirect URL for Authentik
 ```
 https://YOUR-GITLAB-URL/users/auth/openid_connect/callback
