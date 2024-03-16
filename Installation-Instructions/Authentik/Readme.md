@@ -251,9 +251,9 @@ docker-compose up -d
 1. Login to your Cloudflare Account.
 2. Navigate to the DNS Records section of your domain you want attached to Authentik.
 3. Create 3 DNS records.
-    - Set one `DNS A Record` that is set for `your domain` to your `Public IP Address`.
-    - Set one CNAME Record with an `*` for a wildcard with the destination of `@` for root domain.
-    - Set the last one as a CNAME Record for `auth` and destination of `@` for root domain.
+    - Set one `DNS A Record` that is set for `your domain` to your `Public IP Address`. (Root Domain)
+    - Set one `CNAME Record` with an `*` for a wildcard with the destination of `@` for root domain. (Wildcard Entry)
+    - Set the last one as a `CNAME Record` for `auth` and destination of `@` for root domain. (Authentik)
 4. In your Cloudflare Account, navigate to SSL/TLS > Overview
     - Set your `Encryption Mode` to `Full (Strict)`
     - (Optional) Enable `SSL/TLS Recommender`
