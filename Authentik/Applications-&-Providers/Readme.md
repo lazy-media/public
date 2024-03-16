@@ -26,3 +26,8 @@
     - Navigate to `Applications > Outposts`
     - Click the `Edit` button under `Actions`
         - Under `Applications` either double click any applications on the left side, to enable access externally.
+    - Click `Update`.
+
+### Conclusion
+
+This should explain how to Add your Cloudflare Certificate into Authentik, and setup your first Applicaton and Provider using your Cloudflare certificate for Security.
