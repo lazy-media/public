@@ -21,7 +21,7 @@ Only change what is needed to be changed.
 OIDC_ENABLED=true
 OIDC_DISPLAY_NAME=DISPLAY-NAME-FOR-OAUTH-ON-MASTODON-LOGIN-PAGE
 OIDC_DISCOVERY=true
-OIDC_ISSUER=https://YOUR-AUTHENTIK-DOMAIN/application/o/mastodon-oauth/
+OIDC_ISSUER=https://YOUR-AUTHENTIK-DOMAIN/application/o/YOUR-MASTODON-OAUTH-SLUG/
 OIDC_AUTH_ENDPOINT=https://YOUR-AUTHENTIK-DOMAIN/application/o/authorize/
 OIDC_SCOPE=openid,profile,email
 OIDC_UID_FIELD=sub
