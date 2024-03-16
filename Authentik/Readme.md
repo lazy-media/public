@@ -9,6 +9,7 @@ To be clear, I have Authentik Setup in Docker with the Authentik Docker Compose 
 - I currently ONLY run Authentik as my Reverse Proxy, no middle man like NPM, Traefik, Caddy, etc.
 - I use Cloudflare Certificates installed into Authentik, not provided by any other reverse proxy or created by Let's Encrypt.
 - I do not use Cloudflare Tunnels, I use other security measures provided by Cloudflare to protect my domain.
+- For Installation Instructions on how I setup my Authentik, visit [Authentik](Installation-Instructions/Authentik/Readme.md)
 
 ### Support
 
