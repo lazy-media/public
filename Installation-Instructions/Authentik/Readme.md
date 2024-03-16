@@ -261,7 +261,7 @@ docker-compose up -d
     - Set your `Encryption Mode` to `Full (Strict)`
     - (Optional) Enable `SSL/TLS Recommender`
 5. Navigate to SSL/TLS > Edge Certificates
-    - (Optional) Enable `Always Use HTTPS`
+    - (Recommended) Enable `Always Use HTTPS`
     - Configure `HTTP Strict Transport Security (HSTS)`
         - (Recommended) **Enable** `HSTS`
         - (Recommended) `Set Max Age Header` to `6 Months`
@@ -269,9 +269,9 @@ docker-compose up -d
         - (Recommended) **Disable** `Preload`
         - (Recommended) **Enable** `No-Sniff Header`
     - Set `Minimum TLS Version` to `TLS 1.3`
-    - (Optional) **Enable** `Opportunistic Encryption`
+    - (Recommended) **Enable** `Opportunistic Encryption`
     - **Enable** `TLS 1.3`
-    - (Optional) **Enable** `Automatic HTTPS Rewrites`
+    - (Recommended) **Enable** `Automatic HTTPS Rewrites`
 6. Navigate to SSL/TLS > Origin Server
     - Create an `Origin Certificate` if one does not exist already.
         - If one exists, `Revoke` and `Create` a new one.
