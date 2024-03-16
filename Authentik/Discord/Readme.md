@@ -23,7 +23,7 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 - Create a new flow and name it Discord Authentication
 - Designation is set as Authentication
 - Click Finish
-- Clicked on the new Discord Authentication flow and go to Stage Bindings
+- Click on the new Discord Authentication flow and go to Stage Bindings
 - Bind an existing stage and select the Deny Stage you just created. Binding order should be 0. Click Finish to save.
 - Click the Expand arrow for the Discord Verification Deny Stage you just added, click Create and Bind Policy.
 - Create an Expression Policy
