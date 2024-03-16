@@ -100,3 +100,6 @@ services:
     restart: unless-stopped
 
 ```    
+## Running with an ENV File
+
+Please refer to the Linux Server Documentation for Mastodon above.
