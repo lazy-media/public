@@ -5,7 +5,7 @@
 1. Login to your Authentik Admin Account
 2. Navigate to `Applications > Applications`
     - Click on `Create with Wizard`
-    - Enter a Name of an Application
+    - Enter a Name for your Application (i.e. Sonarr)
     - Enter a slug (if not autofilled)
     - (Optional) Set a Group that you want this application to be grouped into (i.e. `Admins`, `Nextcloud Users`)
     - (Optional) Expand `UI Settings` and set a `Launch URL` and enable `Open in new tab`
