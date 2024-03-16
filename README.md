@@ -25,9 +25,11 @@ Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.medi
 
 ---
 
-If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests). ***Only Plex Logins are accepted. Recommended way to sign up.***
+If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests). **Only Plex Logins are accepted. Recommended way to sign up.**
 
-After the form has been approved you will recieve multiple emails with further instructions.
+**PLEASE NOTE: Registrations and Access to Plex are limited.**
+
+If the form has been approved, you will recieve multiple emails with further instructions.
 
 ---
 
