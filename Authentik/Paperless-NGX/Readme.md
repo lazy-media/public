@@ -6,7 +6,7 @@
 ## Prerequisites
 
 - Installed in a Proxmox LXC with YOURUSER 22.04.4
-- Assumes you followed instructions from [Paperless-NGX Installation]
+- Assumes you followed instructions from [Paperless-NGX Installation](Installation-Instructions/Paperless-NGX/Readme.md)
 
 # Adding Authentik OpenID / OAuth to Paperless-NGX
 
