@@ -19,7 +19,7 @@ A-Tech 8 x 32GB DDR4 2400 ECC REG RDIMM = [eBay Link](https://www.ebay.com/itm/3
 - LSI 9211-8i 6Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/155042469639)
 - LSI 9300-16i 12Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/144984053622)
 
-## Graphics Card = 1
+## Graphics Card = 2
 - EVGA GeForce 1080 SuperClocked
 - EVGA GeForce 1070 SuperClocked
 
