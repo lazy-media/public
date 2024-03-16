@@ -15,8 +15,8 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 - Navigate to Flows and Stages > Stages
 - Create a new stage
 - Select Deny Stage
-- Enter your name as Discord Verification and enter the message of your choosing.
-- Select Finish to save
+- Enter your name as `Discord Deny Verification` and enter a message of your choosing.
+- Select `Finish` to save
 
 ## Authentication Flow Creation
 - Navigate to Flows and Stages > Flows
