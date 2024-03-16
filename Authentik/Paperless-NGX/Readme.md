@@ -6,10 +6,19 @@
 ## Prerequisites
 
 - Installed in a Proxmox LXC with YOURUSER 22.04.4
+- Assumes you followed instructions from [Paperless-NGX Installation]
 
 # Adding Authentik OpenID / OAuth to Paperless-NGX
 
 ## Editing Docker Compose File
+
+Login to root user of Proxmox LXC
+
+## Switch to you user you installed Paperless with
+
+```
+su - YOURUSER
+```
 
 Change Directory to Paperless NGX
 
