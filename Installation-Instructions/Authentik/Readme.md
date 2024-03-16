@@ -14,6 +14,8 @@ https://goauthentik.io/docs/installation/docker-compose#preparation
 
 ## Authentik Installation Steps
 
+Login to root user of Proxmox LXC
+
 Download Docker Compose File for Authentik
 ```
 wget https://goauthentik.io/docker-compose.yml
@@ -21,7 +23,7 @@ wget https://goauthentik.io/docker-compose.yml
 
 Install additional dependencies
 ```
-sudo apt-get install -y pwgen
+apt-get install -y pwgen
 ```
 
 Create Authentik folder
