@@ -6,6 +6,8 @@ This is created in a Proxmox LXC Container running Ubuntu 22.04.4
 
 This also assumes you have docker and docker-compose installed. If not, install it.
 
+You can follow this Guide [Docker Installation](Installation-Instructions/Docker/Readme.md)
+
 ## Original Documentation
 
 https://goauthentik.io/docs/installation/docker-compose#preparation
