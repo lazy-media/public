@@ -260,6 +260,18 @@ Run the following command to download and launch Authentik
 docker-compose up -d
 ```
 
+### Authentik User Setup
+Navigate to
+
+```
+https://auth.domain.example/if/flow/initial-setup/
+```
+or
+```
+http://IP.ADDRESS.OF.AUTHENTIK:9000/if/flow/initial-setup/
+```
+
+This should ask you to setup your Authentik admin (if setup correctly)
 
 # Cloudflare Setup
 
