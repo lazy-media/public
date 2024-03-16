@@ -247,6 +247,10 @@ docker-compose up -d
 
 ## Conclusion
 
-With this setup method, the container will create folders under the ```docker/authentik``` directory for ```certs```, ```custom-templates```, ```database```, ```geoip```, ```media``` and ```redis``` and persist data into these folders.
+With this setup method, the container will create folders under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis` and persist data into these folders.
 
-When updating Authentik, you just need to edit the ```docker-compose.yml``` file and update the server tag for authentik server and authentik worker, and then run ```docker-compose up -d``` again.
+When updating Authentik, you just need to edit the `docker-compose.yml` file and update the server tag for authentik server and authentik worker, and then run `docker-compose up -d` again.
+
+## Application and Provider Setup
+
+Please refer to [Authentik Application and Provider Setup]
