@@ -2,7 +2,7 @@
 
 ## Original Creator
 
-- [Open Source is Awesome](https://wiki.opensourceisawesome.com/books/installing-docker-ce-and-docker-compose/page/install-docker-ce-and-docker-compose)
+[Open Source is Awesome](https://wiki.opensourceisawesome.com/books/installing-docker-ce-and-docker-compose/page/install-docker-ce-and-docker-compose)
 
 ### Docker Installation Script
 
