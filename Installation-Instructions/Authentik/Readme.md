@@ -16,10 +16,7 @@ https://goauthentik.io/docs/installation/docker-compose#preparation
 
 Login to root user of Proxmox LXC
 
-Download Docker Compose File for Authentik
-```
-wget https://goauthentik.io/docker-compose.yml
-```
+---
 
 Install additional dependencies
 ```
@@ -33,6 +30,10 @@ mkdir -p docker/authentik
 Change Directory into Authentik Folder
 ```
 cd docker/authentik
+```
+Download Docker Compose File for Authentik
+```
+wget https://goauthentik.io/docker-compose.yml
 ```
 Create Persistant directories for Authentik
 ```
