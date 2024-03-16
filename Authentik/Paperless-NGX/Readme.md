@@ -14,7 +14,7 @@
 
 Login to root user of Proxmox LXC
 
-## Switch to you user you installed Paperless with
+## Switch to the user you installed Paperless with
 
 ```
 su - YOURUSER
