@@ -25,7 +25,7 @@
     - Click `Next` or `Finish`
     - Navigate to `Applications > Outposts`
     - Click the `Edit` button under `Actions`
-        - Under `Applications` either double click any applications on the left side, to enable access externally.
+        - Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
     - Click `Update`.
 
 ## Expanded Application & Provider Setup
