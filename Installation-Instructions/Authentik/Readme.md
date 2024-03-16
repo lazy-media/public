@@ -319,10 +319,17 @@ With this setup method, the container will create folders under the `docker/auth
 ## Updating
 
 Edit the `docker-compose.yml` file and update the server tag for authentik server and authentik worker, and then run `docker-compose down && docker-compose up -d` again.
+
+---
+
+Edit Docker Compose File
 ```
 cd docker/authentik && nano docker-compose.yml
 ```
-
+Restart Authentik
+```
+docker-compose down && docker-compose up -d
+```
 
 ## Application and Provider Setup
 
