@@ -89,6 +89,7 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Click Finish to Save
 - Bind a second Existing Stage 
 - Bind the "default-source-authentication-login"
+- Increment your Order
 - Go to Policies for the same Flow and add "default-source-authentication-if-sso"
 
 ## Enrollment Flow Creation
