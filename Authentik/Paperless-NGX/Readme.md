@@ -1,11 +1,11 @@
 # Original Documentation / Website
 
 - [Paperless NGX](https://docs.paperless-ngx.com)
-- [Docker Engine Installation](https://docs.docker.com/engine/install/YOURUSER/)
+- [Docker Engine Installation](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Prerequisites
 
-- Installed in a Proxmox LXC with YOURUSER 22.04.4
+- Installed in a Proxmox LXC with Ubuntu 22.04.4
 - Assumes you followed instructions from [Paperless-NGX Installation](Installation-Instructions/Paperless-NGX/Readme.md)
 
 # Adding Authentik OpenID / OAuth to Paperless-NGX
