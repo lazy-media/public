@@ -81,7 +81,7 @@ You should be since we have only created folders above.
 
 ## Example Docker Compose File to persist data in the directories created above
 
-Create this file if needed, with `nano docker-compose.yml` and paste the following into this file.
+Edit this file if needed, with `nano docker-compose.yml` and paste the following into this file, or edit to your preference.
 
 ```
 version: "3.4"
