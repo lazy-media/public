@@ -345,4 +345,4 @@ docker-compose down && docker-compose up -d
 
 ## Application and Provider Setup
 
-Please refer to [Authentik Application and Provider Setup]
+Please refer to [Authentik Application and Provider Setup](Authentik/Applications-&-Providers/Readme.md)
