@@ -50,5 +50,9 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 ### Software Pool = 3
 - 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
-# Proxmox0
+# Proxmox Node 1
+
+# Proxmox Node 2
+
+# Proxmox Backup Server
 
