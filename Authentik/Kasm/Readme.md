@@ -57,8 +57,8 @@
 ### Creating Groups in Kasm
 
 - **It is best to manually create the same groups in Kasm as you have in Authentik. These should be identically named.**
-- *You don't need all your Authentik Groups in Kasm, just the ones you want.*
-- **EXAMPLE: If you have an Authentik group named `Discord Users` then you would create a Kasm Group called `Discord Users`.**
+- *You don't need all your Authentik Groups in Kasm, just the ones you want, like the group you have set in Authentik to access Kasm.*
+- **EXAMPLE: If you have an Authentik group named `Discord Users`, or `Kasm Users` then you would create a Kasm Group called `Discord Users`, or `Kasm Users`.**
 - This is just for ease in my opinion, but you can name these whatever you want. The SSO Group Mapping is what matters most.
 
 ### Setting up OpenID
