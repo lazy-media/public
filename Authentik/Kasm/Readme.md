@@ -56,8 +56,8 @@
 
 ### Creating Groups in Kasm
 
-- **It is best to Manually Create the Same groups in Kasm as you have in Authentik. These should be identically named.**
-
+- **It is best to manually create the same groups in Kasm as you have in Authentik. These should be identically named.**
+- *You don't need all your Authentik Groups in Kasm, just the ones you want.*
 - **EXAMPLE: If you have an Authentik group named `Discord Users` then you would create a Kasm Group called `Discord Users`.**
 - This is just for ease in my opinion, but you can name these whatever you want. The SSO Group Mapping is what matters most.
 
@@ -109,7 +109,7 @@
     - Under Attributes type in `authentik Admins`
     - Click `Submit`
 - Edit any other group in Kasm
-- In Each Group you want assigned to Kasm Users upon first login, click on the tab for `SSO Group Mapping`
+- For each Group, click on the tab for `SSO Group Mapping`
 - Click on `Add SSO Mapping`
 - Select your `Authentik SSO Provider`
 - **DO NOT SELECT** `Assign All Users`
