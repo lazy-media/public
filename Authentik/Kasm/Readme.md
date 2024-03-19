@@ -15,6 +15,7 @@
 - This guide assumes you already have Kasm up and Running from a fresh install.
 - This is best if done from a fresh install.
 - No users currently in Kasm have the same email, or username as any Authentik User.
+- You are on the latest version of Authentik.
 
 ## Setting Up Authentik with Easy Setup Wizard
 
