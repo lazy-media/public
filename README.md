@@ -17,11 +17,11 @@ This repository will have all files that I allow to be accessed publicly.
 Easiest way to learn how to use the services and login method at Lazy Media, create an account and take the course at the Lazy Media Support Site.
 - [Lazy Media Course](https://support.lazymedia.media/slides/using-lazy-media-1)
 ---
-***The best way to login to services is with the "Lazy Media - Authentik" button presented on any login pages. When Authentik loads, login with your Plex Credentials using the PLEX OAUTH button.***
+**The best way to login to services is with the `Lazy Media - Authentik` button presented on any login pages. When Authentik loads, login with your Plex Credentials using the `PLEX OAUTH` button.**
 
 ---
 
-Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials using the **PLEX OAUTH** button to view any apps or services you have access to.
+Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials using the `PLEX OAUTH` button to view any apps or services you have access to.
 
 ---
 
@@ -47,7 +47,7 @@ Anyone can login with a Twitch Account but this does not give access to anything
 
 **FOR USERS THAT ARE NOT USING PLEX OR DISCORD OR TWITCH TO LOGIN:**
 
-**IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN 'lazymedia.media', YOUR EMAIL, USERNAME AND PASSWORD MUST MATCH ON ALL SERVICES YOU ACCESS. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD OR TWITCH IS RECOMMENDED AND MUCH EASIER. IT IS NOT RECOMMENDED TO CHANGE YOUR PROFILE INFORMATION ON ANY SERVICE, EVEN IF ALLOWED. THIS IS DUE TO HOW THE AUTHENTICATION METHOD WORKS CURRENTLY. IT COULD POSSIBLY BREAK YOUR ACCOUNTS TO OTHER SERVICES.**
+**IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN `lazymedia.media`, YOUR `EMAIL`, AND `USERNAME` MUST MATCH ON ALL SERVICES YOU ACCESS. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD OR TWITCH IS RECOMMENDED AND MUCH EASIER. IT IS NOT RECOMMENDED TO CHANGE YOUR PROFILE INFORMATION ON ANY SERVICE, EVEN IF ALLOWED. THIS IS DUE TO HOW THE AUTHENTICATION METHOD WORKS CURRENTLY. IT COULD POSSIBLY BREAK YOUR ACCOUNTS TO OTHER SERVICES.**
 
 # Support
 
