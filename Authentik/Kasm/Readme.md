@@ -26,7 +26,7 @@
     - Expand `Advanced Protocol Settings`
         - Under `Scopes`, Hold CTRL and Click on the scopes for `email`, `openid`, and `profile` at minimum, if not already preselected.
         - Under `Subject Mode`, I personally select `Based on User's Email`
-        - I usually everything else default.
+        - I usually leave everything else default on this screen.
     - Click `Next` to save and Finish.
 
 ## Setting up Kasm
