@@ -101,7 +101,14 @@
     - Select your Provider we just added
     - Slide to Select `Assign All Users`
     - Click `Submit`
-- Edit each group in Kasm
+- Edit the `Admins` Group
+- Click on the tab for `SSO Group Mappings`
+- Click on `Add SSO Mapping`
+    - Select your Provider we just added
+    - **DO NOT SELECT** `Assign All Users`
+    - Under Attributes type in `authentik Admins`
+    - Click `Submit`
+- Edit any other group in Kasm
 - In Each Group you want assigned to Kasm Users upon first login, click on the tab for `SSO Group Mapping`
 - Click on `Add SSO Mapping`
 - Select your `Authentik SSO Provider`
