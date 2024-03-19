@@ -11,6 +11,11 @@
     - I have port 443 forwarded to Authentik
 - For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](Installation-Instructions/Authentik/Readme.md)
 
+## Assumptions
+- This guide assumes you already have Kasm up and Running from a fresh install.
+- This is best if done from a fresh install.
+- No users currently in Kasm have the same email, or username as any Authentik User.
+
 ## Setting Up Authentik with Easy Setup Wizard
 
 - Login to Authentik Admin
@@ -41,9 +46,6 @@
     - Click `Next` to save and Finish.
 
 ## Setting up Kasm
-
-This guide assumes you already have Kasm up and Running from a fresh install.
-Best if done from a fresh install.
 
 ### Requirements
 
