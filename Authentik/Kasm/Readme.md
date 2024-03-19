@@ -42,21 +42,22 @@ Click Save.
 ### Edit OAuth PROVIDER
 
 - Now Edit the OAuth Provider you just created in Kasm.
-- Click on the tab for Attribute Mapping
-- Click Add SSO Mapping
-- Select Email for the first field
-- Under Attribute enter email
-- Click Save
+- Click on the tab for `Attribute Mapping`
+- Click `Add SSO Mapping`
+- Select `Email` for the first field
+- Under Attribute enter `email`
+- Click `Save`
 
 ### Edit Groups for SSO Mapping
 
-- Navigate to Admin > Access Management > Groups
+- Navigate to **Admin > Access Management > Groups**
 - Edit each group in Kasm that you have in Authentik
 - In Each Group you want assigned to Kasm Users upon first login, click on the tab for SSO Group Mapping
 - Click on Add SSO Mapping
 - Select your newly created Authentik SSO Provider
 - Choose if you want this assigned to all users or not
 - If not assigned to all users, under Group Attributes, enter the name of the Group from Authentik you want assigned. **MUST BE IDENTICAL**
+- There should also be at least one group that has the `All Users` assigned to it.
 
 ## Example
 
