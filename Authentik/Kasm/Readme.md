@@ -25,7 +25,9 @@
 - Enter a Name such as `Kasm OAuth`
     - Slug should get autofilled
     - (Optional) Type a Group you want this categorized under.
-    - (Optional) Expand `UI Settings` and enter a `Launch URL` and Select `Open in new tab`
+    - (Optional) Expand `UI Settings` 
+        - Enter a `Launch URL` (To Hide this OAuth Provider on the User Apps Main Page, type in `blank://blank`)
+        - Select `Open in new tab`
 - Click `Next`
 - Select `OAuth2/OIDC`
 - Click `Next`
