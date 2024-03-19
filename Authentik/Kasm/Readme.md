@@ -2,7 +2,8 @@
 
 ## Setting up Kasm
 
-This guide assumes you already have Kasm up and Running. Best if done from a fresh install.
+This guide assumes you already have Kasm up and Running, and assumes you have knowledge of setting up an OAuth/OpenID Provider in Authentik.
+Best if done from a fresh install.
 
 ### Requirements
 
