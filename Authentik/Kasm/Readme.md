@@ -116,10 +116,6 @@
 - Under `Group Attributes`, enter the name of the Group from Authentik you want assigned. **MUST BE IDENTICAL**
     - **(i.e.) An Authentik Group Named `Discord Users` should be typed in exactly as `Discord Users` in to this `Group Attributes`**
 
-## Example
-
-If you have an Authentik Group named "authentik Admins" or "Discord Users", then you would enter these exact names, spellings, and capitalizations into Kasm when creating new groups and assigning SSO Group Mapping Attributes
-
 ## Conclusion
 
 You should now be able to login to Kasm with your new Authentik Login Button or it will automatically log you in if you decided to enable that. If you login with your Authentik Admin, it should assign you to the Admin Group of Kasm (if setup correctly).
