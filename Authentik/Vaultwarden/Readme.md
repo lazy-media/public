@@ -1,6 +1,6 @@
 # Vaultwarden Admin Page Verification with Authentik
 
-## Please be aware of how I have my Authentik instance setup. Found at [Authentik Setup](/Authentik/Readme.md)
+### Please be aware of how I have my Authentik instance setup. Found at [Authentik Setup](/Authentik/Readme.md)
 
 ## Assumptions
 - Assumes that you are using the docker image `vaultwarden/server`
