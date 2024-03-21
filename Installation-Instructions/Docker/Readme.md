@@ -34,11 +34,11 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 ```
-sudo apt-get update
+apt update
 ```
 ### Install Docker Engine, Docker Compose, etc.
 ```
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 # Docker Install Script
