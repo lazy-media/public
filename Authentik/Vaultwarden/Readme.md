@@ -1,23 +1,40 @@
 # Vaultwarden Admin Page Verification with Authentik
 
-## This Authentik Instance was setup as a Proxy Provider, not a Forward Auth Provider.
+## Please be aware of how I have my Authentik instance setup. Found at [Authentik Setup](/Authentik/Readme.md)
 
-## After setting up Vaultwarden Proxy in Authentik, input the following to block public access to admin page but allow access to Vaultwarden Web
+## Assumptions
+- Assumes that you are using the docker image `vaultwarden/server`
+- Assumes you already have Vaultwarden installed and running
+- Assumes you want the Admin Page enabled but everything else publicly available.
+    - I only want the Admin Page enabled for individually inviting people instead of having registration open.
+- Assumes you have setup Authentik with Vaultwarden already and it is accessible behind Authentik
 
-### NOTICE: I am using Vaultwarden in a docker container using the vaultwarden/server image. I am also using Authentik to handle all traffic with no middle man like NPM or Traefik. These results may vary depending on your setup but this is what I have found to work for me. This enabled the whole user interface for me but blocked the admin section by Authentik.
-
+## Authentik Variables
+These are to be entered under the `Authentik Provider > Unauthenticated Paths` section.
 
 ```
 ^/$
-^/#/.*
-^/#/login
-^/#/2fa
-^/api/.*
-^/images/.*
-^/identity/.*
-^/app/.*
-^/locales/.*
+^/#/.*$
+^/#/login$
+^/#/2fa$
+^/api/.*$
+^/images/.*$
+^/identity/.*$
+^/connectors/.*$
+^/app/.*$
+^/locales/.*$
+^/notifications/.*$
+^/icons/.*$
+^/encrypt-worker.*.js
+^/webauthn-connector.html
+^/*.html
+^/*.*.js
+^/*.js
+^/*.png$
+^/*.jpg$
+^/*.avif$
+^/*.woff$
 ```
 
-
-These settings do work and do not work. I have had issues with some of the endpoints not working correctly.
+## NOTICE
+These results may vary depending on your situation, but these are the settings I have found to work to allow all types of 2fa, assets, and anything else that needs to be used to load the web interface of Vaultwarden. To use from only a mobile device, not all of these are needed.
