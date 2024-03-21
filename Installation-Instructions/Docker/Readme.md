@@ -2,24 +2,28 @@
 
 ### Update System
 ```
-sudo apt-get update && sudo apt-get upgrade -y
+apt update && apt dist-upgrade -y
+```
+### Install Dependencies
+```
+apt-get install -y curl
 ```
 
 # Add Docker's official GPG key:
 ```
-sudo apt-get update
+apt update
 ```
 ```
-sudo apt-get install ca-certificates curl
+apt install ca-certificates curl
 ```
 ```
-sudo install -m 0755 -d /etc/apt/keyrings
+install -m 0755 -d /etc/apt/keyrings
 ```
 ```
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 ```
 ```
-sudo chmod a+r /etc/apt/keyrings/docker.asc
+chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
 ### Add the repository to Apt sources:
