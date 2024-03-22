@@ -12,14 +12,14 @@
 
 ## Requirements
 
-- Make sure you have the App "OpenID Connect user backend" installed on Nextcloud
+- Make sure you have the App `OpenID Connect user backend` installed on Nextcloud
 
 ## Nextcloud Setup
 
 - Login to Nextcloud Admin Account
 - Navigate to Apps
-- Install ```OpenID Connect user backend``` if needed
-- After installation, Navigate to Administration Settings > OpenID Connect
+- Install `OpenID Connect user backend` if needed
+- After installation, Navigate to `Administration Settings > OpenID Connect`
 - Add a New Provider by click the Plus Icon
 - Fill out the Form as Follows:
 ```
@@ -34,6 +34,15 @@
     Use Unique User ID = False / Unchecked
     Use Group Provisioning = True / Checked
     Send ID Token hint on logout = True / Checked
+```
+At the bottom with the check boxes
+```
+Use Unique user id = UNCHECKED
+Use Provider Identifier as prefix for ids = UNCHECKED
+Use Group Provisioning = CHECKED
+(OPTIONAL) Check Bearer Token on API and WebDav with Bearer Token = Checked / Unchecked
+(OPTIONAL) Auto Provision User when Accessing API and WebDav with Bearer Token = Checked / Unchecked
+Send ID Token hint on logout = CHECKED
 ```
 
 ## Authentik Setup for Nextcloud Quota
