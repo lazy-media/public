@@ -25,6 +25,10 @@ http://PRIVATE-IP-ADDRESS:PORT-NUMBER/auth/login
 - DO NOT CHECK MOBILE REDIRECT URL
 - Remove Basic Authentication Form.
 
+## Immich Google Photos Takeout Helper
+
+- [Google Photos Takeout Helper](Google-Photos-Takeout-Helper/Readme.md)
+
 ## Conclusion
 
 This will allow users to use the mobile app, local IP, or domain name to login with OAuth correctly.
