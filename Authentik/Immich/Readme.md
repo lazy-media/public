@@ -27,6 +27,7 @@ http://PRIVATE-IP-ADDRESS:PORT-NUMBER/auth/login
 
 ## Immich Google Photos Takeout Helper
 
+If you do a Google Photos Takeout, you need to run this program below first before uploading to Immich.
 - [Google Photos Takeout Helper](Google-Photos-Takeout-Helper/Readme.md)
 
 ## Conclusion
