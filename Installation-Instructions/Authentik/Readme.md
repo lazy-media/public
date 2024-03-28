@@ -12,7 +12,7 @@ You can follow this Guide [Docker Installation](Installation-Instructions/Docker
 
 https://goauthentik.io/docs/installation/docker-compose#preparation
 
-### Authentik Prerequisite Setup
+## Authentik Setup
 
 - I currently have Authentik installed alone on a Proxmox LXC container using Ubuntu 22.04, and separate from any other services.
 - My Authentik Ports get set to 443 and 80 within the Docker Environment Variables File, but set to the standard ports in the Docker Compose File as 9443:9443 and 9000:9000.
@@ -23,6 +23,9 @@ https://goauthentik.io/docs/installation/docker-compose#preparation
     - I have port 443 forwarded to Authentik
 - For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](Installation-Instructions/Authentik/Readme.md)
 
+## Other Requirements
+
+Make sure you have Docker and Docker compose installed. You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](Installation-Instructions/Docker/Readme.md)
 
 ## Authentik Installation Steps
 
