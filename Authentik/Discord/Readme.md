@@ -97,9 +97,12 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Create a new Flow and Name it `Discord Enrollment`
 - Click on the Flow and click `Stage Bindings`.
 - Bind an existing stage and select your `Discord Verification Deny Stage` created above.
-- Expand the `Deny Stage`.
+- Click the Expand arrow on the `Deny Stage`.
 - Add your `Discord Verification Policy`
 - Make sure the binding has `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `PASS`.
+- Bind an existing stage and bind `default-source-authentication-login`
+- Increment your order to `10`
+- Click `Finish` or `Update`
 - Create and Bind a New Stage
 - Choose `User Write Stage`
 - Name it `Discord Enrollment Writes`
@@ -107,9 +110,6 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Uncheck `Create new users as inactive`.
 - Leave `User Path Template empty` (autofilled later by Authentik)
 - Select the group you want users to go into when enrolled
-- Increment your order to `10`
-- Click `Finish` or `Update`
-- Bind another existing stage and bind `default-source-authentication-login`
 - Increment your order to `20`
 - Click `Finish` or `Update`
 - Go to the `Policy Section` of the same Flow and add `default-source-enrollment-if-sso`
