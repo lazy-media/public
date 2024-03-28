@@ -138,6 +138,7 @@ services:
       - "${COMPOSE_PORT_HTTP:-9000}:9000"
       - "${COMPOSE_PORT_HTTPS:-9443}:9443"
       - "${COMPOSE_PORT_METRICS:-9300}:9300"
+      - "${COMPOSE_PORT_LDAPS:-6636}:6636"
     depends_on:
       - postgresql
       - redis
@@ -210,12 +211,12 @@ This is the `.env` file
 
 
 # Authentik Listen Settings (Set server address and Port number, eg 0.0.0.0:9000 0.0.0.0:9443)
-# AUTHENTIK_LISTEN__HTTP=
-# AUTHENTIK_LISTEN__HTTPS=
+# COMPOSE_PORT_HTTP=80
+# COMPOSE_PORT_HTTPS=443
 
 # Authentik LDAP Listen Settings (Set server address and Port number, eg 0.0.0.0:3389 0.0.0.0:6636)
-# AUTHENTIK_LISTEN__LDAP=
-# AUTHENTIK_LISTEN__LDAPS=
+# COMPOSE_PORT_LDAP=
+# COMPOSE_PORT_LDAPS=6636
 
 # Authentik Prometheus Metrics Settings (Set server address and port number, eg 0.0.0.0:9300)
 # COMPOSE_PORT_METRICS=9300
@@ -229,7 +230,7 @@ This is the `.env` file
 ```
 
 ## Example GEOIP Override file
-Name this file ```docker-compose.override.yml```
+Name this file `docker-compose.override.yml`
 
 ```
 version: "3.2"
