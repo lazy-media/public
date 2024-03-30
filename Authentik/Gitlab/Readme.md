@@ -23,7 +23,7 @@ nano /etc/gitlab/gitlab.rb
 ```
 The following lines are basic config options for OAuth or SAML Login
 Add the following lines to the config file or search for them in the config
-Change the 'openid_connect' to either 'openid_connect' or 'saml'
+This setup is for OAuth / OpenID connect. Scroll down for SAML Setup.
 ```
 gitlab_rails['omniauth_enabled'] = true
 gitlab_rails['omniauth_allow_single_sign_on'] = ['openid_connect']
