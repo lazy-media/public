@@ -24,7 +24,7 @@
     - (Optional) For Testing, you can pass through the whole application you are trying to proxy by putting a `/` under the `Unauthenticated Paths` box.
     - Click `Next` or `Finish`
     - Navigate to `Applications > Outposts`
-    - Click the `Edit` button under `Actions`
+    - Click the `Edit` button under `Actions` for the default `authentik Embedded Outpost`
         - Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
     - Click `Update`.
 
