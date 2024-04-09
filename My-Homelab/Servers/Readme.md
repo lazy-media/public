@@ -1,7 +1,7 @@
 # Explanation
 This shows the three proxmox servers I run plus a proxmox backup server. These three proxmox servers are not setup in a cluster, they are all individual nodes.
 
-# Main Proxmox Server
+# TrueNas Scale Server
 
 ## Case
 CoolerMaster Storm = [Newegg Link](https://www.newegg.com/black-cooler-master-storm-series-atx-full-tower/p/N82E16811119297)
@@ -32,16 +32,8 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
  
 - 1 x IcyDock Full Metal 8 x 2.5 inch SAS/SATA Enclosure = [Amazon Link](https://www.amazon.com/gp/product/B00TL4US8K/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
-## Proxmox Main Server
-### Proxmox ZFS Data Pool = 2
-- 2 x 500GB Samsung 860 EVO SSD = [Amazon Link](https://www.amazon.com/gp/product/B0781Z7Y3S/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
-
-### Proxmox Boot Drive
+### Boot Drive
 - 2 x 120GB Kingston SSD
-
-## TrueNas Scale (VM)
-### Apps Pool = 4
-- 4 x 1TB Samsung 870 EVO SSD = [Amazon Link](https://www.amazon.com/gp/product/B08QBJ2YMG/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
 ### Media Pool = 9
 - 6 x Seagate Exos X18 16TB Enterprise HDD = [Amazon Link](https://www.amazon.com/gp/product/B0924X39NB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
@@ -50,9 +42,9 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 ### Software Pool = 3
 - 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
-# Proxmox Node 1
+# Main Proxmox Server
 
-# Proxmox Node 2
+# Proxmox Mini HP
 
 # Proxmox Backup Server
 
