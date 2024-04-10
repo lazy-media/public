@@ -282,6 +282,18 @@ http://IP.ADDRESS.OF.AUTHENTIK:9000/if/flow/initial-setup/
 
 This should ask you to setup your Authentik admin (if setup correctly)
 
+## Initial Setup Flow Not Showing Up after creation.
+
+If for some reason the initial setup flow doesn't show up, Authentik might have already created the user and deleted the initial setup flow automatically. If this happened to you, you should be able to gain access to the default Authentik Admin by using the following command by logging into the terminal of the host for Authentik.
+
+- Login to root user of Proxmox LXC
+- Enter the following command:
+
+```
+docker compose run --rm server create_recovery_key 1 akadmin
+```
+This should output a link that you can copy and paste into your web browser to login to the default Authentik Admin.
+
 # Cloudflare Setup
 
 1. Login to your Cloudflare Account.
