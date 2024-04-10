@@ -63,6 +63,8 @@
         - Backchannel Providers is left empty.
         - (optional) Expand `UI Settings`
             - Fill out a Launch URL, or leave empty to be automatically pulled from the selected provider.
+                - To hide an application enter the launch URL as `blank://blank`
+                    - Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the Authentik Overview, log out of Authentik completely, or Log back into the application you just signed out of.
             - Enable `Open in new tab`
             - Upload an Icon for the Application
     - Click `Create`
