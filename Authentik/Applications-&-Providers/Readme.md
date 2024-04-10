@@ -8,6 +8,7 @@
     - Enter a Name for your Application (i.e. Sonarr)
     - Enter a slug (if not autofilled)
     - (Optional) Set a Group that you want this application to be grouped into (i.e. `Admins`, `Nextcloud Users`)
+        - Be aware: That if you set this group, you need to manually type in the group exactly how you want it grouped. If there is a mispelling or any difference, it will create a new group.
     - (Optional) Expand `UI Settings`
         - Set a `Launch URL`
             - To hide an application enter the launch URL as `blank://blank`
@@ -57,6 +58,7 @@
         - Enter a Slug (if not autofilled) (i.e. sonarr)
             - Slugs cannot have spaces. If you type out a slug manually, spaces will be replaced with a dash (`-`)
         - Enter a Group Name if you want these to be grouped into separate groups (i.e. `Plex Users`, `Nextcloud Users`, `Admins`)
+            - Be aware: That if you set this group, you need to manually type in the group exactly how you want it grouped. If there is a mispelling or any difference, it will create a new group.
         - Select a Provider you want this Application linked to. (i.e. Sonarr)
         - Backchannel Providers is left empty.
         - (optional) Expand `UI Settings`
