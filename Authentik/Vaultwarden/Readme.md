@@ -37,4 +37,4 @@ These are to be entered under the `Authentik Provider > Unauthenticated Paths` s
 ```
 
 ## NOTICE
-These results may vary depending on your situation, but these are the settings I have found to work to allow all types of 2fa, assets, and anything else that needs to be used to load the web interface of Vaultwarden. To use from only a mobile device, not all of these are needed.
+These results may vary depending on your situation, but these are the settings I have found to work to allow all types of 2fa, assets, and anything else that needs to be used to load the web interface of Vaultwarden, while still protecting the Admin Page. To use from only a mobile device, not all of these are needed.
