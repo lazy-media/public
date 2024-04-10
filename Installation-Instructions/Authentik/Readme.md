@@ -1,4 +1,4 @@
-# Authentik Installation Instructions
+# Authentik Installation & Cloudflare Setup Instructions
 ## Notice
 Please note my installation setup before continuing.
 
