@@ -8,7 +8,11 @@
     - Enter a Name for your Application (i.e. Sonarr)
     - Enter a slug (if not autofilled)
     - (Optional) Set a Group that you want this application to be grouped into (i.e. `Admins`, `Nextcloud Users`)
-    - (Optional) Expand `UI Settings` and set a `Launch URL` and enable `Open in new tab`
+    - (Optional) Expand `UI Settings`
+        - Set a `Launch URL`
+            - To hide an application enter the launch URL as `blank://blank`
+                - Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the Authentik Overview, log out of Authentik completely, or Log back into the application you just signed out of.
+        - Enable `Open in new tab`
     - Click `Next`
     - Select `Transparent Reverse Proxy` and click `Next`
     - Provider name should be autofilled, change if you want to
