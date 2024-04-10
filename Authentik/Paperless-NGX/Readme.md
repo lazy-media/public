@@ -175,6 +175,6 @@ volumes:
 ```
 
 ## Docker Compose Environment File
-This file is named ```docker-compose.env```
+This file is named `docker-compose.env`
 
-Input any environment files you want added into Paperless NGX
+Visit [Paperless NGX Full Docker Environment Variables List](Installation-Instructions/Paperless-NGX/docker-compose.env) for all the Paperless-NGX Environment Variables. Make sure to refer to Paperless-NGX Website for use of each Variable.
