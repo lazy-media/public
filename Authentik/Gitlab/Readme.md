@@ -91,9 +91,14 @@ gitlab_rails['omniauth_allow_single_sign_on'] = ['saml']
 gitlab_rails['omniauth_sync_email_from_provider'] = 'saml'
 gitlab_rails['omniauth_sync_profile_from_provider'] = ['saml']
 gitlab_rails['omniauth_sync_profile_attributes'] = ['email']
-gitlab_rails['omniauth_auto_sign_in_with_provider'] = 'saml'
 gitlab_rails['omniauth_block_auto_created_users'] = false
 ```
+To have your Gitlab instance automatically login using the SAML Provider Enter
+
+```
+gitlab_rails['omniauth_auto_sign_in_with_provider'] = 'saml'
+```
+
 Add the following lines to your GitLab Config File and change what is necessary
 ```
 gitlab_rails['omniauth_auto_link_saml_user'] = true
