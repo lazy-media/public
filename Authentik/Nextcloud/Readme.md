@@ -7,14 +7,64 @@
 ## Assumptions
 
 - This guide assumes you have Nextcloud setup and running. Depening on your Nextcloud Setup and instance, your URL might be different.
-- Your Nextcloud can either have ```index.php``` or not in the url. Please adjust these to your preference or requirements.
-- This guide uses the Nextcloud installed via the SNAP Store on Ubuntu Server 22.04
+- Your Nextcloud can either have `index.php` or not in the url. Please adjust these to your preference or requirements.
+- This guide uses the Nextcloud version installed via the SNAP Store on Ubuntu Server 22.04
 
 ## Requirements
 
 - Make sure you have the App `OpenID Connect user backend` installed on Nextcloud
 
-## Nextcloud Setup
+# Nextcloud Quota Setup
+
+## Authentik Setup
+
+- Login to Authentik Admin Portal
+- Navigate to `Customization > Property Mappings`
+- Create a new Property Mapping
+    - Create a `Scope Mapping`
+    - Enter a Name such as `Nextcloud Quota`
+    - Enter Scope Name as `nextcloud` (This links this to the scope `nextcloud` in the Nextcloud OpenID Scope Settings below)
+    - (optional) Enter a Description
+    - In the Expression Field copy and paste the code below
+
+- Click `Finish` to Save
+
+- Navigate to `Applications > Providers`
+
+# Authentik OAuth / OpenID Setup
+
+- Login to Authentik Admin Panel
+- Navigate to `Applications > Providers`
+- Create a New Provider
+    - Create a `OAuth2/OpenID Provider`
+    - Enter a Name of your choosing
+    - Leave `Authentication Flow` empty
+    - Authorization Flow is set as either Implicit or Explicit
+        - Implicit should not ask the user for confirmation before logging into the site in question.
+        - Explicit will force the user to confirm the login request before logging in to the site in question.
+    - Client Type should be `Confidential`
+    - **Copy** the `Client ID` and the `Secret Key` in a document temporarily
+    - Enter the `Redirect URI` as `https://YOUR-NEXTCLOUD-URL/index.php/apps/user_oidc/code` or `https://YOUR-NEXTCLOUD-URL/apps/user_oidc/code` (depending on your installation)
+    - Choose a Signing Key (I selected the Cloudflare Certificate we imported during Authentik Installation)
+    - **Expand** `Advanced Protocol Settings` and scroll down to `Scopes`
+        - Make sure at least the `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected for now. We will add another later.
+    - `Subject Mode` is set to `Based on the User's Email` (change to your preference, but I prefer this method.)
+    - Click `Finish` to save.
+- Navigate to `Applications > Applications`
+- Create a New Application
+    - Enter a name of your choosing
+    - Enter the slug as something like `nextcloud-oauth`
+    - (optional) Set a Group that you would like this grouped into.
+        - This is not the Permissions section to restrict users from using this.
+        - This Group Setting only groups applications on the Main Authentik Overview page for each User. Enter a name Exactly as you want it Grouped. If it is mispelled in anyway, it will create another group.
+    - Select your `Provider` as the Nextcloud OAuth we just created above.
+    - (optional) **Expand** `UI Settings`
+        - Set a Launch URL
+        - Enable `Open in new tab`
+        - Set an Icon
+    - Click `Finish` to save.
+
+# Nextcloud OpenID Setup
 
 - Login to Nextcloud Admin Account
 - Navigate to Apps
@@ -26,7 +76,7 @@
     - Client ID = `YOUR AUTHENTIK PROVIDER CLIENTID`
     - Client Secret = `YOUR AUTHENTIK PROVIDER SECRET KEY`
     - Discover Endpoint = `https://YOUR-AUTHENTIK-URL/application/o/YOUR-PROVIDER-SLUG/.well-known/openid-configuration`
-    - Scope = `email` `profile` `openid` `ak_proxy`
+    - Scope = `email` `profile` `openid` `ak_proxy` `nextcloud`
     - User ID Mapping = `sub`
     - Quota Mapping = `quota`
     - Groups Mapping = `groups`
@@ -43,6 +93,23 @@ At the bottom with the check boxes
     - (OPTIONAL) Auto Provision User when Accessing API and WebDav with Bearer Token = `Checked / Unchecked`
     - Send ID Token hint on logout = `CHECKED`
 
+## Nextcloud Quota Expression Policy Property Mapping
 
-## Authentik Setup for Nextcloud Quota
+```
+# Extract all groups the user is a member of
+groups = [group.name for group in user.ak_groups.all()]
 
+# Nextcloud admins must be members of a group called "admin".
+# This is static and cannot be changed.
+# We append a fictional "admin" group to the user's groups if they are an admin in authentik.
+# This group would only be visible in Nextcloud and does not exist in authentik.
+if user.is_superuser and "admin" not in groups:
+    groups.append("admin")
+
+return {
+    "name": request.user.name,
+    "groups": groups,
+    # To set a quota set the "nextcloud_quota" property in the user's attributes
+    "quota": user.group_attributes().get("nextcloud_quota", None)
+}
+```
