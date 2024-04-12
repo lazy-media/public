@@ -45,7 +45,7 @@
     - Enter the `Redirect URI` as `https://YOUR-NEXTCLOUD-URL/index.php/apps/user_oidc/code` or `https://YOUR-NEXTCLOUD-URL/apps/user_oidc/code` (depending on your installation)
     - Choose a Signing Key (I selected the Cloudflare Certificate we imported during [Authentik Installation](/Installation-Instructions/Authentik/Readme.md#cloudflare-setup))
     - **Expand** `Advanced Protocol Settings` and scroll down to `Scopes`
-        - Make sure at least the `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected for now. We will add another later.
+        - Make sure at least the `nextcloud` (scope we just created), `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected.
     - `Subject Mode` is set to `Based on the User's Email` (change to your preference, but I prefer this method.)
     - Click `Finish` to save.
 - Navigate to `Applications > Applications`
