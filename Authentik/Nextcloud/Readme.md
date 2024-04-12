@@ -53,11 +53,11 @@
     - Enter a name of your choosing
     - Enter the slug as something like `nextcloud-oauth`
     - (optional) Set a Group that you would like this grouped into.
-        - This is not the Permissions section to restrict users from using this.
+        - This is not the Permissions section to restrict users from using this. To set permissions, visit [Application Group Permissions](/Authentik/Applications-&-Providers/Readme.md#application-group-permissions)
         - This Group Setting only groups applications on the Main Authentik Overview page for each User. Enter a name Exactly as you want it Grouped. If it is mispelled in anyway, it will create another group.
     - Select your `Provider` as the Nextcloud OAuth we just created above.
     - (optional) **Expand** `UI Settings`
-        - Set a Launch URL
+        - Set a Launch URL (I set to main nextcloud url, not the redirect URL)
         - Enable `Open in new tab`
         - Set an Icon
     - Click `Finish` to save.
