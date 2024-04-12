@@ -4,6 +4,10 @@
 
 - [Authentik Documentation](https://docs.goauthentik.io/integrations/services/nextcloud/)
 
+## Purpose
+
+This helps walk you through on how to setup Authentik as an OpenID provider and make Nextcloud use Authentik as a Login Method. This will also use a Property Mapping to allow control the amount of storage a user has assigned using Authentik User Attribute Settings. This also allows Nextcloud to know the Authentik Admin user and assign the proper Nextcloud Admin group to allow Administrative access to your Authentik Admin.
+
 ## Assumptions
 
 - This guide assumes you have Nextcloud setup and running. Depening on your Nextcloud Setup and instance, your URL might be different.
@@ -12,7 +16,13 @@
 
 ## Requirements
 
-- Make sure you have the App `OpenID Connect user backend` installed on Nextcloud
+- Make sure you have the App `OpenID Connect user backend` installed on Nextcloud.
+    - This can be found at:
+        - Login to Nextcloud Admin Account
+        - Click on User Icon in top right corner
+        - Click on `Apps`
+        - In the list on the left, select `Integration`
+        - Find `OpenID Connect User Backend` and click `Download and Enable`
 
 # Nextcloud Quota Setup
 
@@ -28,6 +38,18 @@
     - In the Expression Field copy and paste the code below [Code to Copy](#nextcloud-quota-expression-policy-property-mapping)
 
 - Click `Finish` to Save
+
+## Authentik Nextcloud Quota User Setup
+
+- Login to Authentik Admin Panel
+- Navigate to `Directory > Users`
+- Click the `Edit` icon under `Actions` for a user you want to restrict the storage amount for
+    - Locate the `Attributes` box for the user
+    - Enter in `nextcloud_quota: 10GB`
+        - Where `10GB` is, you can change this to the amount of storage you want to assign to the user. Change the `10` to the amount followed by the size type below with no space between.
+        - Use `MB` for Megabytes
+        - Use `GB` for Gigabytes
+        - Use `TB` for Terabytes
 
 # Authentik OAuth / OpenID Setup
 
