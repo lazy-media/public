@@ -25,27 +25,25 @@
     - Enter a Name such as `Nextcloud Quota`
     - Enter Scope Name as `nextcloud` (This links this to the scope `nextcloud` in the Nextcloud OpenID Scope Settings below)
     - (optional) Enter a Description
-    - In the Expression Field copy and paste the code below
+    - In the Expression Field copy and paste the code below [Code to Copy](#nextcloud-quota-expression-policy-property-mapping)
 
 - Click `Finish` to Save
-
-- Navigate to `Applications > Providers`
 
 # Authentik OAuth / OpenID Setup
 
 - Login to Authentik Admin Panel
 - Navigate to `Applications > Providers`
 - Create a New Provider
-    - Create a `OAuth2/OpenID Provider`
+    - Create an `OAuth2/OpenID Provider`
     - Enter a Name of your choosing
     - Leave `Authentication Flow` empty
     - Authorization Flow is set as either Implicit or Explicit
         - Implicit should not ask the user for confirmation before logging into the site in question.
         - Explicit will force the user to confirm the login request before logging in to the site in question.
     - Client Type should be `Confidential`
-    - **Copy** the `Client ID` and the `Secret Key` in a document temporarily
+    - **Copy** the `Client ID` and the `Secret Key` in to a document temporarily
     - Enter the `Redirect URI` as `https://YOUR-NEXTCLOUD-URL/index.php/apps/user_oidc/code` or `https://YOUR-NEXTCLOUD-URL/apps/user_oidc/code` (depending on your installation)
-    - Choose a Signing Key (I selected the Cloudflare Certificate we imported during Authentik Installation)
+    - Choose a Signing Key (I selected the Cloudflare Certificate we imported during [Authentik Installation](/Installation-Instructions/Authentik/Readme.md#cloudflare-setup))
     - **Expand** `Advanced Protocol Settings` and scroll down to `Scopes`
         - Make sure at least the `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected for now. We will add another later.
     - `Subject Mode` is set to `Based on the User's Email` (change to your preference, but I prefer this method.)
@@ -63,6 +61,7 @@
         - Enable `Open in new tab`
         - Set an Icon
     - Click `Finish` to save.
+
 
 # Nextcloud OpenID Setup
 
