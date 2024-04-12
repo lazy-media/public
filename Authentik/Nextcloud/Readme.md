@@ -6,7 +6,7 @@
 
 ## Purpose
 
-This helps walk you through on how to setup Authentik as an OpenID provider and make Nextcloud use Authentik as a Login Method. This will also use a Property Mapping to allow control the amount of storage a user has assigned using Authentik User Attribute Settings. This also allows Nextcloud to know the Authentik Admin user and assign the proper Nextcloud Admin group to allow Administrative access to your Authentik Admin.
+This helps walk you through on how to setup Authentik as an OpenID provider and make Nextcloud use Authentik as a Login Method. This will also use a Property Mapping to control the amount of storage a user has assigned using Authentik User Attribute Settings. This also allows Nextcloud to know the Authentik Admin user and assign the proper Nextcloud Admin group to allow Administrative access to your Authentik Admin.
 
 ## Assumptions
 
@@ -23,6 +23,7 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
         - Click on `Apps`
         - In the list on the left, select `Integration`
         - Find `OpenID Connect User Backend` and click `Download and Enable`
+- Do not have the `Group Quota` or `User Quota` apps installed on Nextcloud as Authentik will handle storage quota's.
 
 # Nextcloud Quota Setup
 
