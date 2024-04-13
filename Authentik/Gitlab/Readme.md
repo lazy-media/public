@@ -8,6 +8,9 @@
 - [Gitlab Installation](https://docs.gitlab.com/omnibus/installation/index.html)
 - [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
+# Basic Authentik OAuth2/OpenID Setup
+
+[Authentik Basic OAuth2/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#)
 
 # OPENID / OAUTH SETUP
 ## Redirect URL for Authentik
