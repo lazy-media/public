@@ -1,6 +1,6 @@
 # Authentik Applications & Providers Setup
 
-## Authentik New Easy Wizard Setup
+## Authentik Proxy Provider Easy Wizard Setup
 
 - Login to your Authentik Admin Account
 - Navigate to `Applications > Applications`
@@ -33,7 +33,7 @@
         - Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
     - Click `Update`.
 
-## Expanded Application & Provider Setup
+## Expanded Application & Proxy Provider Setup
 
 - Login to your Authentik Admin Account
 - Navigate to `Applications > Providers`
@@ -72,6 +72,42 @@
     - Click the `Edit` button under `Actions` for the default `authentik Embedded Outpost`
         - Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
     - Click `Update`.
+
+# Authentik Basic OAuth2/OpenID Setup
+
+## Using Authentik's New Easy Setup Wizard
+
+- Login to Authentik Admin
+- Navigate to `Applications > Applications`
+- Click on `Create with Wizard`
+- Enter a Name such as `Example OAuth`
+    - Slug should get autofilled
+    - (Optional) Type a Group you want this categorized under.
+    - (Optional) Expand `UI Setdtings` 
+        - Enter a `Launch URL`
+            - To Hide this OAuth Provider on the User Apps Main Page, type in `blank://blank`
+            - Leave empty to have Authentik Auto detect
+            - Enter the base url of the app you want to set (i.e. nextcloud.example.domain)
+        - Select `Open in new tab`
+- Click `Next`
+- Select `OAuth2/OIDC`
+- Click `Next`
+- The Name for the Application should be autofilled (Change if you want)
+    - Authentication Flow is usually Empty
+    - Authorization Flow is either Implicit or Explicit
+        - Implicit will not show a confirmation diaglog box to the user
+        - Explicit will show a confirmation box and force the user to confirm they want to continue.
+    - Under Protocol Settings
+        - Client Type should be `Confidential`
+        - Make note of `ClientID` & `Client Secret`
+        - Redirect URIs/ Origins can be left blank since it autofills with first successful redirect
+            - If you know the redirect uri, fill it in here
+        - Choose a Signing Key. I use an Imported Cloudflare Cert, so I select this.
+    - Expand `Advanced Protocol Settings`
+        - Under `Scopes`, Hold CTRL and Click on the scopes for `email`, `openid`, and `profile` at minimum, if not already preselected.
+        - Under `Subject Mode`, I personally select `Based on User's Email`
+        - I usually leave everything else default on this screen.
+    - Click `Next` to save and Finish.
 
 ## Application Group Permissions
 
