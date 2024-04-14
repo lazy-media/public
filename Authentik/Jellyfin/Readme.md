@@ -43,6 +43,9 @@ To enable this feature:
 - Click on the `Catalog` tab at the top of the page
     - You should now see `SSO Authentication` show up. If you do not, restart your Jellyfin Server.
     - Click on and Install the new `SSO Authentication`
+
+## Configuring Jellyfin OpenID
+
 - Click on the `My Plugins` tab at the top of Jellyfin
     - Find the plugin `SSO-Auth` and click on it.
         - This should bring you to a screen that says `SSO Settings` with a form to fill out.
