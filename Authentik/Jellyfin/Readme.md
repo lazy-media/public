@@ -16,7 +16,6 @@ Scope Name = `jellyfin`
 ```
 return [group.name for group in user.ak_groups.all()]
 ```
-Attach to your Jellyfin OAuth2/OpenID Provider in Authentik
 
 ## Enable Jellyfin Quick Connect
 
