@@ -43,8 +43,37 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 - 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
 # Main Proxmox Server
+### Processor
+Intel Core i5-6600 @ 3.3GHz
+
+### RAM
+16GB
+
+### Storage
+3 x WD Red 4TB
 
 # Proxmox Mini HP
+HP Elite Desk
+
+### Processor
+Intel Core i7
+
+### RAM
+16GB
+
+### HDD
+500GB Samsung SSD
 
 # Proxmox Backup Server
 
+## HP Mediasmart Server EX490
+
+### Processor
+Pentium Dual Core E5200 @ 2.5GHz
+
+### RAM
+2 GB
+
+### Storage
+3 x WD 2TB Red
+1 x Kingston 120GB SSD
