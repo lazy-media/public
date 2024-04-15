@@ -109,7 +109,7 @@ return {
 
 - Login to Nextcloud local/default Admin Account
 - Navigate to `+ Apps`
-- Install `OpenID Connect user backend` if needed
+- Install `OpenID Connect user backend` if needed, instructions above [Requirements](Readme.md#requirements)
 - After installation, Navigate to `Administration Settings > OpenID Connect`
 - Add a New Provider by click the Plus Icon
 - Fill out the Form as Follows:
