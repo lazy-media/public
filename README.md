@@ -1,9 +1,5 @@
 # Public Files
 
-### Donations
-If my content or documentation has helped you, please consider donating to help me out and continue doing this.
-- [PayPal Donation Link](https://paypal.me/lazymediawa)
-
 ## Getting started
 
 This repository will have all files that I allow to be accessed publicly.
@@ -54,3 +50,7 @@ Anyone can login with a Twitch Account but this does not give access to anything
 # Support
 
 - [RocketChat Live Chat](https://chat.lazymedia.media/livechat)
+
+## Donations
+If my content or documentation has helped you, please consider donating to help me out and continue doing this.
+- [PayPal Donation Link](https://paypal.me/lazymediawa)
