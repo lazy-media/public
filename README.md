@@ -1,6 +1,8 @@
 # Public Files
 
-
+### Donations
+If my content or documentation has helped you, please consider donating to help me out and continue doing this.
+[PayPal Donation Link](https://paypal.me/lazymediawa)
 
 ## Getting started
 
