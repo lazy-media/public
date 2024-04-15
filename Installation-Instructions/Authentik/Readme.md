@@ -287,6 +287,7 @@ This should ask you to setup your Authentik admin (if setup correctly)
 If for some reason the initial setup flow doesn't show up, Authentik might have already created the user and deleted the initial setup flow automatically. If this happened to you, you should be able to gain access to the default Authentik Admin by using the following command by logging into the terminal of the host for Authentik.
 
 - Login to root user of Proxmox LXC
+- Navigate to `cd docker/authentik`
 - Enter the following command:
 
 ```
