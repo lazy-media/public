@@ -107,7 +107,7 @@ return {
 
 # Nextcloud OpenID Setup
 
-- Login to Nextcloud Admin Account
+- Login to Nextcloud local/default Admin Account
 - Navigate to Apps
 - Install `OpenID Connect user backend` if needed
 - After installation, Navigate to `Administration Settings > OpenID Connect`
