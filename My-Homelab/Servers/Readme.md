@@ -3,27 +3,27 @@ This shows the three proxmox servers I run plus a proxmox backup server. These t
 
 # TrueNas Scale Server
 
-## Case
+### Case
 CoolerMaster Storm = [Newegg Link](https://www.newegg.com/black-cooler-master-storm-series-atx-full-tower/p/N82E16811119297)
 
-## Motherboard
+### Motherboard
 ASUS Z10PE-D16 WS = [ASUS Website Link](https://www.asus.com/commercial-servers-workstations/z10ped16_ws/)
 
-## Processors
+### Processors
 2 x Intel Xeon E5-2690 v4 2.6Ghz 14 Core 135W - LGA2011-3 = [Intel Website Link](https://www.intel.com/content/www/us/en/products/sku/91770/intel-xeon-processor-e52690-v4-35m-cache-2-60-ghz/specifications.html)
 
-## RAM / Memory = 256GB Total
+### RAM / Memory = 256GB Total
 A-Tech 8 x 32GB DDR4 2400 ECC REG RDIMM = [eBay Link](https://www.ebay.com/itm/325343526484)
 
-## HDD Controllers = 2
+### HDD Controllers = 2
 - LSI 9211-8i 6Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/155042469639)
 - LSI 9300-16i 12Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/144984053622)
 
-## Graphics Card = 2
+### Graphics Card = 2
 - EVGA GeForce 1080 SuperClocked
 - EVGA GeForce 1070 SuperClocked
 
-## External Networking = 1
+### External Networking = 1
 Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https://www.ebay.com/itm/266099272623)
 
 ## Storage
