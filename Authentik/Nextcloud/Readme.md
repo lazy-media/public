@@ -20,7 +20,7 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
     - This can be found at:
         - Login to Nextcloud Admin Account
         - Click on User Icon in top right corner
-        - Click on `Apps`
+        - Click on `+ Apps`
         - In the list on the left, select `Integration`
         - Find `OpenID Connect User Backend` and click `Download and Enable`
 - Do not have the `Group Quota` or `User Quota` apps installed on Nextcloud as Authentik will handle storage quota's.
@@ -108,7 +108,7 @@ return {
 # Nextcloud OpenID Setup
 
 - Login to Nextcloud local/default Admin Account
-- Navigate to Apps
+- Navigate to `+ Apps`
 - Install `OpenID Connect user backend` if needed
 - After installation, Navigate to `Administration Settings > OpenID Connect`
 - Add a New Provider by click the Plus Icon
