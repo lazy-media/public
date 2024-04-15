@@ -93,7 +93,7 @@ return {
 - Navigate to `Applications > Applications`
 - Create a New Application
     - Enter a name of your choosing
-    - Enter the slug as something like `nextcloud-oauth`
+    - Enter the slug as something like `nextcloud-oauth`, this will be used in the next step.
     - (optional) Set a Group that you would like this grouped into.
         - This is not the Permissions section to restrict users from using this. To set permissions, visit [Application Group Permissions](/Authentik/Applications-&-Providers/Readme.md#application-group-permissions)
         - This Group Setting only groups applications on the Main Authentik Overview page for each User. Enter a name Exactly as you want it Grouped. If it is mispelled in anyway, it will create another group.
@@ -117,6 +117,7 @@ return {
     - Client ID = `YOUR AUTHENTIK PROVIDER CLIENTID`
     - Client Secret = `YOUR AUTHENTIK PROVIDER SECRET KEY`
     - Discover Endpoint = `https://YOUR-AUTHENTIK-URL/application/o/YOUR-PROVIDER-SLUG/.well-known/openid-configuration`
+        - Where `YOUR-PROVIDER-SLUG` is, enter the slug you created above such as `nextcloud-oauth`
     - Scope = `email` `profile` `openid` `ak_proxy` `nextcloud`
     - User ID Mapping = `sub`
     - Quota Mapping = `quota`
