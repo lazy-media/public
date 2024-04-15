@@ -88,7 +88,7 @@ return {
     - Choose a Signing Key (I selected the Cloudflare Certificate we imported during [Authentik Installation](/Installation-Instructions/Authentik/Readme.md#cloudflare-setup))
     - **Expand** `Advanced Protocol Settings` and scroll down to `Scopes`
         - Make sure the `nextcloud` (scope we just created), `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected.
-    - `Subject Mode` is set to `Based on the User's Email` (change to your preference, but I prefer this method.)
+    - `Subject Mode` is set to `Based on the User's Email` (I would recommend this method for nextcloud, but it's your choice...)
     - Click `Finish` to save.
 - Navigate to `Applications > Applications`
 - Create a New Application
