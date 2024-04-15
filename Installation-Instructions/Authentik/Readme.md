@@ -211,6 +211,10 @@ AUTHENTIK_REDIS__CACHE_TIMEOUT_FLOWS=
 AUTHENTIK_REDIS__CACHE_TIMEOUT_POLICIES=
 AUTHENTIK_REDIS__CACHE_TIMEOUT_REPUTATION=
 
+# Authentik Server Image and Version Number
+AUTHENTIK_TAG=2024.2.2
+AUTHENTIK_IMAGE=ghcr.io/goauthentik/server
+
 
 # Authentik Listen Settings (Set server address and Port number, eg 0.0.0.0:9000 0.0.0.0:9443)
 ### SET THESE TO THE PORTS YOU WANT TO USE FOR AUTHENTIK ###
@@ -348,17 +352,17 @@ This should output a link that you can copy and paste into your web browser to l
 
 ## Conclusion
 
-With this setup method, the container will create folders under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis` and persist data into these folders.
+If everything went according to plan, the Authentik container will create folders under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis` and persist data into these folders. This should also enable https connections to Authentik and allow the use of a custom Cloudflare Origin Certificate using Cloudflare's Stict SSL mode with other Cloudflare security measures enabled.
 
 ## Updating
 
-Edit the `docker-compose.yml` file and update the server tag for authentik server and authentik worker, and then run `docker-compose down && docker-compose up -d` again.
+Edit the `.env` file and update the `AUTHENTIK_TAG` to the latest version and then run `docker-compose down && docker-compose up -d` again.
 
 ---
 
-Edit Docker Compose File
+Edit Docker env File
 ```
-cd docker/authentik && nano docker-compose.yml
+cd docker/authentik && nano .env
 ```
 Restart Authentik
 ```
