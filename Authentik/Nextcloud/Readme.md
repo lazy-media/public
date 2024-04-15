@@ -25,9 +25,10 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
         - Find `OpenID Connect User Backend` and click `Download and Enable`
 - Do not have the `Group Quota` or `User Quota` apps installed on Nextcloud as Authentik will handle storage quota's.
 
-# Nextcloud Quota Setup
+# Nextcloud Custom Scope Setup
 
-## Authentik Setup
+## Authentik Nextcloud Scope Mapping Setup
+**This Scope mapping adds Authentik Admins to the Nextcloud Admin Group and Assigns User or Group Storage Quotas**
 
 - Login to Authentik Admin Portal
 - Navigate to `Customization > Property Mappings`
@@ -37,15 +38,33 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
     - Enter Scope Name as `nextcloud` (This links this to the scope `nextcloud` in the Nextcloud OpenID Scope Settings below)
     - (optional) Enter a Description
     - In the Expression Field copy and paste the code below [Code to Copy](#nextcloud-quota-expression-policy-property-mapping)
+```
+# Extract all groups the user is a member of
+groups = [group.name for group in user.ak_groups.all()]
+
+# Nextcloud admins must be members of a group called "admin".
+# This is static and cannot be changed.
+# We append a fictional "admin" group to the user's groups if they are an admin in authentik.
+# This group would only be visible in Nextcloud and does not exist in authentik.
+if user.is_superuser and "admin" not in groups:
+    groups.append("admin")
+
+return {
+    "name": request.user.name,
+    "groups": groups,
+    # To set a quota set the "nextcloud_quota" property in the user's attributes
+    "quota": user.group_attributes().get("nextcloud_quota", None)
+}
+```
 
 - Click `Finish` to Save
 
-## Authentik Nextcloud Quota User Setup
+## Authentik Nextcloud User or Group Quota Setup
 
 - Login to Authentik Admin Panel
-- Navigate to `Directory > Users`
-- Click the `Edit` icon under `Actions` for a user you want to restrict the storage amount for
-    - Locate the `Attributes` box for the user
+- Navigate to `Directory > Users` or `Directory > Groups`
+- Click the `Edit` icon under `Actions` for a user or group you want to restrict the storage amount for
+    - Locate the `Attributes` box for the user or group
     - Enter in `nextcloud_quota: 10GB`
         - Where `10GB` is, you can change this to the amount of storage you want to assign to the user. Change the `10` to the amount followed by the size type below with no space between.
         - Use `MB` for Megabytes
