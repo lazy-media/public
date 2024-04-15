@@ -119,6 +119,7 @@ return {
     - Discover Endpoint = `https://YOUR-AUTHENTIK-URL/application/o/YOUR-PROVIDER-SLUG/.well-known/openid-configuration`
         - Where `YOUR-PROVIDER-SLUG` is, enter the slug you created above such as `nextcloud-oauth`
     - Scope = `email` `profile` `openid` `ak_proxy` `nextcloud`
+        - Enter these all on one line with a space in between each.
     - User ID Mapping = `sub`
     - Quota Mapping = `quota`
     - Groups Mapping = `groups`
