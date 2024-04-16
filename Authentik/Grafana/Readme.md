@@ -1,5 +1,9 @@
 # Grafana OpenID / OAuth Setup with Authentik
 
+## Original Documentation
+
+[Authentik Grafana Documentation](https://docs.goauthentik.io/integrations/services/grafana/)
+
 ## NOTES:
 
 I only use Authentik as my Reverse proxy and I have the Standalone version of Grafana installed, not the docker version.
