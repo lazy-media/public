@@ -297,7 +297,7 @@ If for some reason the initial setup flow doesn't show up, Authentik might have 
 ```
 docker-compose run --rm server create_recovery_key 1 akadmin
 ```
-This should output a link that you can copy and paste into your web browser to login to the default Authentik Admin.
+This should output a link that you can copy and paste into your web browser to login to the default Authentik Admin. Be sure to change the url to point to your local Authentik IP Address or the Domain name of your Authentik Instance before navigating to it, if it didn't generate correctly.
 
 # Cloudflare Setup
 
