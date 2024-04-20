@@ -10,6 +10,9 @@
 - Installed on Ubuntu 22.04
 - Installed Docker Compose
 
+### Assumptions
+- Basic understanding of Docker and Docker Compose
+
 # Docker Compose File
 ```
 #
