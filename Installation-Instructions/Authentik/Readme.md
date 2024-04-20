@@ -180,62 +180,108 @@ volumes:
 ## EXAMPLE Docker Environment Variables File (.env)
 This is the `.env` file
 ```
-# Authentik Postgres Settings
-# Uncomment any lines below to match your Postgres Server
+### Authentik Postgres Settings
+### Uncomment any lines below to match your Postgres Server
 
-### REQUIRED ###
-AUTHENTIK_POSTGRESQL__HOST=
-AUTHENTIK_POSTGRESQL__NAME=
-AUTHENTIK_POSTGRESQL__USER=
-AUTHENTIK_POSTGRESQL__PORT=
-AUTHENTIK_POSTGRESQL__PASSWORD=
-AUTHENTIK_POSTGRESQL__USE_PGBOUNCER=
-AUTHENTIK_POSTGRESQL__USE_PGPOOL=
-AUTHENTIK_POSTGRESQL__SSLMODE=
-AUTHENTIK_POSTGRESQL__SSLROOTCERT=
-AUTHENTIK_POSTGRESQL__SSLCERT=
-AUTHENTIK_POSTGRESQL__SSLKEY=
+### Authentik Secret Key
+### REQUIRED
+AUTHENTIK_SECRET_KEY=SHOULD HAVE BEEN GENERATED ABOVE AND MAYBE ONLY THING ORIGINALLY IN THIS FILE.
+
+### Internal Postgres Server Settings
+### REQUIRED
+PG_USER=authentik
+PG_PASS=SOME RANDOM PASSWORD
+
+### External Postgres Server Settings Settings
+# AUTHENTIK_POSTGRESQL__HOST=
+# AUTHENTIK_POSTGRESQL__NAME=
+# AUTHENTIK_POSTGRESQL__USER=authentik
+# AUTHENTIK_POSTGRESQL__PORT=
+# AUTHENTIK_POSTGRESQL__PASSWORD=SOME RANDOM PASSWORD
+# AUTHENTIK_POSTGRESQL__USE_PGBOUNCER=
+# AUTHENTIK_POSTGRESQL__USE_PGPOOL=
+# AUTHENTIK_POSTGRESQL__SSLMODE=
+# AUTHENTIK_POSTGRESQL__SSLROOTCERT=
+# AUTHENTIK_POSTGRESQL__SSLCERT=
+# AUTHENTIK_POSTGRESQL__SSLKEY=
 
 
-# Authentik REDIS Settings
+### Authentik External REDIS Settings
 # Uncomment any lines below to match your REDIS Server
-### REQUIRED ###
-AUTHENTIK_REDIS__HOST=
-AUTHENTIK_REDIS__PORT=
-AUTHENTIK_REDIS__PASSWORD=
-AUTHENTIK_REDIS__TLS=
-AUTHENTIK_REDIS__TLS_REQS=
-AUTHENTIK_REDIS__DB=
-AUTHENTIK_REDIS__CACHE_TIMEOUT=
-AUTHENTIK_REDIS__CACHE_TIMEOUT_FLOWS=
-AUTHENTIK_REDIS__CACHE_TIMEOUT_POLICIES=
-AUTHENTIK_REDIS__CACHE_TIMEOUT_REPUTATION=
+# AUTHENTIK_REDIS__HOST=
+# AUTHENTIK_REDIS__PORT=
+# AUTHENTIK_REDIS__PASSWORD=
+# AUTHENTIK_REDIS__TLS=
+# AUTHENTIK_REDIS__TLS_REQS=
+# AUTHENTIK_REDIS__DB=
+# AUTHENTIK_REDIS__CACHE_TIMEOUT=
+# AUTHENTIK_REDIS__CACHE_TIMEOUT_FLOWS=
+# AUTHENTIK_REDIS__CACHE_TIMEOUT_POLICIES=
+# AUTHENTIK_REDIS__CACHE_TIMEOUT_REPUTATION=
 
-# Authentik Server Image and Version Number
+### Authentik Server Image and Version Number
+### REQUIRED
 AUTHENTIK_TAG=2024.2.3
 AUTHENTIK_IMAGE=ghcr.io/goauthentik/server
 
+### User Settings
+AUTHENTIK_DEFAULT_USER_CHANGE_NAME=false
+AUTHENTIK_DEFAULT_USER_CHANGE_EMAIL=false
+AUTHENTIK_DEFAULT_USER_CHANGE_USERNAME=false
 
-# Authentik Listen Settings (Set server address and Port number, eg 0.0.0.0:9000 0.0.0.0:9443)
+### Authentik Listen Settings (Set server address and Port number, eg 0.0.0.0:9000 0.0.0.0:9443)
 ### SET THESE TO THE PORTS YOU WANT TO USE FOR AUTHENTIK ###
 COMPOSE_PORT_HTTP=80
 COMPOSE_PORT_HTTPS=443
 
-# Authentik LDAP Listen Settings (Set server address and Port number, eg 0.0.0.0:3389 0.0.0.0:6636)
+### Authentik LDAP Listen Settings (Set server address and Port number, eg 0.0.0.0:3389 0.0.0.0:6636)
 ### UNCOMMENT TO USE LDAP ###
 # COMPOSE_PORT_LDAP=
 # COMPOSE_PORT_LDAPS=6636
 
-# Authentik Prometheus Metrics Settings (Set server address and port number, eg 0.0.0.0:9300)
+### Authentik Prometheus Metrics Settings (Set server address and port number, eg 0.0.0.0:9300)
 ### UNCOMMENT TO USE PROMETHEUS METRICS ###
 # COMPOSE_PORT_METRICS=9300
 
-# Go Debugging Settings (Set server address and port number, eg 0.0.0.0:9900
+### GDPR Compliance Settings
+AUTHENTIK_GDPR_COMPLIANCE=true
+
+### Log Level Settings (Supports debug, info, warning, error, trace)
+# AUTHENTIK_LOG_LEVEL=info
+
+### Go Debugging Settings (Set server address and port number, eg 0.0.0.0:9900
 # AUTHENTIK_LISTEN__DEBUG=
 
-# Trusted Proxies settings
-# Defaults to 127.0.0.0/8, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, fe80::/10, ::1/128
+### Error Reporting Settings
+AUTHENTIK_ERROR_REPORTING__ENABLED=true
+
+### Cookie Domain Settings
+# AUTHENTIK_COOKIE_DOMAIN=
+
+### Trusted Proxies settings
+### Defaults to 127.0.0.0/8, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, fe80::/10, ::1/128
 # AUTHENTIK_LISTEN__TRUSTED_PROXY_CIDRS=
+
+### GeoIP Settings
+### UNCOMMENT BOTH LINES BELOW TO USE GEOIP
+# AUTHENTIK_EVENTS__CONTEXT_PROCESSORS__GEOIP=./geoip/GeoLite2-City.mmdb
+# AUTHENTIK_EVENTS__CONTEXT_PROCESSORS__ASN=./geoip/GeoLite2-ASN.mmdb
+
+### GMAIL EMAIL / SMTP Settings
+AUTHENTIK_EMAIL__HOST=smtp.gmail.com
+AUTHENTIK_EMAIL__PORT=587
+AUTHENTIK_EMAIL__USERNAME=email@address.example
+AUTHENTIK_EMAIL__PASSWORD=google-app-password
+AUTHENTIK_EMAIL__USE_TLS=true
+AUTHENTIK_EMAIL__USE_SSL=false
+AUTHENTIK_EMAIL__TIMEOUT=10
+AUTHENTIK_EMAIL__FROM=noreply@authentik.domain
+
+### Update Check Settings
+# AUTHETNIK_DISABLE_UPDATE_CHECK=false
+
+### Footer Link Settings (Better to set inside Authentik UI)
+# AUTHENTIK_FOOTER_LINKS='[{"name": "LINK NAME","href":"URL"}]'
 ```
 
 ## Example GEOIP Override file
