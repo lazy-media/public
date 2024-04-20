@@ -233,3 +233,4 @@ docker compose down && docker compose pull && docker compose up -d
 ```
 
 # Immich OAuth / OpenID Setup
+[Immich OAuth / OpenID Setup](Authentik/Immich/Readme.md)
