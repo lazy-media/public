@@ -76,6 +76,9 @@ To enable this feature:
             - **Scheme Override:** Enter `https` only if you need to.
         - Click `Save`
 
+### Jellyfin Config Picture
+![Jellyfin OAuth2/OpenID Configuration](./Jellyfin)
+
 ### Adding the Login Button to Jellyfin's Login Page
 
 - Navigate to the `General` tab in the left pane
