@@ -12,6 +12,8 @@
 
 ## (Optional) Authentik Scope Mapping
 
+This is if you want to control access through Authentik. But I have it setup to verify access to the Authentik groups inside Jellyfin. Same concept, but either way works. Add this and then skip the part below that contains the `Role Based Folder Access`. I only do it through Jellyfin, because it is a little more refined and easier to manage, in my opinion.
+
 Scope Name = `jellyfin`
 ```
 return [group.name for group in user.ak_groups.all()]
