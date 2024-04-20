@@ -43,7 +43,7 @@ To enable this feature:
         ```
         - Click `Save` to add the repository
 - Click on the `Catalog` tab at the top of the page
-    - You should now see `SSO Authentication` show up. If you do not, restart your Jellyfin Server.
+    - You should now see `SSO Authentication` show up. If you do not, restart your Jellyfin Server, and come back to this page.
     - Click on and Install the new `SSO Authentication`
 
 ## Configuring Jellyfin OpenID
