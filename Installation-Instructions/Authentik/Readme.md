@@ -295,7 +295,7 @@ If for some reason the initial setup flow doesn't show up, Authentik might have 
 - Enter the following command:
 
 ```
-docker compose run --rm server create_recovery_key 1 akadmin
+docker-compose run --rm server create_recovery_key 1 akadmin
 ```
 This should output a link that you can copy and paste into your web browser to login to the default Authentik Admin.
 
