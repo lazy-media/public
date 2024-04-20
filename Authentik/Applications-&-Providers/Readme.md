@@ -109,7 +109,7 @@
         - I usually leave everything else default on this screen.
     - Click `Next` to save and Finish.
 
-## Application Group Permissions
+# Application Group Permissions
 
 - Login to your Authentik Admin Panel
 - Navigate to `Applications > Applications`
