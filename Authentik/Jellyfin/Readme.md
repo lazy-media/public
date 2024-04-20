@@ -77,7 +77,7 @@ To enable this feature:
         - Click `Save`
 
 ### Jellyfin Config Picture
-![Jellyfin OAuth2/OpenID Configuration](./Jellyfin)
+![Jellyfin OAuth2/OpenID Configuration](Authentik/Jellyfin/Jellyfin_OAuth2_OpenID_Settings.png)
 
 ### Adding the Login Button to Jellyfin's Login Page
 
