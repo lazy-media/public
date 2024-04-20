@@ -85,8 +85,9 @@ To enable this feature:
 - Scroll down to the `Branding` Section
 - Find the `Login Disclaimer` box
     - Input the following into this box:
+        - In this first box in the URL, where it says `Authentik` at the end, if you named your Authentik Provider something different in the Jellyfin Config above, you need to change this to match accordingly.
 ```
-<form action="https://YOUR-JELLYFIN-URL/sso/OID/start/NAME-OF-PROVIDER-YOU-NAMED-IN-JELLYFIN-ABOVE">
+<form action="https://YOUR-JELLYFIN-URL/sso/OID/start/Authentik">
   <button class="raised block emby-button button-submit">
     ENTER NAME YOU WANT SHOWN ON LOGIN PAGE
   </button>
