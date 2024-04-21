@@ -66,8 +66,8 @@ To enable this feature:
             - Fill out the roles you want and how you want them, this is all up to you.
             - **Live TV Roles:** Enter your roles/groups you want access to Live TV. Something like `Jellyfin Users`
             - **Live TV Management Roles:** Enter something like your `authentik Admins` role
-            - Do not enable Live TV Access by Default
-            - Do not enable Live TV Management by Default
+            - Enable Live TV Access by Default
+            - Enable Live TV Management by Default
             - **ROLE CLAIM:** `groups`
             - **Request Additional Scopes:** (Enter 1 per line) `jellyfin` (if added scope mapping above), `openid`, `profile`, `email`, and `ak_proxy`
             - **Do not** set a `Default Provider`
