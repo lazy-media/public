@@ -8,7 +8,7 @@
 
 # Assumptions
 
-- Basic understanding of setting up Authentik OAuth2/OpenID Provider & Application
+- Basic understanding of setting up Authentik OAuth2/OpenID Provider & Application, if not, you can follow this guide [Basic OAuth/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 - Vikunja installed using the docker image `vikunja/vikunja`
 - Know where Vikunja Config file is located and ability to edit this file.
 
