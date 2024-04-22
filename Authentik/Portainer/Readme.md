@@ -10,8 +10,27 @@ This will help you setup OpenID login to Portainer so you can log in with your A
 
 ## Assumptions
 
-Have common knowledge of Authentik and how to create an OAuth2/OpenID Provider
+- Have common knowledge of Authentik and how to create an OAuth2/OpenID Provider
+- Have access to local portainer account
 
 ## Portainer Setup
 
-Coming Soon
+- Login to local Portainer Admin
+- Navigate to `Settings > Authentication`
+- Select your preferred `Session Timeout`
+- Select `OAuth` as the `Authentication Method`
+- **Enable** `Use SSO`
+- *Business Feature* **Enable** `Hide internal authentication prompt`
+- **Enable** `Automatic User Provisioning`
+- *Business Feature* **Enable** `Automatic Team Membership`
+- Select `Custom` as your `Provider`
+- Fill out the form accordingly
+    - **Client ID=** `AUTHENTIK OAUTH CLIENT ID`
+    - **Client Secret=** `AUTHENTIK OAUTH CLIENT SECRET`
+    - **Authorization URL=** `https://auth.domain.example/application/o/authorize/`
+    - **Access Token URL=** `https://auth.domain.example/application/o/token/`
+    - **Resource URL=** `https://auth.domain.example/application/o/userinfo/`
+    - **Logout URL=** `https://auth.domain.example/application/o/AUTHENTIK-PORTAINER-OAUTH-SLUG/end-session/`
+    - **User Identifier=** `email`
+    - **Scopes=** `email openid profile`
+- Click `Save`
