@@ -1,5 +1,8 @@
 # Rocket Chat Server OAuth2/OpenID Setup with Authentik
 
+# Documentation
+[Authentik Documentation](https://docs.goauthentik.io/integrations/services/rocketchat/)
+
 # Assumptions
 
 - Basic understanding of setting up an Authentik OAuth2/OpenID Provider and Application
