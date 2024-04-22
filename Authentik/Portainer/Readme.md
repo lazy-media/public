@@ -30,6 +30,7 @@ This will help you setup OpenID login to Portainer so you can log in with your A
     - **Authorization URL=** `https://auth.domain.example/application/o/authorize/`
     - **Access Token URL=** `https://auth.domain.example/application/o/token/`
     - **Resource URL=** `https://auth.domain.example/application/o/userinfo/`
+    - **Redirect URL=** `https://portainer.domain.example`
     - **Logout URL=** `https://auth.domain.example/application/o/AUTHENTIK-PORTAINER-OAUTH-SLUG/end-session/`
     - **User Identifier=** `email`
     - **Scopes=** `email openid profile`
