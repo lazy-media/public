@@ -81,7 +81,7 @@
 - Navigate to `Applications > Applications`
 - Click on `Create with Wizard`
 - Enter a Name such as `Example OAuth`
-    - Slug should get autofilled
+    - **TAKE NOTE OF THE SLUG** Slug should get autofilled, change if you want to make it something easy to remember. This is used in some cases for URLS in the application you are trying to setup.
     - (Optional) Type a Group you want this categorized under.
     - (Optional) Expand `UI Setdtings` 
         - Enter a `Launch URL`
