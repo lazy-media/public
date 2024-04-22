@@ -7,6 +7,7 @@
 
 - Installed in a Proxmox LXC with Ubuntu 22.04.4
 - Assumes you followed instructions from [Paperless-NGX Installation](Installation-Instructions/Paperless-NGX/Readme.md)
+- Assumes you have basic knowledge of how to setup an Authentik OAuth2/OpenID Provider. If not, you can follow this guide [Basic OAuth/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 
 # Adding Authentik OpenID / OAuth to Paperless-NGX
 
