@@ -4,9 +4,11 @@
 
 [Authentik Grafana Documentation](https://docs.goauthentik.io/integrations/services/grafana/)
 
-## NOTES:
+## Assumptions
 
-I only use Authentik as my Reverse proxy and I have the Standalone version of Grafana installed, not the docker version.
+- I only use Authentik as my Reverse proxy and I have the Standalone version of Grafana installed, not the docker version.
+
+- I use the standalone version of Grafana installed on to Ubuntu 22.04. This guide assumes you know where your Grafana config file is located and know how to edit it accordingly.
 
 ## Grafana Setup
 
