@@ -5,7 +5,7 @@
 
 # Assumptions
 
-- Basic understanding of setting up an Authentik OAuth2/OpenID Provider and Application
+- Basic understanding of setting up an Authentik OAuth2/OpenID Provider and Application, if not, you can follow this guide [Basic OAuth/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 - Have RocketChat Server installed and running
 - I have RocketChat Server installed via SNAP on Ubuntu 22.04
 
