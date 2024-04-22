@@ -10,7 +10,7 @@ This will help you setup OpenID login to Portainer so you can log in with your A
 
 ## Assumptions
 
-- Have common knowledge of Authentik and how to create an OAuth2/OpenID Provider
+- Have basic knowledge of Authentik and how to create an OAuth2/OpenID Provider, if not, you can follow [Basic OAuth/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 - Have access to local portainer account
 
 ## Portainer Setup
