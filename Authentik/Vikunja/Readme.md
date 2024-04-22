@@ -15,4 +15,4 @@
 # Vikunja Config File
 ## Example Config File
 
-[Vikunja Config File](Authentik/Vikunja/config.yml)
+[Vikunja Example YAML Config File](Authentik/Vikunja/config.yml)
