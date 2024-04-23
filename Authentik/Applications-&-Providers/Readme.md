@@ -45,7 +45,7 @@
             - Implicit will not show a dialog box before continuing to the site in question.
             - Explicit will show a dialog box before fully navigating to the site in question and force the user to confirm they want to continue.
         - Select `Proxy` instead of `Forward auth`
-        - Enter your `External Host` as a fully qualified subdomain. (i.e. `https://example.domain.ex`)
+        - Enter your `External Host` as a fully qualified subdomain. (i.e. `https://nextcloud.domain.example`)
         - Set the `Internal Host` to the internal IP Address and Port Number of the service you want Proxied. (i.e. `http://192.168.1.10:8080`)
             - **NOTE: If your internal service normally uses `https` instead of `http`, (i.e. `https://192.168.1.10:8443`), make sure you `DISABLE INTERNAL HOST SSL VALIDATION`**
             - Expand `Advanced Protocol Settings` at the bottom
@@ -87,7 +87,7 @@
         - Enter a `Launch URL`
             - To Hide this OAuth Provider on the User Apps Main Page, type in `blank://blank`
             - Leave empty to have Authentik Auto detect
-            - Enter the base url of the app you want to set (i.e. https://nextcloud.example.domain)
+            - Enter the base url of the app you want to set (i.e. `https://nextcloud.example.domain`)
         - Select `Open in new tab`
 - Click `Next`
 - Select `OAuth2/OIDC`
