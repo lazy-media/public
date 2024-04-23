@@ -2,7 +2,7 @@ service:
   # This token is used to verify issued JWT tokens.
   # Default is a random token which will be generated at each startup of vikunja.
   # (This means all already issued tokens will be invalid once you restart vikunja)
-  JWTSecret: "98$2q$9Wj5#2Xpgy"
+  JWTSecret: "SOME-RANDOM-PASSWORD"
   # The duration of the issued JWT tokens in seconds.
   # The default is 259200 seconds (3 Days).
   jwtttl: 259200
