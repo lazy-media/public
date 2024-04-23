@@ -33,7 +33,7 @@ apt-get install -y curl openssh-server ca-certificates tzdata perl
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 ```
 ### Running Installation with Randomly Generated Password
-***Change the `EXTERNAL_URL="https://gitlab.example.com"` to match your Gitlab Domain Name / URL you setup before running the command. Copy and Paste into a text document if needed to edit temporarily.***
+**Change the `EXTERNAL_URL="https://gitlab.example.com"` to match your Gitlab Domain Name / URL you setup before running the command. Copy and Paste into a text document if needed to edit temporarily.**
 
 ### Latest Version
 ```
