@@ -97,7 +97,7 @@ gitlab_rails['omniauth_sync_profile_from_provider'] = ['saml']
 gitlab_rails['omniauth_sync_profile_attributes'] = ['email']
 gitlab_rails['omniauth_block_auto_created_users'] = false
 ```
-To have your Gitlab instance automatically login using the SAML Provider Enter
+To have your Gitlab instance automatically login using the SAML Provider Enter:
 
 ```
 gitlab_rails['omniauth_auto_sign_in_with_provider'] = 'saml'
