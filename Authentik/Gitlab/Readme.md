@@ -5,7 +5,8 @@
 
 # Original documentation
 
-- [Gitlab Installation](https://docs.gitlab.com/omnibus/installation/index.html)
+- [My Gitlab Installation](Installation-Instructions/Gitlab/Readme.md)
+- [Gitlab Omnibus Installation](https://about.gitlab.com/install/#ubuntu)
 - [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
 # Basic Authentik OAuth2/OpenID Setup
