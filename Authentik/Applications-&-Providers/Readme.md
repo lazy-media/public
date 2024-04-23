@@ -87,7 +87,7 @@
         - Enter a `Launch URL`
             - To Hide this OAuth Provider on the User Apps Main Page, type in `blank://blank`
             - Leave empty to have Authentik Auto detect
-            - Enter the base url of the app you want to set (i.e. nextcloud.example.domain)
+            - Enter the base url of the app you want to set (i.e. https://nextcloud.example.domain)
         - Select `Open in new tab`
 - Click `Next`
 - Select `OAuth2/OIDC`
