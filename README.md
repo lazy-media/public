@@ -31,7 +31,7 @@ If the form has been approved, you will recieve multiple emails with further ins
 
 ---
 
-If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/wFmWWBMEH9). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
+If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/RVqm7ubN4F). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
 
 ---
 
