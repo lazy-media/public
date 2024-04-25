@@ -279,9 +279,6 @@ AUTHENTIK_EMAIL__FROM=noreply@authentik.domain
 
 ### Update Check Settings
 # AUTHETNIK_DISABLE_UPDATE_CHECK=false
-
-### Footer Link Settings (Better to set inside Authentik UI)
-# AUTHENTIK_FOOTER_LINKS='[{"name": "LINK NAME","href":"URL"}]'
 ```
 
 ## Example GEOIP Override file
