@@ -132,6 +132,25 @@ docker-compose run --rm server create_recovery_key 1 akadmin
 ```
 This should output a link that you can copy and paste into your web browser to login to the default Authentik Admin. Be sure to change the url to point to your local Authentik IP Address or the Domain name of your Authentik Instance before navigating to it, if it didn't generate correctly.
 
+## Updating Authentik
+
+Edit the `.env` file and update the `AUTHENTIK_TAG` to the latest version and then run `docker-compose down && docker-compose pull && docker-compose up -d` or just `docker-compose down && docker-compose up -d`.
+
+---
+
+Edit Docker env File
+```
+cd docker/authentik && nano .env
+```
+Restart Authentik
+```
+docker-compose down && docker-compose pull && docker-compose up -d
+```
+or
+```
+docker-compose down && docker-compose up -d
+```
+
 # Cloudflare Setup
 
 1. Login to your Cloudflare Account.
@@ -186,25 +205,6 @@ This should output a link that you can copy and paste into your web browser to l
 ## Conclusion
 
 If everything went according to plan, the Authentik container will persist all data for Authentik under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis`. This will make it much easier to upgrade Authentik in the future. This should also enable HTTPS connections to Authentik and allow the use of a custom Cloudflare Origin Certificate using Cloudflare's Stict SSL mode with other Cloudflare security measures enabled.
-
-## Updating
-
-Edit the `.env` file and update the `AUTHENTIK_TAG` to the latest version and then run `docker-compose down && docker-compose pull && docker-compose up -d` or just `docker-compose down && docker-compose up -d`.
-
----
-
-Edit Docker env File
-```
-cd docker/authentik && nano .env
-```
-Restart Authentik
-```
-docker-compose down && docker-compose pull && docker-compose up -d
-```
-or
-```
-docker-compose down && docker-compose up -d
-```
 
 ## Application and Provider Setup
 
