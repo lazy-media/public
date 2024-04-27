@@ -10,7 +10,7 @@
 - Installed on Ubuntu 22.04
 
 ## Dependencies
-- Install Docker and Docker Compose
+[Install Docker and Docker Compose](Installation-Instructions/Docker/Readme.md)
 
 ### Example Docker Compose File
 
