@@ -37,7 +37,7 @@ The Lazy Media Discord Server can be used for support by Users of Lazy Media, Us
 
 For Plex Users, the Lazy Media Discord Server will also give access to view recently added content, view posted newsletters, report issues with media, and request media.
 
-Automations are in progress to verify role assignment. So for the time being, please be honest about the roles you assign your self. Once the automation gets put in place, it will remove you if you have not completed the correct steps.
+Automations are in progress of being setup to verify role assignment. So for the time being, please be honest about the roles you assign your self. Once the automation gets put in place, it will remove you if you have not completed the correct steps.
 
 ---
 
