@@ -11,6 +11,9 @@
 - [Ollama Models](https://ollama.com/library)
 - [OpenWeb UI](https://docs.openwebui.com/getting-started/)
 
+# NOTICE
+This guide is not complete, please follow the NetworkChuck Video for best results.
+
 ## Installing Ollama
 
 Install Ollama according to Ollama Documentation
