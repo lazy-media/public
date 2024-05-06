@@ -16,7 +16,9 @@ This guide is not complete, please follow the NetworkChuck Video for best result
 
 ## Installing Ollama
 
-Install Ollama according to Ollama Documentation
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
 ## Installing Ollama Models
 
