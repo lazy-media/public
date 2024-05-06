@@ -7,6 +7,7 @@
 ## Original Documentation
 
 - [NetworkChuck YouTube Video](https://www.youtube.com/watch?v=Wjrdr0NU4Sk)
+- [PopOS Download](https://pop.system76.com/)
 - [Ollama Download](https://ollama.com/download/linux)
 - [Ollama Models](https://ollama.com/library)
 - [OpenWeb UI](https://docs.openwebui.com/getting-started/)
