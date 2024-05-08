@@ -21,8 +21,8 @@
 
 ### Jellyfin Setup
 
-- Navigate to your Jellyfin Admin Panel > Live TV > Live TV
-- Add a new TV Provider if not already done so.
+- Navigate to your `Jellyfin Admin Panel > Live TV > Live TV`
+- Add a new TV Provider
 - Use a custom or XMLTV file
 - In the File or URL spot, insert the local address or public address of the file you created on your PHP enabled web server.
     - This should be something like `http://192.168.1.10/tvxml.php` or `https://web.domain.example/tvxml.php`
