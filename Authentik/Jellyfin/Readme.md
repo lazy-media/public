@@ -3,7 +3,6 @@
 ## Original Documentation
 
 - [Jellyfin SSO Plugin](https://github.com/9p4/jellyfin-plugin-sso)
-- [Jellyfin TV Guide](https://gist.github.com/idolpx/c82747bb740c303f56ad8a1e8f17d575)
 
 ## Assumptions
 
