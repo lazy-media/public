@@ -13,7 +13,7 @@
 ## TV Guide Setup
 
 - Login to your Web server running PHP
-- Navigate to a folder that is publically accessible.
+- Navigate to a folder that is publicly accessible.
     - Usually something like `/var/www/YOURWEBSITE/`
 - Create a new file and name it something like `tvxml.php`
 - Paste the contents of [TVXML.php](/Installation-Instructions/Jellyfin/tvxml.php) into this newly created file.
