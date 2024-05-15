@@ -18,6 +18,7 @@ These are to be entered under the `Authentik Provider > Unauthenticated Paths` s
 ^/#/login$
 ^/#/2fa$
 ^/api/.*$
+^/fonts/.*
 ^/images/.*$
 ^/identity/.*$
 ^/connectors/.*$
