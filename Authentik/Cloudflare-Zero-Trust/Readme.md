@@ -8,6 +8,7 @@ THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE T
 
 ## Assumptions
 - You have knowledge of Cloudflare Zero Trust
+- You have your Authentik User and a Cloudflare Zero Trust user with the same email
 
 ## Authentik Setup
 
