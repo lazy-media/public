@@ -62,3 +62,13 @@ THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE T
                 - `openid`
                 - `ak_proxy`
                 - `offline_access`
+- Navigate to your Cloudflare Zero Trust Settings again
+- Find `App Launcher` and click `Manage`
+    - Click on the Tab for `Authentication`
+    - If you do not have `Accept all available identity providers` enabled, either enable it or select the provider we just created.
+
+## Conclusion
+
+This should enable Authentik Login on your personal Cloudflare Zero Trust instance and allow the use of your Authentik credentials to login to Cloudflare Zero Trust.
+
+Please remember that it is your responsibility to setup Cloudflare Zero Trust to your needs. This guide only helps with getting the Authentik login method to display on the page.
