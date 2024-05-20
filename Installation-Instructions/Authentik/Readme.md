@@ -33,6 +33,7 @@ Login to root user of Proxmox LXC
 
 ### (Optional) Create Authentik Machine User
 Create a user for Authentik to run as instead of root with no password enabled
+
 ```
 adduser authentik --disabled-password
 ```
@@ -47,7 +48,7 @@ su - authentik
 
 All commands should still run fine below, if not, add `sudo` to the beginning of each line.
 
----
+## Authentik Setup
 
 Install additional dependencies
 ```
@@ -122,7 +123,7 @@ Run the following command to download and launch Authentik
 docker-compose up -d
 ```
 
-### Authentik User Setup
+## Authentik User Setup
 Navigate to
 
 ```
