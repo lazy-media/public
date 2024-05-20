@@ -31,6 +31,22 @@ Make sure you have Docker and Docker compose installed. You can follow this guid
 
 Login to root user of Proxmox LXC
 
+### (Optional) Create Authentik Machine User
+Create a user for Authentik to run as instead of root with no password enabled
+```
+adduser authentik --disabled-password
+```
+Add user to Docker Group
+```
+usermod -aG docker authentik
+```
+Switch to newly created Authentik User
+```
+su - authentik
+```
+
+All commands should still run fine below, if not, add `sudo` to the beginning of each line.
+
 ---
 
 Install additional dependencies
