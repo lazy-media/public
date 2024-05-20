@@ -1,7 +1,8 @@
 # Cloudflare Zero Trust Authentik Setup
 
 ## NOTICE
-Your results may vary, but this is what I did to get access to Cloudflare Zero Trust with my Authentik Instance
+Your results may vary, but this is what I did to get access to Cloudflare Zero Trust with my Authentik Instance.
+I DO NOT ACTIVELY USE CLOUDFLARE ZERO TRUST. I ONLY SET THIS UP AS A QUICK TEST TO HELP WITH ANOTHER SUPPORT QUESTION.
 
 ## Assumptions
 - You already have an OpenID/OAuth2 Provider and Application setup in Authentik
