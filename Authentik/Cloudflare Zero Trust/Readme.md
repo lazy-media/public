@@ -1,0 +1,60 @@
+# Cloudflare Zero Trust Authentik Setup
+
+## NOTICE
+Your results may vary, but this is what I did to get access to Cloudflare Zero Trust with my Authentik Instance
+
+## Assumptions
+- You already have an OpenID/OAuth2 Provider and Application setup in Authentik
+
+## Authentik Setup
+
+- Login to your Authentik Admin panel
+- Navigate to `Applications > Providers`
+- Create a Cloudflare Provider with the following settings:
+    - **Name=** `Cloudflare Zero Trust`
+    - **Authentication Flow=** `EMPTY`
+    - **Authorization Flow=** `YOUR CHOICE` I choose Implicit
+    - **EXPAND PROTOCOL SETTINGS**
+        - **Client Type=** `Confidential`
+        - **Client ID=** `MAKE NOTE OF THIS`
+        - **Client Secret=** `MAKE NOTE OF THIS`
+        - **Redirect URIs/Origins=** `LEAVE BLANK, LET AUTHENTIK AUTOFILL UPON FIRST LOGIN`
+        - **Signing Key=** `Cloudflare Imported Cert`
+    - **EXPAND ADVANCED PROTOCOL SETTINGS**
+        - **Access Code Validity=** Default
+        - **Access Token Validity=** Default
+        - **Refresh Token Validity=** Default
+        - **Scopes=** Select the following (Hold CTRL to select multiple)
+            - `authentik default OAuth Mapping: OpenID 'email'`
+            - `authentik default OAuth Mapping: OpenID 'offline_access'`
+            - `authentik default OAuth Mapping: OpenID 'openid'`
+            - `authentik default OAuth Mapping: OpenID 'profile'`
+        - **Subject Mode=** `Based on the User's Email`
+        - **Issuer Mode=** `Each provider has a different issuer, base on the application slug
+- Click `SAVE` or `Finish`
+- Navigate to `Applications > Applications`
+    - Attach an Application to the Cloudflare Provider we just created
+    - **MAKE NOTE OF THE APPLICATION SLUG WHEN YOU CREATE THIS, IT IS NEEDED IN THE NEXT STEP WITH CLOUDFLARE!**
+
+## Cloudflare Setup
+
+- Login to your Cloudflare admin panel
+- Navigate to your Zero Trust panel
+- Navigate to your Zero Trust Settings
+- Select `Authentication`
+- Find `Login Methods` and click `Add New`
+    - Select `OpenID Connect`
+        - Fill out the form as follows:
+            - **Name=** Your Preferred Name for the Provider
+            - **App ID=** AUTHENTIK PROVIDER CLIENT ID
+            - **Client Secret=** AUTHENTIK PROVIDER CLIENT Secret
+            - **Auth URL=** `https://auth.DOMAIN.EXAMPLE/application/o/authorize/`
+            - **Token URL=** `https://auth.DOMAIN.EXAMPLE/application/o/token/`
+            - **Certificate URL=** `https://auth.DOMAIN.EXAMPLE/application/o/AUTHENTIK-CLOUDFLARE-PROVIDER-SLUG/jwks/`
+            - **Proof Key for Code Exchange (PKCE)=** Disabled
+            - **Email Claim=** `email`
+            - **OIDC Claims=** (Create a new one for each scope claim)
+                - `profile`
+                - `openid`
+                - `ak_proxy`
+                - `offline_access`
