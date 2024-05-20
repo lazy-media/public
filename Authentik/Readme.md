@@ -1,6 +1,6 @@
 ## NOTICE
 
-To be clear, I have Authentik Setup in Docker with the Authentik Docker Compose File that is listed. I made a few modifications to my docker file, but this is just to persist data on all volumes listed.
+To be clear, I have Authentik Setup in Docker with the Original Authentik Docker Compose File that is listed in their documentation. I made a few modifications to my docker file, but this is just to persist data on all volumes listed, and expose other ports that may be needed for other services.
 
 Please do not ask for support on a product or service that you are trying to use if it is not listed in this repository. It probably means, that I don't use it or don't have it set up with Authentik and will not be able to provide support for it.
 
