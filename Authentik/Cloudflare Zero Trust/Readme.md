@@ -50,7 +50,7 @@ THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE T
         - Fill out the form as follows:
             - **Name=** Your Preferred Name for the Provider
             - **App ID=** AUTHENTIK PROVIDER CLIENT ID
-            - **Client Secret=** AUTHENTIK PROVIDER CLIENT Secret
+            - **Client Secret=** AUTHENTIK PROVIDER CLIENT SECRET
             - **Auth URL=** `https://auth.DOMAIN.EXAMPLE/application/o/authorize/`
             - **Token URL=** `https://auth.DOMAIN.EXAMPLE/application/o/token/`
             - **Certificate URL=** `https://auth.DOMAIN.EXAMPLE/application/o/AUTHENTIK-CLOUDFLARE-PROVIDER-SLUG/jwks/`
