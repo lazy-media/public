@@ -10,9 +10,9 @@
 - You have a local Jellyfin Admin account to log into temporarily.
 - You have basic knowledge of setting up an OAuth2/OpenID Provider in Authentik and already have one created to input into Jellyfin
 
-## (Optional) Authentik Scope Mapping
+## Authentik Scope Mapping
 
-This is if you want to control access through Authentik. But I have it setup to verify access to the Authentik groups inside Jellyfin. Same concept, but either way works. Add this and then skip the part below that contains the `Role Based Folder Access`. I only do it through Jellyfin, because it is a little more refined and easier to manage, in my opinion.
+I have this scope mapping in place as well as controlling access through Jellyfin. This is just my setup. Your setup may vary.
 
 Scope Name = `jellyfin`
 ```
