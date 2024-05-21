@@ -4,15 +4,9 @@
 
 This repository will have all files that I allow to be accessed publicly.
 
-## How to use this site with a mobile device.
-
-- Download Git+ from Your Mobile Store
-- Point it to the url of this site https://gitlab.lazymedia.media
-- Create an Access token from your GitLab account and input it into the Mobile app
-
 ## How to use the rest of the services provided at the domain 'lazymedia.media'
 
-Easiest way to learn how to use the services and login method at Lazy Media, create an account and take the course at the Lazy Media Support Site.
+Easiest way to learn how to use the services and login method at Lazy Media, request an account from the admin of this server and take the course at the Lazy Media Support Site.
 - [Lazy Media Course](https://support.lazymedia.media/slides/using-lazy-media-1)
 ---
 **The best way to login to services is with the `Lazy Media - Authentik` button presented on any login pages. When Authentik loads, login with your Plex Credentials using the `PLEX OAUTH` button.**
