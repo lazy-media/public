@@ -10,6 +10,10 @@
 - You have a local Jellyfin Admin account to log into temporarily.
 - You have basic knowledge of setting up an OAuth2/OpenID Provider in Authentik and already have one created to input into Jellyfin
 
+## Authentik OAuth Provider Setup
+
+Please refer to my basic setup for OAuth Providers here [Basic OAuth/OpenID Provider Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
+
 ## Authentik Scope Mapping
 
 I have this scope mapping in place as well as controlling access through Jellyfin. This is just my setup. Your setup may vary.
