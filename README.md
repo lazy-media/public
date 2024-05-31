@@ -13,7 +13,7 @@ Easiest way to learn how to use the services and login method at Lazy Media, req
 
 ---
 
-Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.media) and login with your Plex Credentials using the `PLEX OAUTH` button to view any apps or services you have access to.
+Alternatively you can go to [Lazy Media's Authentik](http://link.lazymedia.media/mY2G8) and login with your Plex Credentials using the `PLEX OAUTH` button to view any apps or services you have access to.
 
 ---
 
