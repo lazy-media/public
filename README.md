@@ -7,7 +7,7 @@ This repository will have all files that I allow to be accessed publicly.
 ## How to use the rest of the services provided at the domain 'lazymedia.media'
 
 Easiest way to learn how to use the services and login method at Lazy Media, request an account from the admin of this server and take the course at the Lazy Media Support Site.
-- [Lazy Media Course](https://support.lazymedia.media/slides/using-lazy-media-1)
+- [Lazy Media Course](http://link.lazymedia.media/AG5sa)
 ---
 **The best way to login to services is with the `Lazy Media - Authentik` button presented on any login pages. When Authentik loads, login with your Plex Credentials using the `PLEX OAUTH` button.**
 
@@ -17,7 +17,7 @@ Alternatively you can go to [Lazy Media's Authentik](https://auth.lazymedia.medi
 
 ---
 
-If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://sites.google.com/view/b-repairs/plex/plex-requests).
+If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](http://link.lazymedia.media/ZE6PB).
 
 **PLEASE NOTE: Registrations and Access to Plex are limited.**
 
@@ -25,7 +25,7 @@ If the form has been approved, you will recieve multiple emails with further ins
 
 ---
 
-If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://discord.gg/RVqm7ubN4F). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
+If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](http://link.lazymedia.media/gcbGA). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
 
 The Lazy Media Discord Server can be used for support by Users of Lazy Media, Users of Authentik, Users of Ubiquiti Products, or any of the apps I currently run in my Homelab.
 
@@ -49,8 +49,8 @@ Anyone can login with a Twitch Account but this does not give access to anything
 
 # Support
 
-- [RocketChat Live Chat](https://chat.lazymedia.media/livechat)
+- [RocketChat Live Chat](http://link.lazymedia.media/ZRx6r)
 
 ## Donations
 If my content or documentation has helped you, please consider donating to help me out and continue doing this.
-- [PayPal Donation Link](https://paypal.me/lazymediawa)
+- [PayPal Donation Link](http://link.lazymedia.media/oNIwV)
