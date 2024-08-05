@@ -11,6 +11,11 @@ Be sure to read the entire Readme File located in each folder that has one.
 Please do not share this folder or it's contents with anyone else without permission from the original creator.
 
 
+# LINK TO SHARE
+
+[Lazy Media's Satisfactory Save File Share](https://nextcloud.lazymedia.media/index.php/s/X9sHC3GzJayN4aG)
+
+
 # SPACE FILLER
 
 #########################################################################################################################
