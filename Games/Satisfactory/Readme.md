@@ -74,6 +74,8 @@ Please do not share this folder or it's contents with anyone else without permis
   <summary>Expand for Password</summary>
 
   ### Share Password
-  `C!F!2&6o5^7%@S5N`
+  ```
+  C!F!2&6o5^7%@S5N
+  ```
 
 </details>
