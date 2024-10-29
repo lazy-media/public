@@ -5,3 +5,5 @@ Please visit the public link to view and download Drivers
 [Dell Poweredge R710 Drivers](https://link.lazymedia.media/xCWVM)
 
 No Password Needed!
+
+NOTE: I did not create any of these files or the bootable ISO. I downloaded Drivers from the Dell Support Website and I found the bootable ISO from the Internet Archive as I needed it.
