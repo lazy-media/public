@@ -15,7 +15,7 @@ Please take note of how my Authentik is setup [Authentik Setup](/Authentik/Readm
 - I personally entered the following redirect URLS with successfully working OAuth logins.
 ```
 https://PUBLIC-IMMICH-URL/auth/login
-app.immich:/
+app.immich:///oauth-callback
 http://PRIVATE-IP-ADDRESS:PORT-NUMBER/auth/login
 ```
 
