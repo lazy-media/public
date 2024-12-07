@@ -4,7 +4,7 @@
 
 - [Network Chuck YouTube Video](https://link.lazymedia.media/wHjOL)
 - [Network Chuck Acadamy Documentation](https://link.lazymedia.media/wYZCQ)
-- [Stable Diffusion Website]()
+- [Stable Diffusion Github](https://link.lazymedia.media/xNvqh)
 
 # Installation Setup
 
