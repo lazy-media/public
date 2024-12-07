@@ -1,5 +1,7 @@
 # Nextcloud Setup
 
+## IMAGICK SETUP NOT CURRENTLY WORKING WITH NEXTCLOUD...STILL WORKING ON FIGURING THIS OUT.
+
 ## References
 
 - [Imagick Setup](https://link.lazymedia.media/YdFfX)
