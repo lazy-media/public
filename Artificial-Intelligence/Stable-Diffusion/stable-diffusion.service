@@ -1,0 +1,20 @@
+# /etc/systemd/system/stable-diffusion.service
+
+[Service]
+
+ExecStart=/bin/bash /home/ubuntu/stable-diffusion/webui.sh --listen --api --api-auth stable-diffusion:2j3GQ5C3n361
+Restart=always
+WorkingDirectory=/home/ubuntu/stable-diffusion
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=Stable-Diffusion-Webui
+User=ubuntu
+Desc=Stable Diffusion Image Generation
+
+[Install]
+WantedBy=multi-user.target
+
+# usage
+#
+# sudo mv stable-diffusion.service /etc/systemd/system/stable-diffusion.service
+# sudo systemctl start stable-diffusion
