@@ -42,15 +42,20 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 ### Software Pool = 3
 - 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
+
 # Main Proxmox Server
+
+Dell Poweredge R710
+
 ### Processor
-Intel Core i5-6600 @ 3.3GHz
+2 x Intel Xeon X5550 @ 2.67 Ghz
 
 ### RAM
-16GB
+48GB
 
 ### Storage
 3 x WD Red 4TB
+
 
 # Proxmox Mini HP
 HP Elite Desk
@@ -63,6 +68,7 @@ Intel Core i7
 
 ### HDD
 500GB Samsung SSD
+
 
 # Proxmox Backup Server
 
@@ -77,3 +83,21 @@ Pentium Dual Core E5200 @ 2.5GHz
 ### Storage
 3 x WD 2TB Red
 1 x Kingston 120GB SSD
+
+
+# AI Server
+
+### Processor
+Intel Core i5-6600
+
+### RAM
+16GB
+
+### Graphics Card
+NVIDIA GeForce GTX 1070
+
+### Storage
+2 x Samsung EVO 500GB SSD
+
+### Operating System
+Ubuntu 24.04
