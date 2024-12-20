@@ -48,4 +48,4 @@ docker compose down && docker compose pull && docker compose up -d
 
 Use either of these scripts to convert your Google Photos Takeout to Immich compatible format.
 
-[Google Photo Takeout Helpers](/Google-Photos-Takeout/Readme.md)
+[Google Photo Takeout Helpers](/Google-Photos-Takeout/)
