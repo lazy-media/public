@@ -43,3 +43,9 @@ docker compose down && docker compose pull && docker compose up -d
 
 # Immich OAuth / OpenID Setup
 [Immich OAuth / OpenID Setup](Authentik/Immich/Readme.md)
+
+# Google Photo Takeout Conversion Helpers
+
+Use either of these scripts to convert your Google Photos Takeout to Immich compatible format.
+
+[Google Photo Takeout Helpers](/Google-Photos-Takeout/Readme.md)
