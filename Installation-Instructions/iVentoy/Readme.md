@@ -72,3 +72,61 @@ password=YOUR-SHARE-PASSWORD
 sudo chmod 600 .smbcredentials
 ```
 
+### Edit FSTAB
+
+```
+sudo nano /etc/fstab
+```
+
+Add the following line, changing what is needed if directories are different
+
+```
+//YOUR-NAS-IP/ISOs/ /home/ubuntu/iventoy/iso/ cifs credentials=/home/ubuntu/.smbcredentials 0 0
+```
+
+### Mount the Share
+
+```
+sudo mount -a
+```
+
+You should now be able to see your ISOs inside iVentoy ISO folder.
+
+## Create a Service for iVentoy
+
+This allows for iVentoy to start at system boot so you don't have to start it your self everytime
+
+```
+sudo nano /etc/systemd/system/iventoy.service
+```
+
+Paste the following into the file, changing what is needed if your directories are different
+
+```
+# /etc/systemd/system/iventoy.service
+[Unit]
+Description = iVentoy iPXE Server
+Requires = network-online.target
+After    = network-online.target
+Wants    = network-online.target
+
+[Service]
+Type = forking
+User = root
+Group = root
+WorkingDirectory = /home/ubuntu/iventoy
+ExecStart = /home/ubuntu/iventoy/iventoy.sh -R start
+ExecStop = /home/ubuntu/iventoy/iventoy.sh stop
+Restart = on-failure
+
+[Install]
+WantedBy = multi-user.target
+```
+
+Save the file and exit
+
+### Start and enable the iVentoy Service
+
+```
+sudo systemctl start iventoy.service && sudo systemctl enable iventoy.service
+```
