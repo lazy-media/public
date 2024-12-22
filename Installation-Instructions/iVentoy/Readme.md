@@ -5,7 +5,7 @@
 [iVentoy Website](https://www.iventoy.com/en/index.html)
 
 ### Note
-I installed this in a Proxmox Virtual Machine Running Ubuntu 22.04
+I installed this in a Proxmox Virtual Machine Running Ubuntu 24.04
 
 ## Download iVentoy
 Best to pull the url from the latest version from the website
