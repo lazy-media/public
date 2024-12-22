@@ -84,6 +84,12 @@ Add the following line, changing what is needed if directories are different
 //YOUR-NAS-IP/ISOs/ /home/ubuntu/iventoy/iso/ cifs credentials=/home/ubuntu/.smbcredentials 0 0
 ```
 
+### Reload Daemon
+
+```
+sudo systemctl daemon-reload
+```
+
 ### Mount the Share
 
 ```
