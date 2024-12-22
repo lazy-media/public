@@ -1,0 +1,18 @@
+# /etc/systemd/system/iventoy.service
+[Unit]
+Description = iVentoy iPXE Server
+Requires = network-online.target
+After    = network-online.target
+Wants    = network-online.target
+
+[Service]
+Type = forking
+User = root
+Group = root
+WorkingDirectory = /home/ubuntu/iventoy
+ExecStart = /home/ubuntu/iventoy/iventoy.sh -R start
+ExecStop = /home/ubuntu/iventoy/iventoy.sh stop
+Restart = on-failure
+
+[Install]
+WantedBy = multi-user.target
