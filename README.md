@@ -7,10 +7,6 @@ This repository will have all files that I allow to be accessed publicly.
 ## Authentik Setup
 [Authentik Installation & Cloudflare Setup](/Installation-Instructions/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
 
-## How to use the rest of the services provided at the domain 'lazymedia.media'
-
-Easiest way to learn how to use the services and login method at Lazy Media, request an account from the admin of this server and take the course at the Lazy Media Support Site.
-- [Lazy Media Course](https://link.lazymedia.media/AG5sa)
 ---
 **The best way to login to services is with the `Lazy Media - Authentik` button presented on any login pages. When Authentik loads, login with your Plex Credentials using the `PLEX OAUTH` button.**
 
