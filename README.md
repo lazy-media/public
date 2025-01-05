@@ -12,10 +12,6 @@ This repository will have all files that I allow to be accessed publicly.
 
 ---
 
-Alternatively you can go to [Lazy Media's Authentik](https://link.lazymedia.media/mY2G8) and login with your Plex Credentials using the `PLEX OAUTH` button to view any apps or services you have access to.
-
----
-
 If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://link.lazymedia.media/ZE6PB).
 
 **PLEASE NOTE: Registrations and Access to Plex are limited.**
