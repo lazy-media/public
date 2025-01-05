@@ -1,5 +1,8 @@
 # Public Files
 
+## NOTICE
+PLEX MEDIA SERVER IS CURRENTLY DOWN. NO APPLICATIONS FOR PLEX SIGN UP WILL BE ACCEPTED UNTIL FURTHER NOTICE!
+
 ## Getting started
 
 This repository will have all files that I allow to be accessed publicly.
