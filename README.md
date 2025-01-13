@@ -15,7 +15,7 @@ This repository will have all files that I allow to be accessed publicly.
 
 ---
 
-If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://link.lazymedia.media/ZE6PB).
+If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://link.lazymedia.media/cwAP1).
 
 **PLEASE NOTE: Registrations and Access to Plex are limited.**
 
