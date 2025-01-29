@@ -52,3 +52,4 @@ Anyone can login with a Twitch Account but this does not give access to anything
 ## Donations
 If my content or documentation has helped you, please consider donating to help me out and continue doing this.
 - [PayPal Donation Link](https://link.lazymedia.media/oNIwV)
+- Bitcoin Address to Send To: `13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
