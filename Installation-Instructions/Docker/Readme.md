@@ -2,7 +2,7 @@
 
 ### Update System
 ```
-apt update && apt dist-upgrade -y
+apt update && apt upgrade -y
 ```
 ### Install Dependencies
 ```
