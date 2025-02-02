@@ -1,9 +1,6 @@
 # FiveM Server Setup with TX Admin
 
-## Server Setup
+## Please refer to the following links
 
-- I installed this as a test server in a VM
-- Used Ubuntu Server 24.04
-
-## Setup the Server
-
+- [Lazy Media's FiveM GitHub](https://link.lazymedia.media/github-fivem)
+- [Lazy Media's FiveM GitLab](https://link.lazymedia.media/gitlab-fivem)
