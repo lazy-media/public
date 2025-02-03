@@ -1,0 +1,55 @@
+2025-02-03 13:22:13: Loaded: {"profiles": [{"username": "BStewart1989.worker4", "balance_auth_token": "", "name": "antminer", "hostname": "api2.bitcoin.cz", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "C:\\Miners\\GUIMiner\\guiminer\\miners\\cgminer\\cgminer.exe", "password": "worker4", "port": "8332"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "f2pool Main", "hostname": "btc-na.f2pool.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": true, "external_path": "", "password": "21235365876986800", "port": "1314"}, {"username": "pickit420.002", "balance_auth_token": "", "name": "f2pool Backup", "hostname": "btc.f2pool.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "21235365876986800", "port": "1314"}, {"username": "pickit420.worker1", "balance_auth_token": "", "name": "Luxor.tech", "hostname": "btc.global.luxor.tech", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "700"}, {"username": "pickit.001", "balance_auth_token": "", "name": "Poolin.com 1", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": true, "external_path": "", "password": "123", "port": "443"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "Poolin.com 2", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "1883"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "Poolin.com Backup", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "700"}], "bitcoin_executable": "C:\\Program Files\\Bitcoin\\bitcoin-qt.exe", "window_position": [1913, 520, 974, 527], "show_summary": true, "show_opencl_warning": true, "console_max_lines": 5000, "start_minimized": false, "blockchain_directory": "S:\\Bitcoin\\BitcoinRepositories", "show_console": false}
+2025-02-03 13:22:13: Loaded: {"profiles": [{"username": "BStewart1989.worker4", "balance_auth_token": "", "name": "antminer", "hostname": "api2.bitcoin.cz", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "C:\\Miners\\GUIMiner\\guiminer\\miners\\cgminer\\cgminer.exe", "password": "worker4", "port": "8332"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "f2pool Main", "hostname": "btc-na.f2pool.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": true, "external_path": "", "password": "21235365876986800", "port": "1314"}, {"username": "pickit420.002", "balance_auth_token": "", "name": "f2pool Backup", "hostname": "btc.f2pool.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "21235365876986800", "port": "1314"}, {"username": "pickit420.worker1", "balance_auth_token": "", "name": "Luxor.tech", "hostname": "btc.global.luxor.tech", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "700"}, {"username": "pickit.001", "balance_auth_token": "", "name": "Poolin.com 1", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": true, "external_path": "", "password": "123", "port": "443"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "Poolin.com 2", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "1883"}, {"username": "pickit420.001", "balance_auth_token": "", "name": "Poolin.com Backup", "hostname": "btc.ss.poolin.com", "device": 0, "affinity_mask": 0, "flags": "", "autostart": false, "external_path": "", "password": "123", "port": "700"}], "bitcoin_executable": "C:\\Program Files\\Bitcoin\\bitcoin-qt.exe", "window_position": [1913, 520, 974, 527], "show_summary": true, "show_opencl_warning": true, "console_max_lines": 5000, "start_minimized": false, "blockchain_directory": "S:\\Bitcoin\\BitcoinRepositories", "show_console": false}
+2025-02-03 13:22:15: Running command: poclbm.exe pickit420.001:21235365876986800@btc-na.f2pool.com:1314 --device=0 --platform=0 --verbose -r1 
+2025-02-03 13:22:15: Listener for "f2pool Main" started
+2025-02-03 13:22:15: Running command: poclbm.exe pickit.001:123@btc.ss.poolin.com:443 --device=0 --platform=0 --verbose -r1 
+2025-02-03 13:22:15: Listener for "Poolin.com 1" started
+2025-02-03 13:22:16: Listener for "Poolin.com 1": WARNING: ADL missing (no AMD platform?), temperature control is disabled
+2025-02-03 13:22:16: Listener for "Poolin.com 1": btc.ss.poolin.com:443 03/02/2025 13:22:16, checking for stratum...
+2025-02-03 13:22:16: Listener for "Poolin.com 1": btc.ss.poolin.com:443 03/02/2025 13:22:16, started OpenCL miner on platform 0, device 0 (NVIDIA GeForce RTX 3060)
+2025-02-03 13:22:16: Listener for "f2pool Main": WARNING: ADL missing (no AMD platform?), temperature control is disabled
+2025-02-03 13:22:16: Listener for "f2pool Main": 03/02/2025 13:22:16, started OpenCL miner on platform 0, device 0 (NVIDIA GeForce RTX 3060)
+2025-02-03 13:22:16: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:22:16, checking for stratum...
+2025-02-03 13:22:16: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:22:16, no response to getwork, using as stratum
+2025-02-03 13:22:16: Listener for "Poolin.com 1": btc.ss.poolin.com:443 03/02/2025 13:22:16, no response to getwork, using as stratum
+2025-02-03 13:22:17: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:22:17, Setting new difficulty: 65536
+2025-02-03 13:22:17: Listener for "Poolin.com 1": btc.ss.poolin.com:443 03/02/2025 13:22:17, Setting new difficulty: 65536
+2025-02-03 13:22:43: Listener for "Poolin.com 1" shutting down
+2025-02-03 13:24:22: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:24:22, Setting new difficulty: 32768
+2025-02-03 13:24:49: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:24:49, Setting new difficulty: 16384
+2025-02-03 13:24:55: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:24:55, Setting new difficulty: 8192
+2025-02-03 13:35:38: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:35:38, Setting new difficulty: 65536
+2025-02-03 13:38:30: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:38:30, Setting new difficulty: 32768
+2025-02-03 13:39:12: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:39:12, Setting new difficulty: 16384
+2025-02-03 13:40:03: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:40:03, Setting new difficulty: 8192
+2025-02-03 13:49:01: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:49:01, Setting new difficulty: 65536
+2025-02-03 13:51:06: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:51:06, Setting new difficulty: 32768
+2025-02-03 13:51:49: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:51:49, Setting new difficulty: 16384
+2025-02-03 13:51:55: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:51:55, Setting new difficulty: 8192
+2025-02-03 13:54:10: Listener for "f2pool Main" shutting down
+2025-02-03 13:54:10: Running command: poclbm.exe pickit420.001:21235365876986800@btc-na.f2pool.com:1314 --device=0 --platform=0 --verbose -r1 
+2025-02-03 13:54:10: Listener for "f2pool Main" started
+2025-02-03 13:54:10: Listener for "f2pool Main": WARNING: ADL missing (no AMD platform?), temperature control is disabled
+2025-02-03 13:54:10: Listener for "f2pool Main": 03/02/2025 13:54:10, started OpenCL miner on platform 0, device 0 (NVIDIA GeForce RTX 3060)
+2025-02-03 13:54:10: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:10, checking for stratum...
+2025-02-03 13:54:11: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:11, no response to getwork, using as stratum
+2025-02-03 13:54:12: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:12, Setting new difficulty: 65536
+2025-02-03 13:54:39: Listener for "f2pool Main" shutting down
+2025-02-03 13:54:39: Running command: poclbm.exe pickit420.001:21235365876986800@btc-na.f2pool.com:1314 --device=0 --platform=0 --verbose -r1 
+2025-02-03 13:54:39: Listener for "f2pool Main" started
+2025-02-03 13:54:39: Listener for "f2pool Main": WARNING: ADL missing (no AMD platform?), temperature control is disabled
+2025-02-03 13:54:39: Listener for "f2pool Main": 03/02/2025 13:54:39, started OpenCL miner on platform 0, device 0 (NVIDIA GeForce RTX 3060)
+2025-02-03 13:54:39: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:39, checking for stratum...
+2025-02-03 13:54:40: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:40, no response to getwork, using as stratum
+2025-02-03 13:54:41: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:54:41, Setting new difficulty: 65536
+2025-02-03 13:57:09: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:57:09, Setting new difficulty: 32768
+2025-02-03 13:57:45: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:57:45, Setting new difficulty: 16384
+2025-02-03 13:58:36: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 13:58:36, Setting new difficulty: 8192
+2025-02-03 14:08:11: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:08:11, Setting new difficulty: 65536
+2025-02-03 14:10:41: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:10:41, Setting new difficulty: 32768
+2025-02-03 14:10:49: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:10:49, Setting new difficulty: 16384
+2025-02-03 14:11:46: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:11:46, Setting new difficulty: 8192
+2025-02-03 14:21:41: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:21:41, Setting new difficulty: 65536
+2025-02-03 14:24:26: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:24:26, Setting new difficulty: 32768
+2025-02-03 14:25:17: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:25:17, Setting new difficulty: 16384
+2025-02-03 14:26:06: Listener for "f2pool Main": btc-na.f2pool.com:1314 03/02/2025 14:26:06, Setting new difficulty: 8192
