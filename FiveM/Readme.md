@@ -2,5 +2,5 @@
 
 ## Please refer to the following links
 
-- [Lazy Media's FiveM GitHub](https://link.lazymedia.media/github-fivem)
-- [Lazy Media's FiveM GitLab](https://link.lazymedia.media/gitlab-fivem)
+- [Lazy Media's FiveM GitHub (Recommended)](https://link.lazymedia.media/github-fivem)
+- [Lazy Media's FiveM GitLab (Not Up to Date)](https://link.lazymedia.media/gitlab-fivem)
