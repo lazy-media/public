@@ -11,12 +11,94 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
     - Navigate to `Directory > Groups`
     - Create a group for `Discord Users`
 
-## Create a Deny Stage
+## Deny Stages
+
+### Standard Deny Stage with No Discord Server Join Message
 - Navigate to `Flows and Stages > Stages`
 - Create a new stage
 - Select Deny Stage
     - Enter your name as `Discord Deny Verification` and enter a message of your choosing.
 - Select `Finish` to save
+
+### Deny Stage with Join Discord Server Message
+For Easier Setup, Create the `Authentication Flow` and the `Discord Expression Policy` in the next step, then come back to this step.
+
+- Login to you Authentik Admin Panel
+- Navigate to `Flows and Stages > Prompts`
+  - Create a new Prompt
+  - Put what you want in the `Name`, `Field Key` and `Label` boxes.
+  - Select the Prompt Type as `Static: Static Value, Displayed as-is`
+  - Scroll down to `Help Text`
+  - Insert the following (Change what is needed):
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE ME</title>
+    <style>
+        /* Center the button horizontally */
+        #join-button {
+            height: 50%;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Style the button */
+        #join-button {
+          background-color: #3498db;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  <p>
+    <center>
+      <b>
+        INSERT YOUR MESSAGE HERE.
+        <br>
+        IN BASIC HTML CODE.
+      </b>
+      <br>
+      JUST KEEP YOUR CODE BETWEEN THE <center> & </center>
+    </center>
+  </p>
+    <a id="join-button" href="DISCORD JOIN URL" rel="noopener noreferrer">Join Join the Discord Server Now!</a>
+
+    <script>
+        // Optional, if you want to open the Discord server invite link in a new tab when clicked
+        document.getElementById('join-button').addEventListener('click', function() {
+            window.open(this.href, '_blank');
+        });
+    </script>
+</body>
+</html>
+```
+
+- Navigate to `Flows and Stages > Stages`
+- Create a New Prompt Stage
+  - Name the Prompt whatever you want
+  - Under `Fields` in the right column, if there is anything in it, remove everything except for the `Prompt` we just created. If the newly created `Prompt` is not selected, select it and move it to the right column.
+  - Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step.
+- Navigate to `Flows and Stages > Flows`
+  - Find your `Discord Authentication` Flow and Click on it
+    - Click on `Stage Bindings`
+    - Bind an Existing Stage and Bind your `Discord Prompt` we just created, change the order to `0` or the lowest number, and click `Create`
+    - Expand the Stage we just added
+    - Click on `Bind Existing Policy / Group / User`
+    - Under `Policy`, select your `Discord Verification` Policy
+      - MAKE SURE THE `ENABLED` and `NEGATE RESULTS` are both checked.
+      - SET `FAILURE RESULT` to `PASS`
+
 
 ## Authentication Flow Creation
 - Navigate to `Flows and Stages > Flows`
