@@ -21,7 +21,7 @@ This will help you setup OpenID login to Portainer so you can log in with your A
 - Select `OAuth` as the `Authentication Method`
 - **Enable** `Use SSO`
 - *Business Feature* **Enable** `Hide internal authentication prompt`
-- **Enable** `Automatic User Provisioning`
+- **Enable** `Automatic User Provisioning` if you want to
 - *Business Feature* **Enable** `Automatic Team Membership`
 - Select `Custom` as your `Provider`
 - Fill out the form accordingly
@@ -33,5 +33,6 @@ This will help you setup OpenID login to Portainer so you can log in with your A
     - **Redirect URL=** `https://portainer.domain.example`
     - **Logout URL=** `https://auth.domain.example/application/o/AUTHENTIK-PORTAINER-OAUTH-SLUG/end-session/`
     - **User Identifier=** `email`
-    - **Scopes=** `email openid profile`
+    - **Scopes=** `email openid profile ak_proxy offline_access`
+    - **Auth Style=** `Auto Detect`
 - Click `Save`
