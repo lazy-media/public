@@ -72,14 +72,7 @@ For Easier Setup, Create the `Authentication Flow` and the `Discord Expression P
       JUST KEEP YOUR CODE BETWEEN THE <center> & </center>
     </center>
   </p>
-    <a id="join-button" href="DISCORD JOIN URL" rel="noopener noreferrer">Join Join the Discord Server Now!</a>
-
-    <script>
-        // Optional, if you want to open the Discord server invite link in a new tab when clicked
-        document.getElementById('join-button').addEventListener('click', function() {
-            window.open(this.href, '_blank');
-        });
-    </script>
+    <a id="join-button" href="DISCORD JOIN URL" target="_blank" rel="noopener noreferrer">Join Join the Discord Server Now!</a>
 </body>
 </html>
 ```
