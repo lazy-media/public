@@ -6,6 +6,10 @@
 
 This flow allows the use of Discord Login with Authentik. This explains how to create a deny stage to display a message to users if they are not part of your Discord Server. This flow creation will allow Authentik to verify a user against your Discord Server based on Server ID and Role ID, Assign them to an Authentik Group, and Add the Discord Login to the Main Authentik Login Page. Authentik will handle user creation upon a user's first login.
 
+## Example Picture of Discord Notification
+
+![image](JoinDiscordServerNotification.png)
+
 ## Group Creation
 - Login to Authentik Admin Panel
     - Navigate to `Directory > Groups`
