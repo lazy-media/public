@@ -23,7 +23,7 @@ If the form has been approved, you will recieve multiple emails with further ins
 
 ---
 
-If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://link.lazymedia.media/gcbGA). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
+If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://link.lazymedia.media/lazymedia-discord-promo-page). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
 
 The Lazy Media Discord Server can be used for support by Users of Lazy Media, Users of Authentik, Users of Ubiquiti Products, or any of the apps I currently run in my Homelab.
 
