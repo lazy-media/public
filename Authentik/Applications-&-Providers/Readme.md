@@ -104,7 +104,7 @@
             - If you know the redirect uri, fill it in here
         - Choose a Signing Key. I use an Imported Cloudflare Cert, so I select this.
     - Expand `Advanced Protocol Settings`
-        - Under `Scopes`, Hold CTRL and Click on the scopes for `email`, `openid`, and `profile` at minimum, if not already preselected.
+        - Under `Scopes`, Hold CTRL and Click on the scopes for `email`, `openid`, `profile`, and `offline_access` at minimum, if not already preselected. You can also select `ak_proxy` if your OAuth provider has issues, this usually resolves it for me.
         - Under `Subject Mode`, I personally select `Based on User's Email`
         - I usually leave everything else default on this screen.
     - Click `Next` to save and Finish.
