@@ -15,6 +15,7 @@
 
 # OPENID / OAUTH SETUP
 ## Redirect URL for Authentik
+This does not need to be set, Authentik will autofill this upon first use.
 ```
 https://YOUR-GITLAB-URL/users/auth/openid_connect/callback
 ```
