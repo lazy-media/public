@@ -21,7 +21,7 @@ https://YOUR-GITLAB-URL/users/auth/openid_connect/callback
 ```
 ## Adding OAuth to Gitlab Config File
 
-Login and edit the Gitlab Ruby Config File
+Login to your GitLab VM and edit the Gitlab Ruby Config File
 
 ```
 nano /etc/gitlab/gitlab.rb
@@ -84,7 +84,7 @@ Your new OpenID / OAuth2 Provider should now show up on your Gitlab Login Page o
 ```
 https://YOUR-GITLAB-URL/users/auth/saml/callback
 ```
-Login and edit your GitLab Ruby Config File
+Login to your GitLab VM and edit your GitLab Ruby Config File
 ```
 nano /etc/gitlab/gitlab.rb
 ```
