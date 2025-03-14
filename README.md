@@ -33,10 +33,6 @@ Automations are in progress of being setup to verify role assignment. So for the
 
 ---
 
-Anyone can login with a Twitch Account but this does not give access to anything. Twitch Logins can only access basic sites that everyone can access.
-
----
-
 **Public Registration via Email Address alone, is not currently available.**
 
 ---
