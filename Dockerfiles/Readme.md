@@ -22,7 +22,7 @@ This repository contains production-grade Dockerfiles for building optimized con
 
 | Checked | Task |
 |------|------|
-| [x] | Docker Engine 20.10+ installed |
+| [ x ] | Docker Engine 20.10+ installed |
 | [ ] | Minimum 2 CPU cores allocated |
 | [ ] | 4GB+ RAM available |
 | [ ] | `docker-compose` installed (for multi-container setups) |
