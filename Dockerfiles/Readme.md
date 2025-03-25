@@ -5,25 +5,29 @@
 This repository contains production-grade Dockerfiles for building optimized container images. Each image is carefully crafted for specific use cases with security, performance, and maintainability in mind.
 
 ## 🏗️ Repository Architecture
-dockerfiles/
-├── 📁 base-images/ # Minimal base images for different stacks
-├── 📁 language-runtimes/ # JDK, Python, Node, Go, etc.
-├── 📁 databases/ # SQL/NoSQL with optimized configs
-├── 📁 web-servers/ # Nginx, Apache, Caddy with TLS setups
-├── 📁 ci-cd/ # Jenkins, GitLab Runner, ArgoCD
-├── 📁 monitoring/ # Prometheus, Grafana, ELK stacks
-└── 📁 utilities/ # CLI tools, backup utilities, etc.
+
+    dockerfiles/
+    ├── 📁 N8N/ # Custom N8N Images
+    ├── 📁 TBD/ # JDK, Python, Node, Go, etc.
+    ├── 📁 TBD/ # SQL/NoSQL with optimized configs
+    ├── 📁 TBD/ # Nginx, Apache, Caddy with TLS setups
+    ├── 📁 TBD/ # Jenkins, GitLab Runner, ArgoCD
+    ├── 📁 TBD/ # Prometheus, Grafana, ELK stacks
+    └── 📁 TBD/ # CLI tools, backup utilities, etc.
 
 ## 🚦 Quick Start Guide
 
 <details>
 <summary><strong>✅ Pre-flight Checklist</strong></summary>
 
-- [ ] Docker Engine 20.10+ installed
-- [ ] Minimum 2 CPU cores allocated
-- [ ] 4GB+ RAM available
-- [ ] `docker-compose` installed (for multi-container setups)
-- [ ] Proper disk permissions set
+    | Checked | Task |
+    | [ ] | Docker Engine 20.10+ installed |
+    | [ ] | Minimum 2 CPU cores allocated |
+    | [ ] | 4GB+ RAM available |
+    | [ ] | `docker-compose` installed (for multi-container setups) |
+    | [ ] | Proper disk permissions set |
+
+
 </details>
 
 ## 🔥 Building Images
