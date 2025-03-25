@@ -1,51 +1,118 @@
-# Public Files
+# Public Files Repository
 
-## NOTICE
-**PLEX MEDIA SERVER IS CURRENTLY DOWN. NO APPLICATIONS FOR PLEX SIGN UP WILL BE ACCEPTED UNTIL FURTHER NOTICE!**
+## Service Status Notice
 
-## Getting started
+**Plex Media Server is currently offline.**  
+No new Plex sign-up applications will be accepted until further notice.
 
-This repository will have all files that I allow to be accessed publicly.
+## Introduction
 
-## Authentik Setup
-[Authentik Installation & Cloudflare Setup](/Installation-Instructions/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
+This repository contains all publicly accessible files and documentation.
 
----
-**The best way to login to services is with the `Lazy Media - Authentik` button presented on any login pages. When Authentik loads, login with your Plex Credentials using the `PLEX OAUTH` button.**
+## Authentik Configuration
 
----
+[Authentik Installation & Cloudflare Setup Guide](/Installation-Instructions/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
 
-If you do not already have an account on my server, you must fill out the form located at [Server Access Request Form](https://link.lazymedia.media/cwAP1).
+### Recommended Login Method
 
-**PLEASE NOTE: Registrations and Access to Plex are limited.**
-
-If the form has been approved, you will recieve multiple emails with further instructions.
+> **The preferred login method for all services is via the `Lazy Media - Authentik` button** available on login pages.  
+> When Authentik loads, authenticate using your Plex credentials via the `PLEX OAUTH` button.
 
 ---
 
-If you are wanting to Login with Discord, you must be apart of the [Lazy Media Discord Server](https://link.lazymedia.media/lazymedia-discord-promo-page). But this Login method does **NOT** allow access to the Media Server. Very Limited options.
+## Account Access Request
 
-The Lazy Media Discord Server can be used for support by Users of Lazy Media, Users of Authentik, Users of Ubiquiti Products, or any of the apps I currently run in my Homelab.
+To request server access:
+1. Complete the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
+2. Await email notification regarding approval status
 
-For Plex Users, the Lazy Media Discord Server will also give access to view recently added content, view posted newsletters, report issues with media, and request media.
-
-Automations are in progress of being setup to verify role assignment. So for the time being, please be honest about the roles you assign your self. Once the automation gets put in place, it will remove you if you have not completed the correct steps.
-
----
-
-**Public Registration via Email Address alone, is not currently available.**
+**Important Notes:**
+- Plex registrations and access are limited
+- Approved applicants will receive detailed setup instructions via email
 
 ---
 
-**FOR USERS THAT ARE NOT USING PLEX OR DISCORD OR TWITCH TO LOGIN:**
+## Discord Authentication Option
 
-**IN ORDER FOR AUTOMATIC LOGIN TO WORK ACROSS ALL SERVICES PROVIDED TO YOU AT THE DOMAIN `lazymedia.media`, YOUR `EMAIL`, AND `USERNAME` MUST MATCH ON ALL SERVICES YOU ACCESS. FOR THIS REASON, SIGNING UP WITH PLEX OR DISCORD OR TWITCH IS RECOMMENDED AND MUCH EASIER. IT IS NOT RECOMMENDED TO CHANGE YOUR PROFILE INFORMATION ON ANY SERVICE, EVEN IF ALLOWED. THIS IS DUE TO HOW THE AUTHENTICATION METHOD WORKS CURRENTLY. IT COULD POSSIBLY BREAK YOUR ACCOUNTS TO OTHER SERVICES.**
+Alternative login via Discord is available with restrictions:
+- Requires membership in the [Lazy Media Discord Server](https://link.lazymedia.media/lazymedia-discord-promo-page)
+- **Does not grant Media Server access** (limited functionality only)
+
+### Discord Server Features:
+- Support for:
+  - Lazy Media users
+  - Authentik users
+  - Ubiquiti product users
+  - Homelab application users
+- For Plex users:
+  - View recently added content
+  - Access newsletters
+  - Report media issues
+  - Submit media requests
+
+**Current Limitations:**  
+Role assignment automation is in development. Please self-assign roles accurately until automated verification is implemented.
+
+---
+
+## Registration Information
+
+- Public email-only registration is currently unavailable
+- Recommended authentication methods (in order of preference):
+  1. Plex OAuth
+  2. Discord
+
+---
+
+## Important Account Management Notice
+
+**For non-Plex or Discord authenticated users:**
+
+> To maintain seamless cross-service authentication across `lazymedia.media` domains, your **email address and username must be identical** on all accessed services.
+
+**Recommendation:**  
+- Use Plex, Discord, or Twitch authentication when possible
+- Avoid modifying profile information after account creation
+- Changing credentials may disrupt service access due to current authentication architecture
 
 # Support
 
-- [RocketChat Live Chat](https://link.lazymedia.media/ZRx6r)
+[![Rocket.Chat](https://img.shields.io/badge/Live_Support-F5455C?style=for-the-badge&logo=rocket.chat&logoColor=white)](https://link.lazymedia.media/ZRx6r)
+[![Discord](https://img.shields.io/badge/Lazy_Media's_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-discord-promo-page)
 
-## Donations
-If my content or documentation has helped you, please consider donating to help me out and continue doing this.
-- [PayPal Donation Link](https://link.lazymedia.media/oNIwV)
-- Bitcoin Address to Send To: `13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
+## 💖 Support My Work
+
+Enjoying this project? Help me keep it alive and evolving:
+
+### 🌟 One-Time Donations
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/lazymediawa)
+
+### 🔄 Recurring Support
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-30363D?style=for-the-badge&logo=github-sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/lazy-media)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://link.lazymedia.media/patreon)
+
+### ₿ Crypto Donations
+**Bitcoin:**  
+`13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
+
+---
+
+## 🌐 Follow Me
+
+Stay updated with my latest projects and tutorials:
+
+### 📱 Social Media
+
+[![Mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=mastodon&logoColor=white)](https://link.lazymedia.media/mastodon)
+[![Discord](https://img.shields.io/badge/Lazy_Media's_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-discord-promo-page)
+[![Discord](https://img.shields.io/badge/Gaming_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-gaming-discord-promo-page)
+
+### 💻 Dev Platforms
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lazy-media)
+[![GitLab](https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.lazymedia.media/root)
+[![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/lazymedia)
+
+### 🎥 Video & Live Coding
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@LazyMediaWA)
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/LazyMediaWA)
+[![Kick](https://img.shields.io/badge/Kick-53FC18?style=for-the-badge&logo=kick&logoColor=black)](https://kick.com/LazyMedia)
