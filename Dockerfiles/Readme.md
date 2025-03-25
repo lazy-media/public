@@ -20,13 +20,13 @@ This repository contains production-grade Dockerfiles for building optimized con
 <details>
 <summary><strong>✅ Pre-flight Checklist</strong></summary>
 
-| Checked | Task |
+| Completed | Task |
 |------|------|
-| [ x ] | Docker Engine 20.10+ installed |
-| [ ] | Minimum 2 CPU cores allocated |
-| [ ] | 4GB+ RAM available |
-| [ ] | `docker-compose` installed (for multi-container setups) |
-| [ ] | Proper disk permissions set |
+| ✅ | Docker Engine 20.10+ installed |
+| ✅ | Minimum 2 CPU cores allocated |
+| ✅ | 4GB+ RAM available |
+| ✅ | `docker-compose` installed (for multi-container setups) |
+| ✅ | Proper disk permissions set |
 
 
 </details>
@@ -89,20 +89,25 @@ docker buildx build \
 <details> <summary><strong>🏆 Curated Image Catalog</strong></summary>
 
 ### 🐳 Base Images
+
 Image	Features	Size
 alpine-plus	Alpine + core utilities	15MB
 distroless-plus	Google Distroless + shell	25MB
 
 ### 🛢️ Database Images
+
 Image	Optimization	Default Config
 postgres-optimized	Connection pooling	100 max_connections
 redis-secure	ACL enabled	Protected mode on
 
 ### 🌐 Web Stack
+
+```mermaid
 graph TD
     A[Load Balancer] --> B[Web Server]
     B --> C[App Server]
     C --> D[Database]
+```
 
 </details>
 
@@ -133,6 +138,7 @@ graph TD
   </details>
 
   # 🛡️ Security Protocols
+
 <details> <summary><strong>🔐 Hardening Measures</strong></summary>
 
   - All images use COPY --chown for proper permissions
@@ -144,9 +150,10 @@ graph TD
 </details>
 
 # 🤝 Contribution Matrix
+
 | Area          | Owner       | Reviewers     |
 |---------------|-------------|---------------|
-| Base Images   | @core-team  | @security     |
+| N8N   | @core-team  | @security     |
 | DB Images     | @db-team    | @performance  |
 | Web Servers   | @web-team   | @infra        |
 
@@ -161,3 +168,39 @@ All images include:
     Attribution files
 
 <p align="center"> ⚡ Powered by Docker | 🛡️ Security First | 🌍 Multi-Cloud Ready </p> 
+
+## 💖 Support My Work
+
+Enjoying this project? Help me keep it alive and evolving:
+
+### 🌟 One-Time Donations
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/lazymediawa)
+
+### 🔄 Recurring Support
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-30363D?style=for-the-badge&logo=github-sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/lazy-media)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://link.lazymedia.media/patreon)
+
+### ₿ Crypto Donations
+**Bitcoin:**  
+`bc1qyourbitcoinaddress`
+
+---
+
+## 🌐 Follow Me
+
+Stay updated with my latest projects and tutorials:
+
+### 📱 Social Media
+
+[![Mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=mastodon&logoColor=white)](https://link.lazymedia.media/mastodon)
+[![Discord](https://img.shields.io/badge/Main_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-discord-promo-page)
+[![Discord](https://img.shields.io/badge/Gaming_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-gaming-discord-promo-page)
+
+### 💻 Dev Platforms
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lazy-media)
+[![GitLab](https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.lazymedia.media/root)
+
+### 🎥 Video & Live Coding
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@LazyMediaWA)
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/LazyMediaWA)
+[![Kick](https://img.shields.io/badge/Kick-53FC18?style=for-the-badge&logo=kick&logoColor=black)](https://kick.com/LazyMedia)
