@@ -182,7 +182,7 @@ Enjoying this project? Help me keep it alive and evolving:
 
 ### ₿ Crypto Donations
 **Bitcoin:**  
-`bc1qyourbitcoinaddress`
+`13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
 
 ---
 
