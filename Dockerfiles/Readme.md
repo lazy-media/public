@@ -37,6 +37,8 @@ dockerfiles/
 find . -name Dockerfile | sed 's/\/Dockerfile//g'
 
 ### 2. Build with Security Flags
+
+```bash
 cd path/to/image-directory
 
 docker build \
@@ -44,20 +46,27 @@ docker build \
   --pull \
   --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
   -t myorg/image-name:$(git rev-parse --short HEAD) .
+```
 
 ### 3. Verify Image
+
+```bash
 docker scan myorg/image-name  # Security scan
 docker history myorg/image-name  # Layer inspection
+```
+
 </details>
 
 # � Advanced Usage
 <details> <summary><strong>🚀 Multi-Architecture Builds (ARM/x86)</strong></summary>
-bash
+
+```bash
 docker buildx create --use
 docker buildx build \
   --platform linux/amd64,linux/arm64 \
   -t myorg/multiarch-image:latest \
   --push .
+```
 
 </details><details> <summary><strong>🔒 Production Deployment Checklist</strong></summary>
 
@@ -97,7 +106,7 @@ graph TD
 
   ### 1.  Unit Tests
 
-```
+```bash
   container-structure-test test \
   --image my-image \
   --config tests/config.yaml
@@ -105,13 +114,13 @@ graph TD
 
   ### 2. Runtime Tests
 
-```
+```bash
   bats tests/runtime_checks.bats
 ```
 
   ### 3. Compliance Checks
 
-```
+```bash
   docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
   aquasec/kube-bench:latest
 ```
@@ -121,15 +130,11 @@ graph TD
   # 🛡️ Security Protocols
 <details> <summary><strong>🔐 Hardening Measures</strong></summary>
 
-  All images use COPY --chown for proper permissions
-
-  No secrets in build context
-
-  Multi-stage builds to reduce attack surface
-
-  DOCKER_CONTENT_TRUST=1 enforced
-
-  Regular base image updates
+  - All images use COPY --chown for proper permissions
+  - No secrets in build context
+  - Multi-stage builds to reduce attack surface
+  - DOCKER_CONTENT_TRUST=1 enforced
+  - Regular base image updates
 
 </details>
 
