@@ -530,3 +530,8 @@ Run the Install Script
 ```
 ./docker-install.sh
 ```
+
+
+# Installing NVIDIA Docker Container Toolkit
+
+[Visit this site to view instructions temporarily until I can update this](https://www.gravee.dev/en/setup-nvidia-gpu-for-docker/)
