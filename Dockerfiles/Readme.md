@@ -20,12 +20,12 @@ This repository contains production-grade Dockerfiles for building optimized con
 <details>
 <summary><strong>✅ Pre-flight Checklist</strong></summary>
 
-    | Checked | Task |
-    | [ ] | Docker Engine 20.10+ installed |
-    | [ ] | Minimum 2 CPU cores allocated |
-    | [ ] | 4GB+ RAM available |
-    | [ ] | `docker-compose` installed (for multi-container setups) |
-    | [ ] | Proper disk permissions set |
+  | Checked | Task |
+  | [ ] | Docker Engine 20.10+ installed |
+  | [ ] | Minimum 2 CPU cores allocated |
+  | [ ] | 4GB+ RAM available |
+  | [ ] | `docker-compose` installed (for multi-container setups) |
+  | [ ] | Proper disk permissions set |
 
 
 </details>
