@@ -86,6 +86,7 @@ Enjoying this project? Help me keep it alive and evolving:
 
 ### 🌟 One-Time Donations
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/lazymediawa)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lazymedia)
 
 ### 🔄 Recurring Support
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-30363D?style=for-the-badge&logo=github-sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/lazy-media)
