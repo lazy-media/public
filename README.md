@@ -71,7 +71,7 @@ Role assignment automation is in development. Please self-assign roles accuratel
 > To maintain seamless cross-service authentication across `lazymedia.media` domains, your **email address and username must be identical** on all accessed services.
 
 **Recommendation:**  
-- Use Plex, Discord, or Twitch authentication when possible
+- Use Plex or Discord authentication when possible
 - Avoid modifying profile information after account creation
 - Changing credentials may disrupt service access due to current authentication architecture
 
