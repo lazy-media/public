@@ -83,9 +83,9 @@ database:
   # Database user which is used to connect to the database.
   # user: "vikunja"
   # Database password
-  # password: "r-gMiUlFc[D1idBh"
+  # password: "Some Password"
   # Database host
-  # host: "192.168.25.70"
+  # host: "SOME.IP.ADD.RESS"
   # Database port
   # port: "3306"
   # Database to use
