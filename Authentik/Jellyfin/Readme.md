@@ -14,7 +14,7 @@
 
 Please refer to my basic setup for OAuth Providers here [Basic OAuth/OpenID Provider Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 
-## Authentik Scope Mapping
+## Authentik Scope Mapping (Optional)
 
 I have this scope mapping in place as well as controlling access through Jellyfin. This is just my setup. Your setup may vary.
 
