@@ -25,7 +25,7 @@ return [group.name for group in user.ak_groups.all()]
 
 ## Enable Jellyfin Quick Connect
 
-I recommend enabling the Quick Connect setting inside your Jellyfin server to make it possible to connect mobile devices, tv's, game consoles, and other media streaming devices other than a computer and web browser. This SSO method DOES NOT work with anything other than a computer and web browser, which is why I recommend enabling this feature.
+I recommend enabling the Quick Connect setting inside your Jellyfin server to make it possible to connect mobile devices, tv's, game consoles, and other media streaming devices other than a computer and web browser. This SSO method DOES NOT work with anything other than a computer and web browser, which is why I recommend enabling this feature. If it does work with other devices, I haven't figured it out.
 
 To enable this feature:
 - Login to Jellyfin Admin
