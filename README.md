@@ -1,5 +1,7 @@
 # Public Files Repository
 
+# PUBLIC NOTICE: THIS DOCUMENTATION IS IN THE PROCESS OF BEING MOVED TO ANOTHER LOCATION. WHEN THE DOCUMENTATION IS COMPLETE, A URL WILL APPEAR HERE.
+
 # Service Notices & Documentation
 
 ## Documentation Status Notice
