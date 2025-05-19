@@ -96,7 +96,7 @@ Navigate to `Flows and Stages > Stages`
 Create a New Prompt Stage:
 - Name the Prompt whatever you want
 - Under `Fields` in the right column, if there is anything in it, remove everything except for the `Prompt` we just created. If the newly created `Prompt` is not selected, select it and move it to the right column.
-- Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step.
+- Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step (Don't worry, we come back to this so just leave nothing there for now.).
 
 Navigate to `Flows and Stages > Flows`:
 - Find your `Discord Authentication` Flow and Click on it
