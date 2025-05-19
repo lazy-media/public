@@ -1,83 +1,79 @@
 # Public Files Repository
 
-## PUBLIC SERVICE ANNOUNCEMENT
+# Service Notices & Documentation
 
-**YES I DO KNOW THAT A LOT OF MY DOCUMENTATION NEEDS TO BE UPDATED. I AM JUST NOT WORRIED ABOUT IT AT THE MOMENT OR HAVEN'T BEEN ABLE TO GET AROUND TO FIXING IT. I WILL UPDATE AS I NEED. THANK YOU.**
+## Documentation Status Notice
+**Documentation Update Status:**  
+Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
 
-## Service Status Notice
+## Service Availability
+**Current Service Status:**  
+- Plex Media Server: **Offline**  
+- New Plex registrations: **Temporarily suspended** until further notice
 
-**Plex Media Server is currently offline.**  
-No new Plex sign-up applications will be accepted until further notice.
+## Overview
+This knowledge base contains comprehensive documentation for all publicly accessible systems and services.
 
-## Introduction
+## Authentik Configuration Guide
+[Complete Authentik Installation & Cloudflare Integration Guide](/Installation-Instructions/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
 
-This repository contains all publicly accessible files and documentation.
-
-## Authentik Configuration
-
-[Authentik Installation & Cloudflare Setup Guide](/Installation-Instructions/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
-
-### Recommended Login Method
-
-> **The preferred login method for all services is via the `Lazy Media - Authentik` button** available on login pages.  
-> When Authentik loads, authenticate using your Plex credentials via the `PLEX OAUTH` button.
-
----
-
-## Account Access Request
-
-To request server access:
-1. Complete the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
-2. Await email notification regarding approval status
-
-**Important Notes:**
-- Plex registrations and access are limited
-- Approved applicants will receive detailed setup instructions via email
+### Authentication Best Practices
+**Recommended Login Method:**  
+For optimal access to all services, please use the `Lazy Media - Authentik` authentication portal.  
+Upon redirection to Authentik, select the `PLEX OAUTH` option to authenticate with your Plex credentials.
 
 ---
 
-## Discord Authentication Option
+## Access Request Procedure
+To request server access privileges:
+1. Submit the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
+2. Monitor your email for approval notification and further instructions
 
-Alternative login via Discord is available with restrictions:
-- Requires membership in the [Lazy Media Discord Server](https://link.lazymedia.media/lazymedia-discord-promo-page)
-- **Does not grant Media Server access** (limited functionality only)
-
-### Discord Server Features:
-- Support for:
-  - Lazy Media users
-  - Authentik users
-  - Ubiquiti product users
-  - Homelab application users
-- For Plex users:
-  - View recently added content
-  - Access newsletters
-  - Report media issues
-  - Submit media requests
-
-**Current Limitations:**  
-Role assignment automation is in development. Please self-assign roles accurately until automated verification is implemented.
+**Access Policies:**  
+- Plex access is currently restricted to approved users only
+- Approved applicants will receive complete configuration guidelines via email
 
 ---
 
-## Registration Information
+## Alternative Authentication: Discord
+Discord authentication is available with the following specifications:
+- Requires active membership in the [Lazy Media Discord Community](https://link.lazymedia.media/lazymedia-discord-promo-page)
+- **Functionality Note:** Does not provide Media Server access (limited feature set available)
 
-- Public email-only registration is currently unavailable
+### Discord Community Features:
+- Dedicated support channels for:
+  - Lazy Media platform users
+  - Authentik configuration
+  - Ubiquiti product support
+  - Homelab applications
+- Plex-specific features:
+  - New content notifications
+  - Monthly newsletters
+  - Media issue reporting
+  - Content request system
+
+**Current Development Status:**  
+Automated role assignment is currently being implemented. Members are advised to manually select appropriate roles until the verification system is fully operational.
+
+---
+
+## Account Registration Information
+- Public email-based registration is currently unavailable
 - Recommended authentication methods (in order of preference):
   1. Plex OAuth
-  2. Discord
+  2. Discord authentication
 
 ---
 
-## Important Account Management Notice
+## Account Management Guidelines
+**For non-Plex/Discord authenticated accounts:**
 
-**For non-Plex or Discord authenticated users:**
+> To ensure consistent service access across all `lazymedia.media` domains, your **account email address and username must match exactly** on all integrated services.
 
-> To maintain seamless cross-service authentication across `lazymedia.media` domains, your **email address and username must be identical** on all accessed services.
-
-**Recommendation:**  
-- Use Plex or Discord authentication when possible
-- Avoid modifying profile information after account creation
-- Changing credentials may disrupt service access due to current authentication architecture
+**Best Practices:**  
+- Utilize Plex or Discord authentication where possible
+- Avoid modifying account credentials post-creation
+- Note that credential changes may temporarily disrupt service access due to current authentication system architecture
 
 # Support
 
