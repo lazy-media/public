@@ -103,17 +103,17 @@ You should be since we have only created folders above.
 
 Edit this file if needed, with `nano docker-compose.yml` and paste the following into this file, or edit to your preference.
 
-[Example Docker Compose File for Persistant Data](Installation-Instructions/Authentik/docker-compose.yml)
+[Example Docker Compose File for Persistant Data](docker-compose.yml)
 
 ## EXAMPLE Docker Environment Variables File (.env)
 This is the `.env` file
 
-[Example Docker Compose Environment Variables File](Installation-Instructions/Authentik/docker-compose.env.yml)
+[Example Docker Compose Environment Variables File](.env)
 
 ## Example GEOIP Override file
 Name this file `docker-compose.override.yml`
 
-[Example Docker Compose Override File for GeoIP](Installation-Instructions/Authentik/docker-compose.override.yml)
+[Example Docker Compose Override File for GeoIP](docker-compose.override.yml)
 
 # Launch and run Authentik
 
