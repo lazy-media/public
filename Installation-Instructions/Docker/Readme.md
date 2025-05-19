@@ -4,15 +4,12 @@
 ```
 apt update && apt upgrade -y
 ```
-### Install Dependencies
-```
-apt-get install -y curl
-```
 
 # Add Docker's official GPG key:
 ```
 apt update
 ```
+### Install Dependencies & Add Docker Keys
 ```
 apt install ca-certificates curl
 ```
