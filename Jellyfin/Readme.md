@@ -27,5 +27,9 @@
 - In the File or URL spot, insert the local address or public address of the file you created on your PHP enabled web server.
     - This should be something like `http://192.168.1.10/tvxml.php` or `https://web.domain.example/tvxml.php`
 
+### Jellyfin Authentik OpenID Setup
+
+> [Authentik Jellyfin OpenID Setup](/Authentik/Jellyfin/Readme.md)
+
 ### Conclusion
 That's it, you should now be able to view a TV Guide in Jellyfin.

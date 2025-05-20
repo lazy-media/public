@@ -1,7 +1,7 @@
 # Immich Installation
 
-## Original Documentation
-[Immich Website](https://immich.app/)
+## Original Documentation / Website
+> [Immich Website](https://immich.app/)
 
 ## Docker Compose Installation with Persistant Storage for all Volumes
 
@@ -15,18 +15,19 @@
 
 # Docker Compose File
 
-[Example Docker Compose File]
+> [Example Docker Compose File](docker-compose.yml)
+
 
 ## Example Docker Compose Env File
 
-[Example Docker Compose ENV File]
+> [Example Docker Compose ENV File](.env)
 
 # Immich Hardware Acceleration Files
 
-Example `hwaccel.ml.yml`
+> [Example `hwaccel.ml.yml`](hwaccel.ml.yml)
 
 
-Example `hwaccel.transcoding.yml`
+> [Example `hwaccel.transcoding.yml`](hwaccel.transcoding.yml)
 
 
 # Start and Run Immich
@@ -42,10 +43,10 @@ docker compose down && docker compose pull && docker compose up -d
 ```
 
 # Immich OAuth / OpenID Setup
-[Immich OAuth / OpenID Setup](Authentik/Immich/Readme.md)
+[Immich OAuth / OpenID Setup](/Authentik/Immich/Readme.md)
 
 # Google Photo Takeout Conversion Helpers
 
 Use either of these scripts to convert your Google Photos Takeout to Immich compatible format.
 
-[Google Photo Takeout Helpers](/Google-Photos-Takeout/)
+[Google Photo Takeout Helpers](/Google-Photos-Takeout/Readme.md)

@@ -1,40 +1,16 @@
-# Kasm Installation Instructions
+# Original Documentation
 
-## Update System and Reboot
-```
-apt update && apt dist-upgrade -y && reboot
-```
-## Install Dependencies
-```
-apt install -y curl
-```
+### > [Kasm Single Server Installation](https://kasmweb.com/docs/latest/install/single_server_install.html)
 
-## Single Server Installation
-### Change to Temp Directory
-```
-cd /tmp
-```
-### Download Kasm to Temp Directory
-```
-curl -O https://kasm-static-content.s3.amazonaws.com/kasm_release_1.15.0.06fdc8.tar.gz
-```
-### Extract Kasm from downloaded file
-```
-tar -xf kasm_release_1.15.0.06fdc8.tar.gz
-```
-### Run Install script
-```
-sudo bash kasm_release/install.sh
-```
 
-# Third Party Registries
+### Third Party Registries (if not already provided)
 
 Linux.io
 ```
 https://kasmregistry.linuxserver.io
 ```
 
-# Setting Up OAuth with Authentik
+## Setting Up Authentik OpenID / OAuth
 
 ### Create Provider and Application in Authentik and make note of Client ID and Secret Key.
 
