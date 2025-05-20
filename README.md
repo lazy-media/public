@@ -14,7 +14,7 @@
 This knowledge base contains comprehensive documentation for all publicly accessible systems and services.
 
 ## Authentik Configuration Guide
-[Complete Authentik Installation & Cloudflare Integration Guide](/Authentik/Readme.md#authentik-installation--cloudflare-setup-instructions)
+[Complete Authentik Installation & Cloudflare Integration Guide](/Authentik/Authentik-Installation/Readme.md#authentik-installation--cloudflare-setup-instructions)
 
 ### Authentication Best Practices
 **Recommended Login Method:**  
