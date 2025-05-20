@@ -6,9 +6,9 @@ This repository contains production-grade Dockerfiles for building optimized con
 
 ## 🏗️ Repository Architecture
 
-    dockerfiles/
-    ├── 📁 N8N/ # Custom N8N Images
-    ├── 📁 TBD/ # JDK, Python, Node, Go, etc.
+    dockerfiles/N8N/
+    ├── 📁 Python-Enabled/ # Custom N8N Images with full Python3 enabled.
+    ├── 📁 FFMPEG-Enabled/ # Custom N8N Images with FFMPEG Enabled.
     ├── 📁 TBD/ # SQL/NoSQL with optimized configs
     ├── 📁 TBD/ # Nginx, Apache, Caddy with TLS setups
     ├── 📁 TBD/ # Jenkins, GitLab Runner, ArgoCD
@@ -168,39 +168,3 @@ All images include:
     Attribution files
 
 <p align="center"> ⚡ Powered by Docker | 🛡️ Security First | 🌍 Multi-Cloud Ready </p> 
-
-## 💖 Support My Work
-
-Enjoying this project? Help me keep it alive and evolving:
-
-### 🌟 One-Time Donations
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/lazymediawa)
-
-### 🔄 Recurring Support
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-30363D?style=for-the-badge&logo=github-sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/lazy-media)
-[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://link.lazymedia.media/patreon)
-
-### ₿ Crypto Donations
-**Bitcoin:**  
-`13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
-
----
-
-## 🌐 Follow Me
-
-Stay updated with my latest projects and tutorials:
-
-### 📱 Social Media
-
-[![Mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=mastodon&logoColor=white)](https://link.lazymedia.media/mastodon)
-[![Discord](https://img.shields.io/badge/Main_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-discord-promo-page)
-[![Discord](https://img.shields.io/badge/Gaming_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://link.lazymedia.media/lazymedia-gaming-discord-promo-page)
-
-### 💻 Dev Platforms
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lazy-media)
-[![GitLab](https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.lazymedia.media/root)
-
-### 🎥 Video & Live Coding
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@LazyMediaWA)
-[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/LazyMediaWA)
-[![Kick](https://img.shields.io/badge/Kick-53FC18?style=for-the-badge&logo=kick&logoColor=black)](https://kick.com/LazyMedia)
