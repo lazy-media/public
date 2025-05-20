@@ -58,7 +58,10 @@ Create docker install script file
 nano docker-install.sh
 ```
 
-Copy the following into the docker-install.sh file
+Visit [here](docker-install.sh) or copy the following into the docker-install.sh file
+
+<details>
+<summary>Docker Install Script</summary>
 
 ```
 #!/bin/bash
@@ -515,7 +518,11 @@ do
 done
 ```
 
-Save the file and exit with CTRL + O and then Y then Enter
+</details>
+
+---
+
+Save the file and exit with `CTRL + O` and then `Y` then `Enter`
 
 ## Change Permissions and Ownership
 
