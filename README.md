@@ -2,6 +2,8 @@
 
 # Service Notices & Documentation
 
+# PLEASE NOTE THE NEW FOLDER STRUCTURE!!!
+
 ## Documentation Status Notice
 **Documentation Update Status:**  
 Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
