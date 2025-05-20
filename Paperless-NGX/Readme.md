@@ -79,8 +79,8 @@ bash -c "$(curl --location --silent --show-error https://raw.githubusercontent.c
 Fill out the information as told in the setup steps.
 
 ## Example Paperless Docker Compose and Docker Compose Environment Files
-- [docker-compose.yml](Installation-Instructions/Paperless-NGX/docker-compose.yml)
-- [docker-compose.env](Installation-Instructions/Paperless-NGX/docker-compose.env)
+- [docker-compose.yml](docker-compose.yml)
+- [docker-compose.env](.env)
 
 
 # Authentik OAuth / OpenID Setup
