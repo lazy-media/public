@@ -1,12 +1,9 @@
 # Public Files Repository
 
-# Service Notices & Documentation
-
-# PLEASE NOTE THE NEW FOLDER STRUCTURE!!!
-
-## Documentation Status Notice
-**Documentation Update Status:**  
-Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
+### **Documentation Update Status:**  
+> Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
+> ### PLEASE NOTE THE NEW FOLDER STRUCTURE!!!
+> I am in the process of reorganizing and possibly updating some documentation items.
 
 ## Service Availability
 **Current Service Status:**  

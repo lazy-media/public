@@ -105,4 +105,4 @@ apt-key list 3F01618A51312F3F
 ```
 
 # Authentik OAuth2/OpenID & SAML Provider Setup
-[Authentik OAuth2/OpenID & SAML Provider Setup](Authentik/Gitlab/Readme.md)
+[Authentik OAuth2/OpenID & SAML Provider Setup](/Authentik/Gitlab/Readme.md)
