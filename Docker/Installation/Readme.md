@@ -35,7 +35,7 @@ apt update
 ```
 ### Install Docker Engine, Docker Compose, etc.
 ```
-apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 ```
 
 # Docker Install Script
