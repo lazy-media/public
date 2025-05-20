@@ -6,9 +6,9 @@ This repository contains production-grade Dockerfiles for building optimized con
 
 ## 🏗️ Repository Architecture
 
-    dockerfiles/N8N/
-    ├── 📁 Python-Enabled/ # Custom N8N Images with full Python3 enabled.
-    ├── 📁 FFMPEG-Enabled/ # Custom N8N Images with FFMPEG Enabled.
+    dockerfiles/
+    ├── 📁 N8N/Python-Enabled/ # Custom N8N Images with full Python3 enabled.
+    ├── 📁 N8N/FFMPEG-Enabled/ # Custom N8N Images with FFMPEG Enabled.
     ├── 📁 TBD/ # SQL/NoSQL with optimized configs
     ├── 📁 TBD/ # Nginx, Apache, Caddy with TLS setups
     ├── 📁 TBD/ # Jenkins, GitLab Runner, ArgoCD
