@@ -49,6 +49,8 @@ cp .env.example .env
 
 ### Example Docker Compose File
 
+- [docker-compose.yml file](docker-compose.yml)
+
 <details>
 <summary>Example Docker Compose File</summary>
 
@@ -130,6 +132,8 @@ services:
 ### ENV Example File
 
 Use the following example file as a starting point. Be sure to change what is needed for it to fit your needs.
+
+- [.env File](.env)
 
 <details>
     <summary>Cal.com Example ENV File</summary>
@@ -230,6 +234,8 @@ NODE_ENV=production
 
 This file is needed for some integrations to work correctly, like Google and Stripe.
 
+- [.env.appStore File](.env.appStore)
+
 <details>
 <summary>Example .env.appStore File</summary>
 
@@ -317,9 +323,10 @@ This will help you with getting the proper keys for Stripe Integration
 
 - Open Cal.com site and go to Apps. Find and Install Stripe.
 
+## Google OAuth Setup
+
+
 
 ## Nextcloud Talk Setup
 
-
-
-## Google OAuth Setup
+Still trying to figure this out.
