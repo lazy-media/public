@@ -4,18 +4,16 @@ I made this documentation because I could not find enough information on how to 
 
 # Referenced Documentation
 
-> [Cal.com Official Documentation](https://cal.com/docs/self-hosting/docker)
+- [Cal.com Official Documentation](https://cal.com/docs/self-hosting/docker)
 
-> [Cal.com GitHub Documentation (Followed this for Install)](https://github.com/calcom/docker)
+- [Cal.com GitHub Documentation (Followed this for Install)](https://github.com/calcom/docker)
 
-> [Google Integration](https://cal.com/docs/self-hosting/apps/install-apps/google)
+- [Google Integration](https://cal.com/docs/self-hosting/apps/install-apps/google)
 
-> [Stripe Proper ENV Vars Location](https://github.com/calcom/cal.com/issues/11582#issuecomment-1742909210)
+- [Stripe Proper ENV Vars Location](https://github.com/calcom/cal.com/issues/11582#issuecomment-1742909210)
 
-> [Stripe Integration Bug Fix](https://github.com/calcom/cal.com/issues/9699#issuecomment-1606171203)
+- [Stripe Integration Bug Fix](https://github.com/calcom/cal.com/issues/9699#issuecomment-1606171203)
 
-> # WILL UPDATE AT A LATER TIME.
-> ## Full documentation coming.
 
 # Cal.com Installation
 
@@ -228,12 +226,12 @@ NODE_ENV=production
 ```
 </details>
 
-### Example `.env.appstore` File
+### Example `.env.appStore` File
 
 This file is needed for some integrations to work correctly, like Google and Stripe.
 
 <details>
-<summary>Example .env.appstore File</summary>
+<summary>Example .env.appStore File</summary>
 
 ```
 {GOOGLE OAUTH JSON FILE CONTENTS}
@@ -260,14 +258,14 @@ This will help you with getting the proper keys for Stripe Integration
 
 - Navigate to [Stripe API Keys Dashboard](https://dashboard.stripe.com/apikeys)
   - You should see a `Publishable Key` with the token starting with `pk_live_`
-  - Copy this key and paste it into the `.env` and `.env.appstore` files for `NEXT_PUBLIC_STRIPE_PUBLIC_KEY=`
+  - Copy this key and paste it into the `.env` and `.env.appStore` files for `NEXT_PUBLIC_STRIPE_PUBLIC_KEY=`
 
 - On the same screen, we are going to get a Private Key
   - In the `Standard Keys` Section, click on `Create Secret Key` in the top right
   - Select `Building your own integration`, and click `Create Secret Key`
   - Give the Key a name like `Calcom Integration`
   - Copy this Private key, it should start with `sk_live_`
-  - Paste this into the `.env` and `.env.appstore` files for `STRIPE_PRIVATE_KEY`
+  - Paste this into the `.env` and `.env.appStore` files for `STRIPE_PRIVATE_KEY`
 
 </details>
 
@@ -290,7 +288,7 @@ This will help you with getting the proper keys for Stripe Integration
   - Make sure to `Enable OAuth` if it is not already.
   - Under the `Redirects` section, enter in `https://calcom.example.com/api/integrations/stripepayment/callback`, changing the domain as needed.
   - Find `Live Client ID`, it should start with `ca_`, copy this.
-  - Paste this into the `.env` and `.env.appstore` files for `STRIPE_CLIENT_ID`.
+  - Paste this into the `.env` and `.env.appStore` files for `STRIPE_CLIENT_ID`.
 
 </details>
 
@@ -308,13 +306,20 @@ This will help you with getting the proper keys for Stripe Integration
   - Click on it to view information about it.
   - Under the Webhook URL displayed at the top of the page, you should see `Signing Secret`, click to Reveal.
   - The secret should start with `whsec_`, copy this.
-  - Paste this into the `.env` and `.env.appstore` files for `STRIPE_WEBHOOK_SECRET`
+  - Paste this into the `.env` and `.env.appStore` files for `STRIPE_WEBHOOK_SECRET`
 
 </details>
 
----
-### Complete Setup
+
+### Complete Stripe Setup
 
 - Save the file and do a `docker compose down && docker compose up -d` to restart calcom, or restart it how you restart it.
 
 - Open Cal.com site and go to Apps. Find and Install Stripe.
+
+
+## Nextcloud Talk Setup
+
+
+
+## Google OAuth Setup
