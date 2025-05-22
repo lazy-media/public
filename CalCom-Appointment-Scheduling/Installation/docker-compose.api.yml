@@ -1,3 +1,6 @@
+# file location: root directory of calcom docker (etc. /home/user/docker/docker-compose.yml)
+
+
 # Use postgres/example user/password credentials
 
 networks:

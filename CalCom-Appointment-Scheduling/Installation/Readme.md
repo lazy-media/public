@@ -7,7 +7,7 @@ I made this documentation because I could not find enough information on how to 
 > ## NOTICE:
 > If you want the full functionality of this program, it takes up A LOT of space. I gave this a 100 GB ssd and it took up almost half just to run everything I have figured out in this guide.
 
-# Referenced Documentation
+## Referenced Documentation
 
 - [Awesome Open Source YouTube Video](https://www.youtube.com/watch?v=Niep6YkrkXA)
 
@@ -23,6 +23,11 @@ I made this documentation because I could not find enough information on how to 
 
 - [API - Some useful information found here](https://github.com/calcom/cal.com/discussions/19313)
 
+## Assumptions
+
+- You have a fresh copy of Ubuntu Server 24.04 installed on a VM or LXC or whatever you choose.
+- You have `docker` and `docker compose` installed
+- You are using the files provided in this documentation (if you want the best results)
 
 # Cal.com Installation
 
@@ -56,14 +61,15 @@ cd docker
 cp .env.example .env
 ```
 
-### Example Docker Compose File
+## Example Docker Compose File
 
 - [docker-compose.yml file](docker-compose.yml)
 
 <details>
 <summary>Example Docker Compose File</summary>
 
-```
+```yml
+# file location: root directory of calcom docker (etc. /home/user/docker)
 # Use postgres/example user/password credentials
 
 networks:
@@ -137,8 +143,15 @@ services:
 ```
 </details>
 
+## Example Docker Compose File with API
 
-### ENV Example File
+> ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK.
+
+- Use the following [docker-compose.api.yml file](docker-compose.api.yml)
+- Use the following [Example API ENV File](api.env)
+- This docker compose file will build apiv2 endpoint for you.
+
+## ENV Example File
 
 Use the following example file as a starting point. Be sure to change what is needed for it to fit your needs.
 
@@ -147,7 +160,7 @@ Use the following example file as a starting point. Be sure to change what is ne
 <details>
     <summary>Cal.com Example ENV File</summary>
         
-```
+```yml
 # Set this value to 'agree' to accept our license:
 # LICENSE: https://github.com/calendso/calendso/blob/main/LICENSE
 #
@@ -239,7 +252,7 @@ NODE_ENV=production
 ```
 </details>
 
-### Example `.env.appStore` File
+## Example `.env.appStore` File
 
 This file is needed for some integrations to work correctly, like Google and Stripe.
 
@@ -248,7 +261,7 @@ This file is needed for some integrations to work correctly, like Google and Str
 <details>
 <summary>Example .env.appStore File</summary>
 
-```
+```yml
 {GOOGLE OAUTH JSON FILE CONTENTS}
 
 NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
@@ -266,7 +279,7 @@ STRIPE_WEBHOOK_SECRET=
 
 This will help you with getting the proper keys for Stripe Integration
 
-### Getting Stripe API Keys
+### Getting Stripe Private & Public API Keys
 
 <details>
 <summary>How to get the Stripe Public Key</summary>
@@ -340,38 +353,34 @@ This will help you with getting the proper keys for Stripe Integration
 
 ## Nextcloud Talk Setup
 
-Still trying to figure this out.
+> Still trying to figure this out.
 
 ## OpenID / OAuth Setup
 
 > ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK!
 
-> Visit this link [Cal.com Self Hosted - Purchase Commercial License](http://go.cal.com/self-hosted) to purchase a 7-day Free Trial and a commercial License Key.
+> Visit the link [Cal.com Self Hosted - Purchase Commercial License](http://go.cal.com/self-hosted) to purchase a 7-day Free Trial and a commercial License Key.
 
 > You will receive your keys needed after sucessful purchase.
 
 Your keys should look like:
 
-```
+```yml
 CALCOM_LICENSE_KEY=
 CAL_SIGNATURE_TOKEN=
 CALCOM_PRIVATE_API_ROUTE=
 ```
 
-Copy these and paste them at the bottom of your `.env` file.
+- Copy these and paste them at the bottom of your `.env` file.
 
-Save the file and restart calcom.
+- Save the file and restart calcom.
 
-Open Calcom in your web browser and navigate to `Settings > Single sign-on`
+- Open Calcom in your web browser and navigate to `Settings > Single sign-on`
 
-You should now see options for `SSO with OIDC` or `SSO with SAML`.
+- You should now see options for `SSO with OIDC` or `SSO with SAML`.
+
+---
+
+## Authentik Basic OpenID / OAuth Setup
 
 > To learn how to setup an OpenID/OAuth Provider with Authentik, click [here](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
-
-## How to Enable Cal.com API
-
-> ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK.
-
-Use the following [docker-compose.api.yml file](docker-compose.api.yml)
-
-This docker compose file will build apiv2 endpoint for you.
