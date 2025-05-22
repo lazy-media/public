@@ -40,7 +40,6 @@ services:
       - stack
     ports:
       - 3000:3000
-      - 3003:3003
     env_file: .env
     environment:
       - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}
@@ -63,7 +62,9 @@ services:
       - REDIS_URL=${REDIS_URL}
     env_file: .env
     ports:
-      - "3001:80"
+      - "3004:80"
+    networks:
+      - stack
     depends_on:
       - database
       - redis
@@ -76,6 +77,8 @@ services:
     command: redis-server --appendonly yes
     volumes:
       - ./redis_data:/data
+    networks:
+      - stack
 
 
 # Optional use of Prisma Studio. In production, comment out or remove the section below to prevent unwanted access to your database.

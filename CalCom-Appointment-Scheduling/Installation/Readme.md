@@ -4,6 +4,9 @@
 
 I made this documentation because I could not find enough information on how to set this up correctly to work with certain things I wanted to work. After doing a lot of research and digging online, I was able to figure some of this out. This documentation is only for reference.
 
+> ## NOTICE:
+> If you want the full functionality of this program, it takes up A LOT of space. I gave this a 100 GB ssd and it took up almost half just to run everything I have figured out in this guide.
+
 # Referenced Documentation
 
 - [Awesome Open Source YouTube Video](https://www.youtube.com/watch?v=Niep6YkrkXA)
@@ -17,6 +20,8 @@ I made this documentation because I could not find enough information on how to 
 - [Stripe Proper ENV Vars Location](https://github.com/calcom/cal.com/issues/11582#issuecomment-1742909210)
 
 - [Stripe Integration Bug Fix](https://github.com/calcom/cal.com/issues/9699#issuecomment-1606171203)
+
+- [API - Some useful information found here](https://github.com/calcom/cal.com/discussions/19313)
 
 
 # Cal.com Installation
@@ -343,7 +348,7 @@ Still trying to figure this out.
 
 > Visit this link [Cal.com Self Hosted - Purchase Commercial License](http://go.cal.com/self-hosted) to purchase a 7-day Free Trial and a commercial License Key.
 
-> You will receive your keys needs after sucessful purchase.
+> You will receive your keys needed after sucessful purchase.
 
 Your keys should look like:
 
@@ -363,6 +368,10 @@ You should now see options for `SSO with OIDC` or `SSO with SAML`.
 
 > To learn how to setup an OpenID/OAuth Provider with Authentik, click [here](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 
-# How to Enable Cal.com API
+## How to Enable Cal.com API
+
+> ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK.
 
 Use the following [docker-compose.api.yml file](docker-compose.api.yml)
+
+This docker compose file will build apiv2 endpoint for you.
