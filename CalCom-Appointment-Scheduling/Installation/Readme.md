@@ -145,6 +145,8 @@ services:
 
 ## Example Docker Compose File with API
 
+> ### THE API SECTION IS STILL BEING TESTED! USE AT OWN RISK!
+
 > ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK.
 
 - Use the following [docker-compose.api.yml file](docker-compose.api.yml)
