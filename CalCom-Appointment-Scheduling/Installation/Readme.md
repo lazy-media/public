@@ -4,6 +4,8 @@ I made this documentation because I could not find enough information on how to 
 
 # Referenced Documentation
 
+- [Awesome Open Source YouTube Video](https://www.youtube.com/watch?v=Niep6YkrkXA)
+
 - [Cal.com Official Documentation](https://cal.com/docs/self-hosting/docker)
 
 - [Cal.com GitHub Documentation (Followed this for Install)](https://github.com/calcom/docker)
@@ -325,8 +327,34 @@ This will help you with getting the proper keys for Stripe Integration
 
 ## Google OAuth Setup
 
+> I recommend you follow the directions on the main website found [here](https://cal.com/docs/self-hosting/apps/install-apps/google). 
 
+> I will update this section at a later date, as the official documentation is good enough for this section.
 
 ## Nextcloud Talk Setup
 
 Still trying to figure this out.
+
+## OpenID / OAuth Setup
+
+> ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK!
+
+> Visit this link [Cal.com Self Hosted - Purchase Commercial License](http://go.cal.com/self-hosted) to purchase a 7-day Free Trial and a commercial License Key.
+
+> You will receive your keys needs after sucessful purchase.
+
+Your keys should look like:
+
+```
+CALCOM_LICENSE_KEY=
+CAL_SIGNATURE_TOKEN=
+CALCOM_PRIVATE_API_ROUTE=
+```
+
+Copy these and paste them at the bottom of your `.env` file.
+
+Save the file and restart calcom.
+
+Open Calcom in your web browser and navigate to `Settings > Single sign-on`
+
+You should now see options for `SSO with OIDC` or `SSO with SAML`.
