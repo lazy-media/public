@@ -360,3 +360,9 @@ Save the file and restart calcom.
 Open Calcom in your web browser and navigate to `Settings > Single sign-on`
 
 You should now see options for `SSO with OIDC` or `SSO with SAML`.
+
+> To learn how to setup an OpenID/OAuth Provider with Authentik, click [here](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
+
+# How to Enable Cal.com API
+
+Use the following [docker-compose.api.yml file](docker-compose.api.yml)
