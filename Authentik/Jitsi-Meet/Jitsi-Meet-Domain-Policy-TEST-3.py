@@ -5,7 +5,7 @@
 if request.path.startswith("/xmpp-websocket") or request.path.startswith("/http-bind"):
     return True  # Allow WebSocket/XMPP traffic
 else:
-    return request.host == "meet.lazymedia.media"  # Only allow Jitsi domain
+    return request.host == "meet.YOUR.DOMAIN"  # Only allow Jitsi domain
 
 #################
 # Domain Policy #
@@ -21,12 +21,12 @@ def policy_function(domain, room, muc_room_domain, shard):
         "JVB_PORT": 10001,
         "JVB_COLIBRI_PORT": 8080,
         "COLIBRI_WEBSOCKET_PORT": 9090,
-        "PUBLIC_URL": "https://meet.lazymedia.media",
-        "XMPP_DOMAIN": "meet.lazymedia.media",
-        "XMPP_AUTH_DOMAIN": "auth.meet.lazymedia.media",
-        "XMPP_GUEST_DOMAIN": "guest.meet.lazymedia.media",
-        "XMPP_MUC_DOMAIN": "muc.meet.lazymedia.media",
-        "XMPP_RECORDER_DOMAIN": "recorder.meet.lazymedia.media"
+        "PUBLIC_URL": "https://meet.YOUR.DOMAIN",
+        "XMPP_DOMAIN": "meet.YOUR.DOMAIN",
+        "XMPP_AUTH_DOMAIN": "auth.meet.YOUR.DOMAIN",
+        "XMPP_GUEST_DOMAIN": "guest.meet.YOUR.DOMAIN",
+        "XMPP_MUC_DOMAIN": "muc.meet.YOUR.DOMAIN",
+        "XMPP_RECORDER_DOMAIN": "recorder.meet.YOUR.DOMAIN"
     }
 
     # Allowed domains (from env.yml)
@@ -49,7 +49,7 @@ def policy_function(domain, room, muc_room_domain, shard):
 
     # Domain-specific routing + port forwarding
     if domain in allowed_domains:
-        # Main domain (meet.lazymedia.media)
+        # Main domain (meet.YOUR.DOMAIN)
         if domain == config["XMPP_DOMAIN"]:
             return {
                 "bosh": f"//{domain}:{config['HTTPS_PORT']}/http-bind",
@@ -63,7 +63,7 @@ def policy_function(domain, room, muc_room_domain, shard):
                 }
             }
         
-        # Auth domain (auth.meet.lazymedia.media)
+        # Auth domain (auth.meet.YOUR.DOMAIN)
         elif domain == config["XMPP_AUTH_DOMAIN"]:
             return {
                 "bosh": f"//{domain}:{config['HTTPS_PORT']}/http-bind",
@@ -75,7 +75,7 @@ def policy_function(domain, room, muc_room_domain, shard):
                 }
             }
         
-        # Guest domain (guest.meet.lazymedia.media)
+        # Guest domain (guest.meet.YOUR.DOMAIN)
         elif domain == config["XMPP_GUEST_DOMAIN"]:
             return {
                 "bosh": f"//{domain}:{config['HTTPS_PORT']}/http-bind",
@@ -87,7 +87,7 @@ def policy_function(domain, room, muc_room_domain, shard):
                 }
             }
         
-        # MUC domain (muc.meet.lazymedia.media)
+        # MUC domain (muc.meet.YOUR.DOMAIN)
         elif domain == config["XMPP_MUC_DOMAIN"]:
             return {
                 "bosh": f"//{domain}:{config['HTTPS_PORT']}/http-bind",
@@ -99,7 +99,7 @@ def policy_function(domain, room, muc_room_domain, shard):
                 }
             }
         
-        # Recorder domain (recorder.meet.lazymedia.media)
+        # Recorder domain (recorder.meet.YOUR.DOMAIN)
         elif domain == config["XMPP_RECORDER_DOMAIN"]:
             return {
                 "bosh": f"//{domain}:{config['HTTPS_PORT']}/http-bind",
