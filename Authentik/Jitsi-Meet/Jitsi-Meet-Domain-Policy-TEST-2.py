@@ -1,3 +1,7 @@
+#################
+# Domain Policy #
+#################
+
 def policy_function(domain, room, muc_room_domain, shard):
     """Advanced Jitsi Meet policy with port forwarding based on env.yml"""
     
@@ -8,13 +12,13 @@ def policy_function(domain, room, muc_room_domain, shard):
         "JVB_PORT": 10001,
         "JVB_COLIBRI_PORT": 8080,
         "COLIBRI_WEBSOCKET_PORT": 9090,
-        "PUBLIC_URL": "https://meet.YOUR.DOMAIN",
-        "XMPP_DOMAIN": "meet.YOUR.DOMAIN",
-        "XMPP_AUTH_DOMAIN": "auth.meet.YOUR.DOMAIN",
-        "XMPP_GUEST_DOMAIN": "guest.meet.YOUR.DOMAIN",
-        "XMPP_MUC_DOMAIN": "muc.meet.YOUR.DOMAIN",
-        "XMPP_RECORDER_DOMAIN": "recorder.meet.YOUR.DOMAIN",
-        "IP_FALLBACK": "192.168.0.0" # ENTER LOCAL IP OF JITSI
+        "PUBLIC_URL": "https://meet.lazymedia.media",
+        "XMPP_DOMAIN": "meet.lazymedia.media",
+        "XMPP_AUTH_DOMAIN": "auth.meet.lazymedia.media",
+        "XMPP_GUEST_DOMAIN": "guest.meet.lazymedia.media",
+        "XMPP_MUC_DOMAIN": "muc.meet.lazymedia.media",
+        "XMPP_RECORDER_DOMAIN": "recorder.meet.lazymedia.media",
+        "IP_FALLBACK": "192.168.25.87" # ENTER LOCAL IP OF JITSI
     }
 
     # Allowed domains (from env.yml)

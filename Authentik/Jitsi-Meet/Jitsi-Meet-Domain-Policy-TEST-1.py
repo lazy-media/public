@@ -1,3 +1,7 @@
+#################
+# Domain Policy #
+#################
+
 def policy_function(domain, room, muc_room_domain, shard):
     """Production-ready policy function for Jitsi Meet deployment"""
     

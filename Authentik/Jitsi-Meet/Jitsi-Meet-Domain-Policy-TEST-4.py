@@ -1,3 +1,7 @@
+#################
+# Domain Policy #
+#################
+
 def policy_function(domain, room, muc_room_domain, shard):
     """Advanced Jitsi Meet policy with port forwarding, reverse proxy rules, and mobile optimizations."""
     
