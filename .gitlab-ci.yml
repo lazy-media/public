@@ -25,7 +25,6 @@ sast:
   stage: test
 include:
 - template: Auto-DevOps.gitlab-ci.yml
-
 sync_to_github:
   stage: sync
   image: alpine/git
