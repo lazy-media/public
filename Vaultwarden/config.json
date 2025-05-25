@@ -39,6 +39,7 @@
   
     // Network Security Settings
     "ip_header": "X-Real-IP",
+    // "ip_header": "X-Forward-For",
     "http_request_block_non_global_ips": true,
   
     // 2FA Settings
@@ -46,6 +47,10 @@
     "disable_2fa_remember": false,
     "authenticator_disable_time_drift": true,
     "incomplete_2fa_time_limit": 3,
+
+    // Advanced 2FA Settings
+    "two_factor_providers": ["email", "authenticator", "yubico", "duo"],
+    "two_factor_remember_duration": 30,
   
     // DUO Security Settings
     "_enable_duo": false,
@@ -80,6 +85,21 @@
     "email_2fa_enforce_on_verified_invite": false,
     "email_2fa_auto_fallback": false,
   
+    // Database Settings
+    // "database_url": "DATABASE_URL",
+    // "database_max_conns": 10,
+    // "database_connection_timeout": 30,
+    // "database_use_wal": true,
+    
+    // Rocket Server Settings
+    //  "rocket_port": 8000,
+    //  "rocket_address": "0.0.0.0",
+    //  "rocket_tls": {
+    //    "certs": "PATH_TO_CERT",
+    //    "key": "PATH_TO_KEY"
+    // },
+    // "rocket_log": "normal",
+
     // Additional Settings
     "icon_redirect_code": 302,
     "icon_cache_ttl": 2592000,
@@ -88,4 +108,39 @@
     "reload_templates": false,
     "log_timestamp_format": "%Y-%m-%d %H:%M:%S.%3f",
     "increase_note_size_limit": false
-  }
+  
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+///// USE THE VARIABLES BELOW AT YOUR OWN RISK. HAVE NOT VERIFIED THEY WORK YET!! /////
+///////////////////////////////////////////////////////////////////////////////////////
+
+    // Advanced Security Settings
+    "disable_admin_token": false,
+    "data_dir": "DATA_DIR_PATH",
+    "attachments_dir": "ATTACHMENTS_DIR_PATH",
+    "icon_service": "internal",
+    "icon_blacklist_non_global_ips": true,
+
+    // Logging Settings
+    "log_level": "info",
+    "log_file": "PATH_TO_LOG_FILE",
+    "extended_logging": false,
+
+    // Advanced Email Settings
+    "smtp_helo_name": "localhost",
+    "smtp_ssl_verify": true,
+
+    // Advanced User Settings
+    "user_attachment_limit": 500,
+    "org_attachment_limit": 1000,
+    "user_attachment_quota": 104857600,
+    "org_attachment_quota": 1073741824,
+
+    // Rate Limiting
+    "rate_limit": {
+        "enabled": true,
+        "period": 60,
+        "count": 10
+    }
