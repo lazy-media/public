@@ -56,7 +56,7 @@
     "_enable_duo": false,
     "duo_ikey": "YOUR_DUO_IKEY",
     "duo_skey": "YOUR_DUO_SKEY",
-    "duo_host": "api-b65fec52.duosecurity.com",
+    "duo_host": "api-fdaeafeasfe.duosecurity.com",
     "_duo_akey": "YOUR_DUO_AKEY",
   
     // Yubico Settings
