@@ -33,4 +33,5 @@ sync_to_github:
     - git push github --all --force
     - git push github --tags --force
   only:
-    - main  # or your default branch name
+    - main
+    
