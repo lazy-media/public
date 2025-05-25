@@ -6,6 +6,7 @@
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
+- sync
 - build
 - test
 - deploy
@@ -24,9 +25,6 @@ sast:
   stage: test
 include:
 - template: Auto-DevOps.gitlab-ci.yml
-
-stages:
-  - sync
 
 sync_to_github:
   stage: sync
