@@ -1,0 +1,91 @@
+// EXAMPLE VAULTWARDEN CONFIG FILE
+// IF USING DOCKER, BIND MOUNT THE CONFIG FILE
+
+{
+    // ADMIN TOKEN SETTINGS
+    // "admin_token": "$argon2i$v=00$m=00,t=0,p=0$ARGON_2_KEY$ARGON_2_KEY",
+    // "admin_token": "YOUR_PLAIN_TEXT_ADMIN_TOKEN"
+  
+    // DOMAIN INFORMATION
+    "domain": "https://vault.YOUR.DOMAIN",
+    
+    // Have I Been Pwnd API KEY
+    "hibp_api_key": "YOUR_HAVE_I_BEEN_PWND_API_KEY",
+  
+    // Registration & Signup Settings
+    "signups_allowed": true,
+    "signups_verify": true,
+    "signups_verify_resend_time": 3600,
+    "signups_verify_resend_limit": 3,
+    "signups_domains_whitelist": "YOUR.DOMAIN,aol.com,att.net,comcast.net,facebook.com,gmail.com,googlemail.com,google.com,hotmail.com,mac.com,me.com,mail.com,msn.com,live.com,sbcglobal.net,verizon.net,yahoo.com,bellsouth.net,charter.net;cox.net,earthlink.net,juno.com,owncloud.com,owncloud.net,owncloud.org,nextcloud.com,nextcloud.org,nextcloud.net",
+    "invitations_allowed": true,
+    "invitation_org_name": "VaultWarden",
+  
+    // Emergency Access Settings
+    "emergency_access_allowed": true,
+  
+    // User Settings
+    "email_change_allowed": true,
+    "password_hints_allowed": true,
+    "show_password_hint": true,
+  
+    // Security Settings
+    "sends_allowed": true,
+    "trash_auto_delete_days": 30,
+    "disable_icon_download": false,
+    "password_iterations": 600000,
+    "require_device_email": true,
+    "admin_session_lifetime": 20,
+  
+    // Network Security Settings
+    "ip_header": "X-Real-IP",
+    "http_request_block_non_global_ips": true,
+  
+    // 2FA Settings
+    "_enable_email_2fa": true,
+    "disable_2fa_remember": false,
+    "authenticator_disable_time_drift": true,
+    "incomplete_2fa_time_limit": 3,
+  
+    // DUO Security Settings
+    "_enable_duo": false,
+    "duo_ikey": "YOUR_DUO_IKEY",
+    "duo_skey": "YOUR_DUO_SKEY",
+    "duo_host": "api-b65fec52.duosecurity.com",
+    "_duo_akey": "YOUR_DUO_AKEY",
+  
+    // Yubico Settings
+    "_enable_yubico": false,
+    "yubico_client_id": "YOUR_YUBICO_ID",
+    "yubico_secret_key": "YOUR_YUBICO_KEY",
+  
+    // Email & SMTP Settings
+    "_enable_smtp": true,
+    "use_sendmail": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_security": "starttls",
+    "smtp_port": 587,
+    "smtp_from": "no-reply@YOUR.DOMAIN",
+    "smtp_from_name": "Vaultwarden",
+    "smtp_username": "owner@YOUR.DOMAIN",
+    "smtp_password": "YOUR_SMTP_PASSWORD",
+    "smtp_auth_mechanism": "plain",
+    "smtp_timeout": 15,
+    "smtp_embed_images": true,
+    "smtp_accept_invalid_certs": false,
+    "smtp_accept_invalid_hostnames": false,
+    "email_token_size": 6,
+    "email_expiration_time": 600,
+    "email_attempts_limit": 3,
+    "email_2fa_enforce_on_verified_invite": false,
+    "email_2fa_auto_fallback": false,
+  
+    // Additional Settings
+    "icon_redirect_code": 302,
+    "icon_cache_ttl": 2592000,
+    "icon_cache_negttl": 259200,
+    "icon_download_timeout": 10,
+    "reload_templates": false,
+    "log_timestamp_format": "%Y-%m-%d %H:%M:%S.%3f",
+    "increase_note_size_limit": false
+  }
