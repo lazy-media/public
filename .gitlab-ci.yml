@@ -25,13 +25,14 @@ sast:
   stage: test
 include:
 - template: Auto-DevOps.gitlab-ci.yml
-sync_to_github:
-  stage: sync
-  image: alpine/git
-  script:
-    - git remote add github https://$[[ GITHUB_TOKEN ]]@$[[ GITHUB_REPO ]]
-    - git push github --all --force
-    - git push github --tags --force
-  only:
-    - main
+
+# sync_to_github:
+#   stage: sync
+#   image: alpine/git
+#   script:
+#     - git remote add github https://$[[ GITHUB_TOKEN ]]@$[[ GITHUB_REPO ]]
+#     - git push github --all --force
+#     - git push github --tags --force
+#   only:
+#     - main
     
