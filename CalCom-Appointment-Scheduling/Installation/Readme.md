@@ -345,7 +345,7 @@ This will help you with getting the proper keys for Stripe Integration
 
 - Save the file and do a `docker compose down && docker compose up -d` to restart calcom, or restart it how you restart it.
 
-- Open Cal.com site and go to Apps. Find and Install Stripe.
+- Open Your Cal.com site and go to Apps. Find and Install Stripe.
 
 ## Google OAuth Setup
 
