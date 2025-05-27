@@ -66,7 +66,21 @@ cp .env.example .env
 ### Build CalCom
 
 - Change directories (if not already) into the root calcom directory.
-- Run `docker compose up --build`
+
+- Pull docker images with
+```
+docker compose pull
+```
+
+- Start the database server
+```
+docker compose up -d database
+```
+
+- Run
+```
+docker compose up --build
+```
   - Let this run
 
 
