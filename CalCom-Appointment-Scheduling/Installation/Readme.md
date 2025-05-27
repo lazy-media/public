@@ -149,6 +149,10 @@ services:
 
 > ### MUST HAVE A COMMERCIAL SUBSCRIPTION FOR THIS TO WORK.
 
+> Visit the link [Cal.com Self Hosted - Purchase Commercial License](http://go.cal.com/self-hosted) to purchase a 7-day Free Trial and a commercial License Key.
+
+> You will receive your keys needed after sucessful purchase.
+
 - Use the following [docker-compose.api.yml file](docker-compose.api.yml)
 - Use the following [Example API ENV File](api.env)
 - This docker compose file will build apiv2 endpoint for you.
