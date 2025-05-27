@@ -290,7 +290,7 @@ This will help you with getting the proper keys for Stripe Integration
   - You should see a `Publishable Key` with the token starting with `pk_live_`
   - Copy this key and paste it into the `.env` and `.env.appStore` files for `NEXT_PUBLIC_STRIPE_PUBLIC_KEY=`
 
-- On the same screen, we are going to get a Private Key
+- On the same Stripe page, we are going to get a Private Key
   - In the `Standard Keys` Section, click on `Create Secret Key` in the top right
   - Select `Building your own integration`, and click `Create Secret Key`
   - Give the Key a name like `Calcom Integration`
