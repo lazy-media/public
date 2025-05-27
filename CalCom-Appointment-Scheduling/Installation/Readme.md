@@ -11,9 +11,9 @@ I made this documentation because I could not find enough information on how to 
 
 - [Awesome Open Source YouTube Video](https://www.youtube.com/watch?v=Niep6YkrkXA)
 
-- [Cal.com Official Documentation](https://cal.com/docs/self-hosting/docker)
+- [Cal.com Official Documentation (Followed this for Install)](https://cal.com/docs/self-hosting/docker)
 
-- [Cal.com GitHub Documentation (Followed this for Install)](https://github.com/calcom/docker)
+- [Cal.com GitHub Documentation](https://github.com/calcom/docker)
 
 - [Google Integration](https://cal.com/docs/self-hosting/apps/install-apps/google)
 
@@ -62,6 +62,15 @@ cp .env.example .env
 ```
 
 > Edit your .env file to fit your needs. Use the examples as a reference.
+
+### Errors
+
+> I was personally getting errors when running the build command below saying it was missing files. Since I had a previous working copy, I copied the files from that config.
+
+The files that were needed were:
+
+- [git-init.sh](git-init.sh)
+- [git-setup.sh](git-setup.sh)
 
 ### Build CalCom
 
