@@ -1,4 +1,18 @@
 # Authentik Installation & Cloudflare Setup Instructions
+
+## Index
+
+- [Original Documentation](#original-documentation)
+- [Authentik Setup](#authentik-setup)
+- [Authentik Installation Steps](#authentik-installation-steps)
+- [Example Files](#authentik-docker-compose-env-and-geoip-override-files)
+- [Launch & Run Authentik](#launch-and-run-authentik)
+- [First Run User Setup](#authentik-user-setup)
+- [Setup Flow Not Showing Up](#initial-setup-flow-not-showing-up-after-creation)
+- [Updating Authentik](#updating-authentik)
+- [Cloudflare Setup](#cloudflare-setup)
+- [Authentik Cloudflare Certificate Setup](#authentik-certificate-setup)
+
 ## Notice
 Please note my installation setup before continuing.
 
