@@ -34,7 +34,7 @@ services:
       - ./redis:/data
       
   server:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2024.6.0}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.4.1}
     restart: unless-stopped
     command: server
     environment:
@@ -57,7 +57,7 @@ services:
       - redis
 
 #  authentik_ldap:
-#      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2024.6.0}
+#      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2025.4.1}
 #      env_file:
 #        - .env
 #      ports:
@@ -69,7 +69,7 @@ services:
 #          AUTHENTIK_TOKEN: "${AUTHENTIK_LDAP_TOKEN}"
 
 #  radius_outpost:
-#    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2024.6.0}
+#    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2025.4.1}
 #    ports:
 #      - "${COMPOSE_PORT_RADIUS:-1812}:1812"
 #      - "${COMPOSE_PORT_ACCOUNTING:-1813}:1813"
@@ -81,7 +81,7 @@ services:
 #      AUTHENTIK_TOKEN: "${AUTHENTIK_RADIUS_TOKEN}"
           
   worker:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2024.6.0}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.4.1}
     restart: unless-stopped
     command: worker
     environment:
