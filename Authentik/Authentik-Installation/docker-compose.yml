@@ -55,30 +55,30 @@ services:
     depends_on:
       - postgresql
       - redis
-      
-  authentik_ldap:
-      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2024.6.0}
-      env_file:
-        - .env
-      ports:
-      - "${COMPOSE_PORT_LDAP:-6389}:3389"
-      - "${COMPOSE_PORT_LDAPS:-6636}:6636"
-      environment:
-          AUTHENTIK_HOST: "${AUTHENTIK_HOST}"
-          AUTHENTIK_INSECURE: "${AUTHENTIK_INSECURE}"
-          AUTHENTIK_TOKEN: "${AUTHENTIK_LDAP_TOKEN}"
-  
-  radius_outpost:
-    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2024.6.0}
-    ports:
-      - "${COMPOSE_PORT_RADIUS:-1812}:1812"
-      - "${COMPOSE_PORT_ACCOUNTING:-1813}:1813"
-    env_file:
-      - .env
-    environment:
-      AUTHENTIK_HOST: "${AUTHENTIK_HOST}"
-      AUTHENTIK_INSECURE: "${AUTHENTIK_INSECURE}"
-      AUTHENTIK_TOKEN: "${AUTHENTIK_RADIUS_TOKEN}"
+
+#  authentik_ldap:
+#      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2024.6.0}
+#      env_file:
+#        - .env
+#      ports:
+#      - "${COMPOSE_PORT_LDAP:-6389}:3389"
+#      - "${COMPOSE_PORT_LDAPS:-6636}:6636"
+#      environment:
+#          AUTHENTIK_HOST: "${AUTHENTIK_HOST}"
+#          AUTHENTIK_INSECURE: "${AUTHENTIK_INSECURE}"
+#          AUTHENTIK_TOKEN: "${AUTHENTIK_LDAP_TOKEN}"
+
+#  radius_outpost:
+#    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2024.6.0}
+#    ports:
+#      - "${COMPOSE_PORT_RADIUS:-1812}:1812"
+#      - "${COMPOSE_PORT_ACCOUNTING:-1813}:1813"
+#    env_file:
+#      - .env
+#    environment:
+#      AUTHENTIK_HOST: "${AUTHENTIK_HOST}"
+#      AUTHENTIK_INSECURE: "${AUTHENTIK_INSECURE}"
+#      AUTHENTIK_TOKEN: "${AUTHENTIK_RADIUS_TOKEN}"
           
   worker:
     image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2024.6.0}
