@@ -3,12 +3,13 @@ version: "3.2"
 services:
     server:
         volumes:
-            - geoip:/geoip
+            - ./geoip:/geoip
     worker:
         volumes:
-            - geoip:/geoip
+            - ./geoip:/geoip
     geoipupdate:
         image: "maxmindinc/geoipupdate:latest"
+        restart: unless-stopped
         volumes:
             - "./geoip:/usr/share/GeoIP"
         environment:
