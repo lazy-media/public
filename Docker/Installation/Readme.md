@@ -11,7 +11,7 @@
 apt update && apt upgrade -y
 ```
 
-### Install Dependencies & Add Docker Keys
+### Install Dependencies
 ```
 apt install -y ca-certificates curl
 ```
