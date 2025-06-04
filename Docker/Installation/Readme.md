@@ -1,24 +1,54 @@
 # Docker Engine Installation
 
+## NOTES
+
+> ### This contains 3 different methods of installing Docker
+
+## Install dependencies and Other Requirements
+
 ### Update System
 ```
 apt update && apt upgrade -y
 ```
 
-# Add Docker's official GPG key:
-```
-apt update
-```
 ### Install Dependencies & Add Docker Keys
 ```
 apt install ca-certificates curl
 ```
+
+## Docker Install Method 1
+
+<details>
+
+> ### This method should work on most devices
+
+**Debian/Ubuntu Systems**
+```
+curl -sSL https://get.docker.com/ | CHANNEL=stable sh
+systemctl enable --now docker
+```
+
+**On RHEL-based systems (e.g. Rocky Linux 9):**
+```
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+systemctl enable --now docker
+```
+
+</details>
+
+## Docker Install Method 2
+<details>
+
+# Add Docker's official GPG key:
 ```
 install -m 0755 -d /etc/apt/keyrings
 ```
+
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 ```
+
 ```
 chmod a+r /etc/apt/keyrings/docker.asc
 ```
@@ -38,7 +68,13 @@ apt update
 apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 ```
 
-# Docker Install Script
+</details>
+
+
+## Docker Install Method 3
+<details>
+
+## Docker Install Script
 This install the `docker-compose` version not the `docker compose`
 
 ## Original Creator
@@ -58,7 +94,7 @@ Create docker install script file
 nano docker-install.sh
 ```
 
-Visit [here](docker-install.sh) or copy the following into the docker-install.sh file
+Visit [docker-install.sh](docker-install.sh) or copy the following into the docker-install.sh file
 
 <details>
 <summary>Docker Install Script</summary>
@@ -539,3 +575,5 @@ Run the Install Script
 # Installing NVIDIA Docker Container Toolkit
 
 [Visit this site to view instructions temporarily until I can update this](https://www.gravee.dev/en/setup-nvidia-gpu-for-docker/)
+
+</details>
