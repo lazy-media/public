@@ -13,7 +13,7 @@ apt update && apt upgrade -y
 
 ### Install Dependencies & Add Docker Keys
 ```
-apt install ca-certificates curl
+apt install -y ca-certificates curl
 ```
 
 ## Docker Install Method 1
