@@ -6,7 +6,7 @@
 - Navigate to `Applications > Applications`
     - Click on `Create with Wizard`
     - Enter a Name for your Application (i.e. Sonarr)
-    - Enter a slug (if not autofilled)
+    - Enter a slug (if not autofilled, this is the path for Authentik to use, so it should be something simple or related to the program)
     - (Optional) Set a Group that you want this application to be grouped into (i.e. `Admins`, `Nextcloud Users`)
         - Be aware: That if you set this group, you need to manually type in the group exactly how you want it grouped. If there is a mispelling or any difference, it will create a new group.
     - (Optional) Expand `UI Settings`
