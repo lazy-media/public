@@ -117,6 +117,10 @@ You should be since we have only created folders above.
 
 Edit this file if needed, with `nano docker-compose.yml` and paste the following into this file, or edit to your preference.
 
+> This docker-compose.yml file also contains compose information for the Radius and LDAP Outposts.
+
+> When creating these outposts in Authentik Admin Dashboard, I recommend setting them as `No Itegration` before activating them in the docker-compose.yml file.
+
 [Example Docker Compose File for Persistant Data](docker-compose.yml)
 
 ## EXAMPLE Docker Environment Variables File (.env)

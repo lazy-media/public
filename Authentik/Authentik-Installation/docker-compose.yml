@@ -56,7 +56,16 @@ services:
       - postgresql
       - redis
 
-#  authentik_ldap:
+########################################################################
+##### CREATE THE OUTPOSTS BELOW IN AUTHENTIK FIRST!                #####
+##### SET THEM AS `NO INTEGRATION`                                 #####
+##### SELECTING DOCKER INTEGRATION WILL CREATE A DUPLICATE OUTPOST #####
+##### GRAB THE TOKEN FROM THE OUTPOST INFORMATION.                 #####
+##### PASTE BELOW INTO APPROPRIATE OUTPOST.                        #####
+##### UNCOMMENT OUTPOST TO ACTIVATE, RESTART AUTHENTIK.            #####
+########################################################################
+
+#  ldap_outpost:
 #      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2025.4.1}
 #      restart: unless-stopped
 #      env_file:
@@ -81,7 +90,11 @@ services:
 #      AUTHENTIK_HOST: "${AUTHENTIK_HOST}"
 #      AUTHENTIK_INSECURE: "${AUTHENTIK_INSECURE}"
 #      AUTHENTIK_TOKEN: "${AUTHENTIK_RADIUS_TOKEN}"
-          
+
+#######################################
+##### END OF OUTPOST INTEGRATIONS #####
+#######################################
+
   worker:
     image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.4.1}
     restart: unless-stopped
