@@ -61,7 +61,7 @@ services:
 ##### SET THEM AS `NO INTEGRATION`                                 #####
 ##### SELECTING DOCKER INTEGRATION WILL CREATE A DUPLICATE OUTPOST #####
 ##### GRAB THE TOKEN FROM THE OUTPOST INFORMATION.                 #####
-##### PASTE BELOW INTO APPROPRIATE OUTPOST.                        #####
+##### PASTE INTO ENV FILE INTO APPROPRIATE LOCATION.               #####
 ##### UNCOMMENT OUTPOST TO ACTIVATE, RESTART AUTHENTIK.            #####
 ########################################################################
 
