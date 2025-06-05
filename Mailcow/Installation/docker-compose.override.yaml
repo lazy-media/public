@@ -7,7 +7,7 @@ services:
 
 ##### Prometheus Exporter
 ##### Github repository: https://github.com/mailcow/prometheus-exporter
-##### 
+
 
 
     prometheus:
@@ -17,7 +17,6 @@ services:
       environment:
         - MAILCOW_EXPORTER_HOST=mail.YOUR.DOMAIN
         - MAILCOW_EXPORTER_API=YOUR-MAILCOW-API-KEY
-        - MAILCOW_EXPORTER_SECURITY_TOKEN=MAILCOW-SECURITY-TOKEN
         - PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
       labels:
         org.opencontainers.image.created: "2025-03-12T14:11:18.877Z"
