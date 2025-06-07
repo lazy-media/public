@@ -67,7 +67,7 @@ services:
       STORAGE_URL: ${STORAGE_URL}
 
       # -- Printer (Chrome) --
-      ${CHROME_TOKEN}: ${CHROME_TOKEN}
+      CHROME_TOKEN: ${CHROME_TOKEN}
       CHROME_URL: ws://chrome:3000
 
       # -- Database (Postgres) --
