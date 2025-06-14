@@ -18,7 +18,7 @@ This knowledge base contains comprehensive documentation for all publicly access
 
 ---
 
-# Want to Join My Server?
+# Want to Join Lazy Media's Server?
 
 <details>
 <summary>EXPAND ME TO FIND OUT HOW TO JOIN THE SERVER!</summary>
