@@ -40,7 +40,7 @@ systemctl enable --now docker
 ## Docker Install Method 2
 <details>
 
-# Add Docker's official GPG key:
+### Add Docker's official GPG key:
 ```
 install -m 0755 -d /etc/apt/keyrings
 ```
