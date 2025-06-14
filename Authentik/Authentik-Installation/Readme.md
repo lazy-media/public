@@ -20,7 +20,7 @@ This is created in a Proxmox LXC Container running Ubuntu 22.04.4
 
 This also assumes you have docker and docker-compose installed. If not, install it.
 
-You can follow this Guide [Docker Installation](Installation-Instructions/Docker/Readme.md)
+You can follow this Guide [Docker Installation](/Docker/Installation/Readme.md)
 
 ## Original Documentation
 
@@ -35,11 +35,11 @@ https://goauthentik.io/docs/installation/docker-compose#preparation
 - I do not use Cloudflare Tunnels, I use other security measures provided by Cloudflare to protect my domain.
 - I have my ISP Modem in bridge mode and have a Unifi Security Gateway handling all internet traffic.
     - I have port 443 forwarded to Authentik
-- For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](Installation-Instructions/Authentik/Readme.md)
+- For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](Readme.md)
 
 ## Other Requirements
 
-Make sure you have Docker and Docker compose installed. You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](Installation-Instructions/Docker/Readme.md)
+Make sure you have Docker and Docker compose installed. You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](/Docker/Installation/Readme.md)
 
 ## Authentik Installation Steps
 
@@ -243,4 +243,4 @@ If everything went according to plan, the Authentik container will persist all d
 
 ## Application and Provider Setup
 
-Please refer to [Authentik Application and Provider Setup](Authentik/Applications-&-Providers/Readme.md)
+Please refer to [Authentik Application and Provider Setup](../Applications-&-Providers/Readme.md)
