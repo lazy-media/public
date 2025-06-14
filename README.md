@@ -33,7 +33,7 @@ Upon redirection to Authentik, select the `PLEX OAUTH` option to authenticate wi
 ## Access Request Procedure
 To request server access privileges:
 1. Submit the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
-    - Currently offline due to advanced automations currently being setup based on the form. Please be patient and check back eventually for the form to be active.
+    - Currently offline due to advanced automations currently being setup based on the form and integrate into Discord Roles for the Lazy Media Discord Community. Please be patient and check back eventually for the form to be active.
 2. Monitor your email for approval notification and further instructions
 
 **Access Policies:**  
