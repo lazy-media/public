@@ -33,7 +33,7 @@ Please note that I can only provide support for products and services documented
     - Port 443 forwarded to Authentik
 
 For complete setup instructions:  
-[Authentik Installation Guide](Installation-Instructions/Authentik/Readme.md)
+[Authentik Installation Guide](Authentik-Installation/Readme.md)
 
 ---
 
