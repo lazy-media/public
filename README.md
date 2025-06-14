@@ -16,6 +16,13 @@ This knowledge base contains comprehensive documentation for all publicly access
 ## Authentik Configuration Guide
 [Complete Authentik Installation & Cloudflare Integration Guide](/Authentik/Authentik-Installation/Readme.md#authentik-installation--cloudflare-setup-instructions)
 
+---
+
+# Want to Join My Server?
+
+<details>
+<summary>EXPAND ME TO FIND OUT HOW TO JOIN THE SERVER!</summary>
+
 ### Authentication Best Practices
 **Recommended Login Method:**  
 For optimal access to all services, please use the `Lazy Media - Authentik` authentication portal.  
@@ -26,6 +33,7 @@ Upon redirection to Authentik, select the `PLEX OAUTH` option to authenticate wi
 ## Access Request Procedure
 To request server access privileges:
 1. Submit the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
+    - Currently offline due to advanced automations currently being setup based on the form. Please be patient and check back eventually for the form to be active.
 2. Monitor your email for approval notification and further instructions
 
 **Access Policies:**  
@@ -73,6 +81,8 @@ Automated role assignment is currently being implemented. Members are advised to
 - Utilize Plex or Discord authentication where possible
 - Avoid modifying account credentials post-creation
 - Note that credential changes may temporarily disrupt service access due to current authentication system architecture
+
+</details>
 
 # Support
 
