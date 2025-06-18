@@ -1,0 +1,66 @@
+# The github section contains backup jobs for
+# GitHub and GitHub Enterprise
+github:
+    # (optional) The job name. This is used to
+    # create a subfolder in the backup folder. 
+    # (default: GitHub)
+  - job_name: github.com
+    # (required) The GitHub personal access
+    # token. Create one with the scopes:
+    # "read:org, repo"
+    # https://github.com/settings/tokens/new?scopes=repo,read:org
+    access_token: ${{ GITHUB_ACCESS_TOKEN }}
+    # (optional) Back up repos you own.
+    # (default: true)
+    owned: true
+    # (optional) Back up repos you starred.
+    # (default: true)
+    starred: true
+    # (optional) Back up repos on which you 
+    # are a collaborator. (default: true)
+    collaborator: true
+    # (optional) Back up repos owned by 
+    # organisations of which you are a member.
+    # (default: true)
+    org_member: true
+    # (optional) Set this url to connect to
+    # your self-hosted github install.
+    # (default: https://api.github.com)
+    url: ${{ GITHUB_URL }}
+    # (optional) Exclude this list of repos
+    # or whole organizations/users
+#    exclude:
+#      - my-excluded-org
+#      - my-excluded-user
+#      - my-namespace/excluded-repository-name
+# The gitlab section contains backup jobs for
+# GitLab.com and GitLab on premise
+gitlab:
+  # (optional) The job name. This is used to
+  # create a subfolder in the backup folder. 
+  # (default: GitLab)
+  - job_name: gitlab.com
+    # (required) The GitLab access token.
+    # Create one with the scopes: "api"
+    # https://gitlab.com/-/profile/personal_access_tokens?scopes=api&name=git-backup
+    access_token: ${{ GITLAB_TOKEN }}
+    # (optional) Back up repos you own.
+    # (default: true)
+    owned: true
+    # (optional) Back up repos you starred.
+    # (default: true)
+    starred: true
+    # (optional) Back up repos owned by 
+    # teams of which you are a member.
+    # (default: true)
+    member: true
+    # (optional) Set this url to connect to
+    # your self-hosted gitlab install.
+    # (default: https://gitlab.com/)
+    url: ${{ GITLAB_URL }}
+    # (optional) Exclude this list of repos
+    # or whole organizations/users
+#    exclude:
+#      - my-excluded-org
+#      - my-excluded-user
+#      - my-namespace/excluded-repository-name
