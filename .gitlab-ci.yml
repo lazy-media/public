@@ -7,32 +7,4 @@
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
 - sync
-- build
-- test
-- deploy
-- review
-- dast
-- staging
-- canary
-- production
-- incremental rollout 10%
-- incremental rollout 25%
-- incremental rollout 50%
-- incremental rollout 100%
-- performance
-- cleanup
-sast:
-  stage: test
-include:
-- template: Auto-DevOps.gitlab-ci.yml
-
-# sync_to_github:
-#   stage: sync
-#   image: alpine/git
-#   script:
-#     - git remote add github https://$[[ GITHUB_TOKEN ]]@$[[ GITHUB_REPO ]]
-#     - git push github --all --force
-#     - git push github --tags --force
-#   only:
-#     - main
     
