@@ -18,7 +18,7 @@ Please note my installation setup before continuing.
 
 This is created in a Proxmox LXC Container running Ubuntu 22.04.4
 
-This also assumes you have docker and docker-compose installed. If not, install it.
+This also assumes you have docker and docker compose installed. If not, install it.
 
 You can follow this Guide [Docker Installation](/Docker/Installation/Readme.md)
 
@@ -39,7 +39,9 @@ https://goauthentik.io/docs/installation/docker-compose#preparation
 
 ## Other Requirements
 
-Make sure you have Docker and Docker compose installed. You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](/Docker/Installation/Readme.md)
+- Some knowledge of basic commands in Ubuntu and Docker are recommended.
+- Docker and Docker Compose must be installed.
+  - You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](/Docker/Installation/Readme.md)
 
 ## Authentik Installation Steps
 
