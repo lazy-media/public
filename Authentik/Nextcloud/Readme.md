@@ -85,7 +85,7 @@ return {
     - Client Type should be `Confidential`
     - **Copy** the `Client ID` and the `Secret Key` in to a document temporarily
     - Enter the `Redirect URI` as `https://YOUR-NEXTCLOUD-URL/index.php/apps/user_oidc/code` or `https://YOUR-NEXTCLOUD-URL/apps/user_oidc/code` (depending on your installation)
-    - Choose a Signing Key (I selected the Cloudflare Certificate we imported during [Authentik Installation](/Installation-Instructions/Authentik/Readme.md#cloudflare-setup))
+    - Choose a Signing Key (I selected the Cloudflare Certificate we imported during [Authentik Installation](../../Authentik/Authentik-Installation/Readme.md#cloudflare-setup))
     - **Expand** `Advanced Protocol Settings` and scroll down to `Scopes`
         - Make sure the `nextcloud` (scope we just created), `authentik default OAuth Mapping: OpenID 'email'`, `authentik default OAuth Mapping: OpenID 'openid'`, and `authentik default OAuth Mapping: OpenID 'profile'` are selected.
     - `Subject Mode` is set to `Based on the User's Email` (I would recommend this method for nextcloud, but it's your choice...)
@@ -95,7 +95,7 @@ return {
     - Enter a name of your choosing
     - Enter the slug as something like `nextcloud-oauth`, this will be used in the next step.
     - (optional) Set a Group that you would like this grouped into.
-        - This is not the Permissions section to restrict users from using this. To set permissions, visit [Application Group Permissions](/Authentik/Applications-&-Providers/Readme.md#application-group-permissions)
+        - This is not the Permissions section to restrict users from using this. To set permissions, visit [Application Group Permissions](../Applications-&-Providers/Readme.md#application-group-permissions)
         - This Group Setting only groups applications on the Main Authentik Overview page for each User. Enter a name Exactly as you want it Grouped. If it is mispelled in anyway, it will create another group.
     - Select your `Provider` as the Nextcloud OAuth we just created above.
     - (optional) **Expand** `UI Settings`

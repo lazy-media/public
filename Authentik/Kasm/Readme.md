@@ -9,7 +9,7 @@
 - I do not use Cloudflare Tunnels, I use other security measures provided by Cloudflare to protect my domain.
 - I have my ISP Modem in bridge mode and have a Unifi Security Gateway handling all internet traffic.
     - I have port 443 forwarded to Authentik
-- For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](Installation-Instructions/Authentik/Readme.md)
+- For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](../../Authentik/Authentik-Installation/Readme.md)
 
 ## Assumptions
 - This guide assumes you already have Kasm up and Running from a fresh install.

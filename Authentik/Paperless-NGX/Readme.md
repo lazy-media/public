@@ -6,7 +6,7 @@
 ## Prerequisites
 
 - Installed in a Proxmox LXC with Ubuntu 22.04.4
-- Assumes you followed instructions from [Paperless-NGX Installation](Installation-Instructions/Paperless-NGX/Readme.md)
+- Assumes you followed instructions from [Paperless-NGX Installation](../../Paperless-NGX/Readme.md)
 - Assumes you have basic knowledge of how to setup an Authentik OAuth2/OpenID Provider. If not, you can follow this guide [Basic OAuth/OpenID Setup](/Authentik/Applications-&-Providers/Readme.md#authentik-basic-oauth2openid-setup)
 
 # Adding Authentik OpenID / OAuth to Paperless-NGX
@@ -178,4 +178,4 @@ volumes:
 ## Docker Compose Environment File
 This file is named `docker-compose.env`
 
-Visit [Paperless NGX Full Docker Environment Variables List](Installation-Instructions/Paperless-NGX/docker-compose.env) for all the Paperless-NGX Environment Variables. Make sure to refer to Paperless-NGX Website for use of each Variable.
+Visit [Paperless NGX Full Docker Environment Variables List](../../Paperless-NGX/.env) for all the Paperless-NGX Environment Variables. Make sure to refer to Paperless-NGX Website for use of each Variable.
