@@ -9,7 +9,7 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 
 ## Example Picture of Discord Notification
 
-![image](JoinDiscordServerNotification.png)
+![image](assets/JoinDiscordServerNotification.png)
 
 ## Group Creation
 - Login to Authentik Admin Panel
@@ -28,7 +28,7 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 ### Deny Stage with Join Discord Server Message
 For Easier Setup, Create the `Authentication Flow` and the `Discord Expression Policy` in the next step, then come back to this step.
 
-- Login to you Authentik Admin Panel
+- Login to your Authentik Admin Panel
 - Navigate to `Flows and Stages > Prompts`
   - Create a new Prompt
   - Put what you want in the `Name`, `Field Key` and `Label` boxes.
@@ -94,7 +94,7 @@ Navigate to `Flows and Stages > Stages`
 Create a New Prompt Stage:
 - Name the Prompt whatever you want
 - Under `Fields` in the right column, if there is anything in it, remove everything except for the `Prompt` we just created. If the newly created `Prompt` is not selected, select it and move it to the right column.
-- Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step (Don't worry, we come back to this so just leave nothing there for now.).
+- Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step (Don't worry, you come back to this so just leave nothing there for now.).
 
 Navigate to `Flows and Stages > Flows`:
 - Find your `Discord Authentication` Flow and Click on it

@@ -68,7 +68,7 @@ All commands should still run fine below, if not, add `sudo` to the beginning of
 
 Install additional dependencies
 ```
-apt-get install -y pwgen
+sudo apt-get install -y pwgen
 ```
 
 Create Authentik folder

@@ -16,7 +16,7 @@
 - Click on the Flow and click Stage Bindings.
 - Create and Bind a New Stage
 - Choose User Write Stage
-- Named it 'RESPECTIVE SOURCE' Enrollment Writes
+- Named it as you see fit for Enrollment Writes
 - Checked the box next to Create Users when Required
 - Uncheck "Create new users as inactive".
 - Leave User Path Template empty (autofilled later by Authentik)
