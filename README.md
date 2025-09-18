@@ -12,7 +12,7 @@
 
 ## Service Availability
 **Current Service Status:**  
-- Plex Media Server: **Offline**  
+- Plex Media Server: **Online**  
 - New Plex registrations: **Temporarily suspended** until further notice
 
 ## Overview
