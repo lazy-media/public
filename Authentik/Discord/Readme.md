@@ -1,5 +1,7 @@
 # Discord - OAuth Authentication, Enrollment, & User Group Assignment Setup
 
+> # NEEDS TO BE UPDATED. PLEASE BE CAUTIOUS OF FOLLOWING THIS GUIDE. WILL BE UPDATED AT A LATER TIME!
+
 ### Original Documentation
 - [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
 
