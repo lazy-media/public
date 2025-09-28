@@ -176,6 +176,9 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Go to `Policies` for the same Flow and add `default-source-authentication-if-sso`
 
 ## Enrollment Flow Creation
+
+> ### PLEASE NOTE: THIS ENROLLMENT FLOW STILL DOES NOT WORK HOW I WOULD EXPECT IT TO. UPON FIRST LOGIN ATTEMPT, IT SEEMS TO TOSS A NEW USER BACK TO THE LOGIN PAGE. UPON SECOND LOGIN ATTEMPT, IT SHOULD WORK CORRECTLY. NOT SURE WHY THIS IS, BUT I THINK IT IS SOMETHING WITH AUTHENTIK.
+
 - Create a new Flow and Name it `Discord Enrollment`
 - Click on the Flow and click `Stage Bindings`.
 - Bind an existing stage and bind `default-source-authentication-login`
@@ -191,7 +194,9 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Check the box next to `Create Users when Required`
 - Uncheck `Create new users as inactive`.
 - Leave `User Path Template empty` (autofilled later by Authentik)
-  > If for some reason you have issues with Discord Enrollment, try these steps to fix it:
+  > This small fix should not be needed but for some reason, Authentik does not allow the `User Path Template` Section to be left empty anymore.
+  
+  > If for some reason you have issues with Discord Enrollments, try these steps to fix it:
   >  - While still in the Stage for Discord Enrollment Writes and in this section for `User Path Template` input:
   >  - `goauthentik.io/sources/<your-federation-slug>`
   >    - To find your Federation Slug: Go to `Authentik Admin Panel > Directory > Federation and Social Login > Click Edit icon > Find Slug Field (second field usually)`
