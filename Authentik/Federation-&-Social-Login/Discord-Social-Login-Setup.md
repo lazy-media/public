@@ -194,12 +194,13 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 - Check the box next to `Create Users when Required`
 - Uncheck `Create new users as inactive`.
 - Leave `User Path Template empty` (autofilled later by Authentik)
-  > This small fix should not be needed but for some reason, Authentik does not allow the `User Path Template` Section to be left empty anymore.
-  
-  > If for some reason you have issues with Discord Enrollments, try these steps to fix it:
-  >  - While still in the Stage for Discord Enrollment Writes and in this section for `User Path Template` input:
-  >  - `goauthentik.io/sources/<your-federation-slug>`
-  >    - To find your Federation Slug: Go to `Authentik Admin Panel > Directory > Federation and Social Login > Click Edit icon > Find Slug Field (second field usually)`
+
+> This small fix should not be needed but for some reason, Authentik does not allow the `User Path Template` Section to be left empty anymore.
+> If for some reason you have issues with Discord Enrollments, try these steps to fix it:
+>   - While still in the Stage for Discord Enrollment Writes and in this section for `User Path Template` input:
+>   - `goauthentik.io/sources/<your-federation-slug>`
+>     - To find your Federation Slug: Go to `Authentik Admin Panel > Directory > Federation and Social Login > Click Edit icon > Find Slug Field (second field usually)`
+
 - Select the group you want users to go into when enrolled
 - Increment your order to `20`
 - Click `Finish` or `Update`
