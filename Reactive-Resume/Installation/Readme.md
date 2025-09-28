@@ -2,8 +2,10 @@
 
 ## Original Documentation
 
-- [Reactive Resume Docs](https://docs.rxresu.me/)
-- [Reactive Resume Github](https://docs.rxresu.me/product-guides/self-hosting-reactive-resume-using-docker)
+> ### PLEASE ALWAYS REFER TO THE DOCUMENTATION FOR THE MOST UP TO DATE INFORMATION. THIS IS OUTDATED!!!
+
+- [Reactive Resume Docs](https://docs.rxresume.org/)
+- [Reactive Resume Github](https://docs.rxresume.org/product-guides/self-hosting-reactive-resume-using-docker)
 
 ## Docker Compose & .env Files
 
