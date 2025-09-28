@@ -1,7 +1,5 @@
 # Discord - OAuth Authentication, Enrollment, & User Group Assignment Setup
 
-> # NEEDS TO BE UPDATED. PLEASE BE CAUTIOUS OF FOLLOWING THIS GUIDE. WILL BE UPDATED AT A LATER TIME!
-
 ### Original Documentation
 - [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
 
@@ -30,18 +28,14 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 ### Deny Stage with Join Discord Server Message
 For Easier Setup, Create the `Authentication Flow` and the `Discord Expression Policy` in the next step, then come back to this step.
 
-- Login to your Authentik Admin Panel
+- Login to you Authentik Admin Panel
 - Navigate to `Flows and Stages > Prompts`
   - Create a new Prompt
   - Put what you want in the `Name`, `Field Key` and `Label` boxes.
   - Select the Prompt Type as `Static: Static Value, Displayed as-is`
   - Scroll down to `Help Text`
   - Insert the following (Change what is needed):
-
-<details>
-<summary>HTML Code for Discord Join Message</summary>
-
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,27 +80,23 @@ For Easier Setup, Create the `Authentication Flow` and the `Discord Expression P
     <a id="join-button" href="DISCORD JOIN URL" target="_blank" rel="noopener noreferrer">Join Join the Discord Server Now!</a>
 </body>
 </html>
-
 ```
 
-</details>
+- Navigate to `Flows and Stages > Stages`
+- Create a New Prompt Stage
+  - Name the Prompt whatever you want
+  - Under `Fields` in the right column, if there is anything in it, remove everything except for the `Prompt` we just created. If the newly created `Prompt` is not selected, select it and move it to the right column.
+  - Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step.
+- Navigate to `Flows and Stages > Flows`
+  - Find your `Discord Authentication` Flow and Click on it
+    - Click on `Stage Bindings`
+    - Bind an Existing Stage and Bind your `Discord Prompt` we just created, change the order to `0` or the lowest number, and click `Create`
+    - Expand the Stage we just added
+    - Click on `Bind Existing Policy / Group / User`
+    - Under `Policy`, select your `Discord Verification` Policy
+      - MAKE SURE THE `ENABLED` and `NEGATE RESULTS` are both checked.
+      - SET `FAILURE RESULT` to `PASS`
 
-Navigate to `Flows and Stages > Stages`
-
-Create a New Prompt Stage:
-- Name the Prompt whatever you want
-- Under `Fields` in the right column, if there is anything in it, remove everything except for the `Prompt` we just created. If the newly created `Prompt` is not selected, select it and move it to the right column.
-- Under `Validation Policies`, Do the same thing and remove everything from the right column except for the `Discord Verification Policy` created in the next step (Don't worry, you come back to this so just leave nothing there for now.).
-
-Navigate to `Flows and Stages > Flows`:
-- Find your `Discord Authentication` Flow and Click on it
-  - Click on `Stage Bindings`
-  - Bind an Existing Stage and Bind your `Discord Prompt` we just created, change the order to `0` or the lowest number, and click `Create`
-  - Expand the Stage we just added
-  - Click on `Bind Existing Policy / Group / User`
-  - Under `Policy`, select your `Discord Verification` Policy
-    - MAKE SURE THE `ENABLED` and `NEGATE RESULTS` are both checked.
-    - SET `FAILURE RESULT` to `PASS`
 
 ## Authentication Flow Creation
 - Navigate to `Flows and Stages > Flows`
@@ -118,10 +108,7 @@ Navigate to `Flows and Stages > Flows`:
 - Click the `Expand arrow` for the `Discord Verification Deny Stage` you just added, click `Create and Bind Policy`.
 - Create an `Expression Policy`
 - Add the following:
-
-<details> <summary>Discord Verification Policy Code</summary>
-
-```python
+```
 # To get the role and guild ID numbers for the parameters, open Discord, go to Settings > Advanced and
 # enable developer mode.
 # Right-click on the server/guild title and select "Copy ID" to get the guild ID.
@@ -169,61 +156,63 @@ user_matched = any(ACCEPTED_ROLE_ID == g for g in guild_member_object["roles"])
 if not user_matched:
     ak_message(f"User is not a member of the {ROLE_NAME_STRING} role in {GUILD_NAME_STRING}.")
 return user_matched
-
 ```
-
-</details>
-
-**CHANGE THE FOLLOWING LINES WITHIN THE QUOTES IN THE CODE ABOVE BEFORE SAVING AND CONTINUING:**
-
-   ```
-   ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
-   ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
-   GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
-   ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
-   ```
-
+CHANGE THE FOLLOWING LINES WITHIN THE QUOTES IN THE CODE ABOVE BEFORE SAVING AND CONTINUING:
+```
+ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"
+ACCEPTED_GUILD_ID = "CHANGE TO DISCORD SERVER ID"
+GUILD_NAME_STRING = "CHANGE TO SERVER NAME"
+ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
+```
 - Click `Next` to Save the Policy
 - Create the binding with `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `PASS`.
 - Click `Finish` to Save
-- Bind a second Existing Stage
+- Bind a second Existing Stage 
 - Bind the `default-source-authentication-login`
 - Increment your Order to `10`
 - Click `Finish` or `Update`
 - Go to `Policies` for the same Flow and add `default-source-authentication-if-sso`
 
 ## Enrollment Flow Creation
+
+> ### PLEASE NOTE: THIS ENROLLMENT FLOW STILL DOES NOT WORK HOW I WOULD EXPECT IT TO. UPON FIRST LOGIN ATTEMPT, IT SEEMS TO TOSS A NEW USER BACK TO THE LOGIN PAGE. UPON SECOND LOGIN ATTEMPT, IT SHOULD WORK CORRECTLY. NOT SURE WHY THIS IS, BUT I THINK IT IS SOMETHING WITH AUTHENTIK.
+
 - Create a new Flow and Name it `Discord Enrollment`
 - Click on the Flow and click `Stage Bindings`.
-- Bind an existing stage and select your `Discord Verification Deny Stage` created above.
-- Click the Expand arrow on the `Deny Stage`.
-- Add your `Discord Verification Policy`
-- Make sure the binding has `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `PASS`.
 - Bind an existing stage and bind `default-source-authentication-login`
 - Increment your order to `10`
 - Click `Finish` or `Update`
+- Expand the newly created `default-source-authentication-login` policy we just binded
+- Click on `Bind Existing Policy`
+- Add your `Discord Verification Policy`
+- Make sure the binding has `NEGATE RESULT ENABLED` and `FAILURE RESULT` is set to `DON'T PASS`.
 - Create and Bind a New Stage
-  - Choose `User Write Stage`
-  - Name it `Discord Enrollment Writes`
-  - Checked the box next to `Create Users when Required`
-  - Uncheck `Create new users as inactive`.
-  - Leave `User Path Template empty` (autofilled later by Authentik)
-  - Select the group you want users to go into when enrolled
-  - Increment your order to `20`
-  - Click `Finish` or `Update`
+- Choose `User Write Stage`
+- Name it `Discord Enrollment Writes`
+- Check the box next to `Create Users when Required`
+- Uncheck `Create new users as inactive`.
+- Leave `User Path Template empty` (autofilled later by Authentik)
+
+> This small fix should not be needed but for some reason, Authentik does not allow the `User Path Template` Section to be left empty anymore.
+> If for some reason you have issues with Discord Enrollments, try these steps to fix it:
+>   - While still in the Stage for Discord Enrollment Writes and in this section for `User Path Template` input:
+>   - `goauthentik.io/sources/<your-federation-slug>`
+>     - To find your Federation Slug: Go to `Authentik Admin Panel > Directory > Federation and Social Login > Click Edit icon > Find Slug Field (second field usually)`
+
+- Select the group you want users to go into when enrolled
+- Increment your order to `20`
+- Click `Finish` or `Update`
 - Go to the `Policy Section` of the same Flow and add `default-source-enrollment-if-sso`
 
 ## Federation & Social Login Creation + Flows Attachment
 - Navigate to `Directory > Federation & Social Login`
 - Create your `Discord Federation & Social Login Provider`
 - Under the `Scopes Section`, enter the following:
-
 ```
 guilds guilds.members.read
 ```
-
 - At the very bottom of your Federation & Social Login Provider, **Expand** `Flow Settings`
-  - Select your Discord flows we just created above for `Authentication` and `Enrollment`
+- Select your Discord flows we just created above for `Authentication` and `Enrollment`
 - Under this OAuth Settings Page, I personally also made sure that the `USER MATCHING MODE` is set to `Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses.` CHANGE TO MATCH YOUR PREFERENCE.
 
 ## Add SSO & Flow to Login Page
@@ -232,4 +221,4 @@ guilds guilds.members.read
 - Go to `Stage Bindings`
 - Edit stage for `default-authentication-identification`
 - **Expand** `Source Settings` at the bottom
-- Select your SSO providers that you setup. Hold `CTRL + CLICK` for multiple.
+- Select your SSO providers that you setup. Hold CTRL + CLICK for multiple.
