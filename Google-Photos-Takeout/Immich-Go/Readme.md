@@ -9,8 +9,8 @@
 
 ## You can now support my work on `Immich-go`:
 
-- [Github Sponsor](https://github.com/sponsors/simulot)
-- [Paypal Donation](https://www.paypal.com/donate/?hosted_button_id=VGU2SQE88T2T4)
+- [Simulot Github Sponsor](https://github.com/sponsors/simulot)
+- [Simulot Paypal Donation](https://www.paypal.com/donate/?hosted_button_id=VGU2SQE88T2T4)
 
 
 ## Key Features:
