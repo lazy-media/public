@@ -2,8 +2,8 @@
 
 # Backup Notice
 
-> [Lazy Media's Gitlab Public Repository](https://gitlab.lazymedia.media/public-files/public-files) can now also be found on Lazy Media's GitHub. It is setup to Backup Daily at Midnight.
-> If for some reason this site is unavailable, you can find this same Documentation at [Lazy Media's Public GitHub Documentation](https://github.com/lazy-media/public)
+> [Lazy Media's Gitlab Public Repository](https://links.lazymedia.media/q/gowaBJsCk) can now also be found on Lazy Media's GitHub. It is setup to Backup Daily at Midnight.
+> If for some reason this site is unavailable, you can find this same Documentation at [Lazy Media's Public GitHub Documentation](https://links.lazymedia.media/q/Jn3SKjhis)
 
 ### **Documentation Update Status:**  
 > Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
