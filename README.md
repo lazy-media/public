@@ -2,13 +2,16 @@
 
 # Backup Notice
 
-> [Lazy Media's Gitlab Public Repository](https://links.lazymedia.media/q/gowaBJsCk) can now also be found on Lazy Media's GitHub. It is setup to Backup Daily at Midnight.
-> If for some reason this site is unavailable, you can find this same Documentation at [Lazy Media's Public GitHub Documentation](https://links.lazymedia.media/q/Jn3SKjhis)
+> [Lazy Media's Gitlab Public Repository](https://links.lazymedia.media/q/gowaBJsCk) can now also be found on Lazy Media's GitHub. It is setup to Backup Daily at Midnight (PST).
+> If for some reason the GitLab site is unavailable, you can find this same Documentation at [Lazy Media's Public GitHub Documentation](https://links.lazymedia.media/q/Jn3SKjhis)
 
 ### **Documentation Update Status:**  
 > Please be advised that certain documentation sections may require updates. These will be revised as needed based on priority and availability. We appreciate your patience during this process.
 > ### PLEASE NOTE THE NEW FOLDER STRUCTURE!!!
 > I am in the process of reorganizing and possibly updating some documentation items.
+
+### Want to help me update my documentation?
+- Submit an issue on GitHub
 
 ## Service Availability
 **Current Service Status:**  
