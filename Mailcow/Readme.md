@@ -1,1 +1,0 @@
-# Mailcow Information, Setup and Example Files
