@@ -10,10 +10,14 @@ Your results may vary, but this is what I did to get access to Cloudflare Zero T
 
 THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE TO VIEW APPLICATIONS AFTER THE APPROPRIATE PERMISSIONS WERE IN PLACE IN CLOUDFLARE. THIS IS GOING TO BE YOUR RESPONSIBILITY TO FIGURE OUT. I ONLY FIGURED OUT HOW TO GET THE LOGIN PORTION WORKING.
 
+***
+
 ## Assumptions
 
 * You have knowledge of Cloudflare Zero Trust
 * You have your Authentik User and a Cloudflare Zero Trust user with the same email
+
+***
 
 ## Authentik Setup
 
@@ -45,6 +49,8 @@ THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE T
    1. Attach an Application to the Cloudflare Provider we just created
    2. **MAKE NOTE OF THE APPLICATION SLUG WHEN YOU CREATE THIS, IT IS NEEDED IN THE NEXT STEP WITH CLOUDFLARE!**
 
+***
+
 ## Cloudflare Setup
 
 1. Login to your Cloudflare admin panel
@@ -71,6 +77,8 @@ THIS WAS ABLE TO GET ME TO LOGIN TO MY CLOUDFLARE ZERO TRUST INSTANCE AND ABLE T
 7. Find `App Launcher` and click `Manage`
    1. Click on the Tab for `Authentication`
    2. If you do not have `Accept all available identity providers` enabled, either enable it or select the provider we just created.
+
+***
 
 ## Conclusion
 

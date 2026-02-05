@@ -16,12 +16,16 @@ description: Information on how to setup Wiki-JS with Authentik
 * Navigate to your Wiki-JS Admin Portal in one of the tabs or windows
 * Navigate to your Authentik Admin Portal in the other
 
+***
+
 ## Wiki-JS Setup - Part 1
 
 * Go to your Wiki-JS Admin Portal
 * Navigate to _**Authentication**_
 * Add a _**Generic OpenID Connect/OAuth2**_
 * _**Make a note of the**_ **Callback URL/Redirect URI** in the **Configuration Reference** section at the bottom.
+
+***
 
 ## Authentik Setup - Part 1
 
@@ -32,6 +36,8 @@ description: Information on how to setup Wiki-JS with Authentik
 * Select any Signing Key
 * _**NOTE THE CLIENT ID AND CLIENT SECRET**_
 * Click SAVE
+
+***
 
 ## Wiki-JS Setup - Part 2
 
@@ -51,6 +57,8 @@ Allow self-registration: Enabled
 Assign to group: The group to which new users logging in from authentik should be assigned.
 ```
 
+***
+
 ## Authentik Setup - Part 2
 
 * Go back to your Authentik Admin Portal
@@ -59,6 +67,8 @@ Assign to group: The group to which new users logging in from authentik should b
 * Under Provider, select the Wiki Provider you created earlier.
 * Expand UI SETTINGS
 * Set the LAUNCH URL to the Wiki-JS Callback URL you noted down above.
+
+***
 
 ## IMPORTANT NOTE
 

@@ -56,7 +56,8 @@ docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/mastodon generate
 
 ## Mastodon Docker Compose File with OpenID
 
-```
+{% code expandable="true" %}
+```yml
 ---
 version: "2.1"
 services:
@@ -112,6 +113,7 @@ services:
     restart: unless-stopped
 
 ```
+{% endcode %}
 
 ### Running with an ENV File
 

@@ -15,11 +15,13 @@ description: Information on how to setup GitLab OAuth with Authentik
 * [Gitlab Omnibus Installation](https://about.gitlab.com/install/#ubuntu)
 * [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
+***
+
 ## Basic Authentik OAuth2/OpenID Setup
 
 [Authentik Basic OAuth2/OpenID Setup](https://github.com/lazy-media/public/blob/main/Authentik/Gitlab/README.md)
 
-## OPENID / OAUTH SETUP
+### OpenID / OAuth SETUP
 
 ### Redirect URL for Authentik
 
@@ -39,6 +41,7 @@ nano /etc/gitlab/gitlab.rb
 
 The following lines are basic config options for OAuth or SAML Login Add the following lines to the config file or search for them in the config This setup is for OAuth / OpenID connect. Scroll down or click for [SAML](https://gitlab.lazymedia.media/public-files/public-files/-/blob/main/Authentik/Gitlab/Readme.md#saml-setup) Setup.
 
+{% code expandable="true" %}
 ```
 gitlab_rails['omniauth_enabled'] = true
 gitlab_rails['omniauth_allow_single_sign_on'] = ['openid_connect']
@@ -47,6 +50,7 @@ gitlab_rails['omniauth_sync_profile_from_provider'] = ['openid_connect']
 gitlab_rails['omniauth_sync_profile_attributes'] = ['email']
 gitlab_rails['omniauth_block_auto_created_users'] = false
 ```
+{% endcode %}
 
 To have your Provider login automatically instead of stopping at Gitlab's Main Login page, add the following line:
 
@@ -56,6 +60,7 @@ gitlab_rails['omniauth_auto_sign_in_with_provider'] = 'openid_connect'
 
 For OpenID / OAuth2 add the following and change anything that is necessary
 
+{% code expandable="true" %}
 ```
 gitlab_rails['omniauth_providers'] = [
   { 'name' => 'openid_connect',
@@ -79,8 +84,9 @@ gitlab_rails['omniauth_providers'] = [
   }
 ]
 ```
+{% endcode %}
 
-Save and exit with CTRL + O then CTRL + X or CTRL + X, Then 'Y', Then ENTER
+Save and exit with `CTRL + O` then `CTRL + X` then `Y` then `ENTER`
 
 #### Update GitLab Config to apply Changes
 
@@ -91,6 +97,8 @@ gitlab-ctl reconfigure
 ```
 
 Your new OpenID / OAuth2 Provider should now show up on your Gitlab Login Page or Automatically login.
+
+***
 
 ## SAML Setup
 
@@ -125,6 +133,7 @@ gitlab_rails['omniauth_auto_sign_in_with_provider'] = 'saml'
 
 Add the following lines to your GitLab Config File and change what is necessary
 
+{% code expandable="true" %}
 ```
 gitlab_rails['omniauth_auto_link_saml_user'] = true
 gitlab_rails['omniauth_providers'] = [
@@ -147,8 +156,11 @@ gitlab_rails['omniauth_providers'] = [
   }
 ]
 ```
+{% endcode %}
 
-Save and exit with CTRL + O then CTRL + X or CTRL + X, Then 'Y', Then ENTER
+Save and exit with `CTRL + O` then `CTRL + X` then `Y`, Then `ENTER`
+
+***
 
 #### Update GitLab Config to apply Changes
 

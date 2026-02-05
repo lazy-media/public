@@ -8,6 +8,8 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 * Create respective User Groups
 
+***
+
 ## Authentication Flow Creation
 
 1. Created a new Flow and Named it respectively
@@ -16,6 +18,8 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 4. Clicked on the New Authentication Flow to stage bindings.
 5. Bind the "default-source-authentication-login"
 6. Go to Policies for the same Flow and add "default-source-authentication-if-sso"
+
+***
 
 ## Enrollment Flow Creation
 
@@ -36,12 +40,16 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 {% include "../../.gitbook/includes/authentik-social-login-fix-for-user-path-template.md" %}
 
+***
+
 ## Federation & Social Login Creation + Flows Attachment
 
 1. Create your Federation & Social Login Provider (i.e. Plex, Discord, Twitch)
 2. At the very bottom of your Federation & Social Login Provider, expand Flow Settings
 3. Select your respective flows for Authentication and Enrollment
 4. Under this OAuth Settings Page, I personally also made sure that the USER MATCHING MODE is set to "Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses." SET TO MATCH YOUR PREFERENCE.
+
+***
 
 ## Add SSO & Flow to Login Page
 

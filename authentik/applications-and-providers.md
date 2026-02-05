@@ -2,9 +2,7 @@
 description: An example on how to setup Authentik Applications & Providers
 ---
 
-# Applications & Providers
-
-## Authentik Applications & Providers Setup
+# Applications & Providers Setup
 
 ### Authentik Proxy Provider Easy Wizard Setup
 
@@ -38,6 +36,8 @@ description: An example on how to setup Authentik Applications & Providers
    17. Click the `Edit` button under `Actions` for the default `authentik Embedded Outpost`
        * Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
    18. Click `Update`.
+
+***
 
 ### Application & Proxy Provider Setup Without Easy Setup Wizard
 
@@ -79,6 +79,8 @@ description: An example on how to setup Authentik Applications & Providers
       * Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
    2. Click `Update`.
 
+***
+
 ## Authentik Basic OAuth2/OpenID Setup
 
 ### Using Authentik's New Easy Setup Wizard
@@ -115,6 +117,8 @@ description: An example on how to setup Authentik Applications & Providers
       3. I usually leave everything else default on this screen.
    5. Click `Next` to save and Finish.
 
+***
+
 ## Application Group Permissions
 
 1. Login to your Authentik Admin Panel
@@ -134,6 +138,8 @@ description: An example on how to setup Authentik Applications & Providers
          * In the `Group` Dropdown Menu, select the next group you want to be able to access this application (i.e. Plex Users)
          * Increment your `Order` to `10` or any number greater than `0` so it gets placed under the previous group added.
          * Select `Create`
+
+***
 
 #### Conclusion
 

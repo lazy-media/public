@@ -16,7 +16,7 @@ description: Information on how to setup Jellyfin OpenID / OAuth with Authentik.
 
 ## Authentik OAuth Provider Setup
 
-Please refer to my basic setup for OAuth Providers here [Basic OAuth/OpenID Provider Setup](applications-and-providers.md#authentik-basic-oauth2openid-setup)
+Please refer to my basic setup for OAuth Providers here [Basic OAuth/OpenID Provider Setup](applications-and-providers.md#authentik-basic-oauth2-openid-setup)
 
 ## Authentik Scope Mapping (Optional)
 

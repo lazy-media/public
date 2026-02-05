@@ -31,6 +31,8 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
     * Find `OpenID Connect User Backend` and click `Download and Enable`
 * Do not have the `Group Quota` or `User Quota` apps installed on Nextcloud as Authentik will handle storage quota's.
 
+***
+
 ## Nextcloud Custom Scope Setup
 
 ### Authentik Nextcloud Scope Mapping Setup
@@ -44,7 +46,7 @@ This helps walk you through on how to setup Authentik as an OpenID provider and 
   * Enter a Name such as `Nextcloud Quota`
   * Enter Scope Name as `nextcloud` (This links this to the scope `nextcloud` in the Nextcloud OpenID Scope Settings below)
   * (optional) Enter a Description
-  * In the Expression Field copy and paste the code below [Code to Copy](https://github.com/lazy-media/public/blob/main/Authentik/Nextcloud/README.md#nextcloud-quota-expression-policy-property-mapping)
+  * In the Expression Field copy and paste the code below
 
 ```
 # Extract all groups the user is a member of
@@ -79,6 +81,8 @@ return {
     * Use `GB` for Gigabytes
     * Use `TB` for Terabytes
 
+***
+
 ## Authentik OAuth / OpenID Setup
 
 * Login to Authentik Admin Panel
@@ -111,6 +115,8 @@ return {
     * Enable `Open in new tab`
     * Set an Icon
   * Click `Finish` to save.
+
+***
 
 ## Nextcloud OpenID Setup
 

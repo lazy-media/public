@@ -133,6 +133,8 @@ entries:
     model: authentik_flows.flowstagebinding
 </code></pre>
 
+***
+
 ### Flows Enrollment Email Verification
 
 {% code expandable="true" %}
@@ -276,6 +278,8 @@ entries:
 ```
 {% endcode %}
 
+***
+
 ### Flows Login - 2FA
 
 {% code expandable="true" %}
@@ -358,6 +362,8 @@ entries:
     model: authentik_policies.policybinding
 ```
 {% endcode %}
+
+***
 
 ### Conditional Captcha
 
@@ -446,6 +452,8 @@ entries:
     model: authentik_policies.policybinding
 ```
 {% endcode %}
+
+***
 
 ### Flows Recovery Email Verification
 
@@ -615,6 +623,8 @@ entries:
       timeout: 30
 ```
 {% endcode %}
+
+***
 
 ### Flows Un-Enrollment
 

@@ -27,7 +27,7 @@ sudo mkdir wyoming-whisper
 cd wyoming-whisper
 ```
 
-## Docker Run Line
+## Docker Run Command
 
 Be sure to change the path on the left side of the colon `:` to your appropriate path if needed.
 

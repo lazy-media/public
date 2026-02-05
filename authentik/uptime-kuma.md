@@ -27,7 +27,7 @@ Setup a Provider and Application for Uptime Kuma and add to your Outpost.
 
 In the Uptime Kuma Authentik Provider, edit the section for `Unauthenticated Paths` and input the following:
 
-```
+```py
 ^/$
 ^/status
 ^/assets/

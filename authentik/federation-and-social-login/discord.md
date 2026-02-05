@@ -128,6 +128,8 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 3. Click `Finish` or `Update`
 4. Go to the `Policy Section` of the same Flow and add `default-source-enrollment-if-sso`
 
+***
+
 ## Federation & Social Login Creation + Flows Attachment
 
 1. Navigate to `Directory > Federation & Social Login`
@@ -141,6 +143,8 @@ guilds guilds.members.read
 1. At the very bottom of your Federation & Social Login Provider, **Expand** `Flow Settings`
 2. Select your Discord flows we just created above for `Authentication` and `Enrollment`
 3. Under this OAuth Settings Page, I personally also made sure that the `USER MATCHING MODE` is set to `Link to a user with an identical email address. Can have security implications when a source doesn't validate email addresses.` CHANGE TO MATCH YOUR PREFERENCE.
+
+***
 
 ## Add SSO & Flow to Login Page
 

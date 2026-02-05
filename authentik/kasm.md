@@ -4,23 +4,14 @@ description: Information on how to setup Kasm OpenID / OAuth with Authentik
 
 # Kasm OpenID / OAuth Setup
 
-## My Authentik Setup
-
-* I currently have Authentik installed alone on a Proxmox LXC container using Ubuntu 22.04, and separate from any other services.
-* My Authentik Ports get set to 443 and 80 within the Docker Environment Variables File, but set to the standard ports in the Docker Compose File as 9443:9443 and 9000:9000.
-* I currently ONLY run Authentik as my Reverse Proxy, no middle man like NPM, Traefik, Caddy, etc.
-* I use Cloudflare Certificates installed into Authentik, not provided by any other reverse proxy or created by Let's Encrypt.
-* I do not use Cloudflare Tunnels, I use other security measures provided by Cloudflare to protect my domain.
-* I have my ISP Modem in bridge mode and have a Unifi Security Gateway handling all internet traffic.
-  * I have port 443 forwarded to Authentik
-* For Installation Instructions on how I setup my Authentik, visit [Authentik Installation](https://github.com/lazy-media/public/blob/main/Authentik/Authentik-Installation/README.md)
-
 ## Assumptions
 
 * This guide assumes you already have Kasm up and Running from a fresh install.
 * This is best if done from a fresh install.
 * No users currently in Kasm have the same email, or username as any Authentik User.
 * You are on the latest version of Authentik.
+
+***
 
 ## Setting Up Authentik with Easy Setup Wizard
 
@@ -52,6 +43,8 @@ description: Information on how to setup Kasm OpenID / OAuth with Authentik
     * Under `Subject Mode`, I personally select `Based on User's Email`
     * I usually leave everything else default on this screen.
   * Click `Next` to save and Finish.
+
+***
 
 ## Setting up Kasm
 
@@ -121,6 +114,8 @@ description: Information on how to setup Kasm OpenID / OAuth with Authentik
 * **DO NOT SELECT** `Assign All Users`
 * Under `Group Attributes`, enter the name of the Group from Authentik you want assigned. **MUST BE IDENTICAL**
   * **(i.e.) An Authentik Group Named `Discord Users` should be typed in exactly as `Discord Users` in to this `Group Attributes`**
+
+***
 
 ## Conclusion
 
