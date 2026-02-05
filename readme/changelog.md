@@ -27,4 +27,12 @@ description: Major changes made to the documentation
 * Implemented a Status Badge for the Plex Server Status for a better "Live" Status report
 * Reorganization of the Documentation is under way, please be patient for this to be completed
 {% endupdate %}
+
+{% update date="2026-01-29" %}
+## Email Issue Fixed
+
+* Email issue with not being able to receive emails
+* Fixed email issue
+* All emails are successfully being received and delivered
+{% endupdate %}
 {% endupdates %}
