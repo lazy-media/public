@@ -33,7 +33,7 @@ _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed i
 
 This knowledge base contains comprehensive documentation for all publicly accessible systems and services.\
 \
-&#xNAN;_**GitHub Repository**_ ![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)
+&#xNAN;_**GitHub Repository**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
 
 ### Authentik Configuration Guide
 
