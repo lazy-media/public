@@ -5,7 +5,17 @@ labels: ["documentation", "gitbook", "update", "needs triage"]
 assignees: "lazy-media"
 body:
   - type: dropdown
-    id: verification
+    id: issue-verification
+    attributes:
+      label: "Is there an issue, or pull request already open for this?"
+      description: "Please check to make sure there is not already a pull request or an issue open for this before posting."
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: setup-verification
     attributes:
       label: "Does your setup match Lazy Media's setup?"
       description: "Please verify your setup is similar to Lazy Media's by visiting [Authentik Setup](https://docs.lazymedia.media/authentik/authentik-installation). If it is not, it might not get posted..."
@@ -128,5 +138,7 @@ body:
       options:
         - label: "I have searched existing issues to avoid duplicates."
           required: true
-        - label: "The requested change is relevant to the Reactive-Resume-Docs repository."
+        - label: "The requested change is relevant to the Lazy Media Public Docs."
+          required: true
+        - label: "I have written the updated documentation in markdown format."
           required: true
