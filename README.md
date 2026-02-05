@@ -26,14 +26,14 @@ _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed i
 
 **Current Service Status:**
 
-* Plex Media Server:  ![](https://status.lazymedia.media/api/badge/27/status)
+* Plex Media Server: ![](https://status.lazymedia.media/api/badge/27/status)
 * New Plex registrations: **Temporarily suspended** until further notice
 
 ### Overview
 
 This knowledge base contains comprehensive documentation for all publicly accessible systems and services.
 
-_**GitHub Repository**_   [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
+_**GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
 
 ### Authentik Configuration Guide
 
