@@ -35,7 +35,7 @@ This knowledge base contains comprehensive documentation for all publicly access
 
 ### Authentik Configuration Guide
 
-[Complete Authentik Installation & Cloudflare Integration Guide](https://github.com/lazy-media/public/blob/main/Authentik/Authentik-Installation/README.md#authentik-installation--cloudflare-setup-instructions)
+[Complete Authentik Installation & Cloudflare Integration Guide](Authentik/Authentik-Installation/#authentik-installation--cloudflare-setup-instructions)
 
 ***
 
@@ -120,7 +120,9 @@ Automated role assignment is currently being implemented. Members are advised to
 
 > Looking for N8N Automations? Visit my [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://links.lazymedia.media/q/arP6BMfAL).
 
-### Need to build a Resume?
+***
+
+## Need to build a Resume?
 
 <details>
 
@@ -140,7 +142,9 @@ A resume builder application with:
 
 </details>
 
-> **Enjoying this project? Help me keep it alive and evolving:**
+***
+
+### _**Enjoying this project? Help me keep it alive and evolving:**_
 
 #### 🌟 One-Time Donations
 
