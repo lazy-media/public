@@ -8,8 +8,4 @@ description: A Google Photo Take Helper
 
 * [TheLastGimbus Github](https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper)
 
-### Download the file and run it
-
-Windows
-
-* [Windows Executable](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Google-Photo-Takeout-Helper/Google-Photos-Takeout-Helper/gpth-windoza.exe)
+#### Please visit the Original Content Creator to download and use the latest release.

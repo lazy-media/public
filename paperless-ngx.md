@@ -99,9 +99,20 @@ Fill out the information as told in the setup steps.
 
 ### Example Paperless Docker Compose and Docker Compose Environment Files
 
-* [docker-compose.yml](https://github.com/lazy-media/public/blob/main/Paperless-NGX/docker-compose.yml)
-* [docker-compose.env](https://github.com/lazy-media/public/blob/main/Paperless-NGX/.env/README.md)
+{% tabs %}
+{% tab title="Basic Docker Compose" %}
+{% include ".gitbook/includes/paperless-ngx-basic-docker-compose-file.md" %}
+{% endtab %}
+
+{% tab title="OpenID Docker Compose" %}
+{% include ".gitbook/includes/paperless-ngx-with-openid-docker-compose-file.md" %}
+{% endtab %}
+
+{% tab title=".env.example" %}
+{% include ".gitbook/includes/paperless-ngx-example-environment-variables-file.md" %}
+{% endtab %}
+{% endtabs %}
 
 ## Authentik OAuth / OpenID Setup
 
-Please visit [Paperless-NGX OAuth Setup](https://github.com/lazy-media/public/blob/main/Paperless-NGX/Authentik/Paperless-NGX/README.md)
+Please visit [Paperless-NGX OAuth Setup](authentik/paperless-ngx.md)

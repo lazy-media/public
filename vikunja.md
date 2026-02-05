@@ -14,4 +14,4 @@ This respository is mainly for the Vikunja Mobile App backups
 
 ## Authentik OpenID / OAuth Setup
 
-> [Authentik OpenID / OAuth Setup](https://github.com/lazy-media/public/blob/main/Authentik/Vikunja/README.md)
+> [Authentik OpenID / OAuth Setup](authentik/vikunja.md)

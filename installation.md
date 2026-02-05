@@ -4,7 +4,7 @@ description: >-
   Scheduling.
 ---
 
-# Installation
+# Cal.com Appointment & Scheduling
 
 ## Introduction
 
@@ -32,15 +32,17 @@ I made this documentation because I could not find enough information on how to 
 * You have `docker` and `docker compose` installed
 * You are using the files provided in this documentation (if you want the best results)
 
+***
+
 ## Cal.com Installation
 
 ### Prerequisites
 
-> Docker and Docker Compose already installed
+1. Docker and Docker Compose already installed
+2. Fresh install of Ubuntu Server 24.04
+3. You already have a way to remote into this machine or ssh into it.
 
-> Fresh install of Ubuntu Server 24.04
-
-> You already have a way to remote into this machine or ssh into it.
+***
 
 ### Installation
 
@@ -72,8 +74,71 @@ cp .env.example .env
 
 The files that were needed were:
 
-* [git-init.sh](https://github.com/lazy-media/public/blob/main/CalCom-Appointment-Scheduling/Installation/git-init.sh)
-* [git-setup.sh](https://github.com/lazy-media/public/blob/main/CalCom-Appointment-Scheduling/Installation/git-setup.sh)
+{% tabs %}
+{% tab title="git-init.sh" %}
+```sh
+#!/bin/sh
+# Skip if `.gitmodules` exists
+[ -f .gitmodules ] && {
+  echo ".gitmodules already initialized"
+  exit 0
+}
+
+./git-setup.sh website console
+```
+{% endtab %}
+
+{% tab title="git-setup.sh" %}
+{% code expandable="true" %}
+```sh
+#!/bin/sh
+# If no project name is given
+if [ $# -eq 0 ]; then
+  # Display usage and stop
+  echo "Usage: git-setup.sh <console,website>"
+  exit 1
+fi
+# Get remote url to support either https or ssh
+remote_url=$(echo $(git config --get remote.origin.url) | sed 's![^/]*$!!')
+# Loop through the requested modules
+for module in "$@"; do
+  echo "Setting up '$module' module..."
+  # Set the project git URL
+  project=$remote_url$module.git
+  # Check if we have access to the module
+  if [ "$(git ls-remote "$project" 2>/dev/null)" ]; then
+    echo "You have access to '${module}'"
+    # Create the .gitmodules file if it doesn't exist
+    ([ -e ".gitmodules" ] || touch ".gitmodules") && [ ! -w ".gitmodules" ] && echo cannot write to .gitmodules && exit 1
+    # Prevents duplicate entries
+    git config -f .gitmodules --unset-all "submodule.apps/$module.branch"
+    # Add the submodule
+    git submodule add --force $project "apps/$module"
+    
+    # Determine the branch based on module
+    branch="main"
+    if [ "$module" = "website" ]; then
+      branch="production"
+    fi
+
+    # Set the default branch
+    git config -f .gitmodules --add "submodule.apps/$module.branch" ${branch}
+    
+    # Update to the latest of branch in that submodule
+    cd apps/$module && git pull origin ${branch} && cd ../..
+
+    # We forcefully added the subdmoule which was in .gitignore, so unstage it.
+    git restore --staged apps/$module
+  else
+    echo "You don't have access to: '${module}' module."
+  fi
+done
+git restore --staged .gitmodules
+
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 #### Build CalCom
 
@@ -98,21 +163,115 @@ docker compose up --build
 
 * Let this run
 
+***
+
 ### Example Docker Compose File
 
-* [Example docker-compose.yml file](https://github.com/lazy-media/public/blob/main/CalCom-Appointment-Scheduling/Installation/docker-compose.yml)
+{% code expandable="true" %}
+```yml
+# file location: root directory of calcom docker (etc. /home/user/docker/docker-compose.yml)
+
+# Use postgres/example user/password credentials
+
+networks:
+  stack:
+    name: stack
+    external: false
+
+services:
+  database:
+    container_name: database
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database-data:/var/lib/postgresql/data/
+    env_file: .env
+    networks:
+      - stack
+
+  calcom:
+    image: calcom.docker.scarf.sh/calcom/cal.com
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_WEBAPP_URL: ${NEXT_PUBLIC_WEBAPP_URL}
+        NEXT_PUBLIC_API_V2_URL: ${NEXT_PUBLIC_API_V2_URL}
+        NEXT_PUBLIC_LICENSE_CONSENT: ${NEXT_PUBLIC_LICENSE_CONSENT}
+        CALCOM_TELEMETRY_DISABLED: ${CALCOM_TELEMETRY_DISABLED}
+        NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+        CALENDSO_ENCRYPTION_KEY: ${CALENDSO_ENCRYPTION_KEY}
+        DATABASE_URL: ${DATABASE_URL}
+        DATABASE_DIRECT_URL: ${DATABASE_URL}
+        SAML_DATABASE_URL: ${DATABASE_URL_SAML}
+      network: stack
+    restart: always
+    networks:
+      - stack
+    ports:
+      - 3000:3000
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}
+      - DATABASE_DIRECT_URL=${DATABASE_URL}
+      - SAML_DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}
+    depends_on:
+      - database
+
+# Optional use of Prisma Studio. In production, comment out or remove the section below to prevent unwanted access to your database.
+# Uncomment all the lines below until END SECTION if you want to enable this.
+#  studio:
+#    image: calcom.docker.scarf.sh/calcom/cal.com
+#    restart: always
+#    networks:
+#      - stack
+#    ports:
+#      - 5555:5555
+#    env_file: .env
+#    environment:
+#      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}
+#      - DATABASE_DIRECT_URL=${DATABASE_URL}
+#      - SAML_DATABASE_URL=${DATABASE_URL_SAML}
+#    depends_on:
+#      - database
+#    command:
+#      - npx
+#      - prisma
+#      - studio
+# END SECTION: Optional use of Prisma Studio.
+```
+{% endcode %}
+
+***
 
 ### ENV Example File
 
 Use the following example file as a starting point. Be sure to change what is needed for it to fit your needs.
 
-* [Example .env File](https://github.com/lazy-media/public/blob/main/CalCom-Appointment-Scheduling/Installation/.env/README.md)
+```dotenv
+THIS WILL BE FILLED IN AT A LATER TIME!!!
+```
+
+***
 
 ### Example `.env.appStore` File
 
 This file is needed for some integrations to work correctly, like Google and Stripe.
 
-* [Example .env.appStore File](https://github.com/lazy-media/public/blob/main/CalCom-Appointment-Scheduling/Installation/.env.appStore)
+```dotenv
+# file location: root directory of calcom docker (etc. /home/user/docker/.env.appStore)
+
+{GOOGLE OAUTH JSON FILE CONTENTS}
+
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
+STRIPE_PRIVATE_KEY=
+STRIPE_CLIENT_ID=
+STRIPE_WEBHOOK_SECRET=
+```
+
+***
 
 ### Stripe Setup
 
@@ -184,15 +343,21 @@ This will help you with getting the proper keys for Stripe Integration
 * Save the file and do a `docker compose down && docker compose up -d` to restart calcom, or restart it how you restart it.
 * Open Your Cal.com site and go to Apps. Find and Install Stripe.
 
+***
+
 ### Google OAuth Setup
 
 > I recommend you follow the directions on the main website found [here](https://cal.com/docs/self-hosting/apps/install-apps/google).
 
-> I will update this section at a later date, as the official documentation is good enough for this section.
+> I will update this section at a later date, if I see fit, as the official documentation is good enough.
+
+***
 
 ### Nextcloud Talk Setup
 
 > Still trying to figure this out.
+
+***
 
 ### OpenID / OAuth Setup
 
@@ -219,4 +384,4 @@ CALCOM_PRIVATE_API_ROUTE=
 
 ### Authentik Basic OpenID / OAuth Setup
 
-> To learn how to setup an OpenID/OAuth Provider with Authentik, click [here](../authentik/applications-and-providers.md#authentik-basic-oauth2openid-setup)
+> To learn how to setup an OpenID/OAuth Provider with Authentik, click [here](authentik/applications-and-providers.md#authentik-basic-oauth2openid-setup)

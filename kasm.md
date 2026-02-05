@@ -20,4 +20,4 @@ https://kasmregistry.linuxserver.io
 
 Create Provider and Application in Authentik and make note of Client ID and Secret Key.
 
-Visit [Kasm OAuth Instructions](https://github.com/lazy-media/public/blob/main/Authentik/Kasm/README.md)
+Visit [Kasm OAuth Instructions](authentik/kasm.md)

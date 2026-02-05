@@ -141,4 +141,4 @@ apt-key list 3F01618A51312F3F
 
 ## Authentik OAuth2/OpenID & SAML Provider Setup
 
-[Authentik OAuth2/OpenID & SAML Provider Setup](https://github.com/lazy-media/public/blob/main/Authentik/Gitlab/README.md)
+[Authentik OAuth2/OpenID & SAML Provider Setup](authentik/applications-and-providers.md#authentik-basic-oauth2-openid-setup)

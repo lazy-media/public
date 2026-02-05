@@ -8,6 +8,8 @@ description: Information on all my servers that are running.
 
 This shows the TrueNas Scale Storage Server, three Proxmox servers I run plus a Proxmox backup server. These three Proxmox servers are not setup in a cluster, they are all individual nodes.
 
+***
+
 ## TrueNas Scale Server
 
 #### Case
@@ -33,8 +35,7 @@ A-Tech 8 x 32GB DDR4 2400 ECC REG RDIMM = [eBay Link](https://www.ebay.com/itm/3
 
 #### Graphics Card = 2
 
-* EVGA GeForce 1080 SuperClocked
-* EVGA GeForce 1070 SuperClocked
+* GeForce RTX 3060
 
 #### External Networking = 1
 
@@ -60,6 +61,8 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 
 * 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8\&th=1)
 
+***
+
 ## Main Proxmox Server
 
 Dell Poweredge R710
@@ -75,6 +78,8 @@ Dell Poweredge R710
 #### Storage
 
 3 x WD Red 4TB
+
+***
 
 ## Proxmox Mini HP
 
@@ -92,6 +97,8 @@ Intel Core i7
 
 500GB Samsung SSD
 
+***
+
 ## Proxmox Backup Server
 
 ### HP Mediasmart Server EX490
@@ -108,6 +115,8 @@ Pentium Dual Core E5200 @ 2.5GHz
 
 3 x WD 2TB Red 1 x Kingston 120GB SSD
 
+***
+
 ## AI Server
 
 #### Processor
@@ -120,7 +129,8 @@ Intel Core i5-6600
 
 #### Graphics Card
 
-NVIDIA GeForce GTX 1070
+* NVIDIA GeForce GTX 1070
+* NVIDIA GeForce GTX 1080 SC
 
 #### Storage
 
