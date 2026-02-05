@@ -14,10 +14,7 @@ body:
         - "No"
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        **For best results on what you want published to the site, please send your content in Markdown Format.**
+      
   - type: dropdown
     id: doc-section
     attributes:
@@ -94,12 +91,12 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: markdown
     id: replacement
     attributes:
       label: "How would you like the documentation to read instead?"
       description: "Please provide the exact text you'd like to update on the Docs Site, ensuring it is clear, concise, and thoroughly detailed. For optimal compatibility, submit this content in Markdown format."
-      placeholder: "Please input your extremely detailed documentation replacement here. Preferrebly in Markdown Format."
+      placeholder: "Please input your extremely detailed documentation replacement here. Must be in Markdown Format."
     validations:
       required: true
 
