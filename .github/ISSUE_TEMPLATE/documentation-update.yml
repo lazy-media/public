@@ -94,7 +94,7 @@ body:
     validations:
       required: true
 
-  - type: markdown
+  - type: textarea
     id: replacement
     attributes:
       label: "How would you like the documentation to read instead?"
