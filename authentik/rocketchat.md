@@ -1,8 +1,10 @@
 ---
-description: Information on how setup RocketChat Server OpenID / OAuth with Authentik
+description: >-
+  Information on how setup a Self Hosted RocketChat Server OpenID / OAuth with
+  Authentik
 ---
 
-# RocketChat
+# RocketChat Server
 
 ## Rocket Chat Server OAuth2/OpenID Setup with Authentik
 
