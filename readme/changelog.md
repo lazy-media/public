@@ -10,6 +10,7 @@ description: Major changes made to the documentation
 
 * Updated more information on the documentation
 * Added GitLab Integration to push new documentation site directory structure to push to GitHub (one time process to overwrite current information on GitHub)
+* GitHub Public Repo has been updated to reflect new GitBook Structure
 {% endupdate %}
 
 {% update date="2026-02-04" %}
