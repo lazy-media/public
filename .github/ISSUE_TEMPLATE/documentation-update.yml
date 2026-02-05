@@ -14,10 +14,12 @@ body:
         - "No"
     validations:
       required: true
+      
   - type: markdown
     attributes:
       value: |
         **For best results on what you want published to the site, please send your content in Markdown Format.**
+        
   - type: dropdown
     id: doc-section
     attributes:
