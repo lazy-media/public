@@ -14,27 +14,6 @@ body:
         - "No"
     validations:
       required: true
-  - type: dropdown
-    id: setup-verification
-    attributes:
-      label: "Does your setup match Lazy Media's setup?"
-      description: "Please verify your setup is similar to Lazy Media's by visiting [Authentik Setup](https://docs.lazymedia.media/authentik/authentik-installation). If it is not, it might not get posted..."
-      options:
-        - "No"
-        - "Yes"
-    validations:
-      required: true
-  - type: dropdown
-    id: clarity
-    attributes:
-      label: "Will your documentation still work with a setup similar to Lazy Media's?"
-      description: "If your setup already matches, select Yes. If your setup does not match, then make sure the documentation will still work a basic setup similar to Lazy Media's before selecting. If your are not sure, select not sure."
-      options:
-        - "No"
-        - "Yes"
-        - "Not Sure"
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
