@@ -4,6 +4,14 @@ title: "[Public Docs Update] "
 labels: ["documentation", "gitbook", "update", "needs triage"]
 assignees: "lazy-media"
 body:
+  - type: dropdown
+    id: verification
+    attributes:
+      label: "Does your setup match my setup?"
+      description: "Your setup must be setup exactly like mine is in order to get proper documentation posted. Visit [Authentik Setup](https://docs.lazymedia.media/authentik/authentik-installation) to verify."
+      options:
+        - Yes
+        - No
   - type: markdown
     attributes:
       value: |
