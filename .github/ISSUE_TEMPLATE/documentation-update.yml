@@ -10,8 +10,8 @@ body:
       label: "Does your setup match my setup?"
       description: "Your setup must be setup exactly like mine is in order to get proper documentation posted. Visit [Authentik Setup](https://docs.lazymedia.media/authentik/authentik-installation) to verify."
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
   - type: markdown
     attributes:
       value: |
@@ -22,50 +22,50 @@ body:
       label: "Which section of the documentation needs to be updated?"
       description: "Select the main area or section that your update relates to."
       options:
-        - Artificial-Intelligence Faster Whisper
-        - Artificial-Intelligence Ollama
-        - Artificial-Intelligence Open WebUI
-        - Artificial-Intelligence Piper
-        - Artificial-Intelligence Stable Diffusion
-        - Authentik Applications & Providers
-        - Authentik Authentik Installation
-        - Authentik Basic HTTP Authentication
-        - Authentik Cloudflare Zero Trust
-        - Authentik Default Authentik Flows
-        - Authentik Discord
-        - Authentik Federation & Social Login
-        - Authentik Gitlab
-        - Authentik Grafana
-        - Authentik Immich
-        - Authentik Jellyfin
-        - Authentik Jitsi Meet
-        - Authentik Kasm
-        - Authentik Mastodon
-        - Authentik Nextcloud
-        - Authentik Paperless NGX
-        - Authentik Portainer
-        - Authentik Prometheus
-        - Authentik RocketChat
-        - Authentik Uptime Kuma
-        - Authentik Vaultwarden
-        - Authentik Vikunja
-        - Authentik Wiki.JS
-        - Bitcoin Miners
-        - Bitcoin Wallets
-        - CalCom-Appointment-Scheduling Installation
-        - Docker Dockerfiles
-        - Docker Installation
-        - Docker Portainer
-        - Google-Photos-Takeout Google Photo Takeout Helper
-        - Google-Photos-Takeout Immich Go
-        - Mailcow Installation
-        - Mastodon Installation
-        - My-Homelab Personal PC
-        - My-Homelab Servers
-        - Nextcloud Installation
-        - Reactive-Resume Installation
-        - TrueNas-Scale LSI 9300 16i HBA
-        - Vikunja Mobile Application
+        - "Artificial-Intelligence: Faster Whisper"
+        - "Artificial-Intelligence: Ollama"
+        - "Artificial-Intelligence: Open WebUI"
+        - "Artificial-Intelligence: Piper"
+        - "Artificial-Intelligence Stable Diffusion"
+        - "Authentik: Applications & Providers"
+        - "Authentik: Authentik Installation"
+        - "Authentik: Basic HTTP Authentication"
+        - "Authentik: Cloudflare Zero Trust"
+        - "Authentik: Default Authentik Flows"
+        - "Authentik: Discord"
+        - "Authentik: Federation & Social Login"
+        - "Authentik: Gitlab"
+        - "Authentik: Grafana"
+        - "Authentik: Immich"
+        - "Authentik: Jellyfin"
+        - "Authentik: Jitsi Meet"
+        - "Authentik: Kasm"
+        - "Authentik: Mastodon"
+        - "Authentik: Nextcloud"
+        - "Authentik: Paperless NGX"
+        - "Authentik: Portainer"
+        - "Authentik: Prometheus"
+        - "Authentik: RocketChat"
+        - "Authentik: Uptime Kuma"
+        - "Authentik: Vaultwarden"
+        - "Authentik: Vikunja"
+        - "Authentik: Wiki.JS"
+        - "Bitcoin: Miners"
+        - "Bitcoin: Wallets"
+        - "CalCom-Appointment-Scheduling: Installation"
+        - "Docker: Dockerfiles"
+        - "Docker: Installation"
+        - "Docker: Portainer"
+        - "Google-Photos-Takeout: Google Photo Takeout Helper"
+        - "Google-Photos-Takeout: Immich Go"
+        - "Mailcow: Installation"
+        - "Mastodon: Installation"
+        - "My-Homelab: Personal PC"
+        - "My-Homelab: Servers"
+        - "Nextcloud: Installation"
+        - "Reactive-Resume: Installation"
+        - "TrueNas-Scale: LSI 9300 16i HBA"
+        - "Vikunja: Mobile Application"
     validations:
       required: true
 
