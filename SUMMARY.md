@@ -50,6 +50,7 @@
   * [Google-Photo-Takeout-Helper](google-photos-takeout/google-photo-takeout-helper.md)
   * [Immich-Go](google-photos-takeout/immich-go.md)
 * [Immich](immich.md)
+* [iVentoy](iventoy.md)
 * [Jellyfin](jellyfin.md)
 * [Kasm Workspaces](kasm.md)
 * [Mailcow Installation Instructions](installation-1.md)
@@ -68,4 +69,3 @@
 * [Vikunja](vikunja.md)
 * [Webmin](webmin.md)
 * [Windows 11](windows-11.md)
-* [iVentoy](iventoy.md)
