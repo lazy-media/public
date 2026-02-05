@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Lazy Media's Public Docs](README.md)
+  * [Donations & Sponsors](readme/donations-and-sponsors.md)
+  * [Need a Resume?](readme/need-a-resume.md)
+  * [Joining Lazy Media's Server](readme/joining-lazy-medias-server.md)
   * [Changelog](readme/changelog.md)
 * [Authentik](authentik/README.md)
   * [Authentik Installation](authentik/authentik-installation.md)

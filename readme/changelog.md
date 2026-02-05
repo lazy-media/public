@@ -11,6 +11,9 @@ description: Major changes made to the documentation
 * Updated more information on the documentation
 * Added GitLab Integration to push new documentation site directory structure to push to GitHub (one time process to overwrite current information on GitHub)
 * GitHub Public Repo has been updated to reflect new GitBook Structure
+* Fixed links to be local to GitBook instead of redirecting to GitHub content that doesn't exist
+* Separated Donations / Sponsors Page
+* Separated Join Lazy Media's Server to a new page.
 {% endupdate %}
 
 {% update date="2026-02-04" %}
