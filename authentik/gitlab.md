@@ -11,7 +11,7 @@ description: Information on how to setup GitLab OAuth with Authentik
 
 ## Original documentation
 
-* [My Gitlab Installation](https://github.com/lazy-media/public/blob/main/Authentik/Gitlab/Installation-Instructions/Gitlab/README.md)
+* [My Gitlab Installation](../Authentik/Gitlab/Installation-Instructions/Gitlab/)
 * [Gitlab Omnibus Installation](https://about.gitlab.com/install/#ubuntu)
 * [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 
@@ -19,7 +19,7 @@ description: Information on how to setup GitLab OAuth with Authentik
 
 ## Basic Authentik OAuth2/OpenID Setup
 
-[Authentik Basic OAuth2/OpenID Setup](https://github.com/lazy-media/public/blob/main/Authentik/Gitlab/README.md)
+[Authentik Basic OAuth2/OpenID Setup](../Authentik/Gitlab/)
 
 ### OpenID / OAuth SETUP
 
@@ -39,7 +39,7 @@ Login to your GitLab VM and edit the Gitlab Ruby Config File
 nano /etc/gitlab/gitlab.rb
 ```
 
-The following lines are basic config options for OAuth or SAML Login Add the following lines to the config file or search for them in the config This setup is for OAuth / OpenID connect. Scroll down or click for [SAML](../Authentik/Gitlab/#saml-setup) Setup.
+The following lines are basic config options for OAuth or SAML Login Add the following lines to the config file or search for them in the config This setup is for OAuth / OpenID connect. Scroll down or click for [SAML](https://gitlab.lazymedia.media/public-files/public-files/-/blob/main/Authentik/Gitlab/Readme.md#saml-setup) Setup.
 
 {% code expandable="true" %}
 ```
