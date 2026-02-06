@@ -12,14 +12,14 @@ description: Information on how to install Docker Engine with three different me
 
 ### Update System
 
-```
-apt update && apt upgrade -y
+```bash
+sudo apt update && apt upgrade -y
 ```
 
 ### Install Dependencies
 
-```
-apt install -y ca-certificates curl
+```bash
+sudo sapt install -y ca-certificates curl
 ```
 
 ## Docker Installation Methods
