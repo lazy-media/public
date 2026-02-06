@@ -5,6 +5,13 @@ description: Major changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-06" %}
+## Added Documentation
+
+* Added Quick Documentation for [Dockhand Docker Management Tool](../docker/docker-management-tools/dockhand-docker-management.md)
+* Updated GitHub Repository with appropriately named files.
+{% endupdate %}
+
 {% update date="2026-02-05" %}
 ## Documentation Updates
 
