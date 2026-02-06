@@ -19,7 +19,7 @@ sudo apt update && apt upgrade -y
 ### Install Dependencies
 
 ```bash
-sudo sapt install -y ca-certificates curl
+sudo apt install -y ca-certificates curl
 ```
 
 ## Docker Installation Methods
