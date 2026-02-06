@@ -38,7 +38,7 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 13. Click Done or Update
 14. Go to the Policy Section of the same Flow and add "default-source-enrollment-if-sso"
 
-{% include "../../.gitbook/includes/authentik-social-login-fix-for-user-path-template.md" %}
+{% include "../../.gitbook/includes/authentik-warning-social-login-user-template-path-fix.md" %}
 
 ***
 

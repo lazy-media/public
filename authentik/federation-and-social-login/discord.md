@@ -123,7 +123,7 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 14. Uncheck `Create new users as inactive`.
 15. Leave `User Path Template empty` (autofilled later by Authentik)
 
-{% include "../../.gitbook/includes/authentik-social-login-fix-for-user-path-template.md" %}
+{% include "../../.gitbook/includes/authentik-warning-social-login-user-template-path-fix.md" %}
 
 1. Select the group you want users to go into when enrolled
 2. Increment your order to `20`
