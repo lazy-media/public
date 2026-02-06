@@ -10,6 +10,8 @@ description: RocketChat Server is a self hosted alternative to Slack.
 * Snapd installed (automatic if installing Ubuntu Server from ISO file)
 * Basic knowledge of SSH, Ubuntu, and SNAP
 
+***
+
 ### Installation
 
 Login to your Ubuntu Server via ssh with a user that has the ability to run commands with sudo privileges.
@@ -19,6 +21,8 @@ Install the Rocket-Chat Server:
 ```bash
 sudo snap install rocketchat-server
 ```
+
+***
 
 #### Locked out of Rocket-Chat Server due to 2FA?
 
@@ -76,7 +80,7 @@ OVERWRITE_SETTING_Accounts_TwoFactorAuthentication_Enabled=false
 
 Save the file with `CTRL + X` > `Y` > `ENTER`
 
-Restart the Rocket-Chat Server with:
+#### Restart the Rocket-Chat Server with:
 
 ```bash
 sudo snap restart rocketchat-server
