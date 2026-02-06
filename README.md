@@ -6,7 +6,7 @@ description: >-
 
 # Lazy Media's Public Docs
 
-## NOTICE
+### **Documentation Update Status:**
 
 _**Well, look who finally decided to be useful.**_\
 \
@@ -16,11 +16,10 @@ _**We’re currently in the middle of a dramatic, tear-filled overhaul to make t
 \
 _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed in everything from Arabic to Vietnamese. You’re welcome.**_
 
-#### **Documentation Update Status:**
-
-> PLEASE BE PATIENT. THE DOCUMENTATION SITE IS GOING THROUGH A MAJOR RE-WORK.\
-> THIS IS TO IMPROVE THE EXPERIENCE FOR THE USERS.\
-> IF YOU NOTICE THAT DOCUMENTATION IS OUT OF DATE, PLEASE HELP UPDATE IT WITH THE LINK AT THE TOP OF THE PAGE.
+{% hint style="info" %}
+PLEASE BE PATIENT AS THE DOCUMENTATION SITE IS GOING THROUGH A MAJOR RE-WORK.\
+THIS IS TO IMPROVE THE USER EXPERIENCE.
+{% endhint %}
 
 ### Service Availability
 

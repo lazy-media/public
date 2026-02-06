@@ -6,7 +6,9 @@ description: Donations, Sponsors, Dev Platforms, Social and Streaming Profiles
 
 ### 💖 Support My Work
 
-> Looking for N8N Automations? Visit my <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&#x26;logo=patreon&#x26;logoColor=white" alt="Patreon" data-size="original">
+{% hint style="info" %}
+Looking for N8N Automations? Visit my <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&#x26;logo=patreon&#x26;logoColor=white" alt="Patreon" data-size="original">
+{% endhint %}
 
 ### _Enjoying this project? Help me keep it alive and evolving:_
 

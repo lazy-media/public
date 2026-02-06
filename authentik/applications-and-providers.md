@@ -1,8 +1,10 @@
 ---
-description: An example on how to setup Authentik Applications & Providers
+description: >-
+  An example on how to setup a basic Authentik Application & Provider. This is a
+  generic setup where Authentik is your reverse proxy.
 ---
 
-# Applications & Providers Setup
+# Basic Applications & Providers Setup
 
 ### Authentik Proxy Provider Easy Wizard Setup
 
