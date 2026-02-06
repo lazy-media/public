@@ -67,7 +67,7 @@
 * [Proxmox](proxmox.md)
 * [Pterodactyl](pterodactyl-gaming-server.md)
 * [Reactive Resume](reactive-resume.md)
-* [RocketChat Server](rocketchat-server.md)
+* [Rocket-Chat Server](rocketchat-server.md)
 * [TrueNas Scale](truenas-scale/README.md)
   * [LSI 9300 16i HBA](truenas-scale/lsi-9300-16i-hba.md)
 * [Vaultwarden](vaultwarden.md)
