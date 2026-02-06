@@ -11,30 +11,30 @@ description: An example on how to setup Authentik Applications & Providers
    1. Click on `Create with Wizard`
    2. Enter a Name for your Application (i.e. Sonarr)
    3. Enter a slug (if not autofilled, this is the path for Authentik to use, so it should be something simple or related to the program)
-   4. (Optional) Set a Group that you want this application to be grouped into (i.e. `Admins`, `Nextcloud Users`)
-      * Be aware: That if you set this group, you need to manually type in the group exactly how you want it grouped. If there is a mispelling or any difference, it will create a new group.
+   4. (Optional) Set a Group that you want this application to be grouped into on the User Interface (i.e. `Admins`, `Nextcloud Users`)
+      1. Be aware: That if you set this group, you need to manually type in the group exactly how you want it grouped. If there is a mispelling or any difference, it will create a new group.
    5. (Optional) Expand `UI Settings`
-      * Set a `Launch URL`
-        * To hide an application enter the launch URL as `blank://blank`
-          * Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the Authentik Overview, log out of Authentik completely, or Log back into the application you just signed out of.
-      * Enable `Open in new tab`
+      1. Set a `Launch URL`
+         * To hide an application enter the launch URL as `blank://blank`
+           * Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the `Authentik Overview`, `log out of Authentik completely`, or `Log back into the application you just signed out of`.
+      2. Enable `Open in new tab`
    6. Click `Next`
    7. Select `Transparent Reverse Proxy` and click `Next`
    8. Provider name should be autofilled, change if you want to
    9. (Optional) Select an Authentication Flow if you want to, I usually don't select one.
    10. Select `Authorization Flow` as either Implicit or Explicit
-       * Implicit will not show a dialog box before continuing to the site in question.
-       * Explicit will show a dialog box before fully navigating to the site in question and force the user to confirm they want to continue.
+       1. Implicit will not show a dialog box before continuing to the site in question.
+       2. Explicit will show a dialog box before fully navigating to the site in question and force the user to confirm they want to continue.
    11. Set your `External Host` to a fully qualified subdomain name (i.e. `https://test.domain.example`)
    12. Set the `Internal Host` to the internal IP Address and Port Number of the service you want Proxied. (i.e. `http://192.168.1.10:8080`)
-       * **NOTE: If your internal service normally uses `https` instead of `http`, (i.e. `https://192.168.1.10:8443`), make sure you `DISABLE INTERNAL HOST SSL VALIDATION`**
+       1. **NOTE: If your internal service normally uses `https` instead of `http`, (i.e. `https://192.168.1.10:8443`), make sure you `DISABLE INTERNAL HOST SSL VALIDATION`**
    13. Expand `Advanced Protocol Settings` at the bottom
-       * Under `Certificate`, choose your Cloudflare Certificate we created during [Authentik Installation](https://github.com/lazy-media/public/blob/main/Installation-Instructions/Authentik/README.md#cloudflare-setup).
+       1. Under `Certificate`, choose your Cloudflare Certificate we created during [Authentik Installation](../Installation-Instructions/Authentik/#cloudflare-setup).
    14. (Optional) For Testing, you can pass through the whole application you are trying to proxy by putting a `/` under the `Unauthenticated Paths` box.
    15. Click `Next` or `Finish`
    16. Navigate to `Applications > Outposts`
    17. Click the `Edit` button under `Actions` for the default `authentik Embedded Outpost`
-       * Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
+       1. Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
    18. Click `Update`.
 
 ***
@@ -68,15 +68,15 @@ description: An example on how to setup Authentik Applications & Providers
       4. Select a Provider you want this Application linked to. (i.e. Sonarr)
       5. Backchannel Providers is left empty.
       6. (optional) Expand `UI Settings`
-         * Fill out a Launch URL, or leave empty to be automatically pulled from the selected provider.
-           * To hide an application enter the launch URL as `blank://blank`
-             * Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the Authentik Overview, log out of Authentik completely, or Log back into the application you just signed out of.
-         * Enable `Open in new tab`
-         * Upload an Icon for the Application
+         1. Fill out a Launch URL, or leave empty to be automatically pulled from the selected provider.
+            1. To hide an application enter the launch URL as `blank://blank`
+               * Please note that when this is set for OpenID/OAuth Providers/Applications, this is used on the Authentik Logout Page of that Provider when you are asked to go back to the Authentik Overview, log out of Authentik completely, or Log back into the application you just signed out of.
+         2. Enable `Open in new tab`
+         3. Upload an Icon for the Application
    2. Click `Create`
 4. Navigate to `Applications > Outposts`
    1. Click the `Edit` button under `Actions` for the default `authentik Embedded Outpost`
-      * Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
+      1. Under `Applications` either double click any applications on the left side, or Select on the Left Side, and press the `>` in the center column to move to the right side. The right side tells Authentik which applications you want available externally.
    2. Click `Update`.
 
 ***

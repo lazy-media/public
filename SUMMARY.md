@@ -9,7 +9,7 @@
   * [Authentik Installation](authentik/authentik-installation.md)
   * [Applications & Providers Setup](authentik/applications-and-providers.md)
   * [Basic HTTP Authentication Passthrough](authentik/basic-http-authentication.md)
-  * [Cloudflare Zero Trust Authentik Setup](authentik/cloudflare-zero-trust.md)
+  * [Cloudflare Zero Trust](authentik/cloudflare-zero-trust.md)
   * [Custom CSS Examples](authentik/custom-css-examples.md)
   * [Default Authentik Flows](authentik/default-authentik-flows.md)
   * [Dockhand](authentik/dockhand.md)

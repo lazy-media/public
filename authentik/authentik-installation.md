@@ -14,11 +14,11 @@ This is created in a Proxmox LXC Container running Ubuntu 22.04.4
 
 This also assumes you have docker and docker compose installed. If not, install it.
 
-You can follow this Guide [Docker Installation](https://github.com/lazy-media/public/blob/main/Docker/Installation/README.md)
+You can follow this Guide [Docker Installation](../docker/installation.md)
 
 ### Original Documentation
 
-https://goauthentik.io/docs/installation/docker-compose#preparation
+[https://goauthentik.io/docs/installation/docker-compose#preparation](https://goauthentik.io/docs/installation/docker-compose#preparation)
 
 ### Authentik Prerequisites & Environment Setup
 
@@ -58,7 +58,7 @@ Please note that I can only provide support for products and services documented
 
 * Some knowledge of basic commands in Ubuntu and Docker are recommended.
 * Docker and Docker Compose must be installed.
-  * You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](https://github.com/lazy-media/public/blob/main/Docker/Installation/README.md)
+  * You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](../Docker/Installation/)
 
 ***
 
@@ -186,7 +186,7 @@ Edit this file if needed, with `nano docker-compose.yml` and paste the following
 
 > When creating these outposts in Authentik Admin Dashboard, I recommend setting them as `No Itegration` before activating them in the docker-compose.yml file.
 
-{% code expandable="true" %}
+{% code title="docker-compose.yml" expandable="true" %}
 ```yml
 # version: "3.4"
 
@@ -335,7 +335,7 @@ volumes:
 
 This is the `.env` file
 
-{% code expandable="true" %}
+{% code title=".env" expandable="true" %}
 ```dotenv
 ##############################################################################################
 ### Default Authentik Environment Variables.                                               ###
@@ -585,7 +585,7 @@ AUTHENTIK_EMAIL__FROM=noreply@authentik.domain
 
 Name this file `docker-compose.override.yml`
 
-{% code expandable="true" %}
+{% code title="docker-compose.override.yml" expandable="true" %}
 ```yml
 version: "3.2"
 
@@ -680,6 +680,12 @@ or
 docker-compose down && docker-compose up -d
 ```
 
+or if you prefer not to stop the container
+
+```bash
+docker-compose pull && docker-compose up -d
+```
+
 ***
 
 ## Cloudflare Setup
@@ -687,31 +693,31 @@ docker-compose down && docker-compose up -d
 1. Login to your Cloudflare Account.
 2. Navigate to the DNS Records section of your domain you want attached to Authentik.
 3. Create 3 Proxied DNS records.
-   * Set one `DNS A Record` that is set for `your domain` to your `Public IP Address`. (Root Domain (i.e. domain.example))
-   * Set one `CNAME Record` with an asterisk (`*`) for a wildcard with the destination of `@` for root domain. (Wildcard Entry)
-   * Set the last one as a `CNAME Record` for `auth` and destination of `@` for root domain. (Authentik)
+   1. Set one `DNS A Record` that is set for `your domain` to your `Public IP Address`. (Root Domain (i.e. domain.example))
+   2. Set one `CNAME Record` with an asterisk (`*`) for a wildcard with the destination of `@` for root domain. (Wildcard Entry)
+   3. Set the last one as a `CNAME Record` for `auth` and destination of `@` for root domain. (Authentik)
 4. In your Cloudflare Account, navigate to SSL/TLS > Overview
-   * Set your `Encryption Mode` to `Full (Strict)`
-   * (Optional) Enable `SSL/TLS Recommender`
+   1. Set your `Encryption Mode` to `Full (Strict)`
+   2. (Optional) Enable `SSL/TLS Recommender`
 5. Navigate to SSL/TLS > Edge Certificates
-   * (Recommended) Enable `Always Use HTTPS`
-   * Configure `HTTP Strict Transport Security (HSTS)`
-     * (Recommended) **Enable** `HSTS`
-     * (Recommended) `Set Max Age Header` to `6 Months`
-     * (Recommended) **Enable** `Apply HSTS Policy to subdomains`
-     * (Recommended) **Disable** `Preload`
-     * (Recommended) **Enable** `No-Sniff Header`
-   * Set `Minimum TLS Version` to `TLS 1.3`
-   * (Recommended) **Enable** `Opportunistic Encryption`
-   * **Enable** `TLS 1.3`
-   * (Recommended) **Enable** `Automatic HTTPS Rewrites`
+   1. (Recommended) Enable `Always Use HTTPS`
+   2. Configure `HTTP Strict Transport Security (HSTS)`
+      1. (Recommended) **Enable** `HSTS`
+      2. (Recommended) `Set Max Age Header` to `6 Months`
+      3. (Recommended) **Enable** `Apply HSTS Policy to subdomains`
+      4. (Recommended) **Disable** `Preload`
+      5. (Recommended) **Enable** `No-Sniff Header`
+   3. Set `Minimum TLS Version` to `TLS 1.3`
+   4. (Recommended) **Enable** `Opportunistic Encryption`
+   5. **Enable** `TLS 1.3`
+   6. (Recommended) **Enable** `Automatic HTTPS Rewrites`
 6. Navigate to SSL/TLS > Origin Server
-   * Create an `Origin Certificate` if one does not exist already.
-     * If one exists, `Revoke` and `Create` a new one.
-   * Create your Certificate with `RSA (2048)`
-   * Your hostnames should include the wildcard ( \* ) entry and the root domain name at least.
-   * Choose your `Certificate Validity` Length
-   * Copy the contents of both boxes on the next screen into a word or text document temporarily. There should be a `Certificate Key` and a `Private Key`. **DO NOT EVER SHARE THIS INFORMATION WITH ANYONE, IT IS THE KEY TO YOUR DOMAIN CONNECTED TO CLOUDFLARE**
+   1. Create an `Origin Certificate` if one does not exist already.
+      1. If one exists, `Revoke` and `Create` a new one.
+   2. Create your Certificate with `RSA (2048)`
+   3. Your hostnames should include the wildcard ( \* ) entry and the root domain name at least.
+   4. Choose your `Certificate Validity` Length
+   5. Copy the contents of both boxes on the next screen into a word or text document temporarily. There should be a `Certificate Key` and a `Private Key`. **DO NOT EVER SHARE THIS INFORMATION WITH ANYONE, IT IS THE KEY TO YOUR DOMAIN CONNECTED TO CLOUDFLARE**
 
 ***
 
@@ -719,21 +725,21 @@ docker-compose down && docker-compose up -d
 
 1. Login to your Authentik Admin Account
 2. Navigate to `System > Certificates`
-   * Click on `Create` to Import the Cloudflare Origin Certificate we just created.
-   * Name the Certificate whatever you want
-   * Paste the `Certificate Key` into the `Certificate` box
-   * Paste the `Private Key` into the `Private Key` box
-   * Click `Create`
+   1. Click on `Create` to Import the Cloudflare Origin Certificate we just created.
+   2. Name the Certificate whatever you want
+   3. Paste the `Certificate Key` into the `Certificate` box
+   4. Paste the `Private Key` into the `Private Key` box
+   5. Click `Create`
 3. Navigate to `System > Brands`
-   * Click the `Edit` button under `Actions`
-   * Scroll to the bottom of the Window and `Expand Other Global Settings`
-   * Under `Web Certificate`, choose your Cloudflare Certificate we just imported.
-   * Click `Update`
+   1. Click the `Edit` button under `Actions`
+   2. Scroll to the bottom of the Window and `Expand Other Global Settings`
+   3. Under `Web Certificate`, choose your Cloudflare Certificate we just imported.
+   4. Click `Update`
 4. Navigate to `Applications > Outposts`
-   * Click the `Edit` button under `Actions`
-   * Scroll to the bottom and `Expand Advanced Settings`
-     * Make sure your `authentik_host:` is set to the CNAME you created in Cloudflare. (i.e. `https://auth.domain.example`)
-   * Click `Update`
+   1. Click the `Edit` button under `Actions`
+   2. Scroll to the bottom and `Expand Advanced Settings`
+      1. Make sure your `authentik_host:` is set to the CNAME you created in Cloudflare. (i.e. `https://auth.domain.example`)
+   3. Click `Update`
 
 ***
 
