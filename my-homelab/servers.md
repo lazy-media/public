@@ -52,10 +52,9 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 
 * 2 x 120GB Kingston SSD
 
-#### Media Pool = 9
+#### Media Pool = 6
 
 * 6 x Seagate Exos X18 16TB Enterprise HDD = [Amazon Link](https://www.amazon.com/gp/product/B0924X39NB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8\&th=1)
-* 3 x Western Digital 8TB WD Red Pro 7200 RPM = [Amazon Link](https://www.amazon.com/gp/product/B07D3N95GS/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8\&th=1)
 
 #### Software Pool = 3
 

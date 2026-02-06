@@ -21,6 +21,12 @@ description: Information on my Personal PC Specs
 * 2TB Samsung M.2
 * [1 TB Samsung SSD](https://www.amazon.com/Samsung-Factor-Intelligent-Magician-Software/dp/B08PC5DKZQ/ref=sr_1_5?crid=1L7Y0MNSPEQN2\&keywords=samsung+1tb+ssd\&qid=1701922702\&sprefix=samsung+1tb%2Caps%2C166\&sr=8-5\&ufe=app_do%3Aamzn1.fos.17d9e15d-4e43-4581-b373-0e5c1a776d5d)
 
+#### External Storage
+
+* 3 x Western Digital 8TB WD Red Pro 7200 RPM = [Amazon Link](https://a.co/d/00R2da66)
+* 3 x 16TB Seagate External HDD = [Amazon Link](https://a.co/d/0fVlTKHi)
+* 1 x 16TB Western Digital External HDD = [Amazon Link](https://a.co/d/0hbDFnVf)
+
 #### Graphics
 
 * Nvidia RTX 3080 10GB
