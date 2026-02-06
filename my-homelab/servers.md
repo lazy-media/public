@@ -117,7 +117,7 @@ Pentium Dual Core E5200 @ 2.5GHz
 
 ***
 
-## AI Server
+## "AI Server"
 
 #### Processor
 

@@ -12,7 +12,9 @@ _Lazy Media is currently working on a forked version of this new version as well
 
 {% include ".gitbook/includes/create-a-reactive-resume-account.md" %}
 
-### Reactive Resume Links
+***
+
+### Lazy Media's Reactive Resume Links
 
 {% hint style="info" %}
 _This is the original version of Reactive Resume from the original maintainer._
@@ -22,11 +24,17 @@ _This is the original version of Reactive Resume from the original maintainer._
 _This is staying alive in case anyone wants to help keep the older version in development._
 {% endhint %}
 
-Lazy Media Reactive Resume V1 Docs = [https://doc.rxresume.org](https://doc.rxresume.org/)
+[Reactive Resume V1 Docs](https://doc.rxresume.org/)
 
-Lazy Media Reactive Resume V1 App = [https://v1.rxresume.org](https://v1.rxresume.org/)
+[Reactive Resume V1 App](https://v1.rxresume.org/) ![](https://status.lazymedia.media/api/badge/124/status)
 
-Lazy Media's Reactive Resume V1 GitHub = [https://github.com/lazy-media/reactive-resume](https://github.com/lazy-media/reactive-resume)
+[Reactive Resume V1 GitHub](https://github.com/lazy-media/reactive-resume)
+
+[Reactive Resume Status Page](https://status.rxresume.org/)
+
+[Reactive Resume Domain Blacklist Check](https://blacklist.rxresume.org/)
+
+***
 
 ### Original Maintainer Links
 
@@ -34,8 +42,8 @@ Lazy Media's Reactive Resume V1 GitHub = [https://github.com/lazy-media/reactive
 _Still being actively developed and maintained_
 {% endhint %}
 
-Amruth Pillai's Reactive Resume Docs = [https://docs.rxresu.me](https://docs.rxresu.me/)
+[Amruth Pillai's Reactive Resume Docs](https://docs.rxresu.me/)
 
-Amruth Pillai's Reactive Resume App = [https://rxresu.me](https://rxresu.me/)
+[Amruth Pillai's Reactive Resume App](https://rxresu.me/)
 
-Amruth Pillai's Reactive Resume GitHub = [https://github.com/amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume)
+[Amruth Pillai's Reactive Resume GitHub](https://github.com/amruthpillai/reactive-resume)
