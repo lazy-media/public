@@ -23,6 +23,26 @@ docker run -d \
   fnsys/dockhand:latest
 ```
 
+### Quickstart (Docker Run Command)
+
+With Persistent Data
+
+```bash
+# Create the directory on the host
+mkdir -p /opt/dockhand
+```
+
+```bash
+# Use matching paths with DATA_DIR
+docker run -d \
+  --name dockhand \
+  -p 3000:3000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /opt/dockhand:/opt/dockhand \
+  -e DATA_DIR=/opt/dockhand \
+  fnsys/dockhand:latest
+```
+
 ### Docker Compose
 
 ```yml
@@ -33,6 +53,24 @@ services:
     restart: unless-stopped
     ports:
       - 3000:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - dockhand_data:/app/data
+
+volumes:
+  dockhand_data:
+```
+
+### Docker Compose with Persistent Data
+
+```yml
+services:
+  dockhand:
+    image: fnsys/dockhand:latest
+    container_name: dockhand
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - dockhand_data:/app/data
