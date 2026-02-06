@@ -12,10 +12,6 @@ description: Information on how to setup Discord OAuth in Authentik.
 
 This flow allows the use of Discord Login with Authentik. This explains how to create a deny stage to display a message to users if they are not part of your Discord Server. This flow creation will allow Authentik to verify a user against your Discord Server based on Server ID and Role ID, Assign them to an Authentik Group, and Add the Discord Login to the Main Authentik Login Page. Authentik will handle user creation upon a user's first login.
 
-## Example Picture of Discord Notification
-
-![image](../../.gitbook/assets/JoinDiscordServerNotification.png)
-
 ***
 
 ## Group Creation
@@ -65,6 +61,10 @@ For Easier Setup, Create the `Authentication Flow` and the `Discord Expression P
          * MAKE SURE THE `ENABLED` and `NEGATE RESULTS` are both checked.
          * SET `FAILURE RESULT` to `PASS`
 
+#### Example Picture of Discord Notification
+
+![image](../../.gitbook/assets/JoinDiscordServerNotification.png)
+
 ***
 
 ## Authentication Flow Creation
@@ -81,7 +81,9 @@ For Easier Setup, Create the `Authentication Flow` and the `Discord Expression P
 
 {% include "../../.gitbook/includes/authentik-discord-role-and-guild-verification.md" %}
 
+{% hint style="info" %}
 CHANGE THE FOLLOWING LINES WITHIN THE QUOTES IN THE CODE ABOVE BEFORE SAVING AND CONTINUING:
+{% endhint %}
 
 ```py
 ACCEPTED_ROLE_ID = "CHANGE TO DISCORD ROLE ID"

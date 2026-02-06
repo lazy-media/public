@@ -8,7 +8,7 @@ description: >-
 
 ## Custom CSS Example 1
 
-This theme was created by VULGA01 from GitHub. [Link to GitHub Repo For This theme](https://github.com/VULGA01/Authentik-Login-theme-Glassmorphism)
+This theme was created by [VULGA01 from GitHub](https://github.com/VULGA01/Authentik-Login-theme-Glassmorphism).
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -2301,7 +2301,8 @@ text-transform: capitalize !important;
    ![](../.gitbook/assets/image.png)
 3. Click on the `Edit` Actions Button\
    ![](<../.gitbook/assets/image (1).png>)
-4. Expand `Brand Settings` \
+4. Expand `Branding Settings` \
    ![](<../.gitbook/assets/image (2).png>)
+   1. Find the
 5. Paste in your custom CSS
 6. Click on Update
