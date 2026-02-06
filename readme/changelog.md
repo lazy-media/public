@@ -11,7 +11,7 @@ description: Major changes made to the documentation
 * Added Quick Documentation for [Dockhand Docker Management Tool](../docker/docker-management-tools/dockhand-docker-management.md)
 * Updated GitHub Repository with appropriately named files.
 * Added Documentation for [Rocket-Chat Server Setup](../rocketchat-server.md)
-* Removed `Need A Resume?` Page and combined with the [Reactive Resume Page](../reactive-resume/)
+* Removed `Need A Resume?` Page and combined with the [Reactive Resume Page](../reactive-resume.md)
 * Updated more documentation and fixed more links.
 {% endupdate %}
 

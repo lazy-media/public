@@ -10,7 +10,7 @@ This is an older version of what the original maintainer currently has published
 _Lazy Media is currently working on a forked version of this new version as well, just waiting until the original maintainer is done fixing issues and adding features._
 {% endhint %}
 
-{% include "../.gitbook/includes/create-a-reactive-resume-account.md" %}
+{% include ".gitbook/includes/create-a-reactive-resume-account.md" %}
 
 ***
 
