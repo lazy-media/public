@@ -2,7 +2,7 @@
 title: Authentik Warning - Social Login User Template Path Fix
 ---
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 This small fix should not be needed but for some reason, Authentik does not allow the `User Path Template` Section to be left empty anymore. If for some reason you have issues with Social Login Enrollments, try these steps to fix it:
 
 * While still in the Stage for Discord Enrollment Writes and in this section for `User Path Template` input:
