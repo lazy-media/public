@@ -22,6 +22,8 @@ Google Photo Takeout Helper is a local Google Photo Takeout Conversion script th
 
 ### Immich-Go
 
+_Recommended for uploading a Google Photos Takeout to Immich._
+
 This is a command line based utility that will do the same thing as Google Photo Takeout Helper but also uploads the photos to your Immich instance at the same time.
 
 [Immich-Go](immich-go.md)

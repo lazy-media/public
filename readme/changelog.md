@@ -12,6 +12,7 @@ description: Major changes made to the documentation
 * Updated GitHub Repository with appropriately named files.
 * Added Documentation for [Rocket-Chat Server Setup](../rocketchat-server.md)
 * Removed `Need A Resume?` Page and combined with the [Reactive Resume Page](../reactive-resume.md)
+* Updated more documentation and fixed more links.
 {% endupdate %}
 
 {% update date="2026-02-05" %}

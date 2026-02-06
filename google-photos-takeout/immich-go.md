@@ -1,10 +1,14 @@
 ---
-description: A Google Photos Takeout Helper
+description: >-
+  Lazy Media's Recommended Google Photos Takeout to Immich Conversion and Upload
+  Tool.
 ---
 
 # Immich-Go
 
-> **THIS DOCUMENTATION IS FROM THE ORIGINAL GITHUB REPOSITORY. I TAKE NO CREDIT FOR ANY OF THIS DOCUMENTATION.**
+{% hint style="info" %}
+**THIS DOCUMENTATION IS FROM THE ORIGINAL AUTHOR'S GITHUB REPOSITORY. LAZY MEDIA TAKES NO CREDIT FOR ANY OF THIS DOCUMENTATION.**
+{% endhint %}
 
 ## Immich-Go: Upload Your Photos to Your Immich Server
 
@@ -12,6 +16,7 @@ description: A Google Photos Takeout Helper
 
 ### You can now support my work on `Immich-go`:
 
+* [Simulot's Immich-Go GitHub Repository](https://github.com/simulot/immich-go)
 * [Simulot Github Sponsor](https://github.com/sponsors/simulot)
 * [Simulot Paypal Donation](https://www.paypal.com/donate/?hosted_button_id=VGU2SQE88T2T4)
 
@@ -41,7 +46,7 @@ description: A Google Photos Takeout Helper
   * Request another takeout, either for an entire year or in smaller increments.
   * Force the import of files despite the missing JSON. Use the option `-upload-when-missing-JSON`
 
-For insights into the reasoning behind this alternative to `immich-cli`, please read the motivation [here](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/docs/motivation.md).
+For insights into the reasoning behind this alternative to `immich-cli`, please read the motivation [here](../Google-Photos-Takeout/Immich-Go/docs/motivation.md).
 
 > ⚠️ This an early version, not yet extensively tested\
 > ⚠️ Keep a backup copy of your files for safety<br>
@@ -155,7 +160,7 @@ Specialized options for Google Photos management:
 | `-auto-archive`                    | Automatically archive photos that are also archived in Google Photos             | `TRUE`            |
 | `-upload-when-missing-JSON`        | Upload photos not associated with a JSON metadata file                           | `FALSE`           |
 
-Read [here](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/docs/google-takeout.md) to understand why Google Photos takeout isn't easy to handle.
+Read [here](../Google-Photos-Takeout/Immich-Go/docs/google-takeout.md) to understand why Google Photos takeout isn't easy to handle.
 
 #### Burst detection
 
@@ -331,8 +336,8 @@ Kudos to the Immich team for their stunning project! 🤩
 This program use following 3rd party libraries:
 
 * [https://github.com/rivo/tview](https://github.com/rivo/tview) the terminal user interface
-* [github.com/rwcarlsen/goexif](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/github.com/rwcarlsen/goexif/README.md) to get date of capture from JPEG files
-* [github.com/thlib/go-timezone-local](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/github.com/thlib/go-timezone-local/README.md) for its windows timezone management
+* [github.com/rwcarlsen/goexif](../Google-Photos-Takeout/Immich-Go/github.com/rwcarlsen/goexif/) to get date of capture from JPEG files
+* [github.com/thlib/go-timezone-local](../Google-Photos-Takeout/Immich-Go/github.com/thlib/go-timezone-local/) for its windows timezone management
 
 A big thank you to the project contributors:
 

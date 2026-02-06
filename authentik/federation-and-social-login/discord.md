@@ -24,15 +24,18 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 
 ## Deny Stages
 
-### Standard Deny Stage with No Discord Server Join Message
+### Standard Deny Stage without Discord Join Message
 
 1. Navigate to `Flows and Stages > Stages`
 2. Create a new stage
 3. Select Deny Stage
    1. Enter your name as `Discord Deny Verification` and enter a message of your choosing.
 4. Select `Finish` to save
+5. Go to [#authentication-flow-creation](discord.md#authentication-flow-creation "mention")
 
-### Deny Stage with Join Discord Server Message
+***
+
+### Deny Stage with Join Discord Join Server Message
 
 For Easier Setup, Create the `Authentication Flow` and the `Discord Expression Policy` in the next step, then come back to this step.
 

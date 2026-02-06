@@ -8,7 +8,7 @@ description: Information on how to setup Immich OpenID / OAuth with Authentik
 
 ## NOTICE
 
-Please take note of how my Authentik is setup [Authentik Setup](https://github.com/lazy-media/public/blob/main/Authentik/README.md)
+Please take note of how my Authentik is setup [Authentik Setup](authentik-installation.md)
 
 ### Assumptions
 
@@ -33,11 +33,11 @@ app.immich:///oauth-callback
 * DO NOT CHECK MOBILE REDIRECT URL
 * Remove Basic Authentication Form.
 
-### Immich Google Photos Takeout Helper
+### Immich Google Photos Takeout Helpers
 
-If you do a Google Photos Takeout, you need to run this program below first before uploading to Immich.
+If you do a Google Photos Takeout, you need to run one of these programs below first before uploading to Immich. If you don't, then your pictures and videos will not be organized by date, time, location, etc..
 
-* [Google Photos Takeout Helper](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/README.md)
+* [Google Photos Takeout Helper](../google-photos-takeout/)
 
 ### Conclusion
 
