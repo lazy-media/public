@@ -4,7 +4,7 @@ description: >-
   as a more professional and user friendly experience.
 ---
 
-# Lazy Media's Public Docs
+# Lazy Media's Docs
 
 ### **Documentation Update Status:**
 
@@ -27,12 +27,15 @@ THIS IS TO IMPROVE THE USER EXPERIENCE.
 
 * Plex Media Server: ![](https://status.lazymedia.media/api/badge/27/status)
 * New Plex registrations: **Temporarily suspended** until further notice
+* Reactive Resume: ![](https://status.lazymedia.media/api/badge/124/status)
 
 ### Overview
 
 This knowledge base contains comprehensive documentation for all publicly accessible systems and services.
 
-_**GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
+_**Docs GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
+
+_**Reactive Resume Repository:**_&#x20;
 
 ### Authentik Configuration Guide
 
