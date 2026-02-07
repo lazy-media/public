@@ -1,7 +1,8 @@
 ---
 description: >-
-  Lazy Media's Public Documentation Site. This is being updated to use GitBook
-  as a more professional and user friendly experience.
+  The collective brain of our self-hosting adventures. May contain traces of
+  coffee, solved errors, and glorious documentation. Now hosted by GitBook for a
+  professional look. Please use the new site.
 ---
 
 # Lazy Media's Docs
@@ -15,6 +16,8 @@ _**The Lazy Media Public Repository has stumbled into the 21st century and is no
 _**We’re currently in the middle of a dramatic, tear-filled overhaul to make things marginally less confusing and slightly more up-to-date—think of it as putting lipstick on a very technical pig. And because misery loves company, we’re even letting you help edit the docs!**_\
 \
 _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed in everything from Arabic to Vietnamese. You’re welcome.**_
+
+_**If you found any of this documentation helpful, please consider**_ [_**starring the GitHub Repository**_](https://github.com/lazy-media/public)_**.**_
 
 {% hint style="info" %}
 PLEASE BE PATIENT AS THE DOCUMENTATION SITE IS GOING THROUGH A MAJOR RE-WORK.\
