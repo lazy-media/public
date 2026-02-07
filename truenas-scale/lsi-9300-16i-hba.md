@@ -6,9 +6,9 @@ description: Information on the LSI 9300 16i HBA when using TrueNas Scale
 
 ## TrueNas Scale
 
-### Recommended Firmware Flash for HBA
-
+{% hint style="danger" %}
 _Not sure if this is still accurate..._
+{% endhint %}
 
 This guide provides the LSI 9300 16i HBA recommended firmware version for optimal performance and compatibility with TrueNas Scale prior to TrueNas Scale 22.xx release.
 
