@@ -8,7 +8,7 @@ description: Information on how to setup a Self Hosted GitLab Instance
 
 ### Notice
 
-Please always try to refer to the official documentation as it will be the most up to date version to find information for Gitlab.
+Please always refer to the official documentation first. It will be the most up-to-date source for GitLab.
 
 ### Installation & Requirements
 
@@ -25,7 +25,13 @@ Please always try to refer to the official documentation as it will be the most 
 * [Gitlab Self Hosting System Requirements](https://docs.gitlab.com/ee/install/requirements.html)
 * [Updating Gitlab Keys after Expiry](https://docs.gitlab.com/omnibus/update/package_signatures.html#update-keys-after-expiry-extension)
 
+***
+
 ## Omnibus Installation Instructions
+
+{% hint style="info" %}
+You can run the install as `root`, or use a normal user with `sudo`.
+{% endhint %}
 
 * Login as root user or non root user then switch to root user with `sudo su -`
 
@@ -48,6 +54,10 @@ curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.de
 #### Running Installation with Randomly Generated Password
 
 **Change the `EXTERNAL_URL="https://gitlab.example.com"` to match your Gitlab Domain Name / URL you setup before running the command. Copy and Paste into a text document if needed to edit temporarily.**
+
+{% hint style="warning" %}
+Make sure your `EXTERNAL_URL` uses the correct scheme (`https://` vs `http://`) for your setup.
+{% endhint %}
 
 #### Latest Version
 
@@ -88,6 +98,8 @@ nano /etc/gitlab/initial_root_password
 ```
 sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://gitlab.example.com" apt install gitlab-ee
 ```
+
+***
 
 ## Updating Keys after Expiry Extension
 
@@ -138,6 +150,8 @@ curl -s "https://packages.gitlab.com/gpg.key" | apt-key add -
 ```
 apt-key list 3F01618A51312F3F
 ```
+
+***
 
 ## Authentik OAuth2/OpenID & SAML Provider Setup
 

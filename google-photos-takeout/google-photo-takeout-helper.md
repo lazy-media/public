@@ -8,15 +8,15 @@ description: Lazy Media's Recommended Google Photos Takeout Conversion Tool for 
 
 * [TheLastGimbus Github](https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **THIS DOCUMENTATION IS FROM THE ORIGINAL AUTHOR'S GITHUB REPOSITORY. LAZY MEDIA TAKES NO CREDIT FOR ANY OF THIS DOCUMENTATION.**
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 LAZY MEDIA HIGHLY RECOMMENDS THAT WHEN USING THIS APP, EXTRACT YOUR GOOGLE PHOTOS TAKEOUT ZIP FILES TO AN EXTERNAL OR SEPARATE DRIVE OR FOLDER. DO NOT DELETE YOUR ZIP FILES IN CASE SOMETHING DOESN'T WORK CORRECTLY, YOU CAN ALWAYS EXTRACT THEM AGAIN.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 WHEN DOING THE ACTUAL CONVERSION, LAZY MEDIA RECOMMENDS YOU CREATE ANOTHER FOLDER IN ANOTHER LOCATION, POSSIBLY ON THE SAME DRIVE IF IT IS LARGE ENOUGH TO PUT THE CONVERTED FILES IN.
 {% endhint %}
 

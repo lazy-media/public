@@ -6,6 +6,8 @@ description: GitHub Repo Contains Test Files.
 
 ### THIS IS IN TESTING, USE AT YOUR OWN RISK.
 
+For trying to get Jitsi meet to pass through Authentik correctly when Authentik is the reverse proxy.
+
 {% code expandable="true" %}
 ```py
 #################

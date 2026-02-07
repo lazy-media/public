@@ -761,7 +761,7 @@ docker-compose pull && docker-compose up -d
 
 ### Conclusion
 
-If everything went according to plan, the Authentik container will persist all data for Authentik under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis`. This will make it much easier to upgrade Authentik in the future. This should also enable HTTPS connections to Authentik and allow the use of a custom Cloudflare Origin Certificate using Cloudflare's Stict SSL mode with other Cloudflare security measures enabled.
+If everything went according to plan, the Authentik container will persist all data for Authentik under the `docker/authentik` directory for `certs`, `custom-templates`, `database`, `geoip`, `media` and `redis`. This will make it much easier to upgrade Authentik in the future. This should also enable HTTPS connections to Authentik and allow the use of a custom Cloudflare Origin Certificate using Cloudflare's Strict SSL mode with other Cloudflare security measures enabled.
 
 ***
 

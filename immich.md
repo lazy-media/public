@@ -4,25 +4,38 @@ description: Information on how to setup Immich; A self hosted Google Photos alt
 
 # Immich
 
-## Immich Installation
+### Overview
 
-### Original Documentation / Website
+Immich is a self-hosted Google Photos alternative. This page provides a Docker Compose-based setup with persistent storage, plus optional hardware acceleration files.
+
+### Official site / docs
 
 > [Immich Website](https://immich.app/)
 
-### Docker Compose Installation with Persistant Storage for all Volumes
+{% hint style="info" %}
+This page assumes you already have Docker + Docker Compose installed and working.
+{% endhint %}
 
-#### Installation Requirements / Setup
+### Environment used (example)
 
 * Installed in a Proxmox LXC
 * Installed on Ubuntu 22.04
 * Installed Docker Compose
 
-#### Assumptions
+### Assumptions
 
 * Basic understanding of Docker and Docker Compose
 
-## Docker Compose File
+***
+
+### 1) Create the required files
+
+You’ll create:
+
+* `docker-compose.yml` (Immich stack)
+* `.env` (stack configuration)
+
+#### Docker Compose file
 
 {% code expandable="true" %}
 ```yml
@@ -121,7 +134,7 @@ volumes:
 ```
 {% endcode %}
 
-### Example Docker Compose Env File
+#### Example `.env` file
 
 {% code expandable="true" %}
 ```dotenv
@@ -147,7 +160,11 @@ REDIS_HOSTNAME=immich_redis
 ```
 {% endcode %}
 
-## Immich Hardware Acceleration Files
+***
+
+### 2) Optional: hardware acceleration files
+
+Only use these if you plan to enable hardware acceleration. Keep them next to your `docker-compose.yml` if you plan to reference them with `extends`.
 
 {% tabs %}
 {% tab title="hwaccel.ml.yml" %}
@@ -270,27 +287,41 @@ services:
 {% endtab %}
 {% endtabs %}
 
-## Start and Run Immich
+***
+
+### 3) Start Immich
 
 Run the following command
 
-```
+```bash
 docker compose pull && docker compose up -d
 ```
 
-## Updating Immich
+***
+
+### Updating Immich
 
 Run
 
-```
+```bash
 docker compose down && docker compose pull && docker compose up -d
 ```
 
-## Immich OAuth / OpenID Setup
+or
+
+```bash
+docker compose pull && docker compose up -d
+```
+
+***
+
+### Immich OAuth / OpenID Setup
 
 [Immich OAuth / OpenID Setup](authentik/immich.md)
 
-## Google Photo Takeout Conversion Helpers
+***
+
+### Google Photo Takeout Conversion Helpers
 
 Use either of these scripts to convert your Google Photos Takeout to Immich compatible format.
 

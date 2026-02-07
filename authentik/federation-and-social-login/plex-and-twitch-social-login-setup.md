@@ -4,13 +4,29 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 # Plex & Twitch - OAuth Authentication, Enrollment, & User Group Assignment Setup
 
-## Group Creation
+### What this achieves
+
+Adds **Plex** and/or **Twitch** as Authentik social login sources. New users get created on first login, can be assigned to a target group, and the login buttons appear on the default Authentik login page.
+
+***
+
+### Assumptions / prerequisites
+
+* You can access the Authentik Admin UI.
+* You already created the Plex and/or Twitch OAuth app on the provider side.
+  * You have the **Client ID** and **Client Secret** ready.
+* You know your public Authentik URL and can set redirect/callback URLs as required by the provider.
+* You’re using Authentik’s default flows, or you’re comfortable editing flows/stages.
+
+***
+
+### Group Creation
 
 * Create respective User Groups
 
 ***
 
-## Authentication Flow Creation
+### Authentication Flow Creation
 
 1. Created a new Flow and Named it respectively
 2. Designation is set as Authentication
@@ -21,7 +37,7 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 ***
 
-## Enrollment Flow Creation
+### Enrollment Flow Creation
 
 1. Created a new Flow and Named it respectively
 2. Click on the Flow and click Stage Bindings.
@@ -42,7 +58,7 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 ***
 
-## Federation & Social Login Creation + Flows Attachment
+### Federation & Social Login Creation + Flows Attachment
 
 1. Create your Federation & Social Login Provider (i.e. Plex, Discord, Twitch)
 2. At the very bottom of your Federation & Social Login Provider, expand Flow Settings
@@ -51,7 +67,7 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 
 ***
 
-## Add SSO & Flow to Login Page
+### Add SSO & Flow to Login Page
 
 1. Go back to Flows
 2. Click on "default-authentication-flow"
@@ -59,3 +75,9 @@ description: Information on how to setup Plex & Twitch OAuth in Authentik.
 4. Edit stage for "default-authentication-identification"
 5. Expand Source Settings at the bottom
 6. Select your SSO providers that you setup. Hold CTRL + CLICK for multiple.
+
+***
+
+### Conclusion
+
+You should now see **Plex** and/or **Twitch** as login options on your Authentik login page. On first successful login, Authentik should create the user (if enabled), enroll them via your enrollment flow, and place them into the group you selected in the User Write stage.

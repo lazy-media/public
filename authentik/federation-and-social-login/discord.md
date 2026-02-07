@@ -8,13 +8,22 @@ description: Information on how to setup Discord OAuth in Authentik.
 
 * [Authentik Docs](https://goauthentik.io/integrations/sources/discord/)
 
-### Explanation of Flow
+### What this achieves
 
-This flow allows the use of Discord Login with Authentik. This explains how to create a deny stage to display a message to users if they are not part of your Discord Server. This flow creation will allow Authentik to verify a user against your Discord Server based on Server ID and Role ID, Assign them to an Authentik Group, and Add the Discord Login to the Main Authentik Login Page. Authentik will handle user creation upon a user's first login.
+Adds **Discord** as an Authentik social login source. Authentik checks the user’s Discord membership and role, then either denies access with a message or allows login. On first successful login, Authentik can create the user and assign them to an Authentik group. This also adds the Discord login button to the default Authentik login page.
+
+### Assumptions / prerequisites
+
+* You can access the Authentik Admin UI.
+* You already created a Discord OAuth app.
+  * You have the **Client ID** and **Client Secret** ready.
+* You have Discord **Developer Mode** enabled.
+  * You can copy the **Guild (Server) ID** and **Role ID**.
+* You’re comfortable creating/editing Authentik flows, stages, and expression policies.
 
 ***
 
-## Group Creation
+### Group Creation
 
 1. Login to Authentik Admin Panel
    1. Navigate to `Directory > Groups`
@@ -22,7 +31,7 @@ This flow allows the use of Discord Login with Authentik. This explains how to c
 
 ***
 
-## Deny Stages
+### Deny Stages
 
 ### Standard Deny Stage without Discord Join Message
 
@@ -70,7 +79,7 @@ For Easier Setup, Create the `Authentication Flow` and the `Discord Expression P
 
 ***
 
-## Authentication Flow Creation
+### Authentication Flow Creation
 
 1. Navigate to `Flows and Stages > Flows`
 2. Create a new flow and name it `Discord Authentication`
@@ -106,7 +115,7 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 
 ***
 
-## Enrollment Flow Creation
+### Enrollment Flow Creation
 
 > **PLEASE NOTE: THIS ENROLLMENT FLOW STILL DOES NOT WORK HOW I WOULD EXPECT IT TO. UPON FIRST LOGIN ATTEMPT, IT SEEMS TO TOSS A NEW USER BACK TO THE LOGIN PAGE. UPON SECOND LOGIN ATTEMPT, IT SHOULD WORK CORRECTLY. NOT SURE WHY THIS IS, BUT I THINK IT IS SOMETHING WITH AUTHENTIK.**
 
@@ -135,7 +144,7 @@ ROLE_NAME_STRING = "CHANGE TO ROLE NAME"
 
 ***
 
-## Federation & Social Login Creation + Flows Attachment
+### Federation & Social Login Creation + Flows Attachment
 
 1. Navigate to `Directory > Federation & Social Login`
 2. Create your `Discord Federation & Social Login Provider`
@@ -151,7 +160,7 @@ guilds guilds.members.read
 
 ***
 
-## Add SSO & Flow to Login Page
+### Add SSO & Flow to Login Page
 
 1. Navigate to `Flows & Stage > Flows`
 2. Click on `default-authentication-flow`
@@ -159,3 +168,9 @@ guilds guilds.members.read
 4. Edit stage for `default-authentication-identification`
 5. **Expand** `Source Settings` at the bottom
 6. Select your SSO providers that you setup. Hold CTRL + CLICK for multiple.
+
+***
+
+### Conclusion
+
+You should now see a **Discord** login option on your Authentik login page. Users who match your Discord verification policy (guild + role) can authenticate, get created on first login (if enabled), and be assigned to your target Authentik group. Users who don’t match should be denied with your configured message.

@@ -6,7 +6,7 @@ description: >-
 
 # Immich-Go
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **THIS DOCUMENTATION IS FROM THE ORIGINAL AUTHOR'S GITHUB REPOSITORY. LAZY MEDIA TAKES NO CREDIT FOR ANY OF THIS DOCUMENTATION.**
 {% endhint %}
 

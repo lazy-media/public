@@ -4,12 +4,6 @@ description: Information on how to setup Immich OpenID / OAuth with Authentik
 
 # Immich
 
-## Immich Setup
-
-## NOTICE
-
-Please take note of how my Authentik is setup [Authentik Setup](authentik-installation.md)
-
 ### Assumptions
 
 * You have basic knowledge of Setting Up OAuth Providers in Authentik

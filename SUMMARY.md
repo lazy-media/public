@@ -20,7 +20,7 @@
   * [Immich](authentik/immich.md)
   * [Jellyfin](authentik/jellyfin.md)
   * [Jitsi Meet Test Files](authentik/jitsi-meet.md)
-  * [Kasm OpenID / OAuth Setup](authentik/kasm.md)
+  * [Kasm](authentik/kasm.md)
   * [Mastodon](authentik/mastodon.md)
   * [Nextcloud](authentik/nextcloud.md)
   * [Paperless-NGX](authentik/paperless-ngx.md)
