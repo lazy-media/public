@@ -126,6 +126,10 @@ cd docker/authentik
 
 Download Docker Compose File for Authentik
 
+{% hint style="warning" %}
+This will download the latest version of the Authentik compose file, but the version below contains Redis, which does not exist in the latest version of Authentik. Please be cautious of this when following this guide.
+{% endhint %}
+
 ```
 wget https://goauthentik.io/docker-compose.yml
 ```
@@ -176,7 +180,11 @@ echo "AUTHENTIK_SECRET_KEY=$(pwgen -s 50 1)" >> .env
 
 ## Authentik Docker Compose, .env, and GeoIP Override Files
 
-Make sure you are still in the folder `docker/authentik` You should be since we have only created folders above.
+{% hint style="danger" %}
+PLEASE NOTE THAT THE INFORMATION PAST THIS POINT IS GOOD UP TO VERSION 2025.8.5 DUE TO REDIS BEING REMOVED.
+
+IN VERSIONS NEWER THAN 2025.8.5, REDIS IS REMOVED, AND I NEED TO FIGURE OUT HOW TO UPGRADE PROPERLY AND DOCUMENT IT.
+{% endhint %}
 
 ### Example Docker Compose File to persist data in the directories created above
 
@@ -185,6 +193,10 @@ Edit this file if needed, with `nano docker-compose.yml` and paste the following
 > This docker-compose.yml file also contains compose information for the Radius and LDAP Outposts.
 
 > When creating these outposts in Authentik Admin Dashboard, I recommend setting them as `No Itegration` before activating them in the docker-compose.yml file.
+
+{% hint style="warning" %}
+THIS DOCKER COMPOSE FILE NEEDS TO BE UPDATED TO REMOVE REDIS
+{% endhint %}
 
 {% code title="docker-compose.yml" expandable="true" %}
 ```yml
@@ -224,7 +236,7 @@ services:
       - ./redis:/data
       
   server:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.4.1}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.8.5}
     restart: unless-stopped
     command: server
     environment:
@@ -256,7 +268,7 @@ services:
 ########################################################################
 
 #  ldap_outpost:
-#      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2025.4.1}
+#      image: ${AUTHENTIK_IMAGE_LDAP:-ghcr.io/goauthentik/ldap}:${AUTHENTIK_TAG:-2025.8.5}
 #      restart: unless-stopped
 #      env_file:
 #        - .env
@@ -269,7 +281,7 @@ services:
 #          AUTHENTIK_TOKEN: "${AUTHENTIK_LDAP_TOKEN}"
 
 #  radius_outpost:
-#    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2025.4.1}
+#    image: ${AUTHENTIK_IMAGE_RADIUS:-ghcr.io/goauthentik/radius}:${AUTHENTIK_TAG:-2025.8.5}
 #    restart: unless-stopped
 #    ports:
 #      - "${COMPOSE_PORT_RADIUS:-1812}:1812"
@@ -296,7 +308,7 @@ services:
 #######################################
 
   worker:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.4.1}
+    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2025.8.5}
     restart: unless-stopped
     command: worker
     environment:
@@ -335,6 +347,10 @@ volumes:
 
 This is the `.env` file
 
+{% hint style="warning" %}
+THIS ENV FILE NEEDS TO BE UPDATED TO REMOVE REDIS.D
+{% endhint %}
+
 {% code title=".env" expandable="true" %}
 ```dotenv
 ##############################################################################################
@@ -358,14 +374,14 @@ This is the `.env` file
 
 ### Authentik Secret Key
 ### REQUIRED
-AUTHENTIK_SECRET_KEY=THIS SHOULD HAVE BEEN GENERATED AND MAYBE ONLY THING ORIGINALLY IN THIS FILE.
+AUTHENTIK_SECRET_KEY=THIS SHOULD HAVE BEEN GENERATED FROM THE PREVIOUS STEP!
 
 ### Result Backend Settings
 # AUTHENTIK_RESULT_BACKEND__URL=
 
 ### Authentik Server Image and Version Number
 ### REQUIRED
-AUTHENTIK_TAG=2025.6.3 ## <-- UPDATE THIS TO LATEST VERSION NUMBER!!! ##
+AUTHENTIK_TAG=2025.8.5 ## <-- UPDATE THIS TO LATEST VERSION NUMBER!!! ##
 AUTHENTIK_IMAGE=ghcr.io/goauthentik/server
 
 ### User Settings
@@ -403,7 +419,7 @@ AUTHENTIK_GDPR_COMPLIANCE=true
 ### Internal Postgres Server Settings
 ### REQUIRED
 PG_USER=authentik
-PG_PASS=SOME RANDOM PASSWORD
+PG_PASS=THIS SHOULD HAVE BEEN AUTOMATICALLY GENERATED FROM THE PREVIOUS STEP
 
 ### External Postgres Server Settings
 # AUTHENTIK_POSTGRESQL__HOST=
