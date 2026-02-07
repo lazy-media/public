@@ -6,7 +6,7 @@ description: Major changes made to the documentation
 
 {% updates format="full" %}
 {% update date="2026-02-07" %}
-## Updated Documentation
+## Documentation Updates
 
 * Updated some Authentik documentation to acknowledge it is outdated and needs updating
 * Added Warning and Info notes to those pages to let users know.
