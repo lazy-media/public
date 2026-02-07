@@ -27,7 +27,6 @@ THIS IS TO IMPROVE THE USER EXPERIENCE.
 
 * Plex Media Server: ![](https://status.lazymedia.media/api/badge/27/status)
 * New Plex registrations: **Temporarily suspended** until further notice
-* Reactive Resume: ![](https://status.lazymedia.media/api/badge/124/status)
 
 ### Overview
 
@@ -35,7 +34,9 @@ This knowledge base contains comprehensive documentation for all publicly access
 
 _**Docs GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
 
-_**Reactive Resume Repository:**_&#x20;
+### Star History
+
+<figure><img src="https://api.star-history.com/svg?repos=lazy-media/public&#x26;type=date&#x26;legend=top-left" alt=""><figcaption></figcaption></figure>
 
 ### Authentik Configuration Guide
 
