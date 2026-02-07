@@ -5,6 +5,15 @@ description: Major changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-07" %}
+## Updated Documentation
+
+* Updated some Authentik documentation to acknowledge it is outdated and needs updating
+* Added Warning and Info notes to those pages to let users know.
+* Separated Home lab sections into their own pages.
+* Added additional Proxmox Servers to Home lab
+{% endupdate %}
+
 {% update date="2026-02-06" %}
 ## Added Documentation
 

@@ -1,17 +1,4 @@
----
-description: Information on all my servers that are running.
-hidden: true
----
-
-# Servers
-
-## Explanation
-
-This shows the TrueNas Scale Storage Server, three Proxmox servers I run plus a Proxmox backup server. These three Proxmox servers are not setup in a cluster, they are all individual nodes.
-
-***
-
-## TrueNas Scale Server
+# TrueNas Scale Server
 
 #### Case
 
@@ -34,7 +21,7 @@ A-Tech 8 x 32GB DDR4 2400 ECC REG RDIMM = [eBay Link](https://www.ebay.com/itm/3
 * LSI 9211-8i 6Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/155042469639)
 * LSI 9300-16i 12Gbps HBA IT Mode = [eBay Link](https://www.ebay.com/itm/144984053622)
 
-#### Graphics Card = 2
+#### Graphics Card = 1
 
 * GeForce RTX 3060
 
@@ -60,82 +47,3 @@ Broadcom BCM57810S Chipset 10Gb Dual SFP+ PCI-E Network Card = [ebay Link](https
 #### Software Pool = 3
 
 * 3 x Western Digital 4TB WD Red Pro 5400 RPM = [Amazon Link](https://www.amazon.com/gp/product/B083XVY99B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8\&th=1)
-
-***
-
-## Main Proxmox Server
-
-Dell Poweredge R710
-
-#### Processor
-
-2 x Intel Xeon X5550 @ 2.67 Ghz
-
-#### RAM
-
-48GB
-
-#### Storage
-
-3 x WD Red 4TB
-
-***
-
-## Proxmox Mini HP
-
-HP Elite Desk
-
-#### Processor
-
-Intel Core i7
-
-#### RAM
-
-16GB
-
-#### HDD
-
-500GB Samsung SSD
-
-***
-
-## Proxmox Backup Server
-
-### HP Mediasmart Server EX490
-
-#### Processor
-
-Pentium Dual Core E5200 @ 2.5GHz
-
-#### RAM
-
-2 GB
-
-#### Storage
-
-3 x WD 2TB Red 1 x Kingston 120GB SSD
-
-***
-
-## "AI Server"
-
-#### Processor
-
-Intel Core i5-6600
-
-#### RAM
-
-16GB
-
-#### Graphics Card
-
-* NVIDIA GeForce GTX 1070
-* NVIDIA GeForce GTX 1080 SC
-
-#### Storage
-
-2 x Samsung EVO 500GB SSD
-
-#### Operating System
-
-Ubuntu 24.04
