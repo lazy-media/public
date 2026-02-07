@@ -47,6 +47,7 @@
     * [Dockhand Docker Management](docker/docker-management-tools/dockhand-docker-management.md)
     * [Dozzle Docker Logs](docker/docker-management-tools/dozzle-docker-logs.md)
     * [Portainer Docker Management](docker/docker-management-tools/portainer.md)
+    * [WatchTower](docker/docker-management-tools/watchtower.md)
 * [FiveM Server Setup with TX Admin](fivem.md)
 * [Gitlab](gitlab.md)
 * [Google-Photos-Takeout](google-photos-takeout/README.md)
