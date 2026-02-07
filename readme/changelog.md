@@ -5,15 +5,6 @@ description: Major changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
-{% update date="2026-02-07" %}
-## Documentation Updates
-
-* Updated some Authentik documentation to acknowledge it is outdated and needs updating
-* Added Warning and Info notes to those pages to let users know.
-* Separated Home lab sections into their own pages.
-* Added additional Proxmox Servers to Home lab
-{% endupdate %}
-
 {% update date="2026-02-06" %}
 ## Added Documentation
 
@@ -22,6 +13,11 @@ description: Major changes made to the documentation
 * Added Documentation for [Rocket-Chat Server Setup](../rocketchat-server.md)
 * Removed `Need A Resume?` Page and combined with the [Reactive Resume Page](../reactive-resume.md)
 * Updated more documentation and fixed more links.
+* Updated some Authentik documentation to acknowledge it is outdated and needs updating
+* Added Warning and Info notes to those pages to let users know.
+* Separated Home lab sections into their own pages.
+* Added additional Proxmox Servers to Home lab
+* Added some documentation for [WatchTower](../docker/docker-management-tools/watchtower.md)
 {% endupdate %}
 
 {% update date="2026-02-05" %}
