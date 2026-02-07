@@ -1,5 +1,8 @@
 ---
-description: A docker image to update docker images
+description: >-
+  Watchtower is a docker app that can update other docker apps by pulling new
+  images, gracefully shutting down existing containers, and restarts with same
+  options and new image.
 ---
 
 # WatchTower
