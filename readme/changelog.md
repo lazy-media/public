@@ -18,7 +18,7 @@ description: Major changes made to the documentation
 * Separated Home lab sections into their own pages.
 * Added additional Proxmox Servers to Home lab
 * Added some documentation for [WatchTower](../docker/docker-management-tools/watchtower.md)
-* Had GitBook AI Agent Help make the documentation more professional looking and easier to read for users without changing the content that was already present.
+* Had GitBook AI Agent Help make the some of the documentation more professional looking and easier to read for users without changing the content that was already present. _More to come.._
 {% endupdate %}
 
 {% update date="2026-02-05" %}
