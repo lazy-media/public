@@ -28,7 +28,7 @@ _This is staying alive in case anyone wants to help keep the older version in de
 
 [Reactive Resume V1 App](https://v1.rxresume.org/) ![](https://status.lazymedia.media/api/badge/124/status)
 
-[Reactive Resume V1 GitHub](https://github.com/lazy-media/reactive-resume)
+[Reactive Resume V1 GitHub](https://github.com/lazy-media/reactive-resume) [![Stars](https://img.shields.io/github/stars/lazy-media/reactive-resume)](https://github.com/lazy-media/reactive-resume)
 
 [Reactive Resume Status Page](https://status.rxresume.org/)
 
