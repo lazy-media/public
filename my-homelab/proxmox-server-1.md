@@ -1,5 +1,7 @@
 # Proxmox Server 1
 
+#### Model
+
 Dell Poweredge R710
 
 #### Processor

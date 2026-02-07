@@ -1,6 +1,8 @@
 # Proxmox Backup Server
 
-### HP Mediasmart Server EX490
+#### Model
+
+HP Mediasmart Server EX490
 
 #### Processor
 
