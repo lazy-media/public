@@ -1,5 +1,6 @@
 ---
 description: GitHub Repo Contains Test Files.
+hidden: true
 ---
 
 # Jitsi Meet Test Files

@@ -8,17 +8,17 @@ description: An example of how Lazy Media has their Authentik Installation Setup
 
 ### Notice
 
+{% hint style="info" %}
 Please note my installation setup before continuing.
 
-This is created in a Proxmox LXC Container running Ubuntu 22.04.4
-
-This also assumes you have docker and docker compose installed. If not, install it.
-
-You can follow this Guide [Docker Installation](../docker/installation.md)
+* This is created in a Proxmox LXC Container running Ubuntu 22.04.4
+* This also assumes you have docker and docker compose installed. If not, install it.
+* You can follow this Guide [Docker Installation](../docker/installation.md)
+{% endhint %}
 
 ### Original Documentation
 
-[https://goauthentik.io/docs/installation/docker-compose#preparation](https://goauthentik.io/docs/installation/docker-compose#preparation)
+* [https://goauthentik.io/docs/installation/docker-compose#preparation](https://goauthentik.io/docs/installation/docker-compose#preparation)
 
 ### Authentik Prerequisites & Environment Setup
 
@@ -72,59 +72,61 @@ Please note that I can only provide support for products and services documented
 
 #### Recommended Learning Resources
 
-[Cooptonian - Authentik Setup Video Series](https://youtube.com/playlist?list=PLH73rprBo7vSkDq-hAuXOoXx2es-1ExOP\&si=Y0byly0a4PmfdxkR)
+* [Cooptonian - Authentik Setup Video Series](https://youtube.com/playlist?list=PLH73rprBo7vSkDq-hAuXOoXx2es-1ExOP\&si=Y0byly0a4PmfdxkR)
 
 ***
 
 ### Authentik Installation Steps
 
-Login to root user of Proxmox LXC
+**Login to root user of Proxmox LXC**
 
 #### (Recommended) Create Authentik Machine User
 
-Create a user for Authentik to run as instead of root with no password enabled
+**Create a user for Authentik to run as instead of root with no password enabled**
 
 ```
 adduser authentik --disabled-password
 ```
 
-Add user to Docker Group
+**Add user to Docker Group**
 
 ```
 usermod -aG docker authentik
 ```
 
-Switch to newly created Authentik User
+**Switch to newly created Authentik User**
 
 ```
 su - authentik
 ```
 
+{% hint style="info" %}
 All commands should still run fine below, if not, add `sudo` to the beginning of each line.
+{% endhint %}
 
 ***
 
 ### Authentik Setup
 
-Install additional dependencies for key generation
+**Install additional dependencies for key generation**
 
 ```
 sudo apt-get install -y pwgen
 ```
 
-Create Authentik folder
+**Create Authentik folder**
 
 ```
 mkdir -p docker/authentik
 ```
 
-Change Directory into Authentik Folder
+**Change Directory into Authentik Folder**
 
 ```
 cd docker/authentik
 ```
 
-Download Docker Compose File for Authentik
+**Download Docker Compose File for Authentik**
 
 {% hint style="warning" %}
 This will download the latest version of the Authentik compose file, but the version below contains Redis, which does not exist in the latest version of Authentik. Please be cautious of this when following this guide.
@@ -134,7 +136,7 @@ This will download the latest version of the Authentik compose file, but the ver
 wget https://goauthentik.io/docker-compose.yml
 ```
 
-Create Persistant directories for Authentik
+**Create Persistant directories for Authentik**
 
 ```bash
 mkdir -p {certs, custom-templates, database, geoip, media, redis}
@@ -166,7 +168,7 @@ mkdir media
 mkdir redis
 ```
 
-Key Generation & .env file creation
+**Key Generation & .env file creation**
 
 ```bash
 echo "PG_PASS=$(pwgen -s 40 1)" >> .env
@@ -178,7 +180,7 @@ echo "AUTHENTIK_SECRET_KEY=$(pwgen -s 50 1)" >> .env
 
 ***
 
-## Authentik Docker Compose, .env, and GeoIP Override Files
+### Authentik Docker Compose, .env, and GeoIP Override Files
 
 {% hint style="danger" %}
 PLEASE NOTE THAT THE INFORMATION PAST THIS POINT IS GOOD UP TO VERSION 2025.8.5 DUE TO REDIS BEING REMOVED.
@@ -190,9 +192,11 @@ IN VERSIONS NEWER THAN 2025.8.5, REDIS IS REMOVED, AND I NEED TO FIGURE OUT HOW 
 
 Edit this file if needed, with `nano docker-compose.yml` and paste the following into this file, or edit to your preference.
 
-> This docker-compose.yml file also contains compose information for the Radius and LDAP Outposts.
+{% hint style="info" %}
+This docker-compose.yml file also contains compose information for the Radius and LDAP Outposts.
 
-> When creating these outposts in Authentik Admin Dashboard, I recommend setting them as `No Itegration` before activating them in the docker-compose.yml file.
+When creating these outposts in Authentik Admin Dashboard, I recommend setting them as `No Itegration` before activating them in the docker-compose.yml file.
+{% endhint %}
 
 {% hint style="warning" %}
 THIS DOCKER COMPOSE FILE NEEDS TO BE UPDATED TO REMOVE REDIS
@@ -348,7 +352,7 @@ volumes:
 This is the `.env` file
 
 {% hint style="warning" %}
-THIS ENV FILE NEEDS TO BE UPDATED TO REMOVE REDIS.D
+THIS ENV FILE NEEDS TO BE UPDATED TO REMOVE REDIS
 {% endhint %}
 
 {% code title=".env" expandable="true" %}
@@ -630,9 +634,9 @@ volumes:
 
 ***
 
-## Launch and run Authentik
+### Launch and run Authentik
 
-Run the following command to download and launch Authentik
+**Run the following command to download and launch Authentik**
 
 ```bash
 docker-compose up -d
@@ -640,7 +644,7 @@ docker-compose up -d
 
 ### Authentik User Setup
 
-Navigate to
+**Navigate to**
 
 ```html
 https://auth.domain.example/if/flow/initial-setup/
@@ -658,7 +662,9 @@ This should ask you to setup your Authentik admin (if setup correctly)
 
 ### Initial Setup Flow Not Showing Up after creation.
 
+{% hint style="warning" %}
 If for some reason the initial setup flow doesn't show up, Authentik might have already created the user and deleted the initial setup flow automatically. If this happened to you, you should be able to gain access to the default Authentik Admin by using the following command by logging into the terminal of the host for Authentik.
+{% endhint %}
 
 * Login to root user of Proxmox LXC
 * Navigate to `cd docker/authentik`
@@ -674,7 +680,9 @@ This should output a link that you can copy and paste into your web browser to l
 
 ### Updating Authentik
 
+{% hint style="info" %}
 Edit the `.env` file and update the `AUTHENTIK_TAG` to the latest version and then run `docker-compose down && docker-compose pull && docker-compose up -d` or just `docker-compose down && docker-compose up -d`.
+{% endhint %}
 
 ***
 
@@ -704,18 +712,18 @@ docker-compose pull && docker-compose up -d
 
 ***
 
-## Cloudflare Setup
+### Cloudflare Setup
 
-1. Login to your Cloudflare Account.
-2. Navigate to the DNS Records section of your domain you want attached to Authentik.
-3. Create 3 Proxied DNS records.
+1. **Login to your Cloudflare Account.**
+2. **Navigate to the DNS Records section of your domain you want attached to Authentik.**
+3. **Create 3 Proxied DNS records.**
    1. Set one `DNS A Record` that is set for `your domain` to your `Public IP Address`. (Root Domain (i.e. domain.example))
    2. Set one `CNAME Record` with an asterisk (`*`) for a wildcard with the destination of `@` for root domain. (Wildcard Entry)
    3. Set the last one as a `CNAME Record` for `auth` and destination of `@` for root domain. (Authentik)
-4. In your Cloudflare Account, navigate to SSL/TLS > Overview
+4. **In your Cloudflare Account, navigate to SSL/TLS > Overview**
    1. Set your `Encryption Mode` to `Full (Strict)`
    2. (Optional) Enable `SSL/TLS Recommender`
-5. Navigate to SSL/TLS > Edge Certificates
+5. **Navigate to SSL/TLS > Edge Certificates**
    1. (Recommended) Enable `Always Use HTTPS`
    2. Configure `HTTP Strict Transport Security (HSTS)`
       1. (Recommended) **Enable** `HSTS`
@@ -727,7 +735,7 @@ docker-compose pull && docker-compose up -d
    4. (Recommended) **Enable** `Opportunistic Encryption`
    5. **Enable** `TLS 1.3`
    6. (Recommended) **Enable** `Automatic HTTPS Rewrites`
-6. Navigate to SSL/TLS > Origin Server
+6. **Navigate to SSL/TLS > Origin Server**
    1. Create an `Origin Certificate` if one does not exist already.
       1. If one exists, `Revoke` and `Create` a new one.
    2. Create your Certificate with `RSA (2048)`
@@ -737,21 +745,21 @@ docker-compose pull && docker-compose up -d
 
 ***
 
-## Authentik Certificate Setup
+### Authentik Certificate Setup
 
-1. Login to your Authentik Admin Account
-2. Navigate to `System > Certificates`
+1. **Login to your Authentik Admin Account**
+2. **Navigate to `System > Certificates`**
    1. Click on `Create` to Import the Cloudflare Origin Certificate we just created.
    2. Name the Certificate whatever you want
    3. Paste the `Certificate Key` into the `Certificate` box
    4. Paste the `Private Key` into the `Private Key` box
    5. Click `Create`
-3. Navigate to `System > Brands`
+3. **Navigate to `System > Brands`**
    1. Click the `Edit` button under `Actions`
    2. Scroll to the bottom of the Window and `Expand Other Global Settings`
    3. Under `Web Certificate`, choose your Cloudflare Certificate we just imported.
    4. Click `Update`
-4. Navigate to `Applications > Outposts`
+4. **Navigate to `Applications > Outposts`**
    1. Click the `Edit` button under `Actions`
    2. Scroll to the bottom and `Expand Advanced Settings`
       1. Make sure your `authentik_host:` is set to the CNAME you created in Cloudflare. (i.e. `https://auth.domain.example`)

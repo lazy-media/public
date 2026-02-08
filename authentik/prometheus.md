@@ -4,20 +4,28 @@ description: Information on how to scrape Authentik Metrics with Prometheus
 
 # Prometheus Metrics for Authentik
 
-## Purpose
+### Overview
 
-This will help you setup Prometheus to gather metrics from Authentik.
+Configure Prometheus to scrape metrics from Authentik.
 
-## Assumptions
+### Prerequisites / assumptions
 
-* Assumes you have the Authentik Docker Compose file setup correctly, and make sure you have the ports set in your docker environment variables file. If you followed my instructions, you should just need to Uncomment the `COMPOSE_PORT_METRICS` line in your docker environment variables file.
-* Assumes you have the standalone version of prometheus installed or you know where your config file is located to edit, if it differs from mine.
+{% hint style="info" %}
+* Your Authentik Docker Compose setup is working.
+* Metrics are exposed from Authentik.
+  * If you followed these docs, uncomment `COMPOSE_PORT_METRICS` in your docker environment variables file.
+  * See [Authentik Installation](authentik-installation.md) and [Docker Compose and ENV](authentik-installation.md#authentik-docker-compose-.env-and-geoip-override-files) for examples.
+* You have Prometheus installed.
+* You can locate and edit your Prometheus config file.
+{% endhint %}
 
-## Prometheus Setup
+### Configure Prometheus scraping
 
-Edit your prometheus config file. Mine is found at `/etc/prometheus/prometheus.yml`
+Edit your Prometheus config file.
 
-Add the following to the file:
+Mine is located at `/etc/prometheus/prometheus.yml`.
+
+Add the following:
 
 ```
   - job_name: "Authentik Server"
@@ -26,7 +34,9 @@ Add the following to the file:
     metrics_path: "/metrics"
 ```
 
-## Restart Prometheus
+### Restart Prometheus
+
+Restart the Prometheus service:
 
 ```
 systemctl restart prometheus

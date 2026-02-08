@@ -6,11 +6,11 @@ description: Information on how to setup Wiki-JS with Authentik
 
 ## Wiki-JS OAuth Setup
 
-## Authentik Documentation Used
+### Authentik Documentation Used
 
-[Authentik Docs](https://goauthentik.io/integrations/services/wiki-js/)
+* [Authentik Docs](https://goauthentik.io/integrations/services/wiki-js/)
 
-## Preparation
+### Preparation
 
 * Open 2 browser tabs or windows
 * Navigate to your Wiki-JS Admin Portal in one of the tabs or windows
@@ -18,7 +18,7 @@ description: Information on how to setup Wiki-JS with Authentik
 
 ***
 
-## Wiki-JS Setup - Part 1
+### Wiki-JS Setup - Part 1
 
 * Go to your Wiki-JS Admin Portal
 * Navigate to _**Authentication**_
@@ -27,7 +27,7 @@ description: Information on how to setup Wiki-JS with Authentik
 
 ***
 
-## Authentik Setup - Part 1
+### Authentik Setup - Part 1
 
 * Go to your Authentik Admin Portal and Navigate to Admin Section.
 * Go to _**Applications**_, then _**Providers**_
@@ -39,11 +39,14 @@ description: Information on how to setup Wiki-JS with Authentik
 
 ***
 
-## Wiki-JS Setup - Part 2
+### Wiki-JS Setup - Part 2
 
 * Go back to your Wiki-JS Admin Portal
-* Configure the Authentication Method similar to the following:
-* _**REPLACE 'authentik.company' WITH YOUR URL FOR AUTHENTIK**_
+* Configure the Authentication Method similar to the following
+
+{% hint style="warning" %}
+_**REPLACE 'authentik.company' WITH YOUR URL FOR AUTHENTIK**_
+{% endhint %}
 
 ```
 Client ID: Client ID from the authentik provider.
@@ -59,7 +62,7 @@ Assign to group: The group to which new users logging in from authentik should b
 
 ***
 
-## Authentik Setup - Part 2
+### Authentik Setup - Part 2
 
 * Go back to your Authentik Admin Portal
 * Create an Application
@@ -69,9 +72,3 @@ Assign to group: The group to which new users logging in from authentik should b
 * Set the LAUNCH URL to the Wiki-JS Callback URL you noted down above.
 
 ***
-
-## IMPORTANT NOTE
-
-* Doing this will skip the Wiki-JS Login Prompt and log you in directly.
-* Optionally, you can setup a seperate Authentication and Enrollment Flow to add these users to a Group.
-* Check this guide out on how to setup [Authentik OAuth Setup](https://gitlab.lazymedia.media/lazymedia/authentik/-/blob/9236f51bc5693c6812d89e5000ae9487e0fdc96e/Flows%20Setup/OAuth%20Flow%20Setup.md)
