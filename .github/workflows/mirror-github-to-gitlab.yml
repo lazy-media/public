@@ -1,0 +1,64 @@
+name: Mirror GitHub to GitLab
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight
+      timezone: 'America/Los_Angeles'
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout GitHub repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITH_TOKEN_MIRROR }}
+
+    - name: Mirror to GitLab
+      run: |
+        # Configure git identity
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # Add GitLab remote
+        git remote add gitlab ${{ secrets.GITLAB_REPO_URL }}
+        
+        # Fetch all from GitLab
+        git fetch --all --prune
+        
+        # Save .gitlab-ci.yml if it exists on GitLab
+        if git cat-file -e gitlab/main:.gitlab-ci.yml 2>/dev/null; then
+          git show gitlab/main:.gitlab-ci.yml > ../.gitlab-ci.yml-backup
+        fi
+        
+        # Save any .gitlab* directories that exist on GitLab
+        for item in $(git ls-tree --name-only gitlab/main 2>/dev/null | grep "^\.gitlab" || true); do
+          if [ -d "$item" ] || git cat-file -t gitlab/main:"$item" 2>/dev/null | grep -q "tree"; then
+            mkdir -p "../.gitlab-backup"
+            git archive gitlab/main "$item" | tar -x -C "../.gitlab-backup/" 2>/dev/null || true
+          fi
+        done
+        
+        # Restore .gitlab-ci.yml
+        if [ -f ../.gitlab-ci.yml-backup ]; then
+          rm -f .gitlab-ci.yml  # Remove if it exists from GitHub
+          mv ../.gitlab-ci.yml-backup .gitlab-ci.yml
+        fi
+        
+        # Restore .gitlab* directories
+        if [ -d ../.gitlab-backup ]; then
+          rm -rf .gitlab*  # Remove if they exist from GitHub
+          mv ../.gitlab-backup/.gitlab* ./ 2>/dev/null || true
+        fi
+        
+        # Commit the restored GitLab-specific files if they changed
+        git add .gitlab-ci.yml .gitlab* 2>/dev/null || true
+        if ! git diff --cached --quiet 2>/dev/null; then
+          git commit -m "${{ secrets.COMMIT_MESSAGE }}"
+        fi
+        
+        # Push to GitLab using the force flag
+        git push --force gitlab ${{ secrets.GITH_BRANCH }}:main
