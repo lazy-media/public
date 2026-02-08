@@ -1,4 +1,4 @@
-name: Mirror GitHub to GitLab
+name: Mirror GitHub to GitLab with Signed Commits
 
 on:
   schedule:
