@@ -2,8 +2,7 @@ name: Mirror GitHub to GitLab
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
-      timezone: 'America/Los_Angeles'
+    - cron: '0 7 * * *'  # Runs daily at midnight PST/7am UTC
   workflow_dispatch:     # Allows manual triggering
 
 jobs:
