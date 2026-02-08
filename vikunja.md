@@ -4,14 +4,20 @@ description: Information on how to setup Vikunja Self Hosted
 
 # Vikunja
 
-## Vikunja Readme File
+### Overview
 
-This respository is mainly for the Vikunja Mobile App backups
+Notes and links for running Vikunja self-hosted. This page also tracks Vikunja mobile app releases for backups.
 
-## Original Documentation
+### What this page covers
 
-> [Vikunja Mobile App Github Repository](https://github.com/go-vikunja/app/releases)
+* Vikunja Mobile App release backups
 
-## Authentik OpenID / OAuth Setup
+### Key links
 
-> [Authentik OpenID / OAuth Setup](authentik/vikunja.md)
+#### Mobile app releases
+
+[Vikunja Mobile App Github Repository](https://github.com/go-vikunja/app/releases)
+
+#### SSO (Authentik OpenID / OAuth)
+
+[Authentik OpenID / OAuth Setup](authentik/vikunja.md)

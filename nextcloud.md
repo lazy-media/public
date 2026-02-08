@@ -6,7 +6,11 @@ description: Nextcloud Self Hosted Setup Instructions
 
 ## Nextcloud
 
-### IMAGICK SETUP NOT CURRENTLY WORKING WITH NEXTCLOUD...STILL WORKING ON FIGURING THIS OUT.
+{% hint style="danger" %}
+LAZY MEDIA HAS SINCE CONVERTED TO USING THE NEXTCLOUD APP PROVIDED BY TRUENAS SCALE.
+
+THIS DOCUMENTATION REFERENCES HOW TO USE THE SNAP PACKAGE FROM UBUNTU.
+{% endhint %}
 
 ### References
 
@@ -17,13 +21,17 @@ description: Nextcloud Self Hosted Setup Instructions
 * Ubuntu Server 22.04 or really any Ubuntu Version you want with Snap preinstalled
 * Installed via Snap / Snapd
 
-### Installation
+### SNAP Package Installation
 
 ```
 sudo snap install nextcloud
 ```
 
 ### Imagick Installation and Setup for Favicon
+
+{% hint style="danger" %}
+DOCUMENTATION AFTER THIS POINT MAY NOT BE ACCURATE, PLEASES USE AT YOUR OWN RISK OR HELP UPDATE THE DOCS TO REFLECT THE CORRECT METHOD.
+{% endhint %}
 
 #### Install PHP Requirements
 
@@ -65,4 +73,4 @@ php -m | grep imagick
 
 ### OpenID / OAuth Setup
 
-Visit Authentik Nextcloud OpenID / OAuth Setup
+Visit [Authentik Nextcloud OpenID / OAuth Setup](authentik/nextcloud.md)

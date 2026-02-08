@@ -1,10 +1,20 @@
 ---
-description: Major changes made to the documentation
+description: Logs changes made to the documentation
 ---
 
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-08" %}
+## Documentation Updates
+
+* Added Dockerfile for [ReType](../docker/dockerfiles/retype.md) just as a reference.
+  * Suggested as an alternative for GitBook, but doesn't meet all requirements Lazy Media is looking for.
+* Update some more documentation to fix broken or missing links
+* Updated [Proxmox](../proxmox.md) page to look more "professional"
+* Updated [Rocket.Chat](../rocketchat-server.md) page to look more "professional"
+{% endupdate %}
+
 {% update date="2026-02-06" %}
 ## Documentation Updates
 
