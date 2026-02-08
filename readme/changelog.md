@@ -13,6 +13,7 @@ description: Logs changes made to the documentation
 * Update some more documentation to fix broken or missing links
 * Updated [Proxmox](../proxmox.md) page to look more "professional"
 * Updated [Rocket.Chat](../rocketchat-server.md) page to look more "professional"
+* Updated [Windows 11](../windows-11.md) page to look more "professional"
 {% endupdate %}
 
 {% update date="2026-02-06" %}
