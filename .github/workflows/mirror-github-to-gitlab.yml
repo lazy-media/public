@@ -26,8 +26,5 @@ jobs:
         # Add GitLab remote with authentication token
         git remote add gitlab https://oauth2:${{ secrets.GITL_TOKEN }}@${{ secrets.GITLAB_REPO_URL }}
         
-        # Fetch all from GitLab
-        git fetch --all --prune
-        
         # Push to GitLab's default branch (assuming it's 'main')
         git push --force gitlab ${{ secrets.GITH_BRANCH }}:main
