@@ -1,4 +1,4 @@
-name: Mirror GitHub Repository to GitLab
+name: Mirror GitHub to GitLab
 
 on:
   schedule:
@@ -20,11 +20,14 @@ jobs:
     - name: Mirror to GitLab
       run: |
         # Configure git identity
-        git config --global user.name "${{ secrets.GIT_AUTHOR_NAME }}"
-        git config --global user.email "${{ secrets.GIT_AUTHOR_EMAIL }}"
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
         
-        # Add GitLab remote
-        git remote add gitlab ${{ secrets.GITLAB_REPO_URL }}
+        # Add GitLab remote with authentication token
+        git remote add gitlab https://oauth2:${{ secrets.GITL_TOKEN }}@${{ secrets.GITLAB_REPO_URL }}
         
-        # Push to GitLab using force to ensure complete mirror
-        git push --force gitlab ${{ secrets.GITH_BRANCH }}:main --tags
+        # Fetch all from GitLab
+        git fetch --all --prune
+        
+        # Push to GitLab's default branch (assuming it's 'main')
+        git push --force gitlab ${{ secrets.GITH_BRANCH }}:main
