@@ -1,0 +1,44 @@
+name: Mirror GitHub to GitLab
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Runs daily at midnight PST/7am UTC
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout GitHub repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITH_TOKEN_MIRROR }}
+
+    - name: Import GPG key
+      run: |
+        echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import --batch
+        echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --quick-add-key $(gpg --list-secret-keys --keyid-format LONG | grep sec | awk '{print $2}' | cut -d'/' -f2) 2>/dev/null || true
+
+    - name: Mirror to GitLab
+      run: |
+        # Configure git identity
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # Configure GPG signing
+        git config --global commit.gpgsign true
+        git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
+        git config --global gpg.program gpg
+        
+        # Remove https:// prefix if present in GITLAB_REPO_URL
+        GITLAB_URL="${{ secrets.GITLAB_REPO_URL }}"
+        GITLAB_URL="${GITLAB_URL#https://}"
+        GITLAB_URL="${GITLAB_URL#http://}"
+        
+        # Add GitLab remote with authentication token
+        git remote add gitlab https://oauth2:${{ secrets.GITL_TOKEN }}@${GITLAB_URL}
+        
+        # Push to GitLab's default branch (assuming it's 'main')
+        git push --force gitlab ${{ secrets.GITH_BRANCH }}:main
