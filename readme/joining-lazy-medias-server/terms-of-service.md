@@ -6,7 +6,7 @@ description: Terms for using Lazy Media hosted apps, SSO, and community services
 
 ### Last updated
 
-2026-02-09
+2026-02-08
 
 ### Who this is for
 
