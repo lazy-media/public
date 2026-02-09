@@ -2,7 +2,9 @@
 
 * [Lazy Media's Docs](README.md)
   * [Donations & Sponsors](readme/donations-and-sponsors.md)
-  * [Joining Lazy Media's Server](readme/joining-lazy-medias-server.md)
+  * [Joining Lazy Media's Server](readme/joining-lazy-medias-server/README.md)
+    * [Privacy Policy](readme/joining-lazy-medias-server/privacy-policy.md)
+    * [Terms of Service](readme/joining-lazy-medias-server/terms-of-service.md)
   * [Changelog](readme/changelog.md)
 * [Authentik](authentik/README.md)
   * [Authentik Installation](authentik/authentik-installation.md)
