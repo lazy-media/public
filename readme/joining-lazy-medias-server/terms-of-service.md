@@ -26,6 +26,8 @@ It also explains why we collect it.
 
 If these Terms conflict with the Privacy Policy, the Privacy Policy controls for privacy topics.
 
+Our [Cookie Policy](cookie-policy.md) explains cookies and similar technologies.
+
 ### Services covered
 
 These Terms cover use of Lazy Media services documented here:
@@ -272,6 +274,18 @@ We do not control upstream projects.
 
 We do not guarantee feature completeness across apps.
 
+We may also rely on third‑party infrastructure and security providers.
+
+This can include ISP, DNS, and edge security services.
+
+We may also use payment processors such as PayPal and Stripe.
+
+These providers may process technical or transaction data.
+
+Details are in our [Privacy Policy](privacy-policy.md).
+
+Cookie-related details are in our [Cookie Policy](cookie-policy.md).
+
 ### Security, backups, and data loss
 
 We use reasonable measures to protect services.
@@ -324,6 +338,8 @@ Unless required by law, donations are non-refundable.
 Services are provided “as is” and “as available”.
 
 We disclaim warranties to the maximum extent allowed by law.
+
+Third‑party providers may apply their own terms, limits, and availability constraints.
 
 We are not liable for indirect, incidental, or consequential damages.
 

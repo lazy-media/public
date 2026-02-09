@@ -14,7 +14,7 @@ description: Logs changes made to the documentation
 * Updated [Proxmox](../proxmox.md) page to look more "professional"
 * Updated [Rocket.Chat](../rocketchat-server.md) page to look more "professional"
 * Updated [Windows 11](../windows-11.md) page to look more "professional"
-* Added a [Privacy Policy](joining-lazy-medias-server/privacy-policy.md) & [Terms of Service](joining-lazy-medias-server/terms-of-service.md) that only applies when you actually use a Lazy Media hosted service or log in via Lazy Media SSO
+* Added a [Cookie Policy](joining-lazy-medias-server/cookie-policy.md), [Privacy Policy](joining-lazy-medias-server/privacy-policy.md) & [Terms of Service](joining-lazy-medias-server/terms-of-service.md) that only applies when you actually use a Lazy Media hosted service or log in via Lazy Media SSO
   * This is just for a reference that is always online to Lazy Media Users.
 {% endupdate %}
 

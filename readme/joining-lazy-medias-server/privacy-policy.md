@@ -215,6 +215,16 @@ We may collect technical data to run services safely:
 
 This data helps with abuse prevention and troubleshooting.
 
+Depending on how you access our services, **network equipment** and **infrastructure/security services** we use may also process or log additional data.
+
+This can include:
+
+* Device identifiers and connection details (for example, device name, MAC address, IP address).
+* Network and web traffic metadata (for example, domains requested, DNS query/response data, request headers, timestamps, and volume).
+* Website traffic and security events (for example, suspected bot traffic, malware/spyware indicators, blocked requests, and similar threat signals).
+
+Some of this data may be linked to you by the relevant provider based on their relationship with you.
+
 #### 4) Communications and support
 
 If you request access or support, we may collect:
@@ -236,6 +246,17 @@ We may receive limited data like your name, handle, and donation amount.
 See:
 
 * [Donations & Sponsors](../donations-and-sponsors.md)
+
+Lazy Media may use payment processors such as **PayPal** and **Stripe**.
+
+If you make a payment, they may process information such as:
+
+* Your payment method details (for example, card or account details).
+* Billing address.
+* Transaction amount, currency, and timestamp.
+* Fraud and risk signals.
+
+We do not receive full card or bank details.
 
 ### How we use your data
 
@@ -276,6 +297,7 @@ See the Authentik social login docs:
 
 We may use third-party providers to operate and secure the services, including:
 
+* Internet connectivity providers (ISP).
 * Reverse proxy, DNS, and TLS services.
 * DDoS mitigation and firewalling.
 
@@ -291,6 +313,25 @@ An example of our Cloudflare settings is documented in the â€œCloudflare Setupâ€
 
 We may also implement additional infrastructure and security controls that are not listed in this policy.
 
+Lazy Media may use providers such as:
+
+* **Xfinity** as an Internet service provider.
+* **Cloudflare** for DNS and security services.
+* **Quad9** for DNS security services.
+
+When you use our services, these providers may process technical data as part of delivering connectivity and security.
+
+This can include IP addresses, timestamps, request metadata, and DNS query/response data.
+
+Depending on the service and your interaction, information processed by these providers (or other similar providers we may use) can also include:
+
+* Personal contact information you provide to a provider directly (for example, name, email, address, phone number).
+* Location and locale information (for example, city, state, country, language).
+* Device and network information (for example, device name, MAC address, IP address).
+* Website traffic, DNS traffic, and security-related traffic classifications (for example, suspected ad traffic, malware traffic, spyware traffic, and similar categories).
+
+Payment information is typically processed by payment processors, not by our ISP/DNS providers.
+
 #### Payments
 
 Payments and recurring support are processed by their platforms.
@@ -298,6 +339,16 @@ Payments and recurring support are processed by their platforms.
 See:
 
 * [Donations & Sponsors](../donations-and-sponsors.md)
+
+Lazy Media may use **PayPal** and **Stripe** to process payments.
+
+These providers may process your transaction and fraud-prevention data under their own policies.
+
+Depending on the payment method and region, this can include personal contact information and payment information.
+
+This may include bank account information or debit/credit card information.
+
+Lazy Media does not receive full card or bank account details.
 
 ### Cookies and session storage
 
