@@ -20,7 +20,7 @@ _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed i
 _**If you found any of this documentation helpful, please consider**_ [_**starring the GitHub Repository**_](https://github.com/lazy-media/public)_**.**_
 
 {% hint style="info" %}
-PLEASE BE PATIENT AS THE DOCUMENTATION SITE IS GOING THROUGH A MAJOR RE-WORK. THIS IS TO IMPROVE THE USER EXPERIENCE.
+Updates to the docs are a deliberate, thoughtful process. Patience is not just a virtue; it is a requirement.
 {% endhint %}
 
 ***
