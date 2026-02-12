@@ -5,6 +5,13 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-11" %}
+## Added Documentation
+
+* Added Information on [Wordpress](../wordpress.md)
+  * basic fixes for some common issues
+{% endupdate %}
+
 {% update date="2026-02-08" %}
 ## Documentation Updates
 

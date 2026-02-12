@@ -85,3 +85,4 @@
 * [Vikunja](vikunja.md)
 * [Webmin](webmin.md)
 * [Windows 11](windows-11.md)
+* [WordPress](wordpress.md)
