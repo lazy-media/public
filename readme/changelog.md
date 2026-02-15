@@ -5,6 +5,12 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-15" %}
+## Added Documentation
+
+* Added a note for unlocking Proxmox VMs and LXCs for quick referencing
+{% endupdate %}
+
 {% update date="2026-02-11" %}
 ## Added Documentation
 
