@@ -53,8 +53,14 @@ Shut down anything using the physical NIC you plan to bridge.
 
 At minimum:
 
-* Shut down VMs.
-* Detach VM NICs from the physical interface, if required by your setup.
+* If the VM OS supports hot-swapping network devices, you can change the NIC without shutting down.
+* If it does not, shut down the VM first.
+* If your TrueNAS server has multiple physical NICs:
+  * Move the VM's NIC off the NIC you’re about to bridge.
+  * Attach it to a NIC that is not currently being used.
+* If your TrueNAS server has only a single physical NIC:
+  * Record the NIC **Device Order** value before removing it.
+  * Remove the NIC device from the VM completely.
 
 This avoids “interface in use” edge cases during the change.
 
@@ -121,8 +127,10 @@ TrueNAS requires **Test Changes** before it finalizes network updates. If the ch
 For each VM:
 
 1. Edit the VM.
-2. Update the NIC device to use `br0`.
-3. Start the VM.
+2. If you removed the NIC earlier, add a new NIC device now.
+   * Set **Device Order** to the value you recorded.
+3. Update the NIC device to use `br0`.
+4. Start the VM.
 
 Once the VM is online, it should be able to reach the TrueNAS host over the LAN and connect to SMB shares using the host IP/hostname.
 {% endstep %}
