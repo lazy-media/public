@@ -5,6 +5,12 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-17" %}
+## Added Documentation
+
+* Added [Bridged Networking (VM LAN Access)](../truenas-scale/bridged-networking-vm-lan-access.md) under TrueNAS SCALE, documenting bridge interface setup for VMs that need access to SMB shares hosted on the same server.
+{% endupdate %}
+
 {% update date="2026-02-15" %}
 ## Added Documentation
 

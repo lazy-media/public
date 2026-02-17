@@ -80,6 +80,7 @@
 * [Reactive Resume](reactive-resume.md)
 * [Rocket-Chat Server](rocketchat-server.md)
 * [TrueNas Scale](truenas-scale/README.md)
+  * [Bridged Networking (VM LAN Access)](truenas-scale/bridged-networking-vm-lan-access.md)
   * [LSI 9300 16i HBA](truenas-scale/lsi-9300-16i-hba.md)
 * [Vaultwarden](vaultwarden.md)
 * [Vikunja](vikunja.md)
