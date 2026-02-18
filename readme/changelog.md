@@ -5,6 +5,14 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-18" %}
+## Added Documentation
+
+* Added a full guide for [UPS Monitor Setup](../truenas-scale/ups-monitor-setup.md) under TrueNAS SCALE.
+  * Includes step-by-step UPS service config, NUT verification commands (`upsc`, `upscmd`), and troubleshooting.
+  * Includes optional Peanut/PeaNUT visual monitoring steps with screenshot placeholders.
+{% endupdate %}
+
 {% update date="2026-02-17" %}
 ## Added Documentation
 

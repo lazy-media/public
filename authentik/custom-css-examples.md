@@ -10,11 +10,11 @@ description: >-
 
 This theme was created by [VULGA01 from GitHub](https://github.com/VULGA01/Authentik-Login-theme-Glassmorphism).
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% code fullWidth="false" expandable="true" %}
 ```css
@@ -2298,11 +2298,11 @@ text-transform: capitalize !important;
 
 1. Login to your Authentik Admin Dashboard
 2. Navigate to Admin Interface > System > Brands\
-   ![](../.gitbook/assets/image.png)
+   ![](<../.gitbook/assets/image (5).png>)
 3. Click on the `Edit` Actions Button\
-   ![](<../.gitbook/assets/image (1).png>)
+   ![](<../.gitbook/assets/image (1) (1).png>)
 4. Expand `Branding Settings` \
-   ![](<../.gitbook/assets/image (2).png>)
+   ![](<../.gitbook/assets/image (2) (1).png>)
    1. Find the
 5. Paste in your custom CSS
 6. Click on Update
