@@ -4,7 +4,7 @@ description: >-
   into the correct files so they can be imported into another app like Immich.
 ---
 
-# Google-Photos-Takeout
+# Google Photos Takeout
 
 ### Overview
 
@@ -27,8 +27,8 @@ Use the quick guide below, then click the linked page for the tool you choose.
 
 #### Quick decision guide
 
-* Want to do everything **locally** first, then upload later? Use **Google Photo Takeout Helper**.
-* Want to **process and upload to Immich in one step**? Use **Immich-Go**.
+* Want to do everything **locally** first, then upload later? Use [**Google Photo Takeout Helper**](google-photo-takeout-helper.md).
+* Want to **process and upload to Immich in one step**? Use [**Immich-Go**](immich-go.md).
 
 ### Google Photo Takeout Helper
 
