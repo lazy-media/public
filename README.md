@@ -17,7 +17,7 @@ _**We’re currently in the middle of a dramatic, tear-filled overhaul to make t
 
 _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed in everything from Arabic to Vietnamese. You’re welcome.**_
 
-_**If you found any of this documentation helpful, please consider**_ [_**starring the GitHub Repository**_](https://github.com/lazy-media/public)_**.**_
+_**If you found any of this documentation helpful, please consider**_ <a href="https://github.com/lazy-media/public" class="button primary">Starring the GitHub Repo!</a>
 
 {% hint style="info" %}
 Updates to the docs are a deliberate, thoughtful process. Patience is not just a virtue; it is a requirement.
@@ -36,7 +36,7 @@ Updates to the docs are a deliberate, thoughtful process. Patience is not just a
 
 ### Overview
 
-This knowledge base contains comprehensive documentation for all publicly accessible systems and services.
+This knowledge base is a growing collection of everything Lazy Media has documented across real-world home-lab deployments. It is intended as a practical quick-reference for common tasks, fixes, and configuration patterns that new and everyday home-labbers run into. It includes troubleshooting, installation guides, and extra configuration steps that may be missing, unclear, or not covered in official documentation.
 
 _**Docs GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy-media/public?style=flat-square)](https://github.com/lazy-media/public)
 
