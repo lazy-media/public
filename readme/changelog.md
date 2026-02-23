@@ -5,6 +5,22 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-02-23" %}
+## Documentation and Policy Updates
+
+* Updated [Donations & Sponsors](donations-and-sponsors.md) for improved readability and navigation.
+* Expanded [Cookie Policy](joining-lazy-medias-server/cookie-policy.md) to cover:
+  * Analytics and link measurement (Google, Umami, Tianji, Shlink).
+  * Monitoring and metrics tooling (Grafana, Prometheus, InfluxDB, and similar systems).
+  * Support and store experiences (Odoo support portal, WordPress store).
+  * Payments (PayPal and Stripe) and UniFi/Ubiquiti network infrastructure assumptions.
+  * Coverage for additional internal services beyond those listed in the docs.
+* Expanded [Privacy Policy](joining-lazy-medias-server/privacy-policy.md) to reflect the same ecosystem assumptions (analytics, monitoring, support/store, UniFi), and documented backup retention:
+  * Daily backups retained for 7 days.
+  * Weekly backups retained for 2 weeks.
+* Updated [Terms of Service](joining-lazy-medias-server/terms-of-service.md) to align scope with the documented services and the broader internal stack, and to reference PayPal/Stripe processing terms where applicable.
+{% endupdate %}
+
 {% update date="2026-02-18" %}
 ## Added Documentation
 

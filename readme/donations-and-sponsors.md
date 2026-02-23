@@ -4,15 +4,25 @@ description: Donations, Sponsors, Dev Platforms, Social and Streaming Profiles
 
 # Donations & Sponsors
 
-### Support my work
+## Support my work
 
-If these docs saved you time, consider supporting the project. It helps cover hosting, tools, and time spent improving guides.
+If these docs saved you time, consider supporting the project.
+
+Support helps cover hosting, tooling, and time spent improving guides.
 
 {% hint style="info" %}
-Looking for N8N Automations? Visit my <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&#x26;logo=patreon&#x26;logoColor=white" alt="Patreon" data-size="original">
+Want my N8N automations? They live on Patreon.
+
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://links.lazymedia.media/q/arP6BMfAL)
 {% endhint %}
 
+{% columns %}
+{% column %}
 ### Donate
+
+{% hint style="success" %}
+Not sure what to pick? Monthly support helps the most.
+{% endhint %}
 
 #### One-time
 
@@ -29,10 +39,18 @@ Looking for N8N Automations? Visit my <img src="https://img.shields.io/badge/Pat
 
 **Bitcoin**
 
+{% hint style="warning" %}
+Crypto transfers are irreversible. Double-check the address before sending.
+{% endhint %}
+
 `13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
 
-***
+Scan to open in your wallet:
 
+![Bitcoin donation QR (bitcoin:13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp)](https://api.qrserver.com/v1/create-qr-code/?size=240x240\&data=bitcoin%3A13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp)
+{% endcolumn %}
+
+{% column %}
 ### Follow
 
 #### Social
@@ -45,3 +63,5 @@ Looking for N8N Automations? Visit my <img src="https://img.shields.io/badge/Pat
 
 * [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://links.lazymedia.media/q/BbN6YEBmi)
 * [![GitLab](https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge\&logo=gitlab\&logoColor=white)](https://links.lazymedia.media/q/O79M6JauO)
+{% endcolumn %}
+{% endcolumns %}

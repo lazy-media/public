@@ -8,7 +8,7 @@ description: >-
 
 ### Last updated
 
-2026-02-09
+2026-02-22
 
 ### Who this is for
 
@@ -19,6 +19,14 @@ It applies when you use any Lazy Media hosted app or service.
 It also applies when you use Lazy Media single sign-on (SSO).
 
 SSO is primarily handled by [Authentik](../../authentik/).
+
+{% hint style="info" %}
+Lazy Media runs 100+ self-hosted services.
+
+Not all services are public.
+
+This Policy applies to any Lazy Media service you access, whether public or internal.
+{% endhint %}
 
 ### Related documents
 
@@ -49,10 +57,25 @@ This Policy covers use of Lazy Media services documented here:
 * [Cal.com Appointment & Scheduling](../../cal.com-appointment-and-scheduling.md)
 * [Pterodactyl](../../pterodactyl-gaming-server.md)
 * [FiveM Server Setup with TX Admin](../../fivem.md)
+* [WordPress](../../wordpress.md)
 
 {% hint style="info" %}
 Some pages describe self-hosting guides or internal infrastructure. This Policy applies when you use a Lazy Media hosted service or Lazy Media SSO.
 {% endhint %}
+
+### Extra services assumed by this documentation
+
+This documentation references a broader ecosystem than the pages list can capture.
+
+Assume the following also exist and may use cookies or similar storage:
+
+* A **support portal** based on **Odoo (open source)**.
+* A **store site** based on **WordPress** (often with e-commerce plugins).
+* A **link shortener / link analytics** stack (for example, Shlink).
+* A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
+* A **network infrastructure** stack based on **UniFi / Ubiquiti**.
+
+If you access any of these via a browser, expect session cookies and security tokens.
 
 ### What cookies are
 
@@ -76,6 +99,7 @@ We use cookies for the following purposes:
 * **Service functionality and preferences.**
 * **Reliability and performance troubleshooting.**
 * **Abuse prevention and rate limiting.**
+* **Analytics and link measurement** (where enabled and legally permitted).
 
 Some cookies are required to make the services work.
 
@@ -131,6 +155,62 @@ If we use non-essential analytics cookies, we aim to:
 Not every Lazy Media service uses every category above. Many self-hosted apps rely mainly on session and security cookies.
 {% endhint %}
 
+### Analytics, link tracking, and stats tooling
+
+Lazy Media may run first-party and third-party analytics.
+
+This can apply to the docs site, the support portal, the store, and any public app.
+
+#### Analytics providers (assumed)
+
+Depending on the site and configuration, we may use:
+
+* **Google** analytics and advertising measurement tools.
+* **Umami** (self-hosted analytics).
+* **Tianji** (self-hosted analytics and monitoring).
+* **Shlink** (short links and click analytics).
+
+We may also run other self-hosted analytics, telemetry, or logging tools.
+
+#### What these tools can store
+
+These tools can use cookies or similar storage for:
+
+* A pseudonymous identifier (repeat visits).
+* Session state (single visit grouping).
+* Attribution (referrer, campaign parameters).
+* Abuse prevention and bot filtering.
+
+Some configurations may be cookie-less.
+
+Even then, server logs may still record click or pageview events.
+
+{% hint style="info" %}
+This docs site uses short links (for example, `links.lazymedia.media`).
+
+When you click them, the short-link service can log the click.
+
+It may also set cookies if it serves an interactive page.
+{% endhint %}
+
+### Monitoring, metrics, and admin dashboards
+
+Lazy Media uses monitoring and metrics tools to keep services stable.
+
+Examples include **Grafana**, **Prometheus**, and **InfluxDB**.
+
+If you access these web UIs, they commonly use cookies for:
+
+* Login sessions (including SSO-backed sessions).
+* CSRF protection.
+* UI preferences (theme, time range, last dashboard).
+
+Prometheus itself is often cookie-free.
+
+Grafana is the most likely to set browser cookies.
+
+We may also run other observability tools for logs, tracing, and uptime checks.
+
 ### Third‑party cookies and embedded content
 
 Some pages or services may include third‑party components.
@@ -141,8 +221,9 @@ Common examples across our stack include:
 
 * **Identity providers** used for social login via Authentik.
 * **DNS / TLS / edge security providers** where used (for example, Cloudflare).
-* **Documentation hosting** and embedded media providers (where used).
-* **Payment processors** (for example, PayPal and Stripe) when you donate or pay.
+* **Documentation hosting** providers (for example, GitBook) and embedded media providers (where used).
+* **Analytics providers** (for example, Google) where enabled.
+* **Payment processors** (PayPal and Stripe) when you donate or pay.
 
 When a third party sets cookies, their policies apply.
 
@@ -164,6 +245,19 @@ These are typically used to process payments and prevent fraud.
 
 They may also be used for compliance and risk scoring.
 
+### Cookies in support and store experiences
+
+If you use Lazy Media’s support portal (Odoo) or store site (WordPress):
+
+* Expect login and session cookies.
+* Expect CSRF and anti-abuse tokens.
+* Expect preference cookies (language, theme).
+
+On store flows, cookies may also support:
+
+* Cart state and checkout continuity.
+* Fraud prevention and payment handoff to PayPal or Stripe.
+
 ### Cookies in authentication and SSO
 
 If you log in via Lazy Media SSO, Authentik typically sets cookies to:
@@ -179,6 +273,20 @@ Integration examples are documented here:
 * [Basic Applications & Providers Setup](../../authentik/applications-and-providers.md)
 * [Basic HTTP Authentication Passthrough](../../authentik/basic-http-authentication.md)
 * [Federation & Social Logins](../../authentik/federation-and-social-login/)
+
+### Cookies and the homelab network (UniFi)
+
+Lazy Media’s homelab network infrastructure is based on UniFi / Ubiquiti.
+
+If you access network-related portals or admin UIs, they can set cookies for:
+
+* Administrator session management.
+* Device identification within the portal.
+* UI preferences.
+
+Network telemetry and logs are typically server-side.
+
+They may still correlate to sessions initiated from your browser.
 
 ### How you can control cookies
 
@@ -365,7 +473,10 @@ If you use any Lazy Media hosted version of these, this Policy applies.
   * [Unifi / Ubiquiti Equipment](../../my-homelab/unifi-ubiquiti-equipment.md)
 * [Proxmox](../../proxmox.md)
 * [TrueNas Scale](../../truenas-scale/)
+  * [Bridged Networking (VM LAN Access)](../../truenas-scale/bridged-networking-vm-lan-access.md)
   * [LSI 9300 16i HBA](../../truenas-scale/lsi-9300-16i-hba.md)
+  * [UPS Monitor Setup](../../truenas-scale/ups-monitor-setup.md)
 * [Windows 11](../../windows-11.md)
+* [WordPress](../../wordpress.md)
 
 </details>

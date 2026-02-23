@@ -8,7 +8,7 @@ description: >-
 
 ### Last updated
 
-2026-02-08
+2026-02-22
 
 ### Who this is for
 
@@ -19,6 +19,21 @@ It covers our hosted apps and public services.
 It also covers access via our single sign-on (SSO).
 
 SSO is primarily handled by Authentik.
+
+{% hint style="info" %}
+Lazy Media runs 100+ self-hosted services.
+
+Not all services are public.
+
+This Privacy Policy applies to any Lazy Media service you access, whether public or internal.
+{% endhint %}
+
+### Related documents
+
+Read this policy with:
+
+* [Cookie Policy](cookie-policy.md)
+* [Terms of Service](terms-of-service.md)
 
 ### Services covered
 
@@ -40,10 +55,24 @@ This policy covers use of the services documented here:
 * [Cal.com Appointment & Scheduling](../../cal.com-appointment-and-scheduling.md)
 * [Pterodactyl](../../pterodactyl-gaming-server.md)
 * [FiveM Server Setup with TX Admin](../../fivem.md)
+* [WordPress](../../wordpress.md)
 
 {% hint style="info" %}
 Some pages in this site describe self-hosting guides or internal infrastructure. Those pages are not “apps you use” by default. This policy applies when you actually use a Lazy Media hosted service or log in via Lazy Media SSO.
 {% endhint %}
+
+### Extra services assumed by this documentation
+
+This documentation references a broader ecosystem than the page list can capture.
+
+Assume the following also exist and may collect data described in this Policy:
+
+* A **support portal** based on **Odoo (open source)**.
+* A **store site** based on **WordPress** (often with e-commerce plugins).
+* A **link shortener / link analytics** stack (for example, Shlink).
+* An **analytics** stack (for example, Google, Umami, Tianji).
+* A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
+* A **network infrastructure** stack based on **UniFi / Ubiquiti**.
 
 <details>
 
@@ -55,6 +84,9 @@ If you use any Lazy Media hosted version of these, this policy applies.
 
 * [Lazy Media's Docs](../../)
 * [Joining Lazy Media's Server](./)
+* [Cookie Policy](cookie-policy.md)
+* [Privacy Policy](privacy-policy.md)
+* [Terms of Service](terms-of-service.md)
 * [Donations & Sponsors](../donations-and-sponsors.md)
 * [Changelog](../changelog.md)
 
@@ -117,6 +149,7 @@ If you use any Lazy Media hosted version of these, this policy applies.
 * [Vaultwarden](../../vaultwarden.md)
 * [Vikunja](../../vikunja.md)
 * [Webmin](../../webmin.md)
+* [WordPress](../../wordpress.md)
 
 #### Docker / self-hosting tooling (admin-facing)
 
@@ -146,7 +179,9 @@ If you use any Lazy Media hosted version of these, this policy applies.
 * [iVentoy](../../iventoy.md)
 * [Proxmox](../../proxmox.md)
 * [TrueNas Scale](../../truenas-scale/)
+  * [Bridged Networking (VM LAN Access)](../../truenas-scale/bridged-networking-vm-lan-access.md)
   * [LSI 9300 16i HBA](../../truenas-scale/lsi-9300-16i-hba.md)
+  * [UPS Monitor Setup](../../truenas-scale/ups-monitor-setup.md)
 * [Windows 11](../../windows-11.md)
 * [Dell Poweredge R710 Drivers and Bootable ISO](../../dell-poweredge-r710.md)
 * [My Home Lab](../../my-homelab/)
@@ -215,6 +250,53 @@ We may collect technical data to run services safely:
 
 This data helps with abuse prevention and troubleshooting.
 
+#### 4) Analytics, link clicks, and site usage (where enabled)
+
+Lazy Media may collect product analytics and usage stats for operations and planning.
+
+Analytics may be collected on the docs site, hosted apps, the support portal, and the store.
+
+Depending on the service, this can include:
+
+* Pages/screens viewed and feature usage events.
+* Referrer and campaign parameters (UTM tags).
+* Session identifiers or pseudonymous analytics IDs.
+* Approximate location derived from IP (region/country level).
+* Device/browser characteristics (for example, screen size, OS, language).
+
+Assume we may use analytics and link measurement tools such as:
+
+* **Google** analytics and advertising measurement tools.
+* **Umami** (self-hosted analytics).
+* **Tianji** (self-hosted analytics and monitoring).
+* **Shlink** (short links and click analytics).
+
+We may also run other open-source analytics, telemetry, logging, or monitoring tools.
+
+{% hint style="info" %}
+This docs site uses short links (for example, `links.lazymedia.media`).
+
+When you click them, the short-link service can log the click event.
+{% endhint %}
+
+#### 5) Monitoring, metrics, and observability data
+
+Lazy Media operates monitoring systems to keep services reliable and secure.
+
+Examples include **Grafana**, **Prometheus**, and **InfluxDB**.
+
+These systems typically collect:
+
+* Service health and availability data (uptime, latency, error rates).
+* Host and container metrics (CPU, memory, disk, network).
+* Logs and audit events (for example, admin actions and authentication events).
+
+If you access admin dashboards, they may also log:
+
+* Your account identifier (if logged in).
+* The dashboards you access.
+* Queries you run (for example, for troubleshooting).
+
 Depending on how you access our services, **network equipment** and **infrastructure/security services** we use may also process or log additional data.
 
 This can include:
@@ -225,19 +307,20 @@ This can include:
 
 Some of this data may be linked to you by the relevant provider based on their relationship with you.
 
-#### 4) Communications and support
+#### 6) Communications and support (including Odoo)
 
 If you request access or support, we may collect:
 
 * The information you submit in our forms.
 * Emails you send to us, and our replies.
 * Messages you send in our Discord support channels.
+* Support tickets, messages, and attachments submitted via our support portal (Odoo).
 
 Server access is described here:
 
 * [Joining Lazy Media's Server](./)
 
-#### 5) Donations and payments
+#### 7) Store, donations, and payments (PayPal and Stripe)
 
 If you donate or sponsor, payment data is handled by the payment platform.
 
@@ -300,6 +383,33 @@ We may use third-party providers to operate and secure the services, including:
 * Internet connectivity providers (ISP).
 * Reverse proxy, DNS, and TLS services.
 * DDoS mitigation and firewalling.
+
+#### Documentation hosting and embedded content
+
+This documentation site may be hosted by a third-party documentation platform (for example, GitBook).
+
+When you view the docs, that platform may process technical data such as:
+
+* IP address and user agent.
+* Request timestamps and pages viewed.
+* Basic analytics or performance telemetry (depending on configuration).
+
+If we embed third-party content (video, social posts, etc.), those providers may also collect data under their own policies.
+
+#### Network infrastructure (UniFi / Ubiquiti)
+
+Lazy Media’s homelab network infrastructure is based on UniFi / Ubiquiti.
+
+If you connect to network services we operate, UniFi systems may process:
+
+* Device identifiers (for example, MAC address).
+* Connection and authentication events.
+* Traffic and performance statistics.
+* Network security events.
+
+Most of this is operational telemetry.
+
+It may still be associated with your account or device in some contexts.
 
 Where used, Lazy Media uses Cloudflare in a standard configuration.
 
@@ -368,7 +478,16 @@ We keep data only as long as needed for:
 * Security and abuse prevention.
 * Legal or compliance obligations (if applicable).
 
-When you delete content in an app, it may remain in backups for a limited time.
+#### Backups
+
+We maintain service backups for reliability and disaster recovery.
+
+Our backup retention is:
+
+* **Daily backups:** retained for **7 days**
+* **Weekly backups:** retained for **2 weeks**
+
+When you delete content in an app, it may remain in backups until those backups expire.
 
 ### Security
 

@@ -6,7 +6,7 @@ description: Terms for using Lazy Media hosted apps, SSO, and community services
 
 ### Last updated
 
-2026-02-08
+2026-02-22
 
 ### Who this is for
 
@@ -17,6 +17,14 @@ They apply to you (“you”) when you use any Lazy Media hosted service.
 They also apply when you log in via Lazy Media single sign-on (SSO).
 
 SSO is primarily handled by [Authentik](../../authentik/).
+
+{% hint style="info" %}
+Lazy Media runs 100+ self-hosted services.
+
+Not all services are public.
+
+These Terms apply to any Lazy Media service you access, whether public or internal.
+{% endhint %}
 
 ### Privacy
 
@@ -48,10 +56,24 @@ These Terms cover use of Lazy Media services documented here:
 * [Cal.com Appointment & Scheduling](../../cal.com-appointment-and-scheduling.md)
 * [Pterodactyl](../../pterodactyl-gaming-server.md)
 * [FiveM Server Setup with TX Admin](../../fivem.md)
+* [WordPress](../../wordpress.md)
 
 {% hint style="info" %}
 Some pages describe self-hosting guides or internal infrastructure. These Terms apply when you use a Lazy Media hosted service or Lazy Media SSO.
 {% endhint %}
+
+### Extra services assumed by this documentation
+
+This documentation references a broader ecosystem than the page list can capture.
+
+Assume the following also exist and are covered by these Terms when you access them:
+
+* A **support portal** based on **Odoo (open source)**.
+* A **store site** based on **WordPress** (often with e-commerce plugins).
+* A **link shortener / link analytics** stack (for example, Shlink).
+* An **analytics** stack (for example, Google, Umami, Tianji).
+* A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
+* A **network infrastructure** stack based on **UniFi / Ubiquiti**.
 
 <details>
 
@@ -66,6 +88,8 @@ If you use any Lazy Media hosted version of these, these Terms apply.
 * [Donations & Sponsors](../donations-and-sponsors.md)
 * [Changelog](../changelog.md)
 * [Privacy Policy](privacy-policy.md)
+* [Cookie Policy](cookie-policy.md)
+* [Terms of Service](terms-of-service.md)
 
 #### Auth and identity (Authentik)
 
@@ -126,6 +150,7 @@ If you use any Lazy Media hosted version of these, these Terms apply.
 * [Vaultwarden](../../vaultwarden.md)
 * [Vikunja](../../vikunja.md)
 * [Webmin](../../webmin.md)
+* [WordPress](../../wordpress.md)
 
 #### Docker / self-hosting tooling (admin-facing)
 
@@ -155,7 +180,9 @@ If you use any Lazy Media hosted version of these, these Terms apply.
 * [iVentoy](../../iventoy.md)
 * [Proxmox](../../proxmox.md)
 * [TrueNas Scale](../../truenas-scale/)
+  * [Bridged Networking (VM LAN Access)](../../truenas-scale/bridged-networking-vm-lan-access.md)
   * [LSI 9300 16i HBA](../../truenas-scale/lsi-9300-16i-hba.md)
+  * [UPS Monitor Setup](../../truenas-scale/ups-monitor-setup.md)
 * [Windows 11](../../windows-11.md)
 * [Dell Poweredge R710 Drivers and Bootable ISO](../../dell-poweredge-r710.md)
 * [My Home Lab](../../my-homelab/)
@@ -278,7 +305,15 @@ We may also rely on third‑party infrastructure and security providers.
 
 This can include ISP, DNS, and edge security services.
 
-We may also use payment processors such as PayPal and Stripe.
+We may also run analytics, monitoring, and link measurement tooling.
+
+Common examples include:
+
+* Analytics and click measurement: **Google**, **Umami**, **Tianji**, **Shlink**.
+* Monitoring and metrics: **Grafana**, **Prometheus**, **InfluxDB**.
+* Network infrastructure: **UniFi / Ubiquiti**.
+
+We may also use payment processors such as **PayPal** and **Stripe**.
 
 These providers may process technical or transaction data.
 
@@ -330,6 +365,10 @@ Donations are voluntary.
 Donation options are listed here:
 
 * [Donations & Sponsors](../donations-and-sponsors.md)
+
+Payments may be processed by **PayPal** and **Stripe**.
+
+Their terms and fraud controls may apply to the transaction flow.
 
 Unless required by law, donations are non-refundable.
 
