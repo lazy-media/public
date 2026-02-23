@@ -20,7 +20,7 @@ Menu names can shift between SCALE releases. If you do not see **System Settings
 
 ### Before you start
 
-* Plug the UPS into the TrueNAS host (USB or network).
+* Plug the UPS into the TrueNAS host via USB.
 * Know your UPS vendor and model.
 * Plan a safe shutdown behavior for your environment.
 
@@ -54,6 +54,7 @@ Set these fields:
 * **Remote Monitor**: enable if a client connects over the network.
 * **Shutdown Mode**: choose your preference.
 * **Shutdown Timer**: choose your preference.
+  * _Start with a short value (for example, 30 seconds). After you confirm your estimated runtime in PeaNUT, increase this to a conservative “safe” delay that still leaves enough battery for a clean shutdown._
 * **Shutdown Command**: Empty (uses default TrueNas Command)
 * **Power Off UPS**: choose your preference.
 
@@ -107,7 +108,10 @@ Peanut (often styled **PeaNUT**) is a lightweight web UI for NUT. It connects to
 2. Install **Peanut / PeaNUT** from your catalog.
 3.
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="/files/UNVBv1CxNcO6RWLnv9IQ" alt=""><figcaption></figcaption></figure>
+```
+
 4. Use your normal Apps storage pattern (pool + dataset).
 
 {% columns %}
