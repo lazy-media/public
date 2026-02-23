@@ -134,7 +134,7 @@ Fill the form:
 * **Username**: your **Monitor User**
 * **Password**: your **Monitor Password**
 
-Use the **⋯** menu under the password field. Select **Test**.
+Using the 3-dot vertical menu under the password field, select **Test**.
 
 You should see a green indicator next to the server name.
 
