@@ -37,6 +37,8 @@ Discord login is supported, but it has a more limited feature set.
 
 Fill out the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
 
+_(Extremely Limited to Family Members and Close Friends)_
+
 {% hint style="danger" %}
 _This is currently disabled..._
 {% endhint %}
