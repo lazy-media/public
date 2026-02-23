@@ -8,7 +8,7 @@ description: >-
 
 ### Last updated
 
-2026-02-22
+2026-02-23
 
 ### Who this is for
 
@@ -69,6 +69,7 @@ Assume the following also exist and may collect data described in this Policy:
 
 * A **support portal** based on **Odoo (open source)**.
 * A **store site** based on **WordPress** (often with e-commerce plugins).
+* An **appointment scheduling page** based on **Cal.com (self-hosted)**: [https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia).
 * A **link shortener / link analytics** stack (for example, Shlink).
 * An **analytics** stack (for example, Google, Umami, Tianji).
 * A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
@@ -254,7 +255,7 @@ This data helps with abuse prevention and troubleshooting.
 
 Lazy Media may collect product analytics and usage stats for operations and planning.
 
-Analytics may be collected on the docs site, hosted apps, the support portal, and the store.
+Analytics may be collected on the docs site, hosted apps, the support portal, the store, and the appointment scheduling page ([https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia)).
 
 Depending on the service, this can include:
 
@@ -315,6 +316,7 @@ If you request access or support, we may collect:
 * Emails you send to us, and our replies.
 * Messages you send in our Discord support channels.
 * Support tickets, messages, and attachments submitted via our support portal (Odoo).
+* Appointment scheduling details you submit via our Cal.com scheduling page ([https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia)) (for example, name, email, and notes).
 
 Server access is described here:
 
@@ -322,7 +324,7 @@ Server access is described here:
 
 #### 7) Store, donations, and payments (PayPal and Stripe)
 
-If you donate or sponsor, payment data is handled by the payment platform.
+If you donate, sponsor, buy something, or pay for an appointment-related charge, payment data is handled by the payment platform.
 
 We may receive limited data like your name, handle, and donation amount.
 

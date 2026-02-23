@@ -8,7 +8,7 @@ description: >-
 
 ### Last updated
 
-2026-02-22
+2026-02-23
 
 ### Who this is for
 
@@ -71,6 +71,7 @@ Assume the following also exist and may use cookies or similar storage:
 
 * A **support portal** based on **Odoo (open source)**.
 * A **store site** based on **WordPress** (often with e-commerce plugins).
+* An **appointment scheduling page** based on **Cal.com (self-hosted)**: [https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia).
 * A **link shortener / link analytics** stack (for example, Shlink).
 * A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
 * A **network infrastructure** stack based on **UniFi / Ubiquiti**.
@@ -159,15 +160,15 @@ Not every Lazy Media service uses every category above. Many self-hosted apps re
 
 Lazy Media may run first-party and third-party analytics.
 
-This can apply to the docs site, the support portal, the store, and any public app.
+This can apply to the docs site, the support portal, the store, the appointment scheduling page, and any public app.
 
 #### Analytics providers (assumed)
 
 Depending on the site and configuration, we may use:
 
 * **Google** analytics and advertising measurement tools.
-* **Umami** (self-hosted analytics).
-* **Tianji** (self-hosted analytics and monitoring).
+* **Umami** (self-hosted analytics, short links and click analytics).
+* **Tianji** (self-hosted analytics, short links, click analytics and monitoring).
 * **Shlink** (short links and click analytics).
 
 We may also run other self-hosted analytics, telemetry, or logging tools.
@@ -223,7 +224,7 @@ Common examples across our stack include:
 * **DNS / TLS / edge security providers** where used (for example, Cloudflare).
 * **Documentation hosting** providers (for example, GitBook) and embedded media providers (where used).
 * **Analytics providers** (for example, Google) where enabled.
-* **Payment processors** (PayPal and Stripe) when you donate or pay.
+* **Payment processors** (PayPal and Stripe) when you donate, book, or pay.
 
 When a third party sets cookies, their policies apply.
 
@@ -247,13 +248,13 @@ They may also be used for compliance and risk scoring.
 
 ### Cookies in support and store experiences
 
-If you use Lazy Media’s support portal (Odoo) or store site (WordPress):
+If you use [Lazy Media’s support portal](https://support.lazymedia.media/) (Odoo), [store site](https://store.lazymedia.media/) (WordPress), or [appointment scheduling page](https://appt.lazymedia.media/lazymedia) (Cal.com at [https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia)):
 
 * Expect login and session cookies.
 * Expect CSRF and anti-abuse tokens.
 * Expect preference cookies (language, theme).
 
-On store flows, cookies may also support:
+On store and scheduling flows, cookies may also support:
 
 * Cart state and checkout continuity.
 * Fraud prevention and payment handoff to PayPal or Stripe.
@@ -274,9 +275,9 @@ Integration examples are documented here:
 * [Basic HTTP Authentication Passthrough](../../authentik/basic-http-authentication.md)
 * [Federation & Social Logins](../../authentik/federation-and-social-login/)
 
-### Cookies and the homelab network (UniFi)
+### Cookies and the home-lab network (UniFi)
 
-Lazy Media’s homelab network infrastructure is based on UniFi / Ubiquiti.
+Lazy Media’s home-lab network infrastructure is based on UniFi / Ubiquiti.
 
 If you access network-related portals or admin UIs, they can set cookies for:
 

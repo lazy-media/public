@@ -6,7 +6,7 @@ description: Terms for using Lazy Media hosted apps, SSO, and community services
 
 ### Last updated
 
-2026-02-22
+2026-02-23
 
 ### Who this is for
 
@@ -70,6 +70,7 @@ Assume the following also exist and are covered by these Terms when you access t
 
 * A **support portal** based on **Odoo (open source)**.
 * A **store site** based on **WordPress** (often with e-commerce plugins).
+* An **appointment scheduling page** based on **Cal.com (self-hosted)**: [https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia).
 * A **link shortener / link analytics** stack (for example, Shlink).
 * An **analytics** stack (for example, Google, Umami, Tianji).
 * A **monitoring / observability** stack (for example, Grafana, Prometheus, InfluxDB).
@@ -369,6 +370,8 @@ Donation options are listed here:
 Payments may be processed by **PayPal** and **Stripe**.
 
 Their terms and fraud controls may apply to the transaction flow.
+
+Some services may also accept payments related to scheduling (for example, paid appointments) via [https://appt.lazymedia.media/lazymedia](https://appt.lazymedia.media/lazymedia).
 
 Unless required by law, donations are non-refundable.
 
