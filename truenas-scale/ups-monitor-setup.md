@@ -54,7 +54,7 @@ Set these fields:
 * **Remote Monitor**: enable if a client connects over the network.
 * **Shutdown Mode**: choose your preference.
 * **Shutdown Timer**: choose your preference.
-* **Shutdown Command**: `shutdown -h 0`
+* **Shutdown Command**: Empty (uses default TrueNas Command)
 * **Power Off UPS**: choose your preference.
 
 {% hint style="info" %}
