@@ -105,14 +105,12 @@ Peanut (often styled **PeaNUT**) is a lightweight web UI for NUT. It connects to
 #### Install Peanut
 
 1. Go to **Apps**.
-2. Install **Peanut / PeaNUT** from your catalog.
-3.
+2.  Install **Peanut / PeaNUT** from your catalog.
 
-```
-<figure><img src="/files/UNVBv1CxNcO6RWLnv9IQ" alt=""><figcaption></figcaption></figure>
-```
 
-4. Use your normal Apps storage pattern (pool + dataset).
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+3. Use your normal Apps storage pattern (pool + dataset).
 
 {% columns %}
 {% column %}
