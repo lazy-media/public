@@ -17,7 +17,7 @@ Want my N8N automations? They live on Patreon.
 {% endhint %}
 
 {% columns %}
-{% column %}
+{% column width="50%" %}
 ### Donate
 
 {% hint style="success" %}
@@ -43,6 +43,16 @@ Not sure what to pick? Monthly support helps the most.
 Crypto transfers are irreversible. Double-check the address before sending.
 {% endhint %}
 
+***
+
+#### Pay With BTCPay
+
+![Bitcoin donation QR (BTC Pay Link)](<../.gitbook/assets/image (6).png>)
+
+***
+
+#### Pay With Bitcoin Wallet
+
 `34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm`
 
 Scan to open in your wallet:
@@ -50,7 +60,7 @@ Scan to open in your wallet:
 ![Bitcoin donation QR (bitcoin:34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm)](../.gitbook/assets/public-donations-bitcoin-qr-code.png)
 {% endcolumn %}
 
-{% column %}
+{% column width="50%" %}
 ### Follow
 
 #### Social
