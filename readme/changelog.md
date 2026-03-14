@@ -9,6 +9,10 @@ description: Logs changes made to the documentation
 ## Documentation Updates
 
 * Replaced the retired Bitcoin donation address with the current active address.
+* Updated [Donations & Sponsors](donations-and-sponsors.md) to improve the Bitcoin donation section:
+  * Restyled BTCPay links as matching button-style badges.
+  * Added a BTCPay contact button for payment questions and custom requests.
+  * Split Bitcoin donations into a dedicated two-column section for better readability.
 {% endupdate %}
 
 {% update date="2026-02-23" %}

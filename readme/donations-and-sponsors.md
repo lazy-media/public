@@ -34,34 +34,6 @@ Not sure what to pick? Monthly support helps the most.
 
 * [![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-30363D?style=for-the-badge\&logo=github-sponsors\&logoColor=#EA4AAA)](https://links.lazymedia.media/q/iGmWHIZTq)
 * [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://links.lazymedia.media/q/arP6BMfAL)
-
-#### Crypto
-
-**Bitcoin**
-
-{% hint style="warning" %}
-Crypto transfers are irreversible. Double-check the address before sending.
-{% endhint %}
-
-***
-
-#### Pay With BTCPay
-
-[BTCPay Crowdfund Page](https://btcpay.lazymedia.media/apps/haLjehHWgZ5LZkHAT3Hod1kghkT/crowdfund)
-
-[BTCPay Store Page](https://btcpay.lazymedia.media/apps/ZrsrWzMXoFqGB8EwxYvB6QKEom4/pos)
-
-![Bitcoin donation QR (BTC Pay Link)](<../.gitbook/assets/image (6).png>)
-
-***
-
-#### Pay With Bitcoin Wallet
-
-`34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm`
-
-Scan to open in your wallet:
-
-![Bitcoin donation QR (bitcoin:34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm)](../.gitbook/assets/public-donations-bitcoin-qr-code.png)
 {% endcolumn %}
 
 {% column width="50%" %}
@@ -77,5 +49,41 @@ Scan to open in your wallet:
 
 * [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://links.lazymedia.media/q/BbN6YEBmi)
 * [![GitLab](https://img.shields.io/badge/GitLab-FCA121?style=for-the-badge\&logo=gitlab\&logoColor=white)](https://links.lazymedia.media/q/O79M6JauO)
+{% endcolumn %}
+{% endcolumns %}
+
+### Bitcoin donations
+
+Use BTCPay for guided donation options.
+
+Use the direct wallet option if you already know what to do.
+
+{% hint style="warning" %}
+Crypto transfers are irreversible. Double-check the address before sending.
+{% endhint %}
+
+{% columns %}
+{% column width="50%" %}
+#### BTCPay
+
+* [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/haLjehHWgZ5LZkHAT3Hod1kghkT/crowdfund)
+* [![BTCPay Store](https://img.shields.io/badge/BTCPay-Store-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/ZrsrWzMXoFqGB8EwxYvB6QKEom4/pos)
+* [![BTCPay Contact Form](https://img.shields.io/badge/BTCPay-Contact_Form-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/forms/d35c9058-6bf2-4ec2-9965-8b65f75c71e8)
+
+Scan this QR code to open the BTCPay donation flow:
+
+<div data-with-frame="true"><img src="../.gitbook/assets/BTCPay.png" alt="Bitcoin donation QR (BTC Pay Link)"></div>
+{% endcolumn %}
+
+{% column width="50%" %}
+#### Direct Bitcoin wallet
+
+Wallet address:
+
+`34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm`
+
+Scan this QR code to open the wallet address:
+
+<div data-with-frame="true"><img src="../.gitbook/assets/public-donations-bitcoin-qr-code.png" alt="Bitcoin donation QR (bitcoin:34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm)"></div>
 {% endcolumn %}
 {% endcolumns %}
