@@ -43,11 +43,11 @@ Not sure what to pick? Monthly support helps the most.
 Crypto transfers are irreversible. Double-check the address before sending.
 {% endhint %}
 
-`13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp`
+`34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm`
 
 Scan to open in your wallet:
 
-![Bitcoin donation QR (bitcoin:13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp)](https://api.qrserver.com/v1/create-qr-code/?size=240x240\&data=bitcoin%3A13GdxyJ85Y78oq97Ktnr6fqdCUsa4vcMgp)
+![Bitcoin donation QR (bitcoin:34t2s1LhNAWXLdbAJHMNDLhXKfdEyt6fvm)](../.gitbook/assets/public-donations-bitcoin-qr-code.png)
 {% endcolumn %}
 
 {% column %}
