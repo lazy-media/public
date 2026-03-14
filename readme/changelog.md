@@ -5,6 +5,12 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-03-14" %}
+## Documentation Updates
+
+* Replaced the retired Bitcoin donation address with the current active address.
+{% endupdate %}
+
 {% update date="2026-02-23" %}
 ## Documentation and Policy Updates
 
