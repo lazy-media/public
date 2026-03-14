@@ -47,6 +47,10 @@ Crypto transfers are irreversible. Double-check the address before sending.
 
 #### Pay With BTCPay
 
+[BTCPay Crowdfund Page](https://btcpay.lazymedia.media/apps/haLjehHWgZ5LZkHAT3Hod1kghkT/crowdfund)
+
+[BTCPay Store Page](https://btcpay.lazymedia.media/apps/ZrsrWzMXoFqGB8EwxYvB6QKEom4/pos)
+
 ![Bitcoin donation QR (BTC Pay Link)](<../.gitbook/assets/image (6).png>)
 
 ***
