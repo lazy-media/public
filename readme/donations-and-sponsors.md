@@ -64,15 +64,13 @@ Crypto transfers are irreversible. Double-check the address before sending.
 
 {% columns %}
 {% column width="50%" %}
-_**THIS IS BEING FIXED, STOPPED WORKING.**_
-
 #### BTCPay
 
-* [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/haLjehHWgZ5LZkHAT3Hod1kghkT/crowdfund)
-* [![BTCPay Store](https://img.shields.io/badge/BTCPay-Store-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/ZrsrWzMXoFqGB8EwxYvB6QKEom4/pos)
-* [![BTCPay Contact Form](https://img.shields.io/badge/BTCPay-Contact_Form-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/forms/d35c9058-6bf2-4ec2-9965-8b65f75c71e8)
+* [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/2WvVG6qpeyeqezbFrNhP5LvyJ4vj/crowdfund)
+* [![BTCPay Store](https://img.shields.io/badge/BTCPay-Store-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/3ex1xZfqP6HCMaGgk2CjVQNrhhx/pos)
+* [![BTCPay Contact Form](https://img.shields.io/badge/BTCPay-Contact_Form-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/forms/53ed4ed4-2906-4d29-9770-254215fd149f)
 
-Scan this QR code to open the BTCPay donation flow:
+Scan this QR code to open the BTCPay donation flow: _(BTC Network Resyncing)_
 
 <div data-with-frame="true"><img src="../.gitbook/assets/BTCPay.png" alt="Bitcoin donation QR (BTC Pay Link)"></div>
 {% endcolumn %}
