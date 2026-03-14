@@ -64,6 +64,8 @@ Crypto transfers are irreversible. Double-check the address before sending.
 
 {% columns %}
 {% column width="50%" %}
+_**THIS IS BEING FIXED, STOPPED WORKING.**_
+
 #### BTCPay
 
 * [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/haLjehHWgZ5LZkHAT3Hod1kghkT/crowdfund)
