@@ -42,12 +42,6 @@ _**Docs GitHub Repository:**_ [![Stars](https://img.shields.io/github/stars/lazy
 
 ***
 
-### Star History
-
-<figure><img src="https://api.star-history.com/svg?repos=lazy-media/public&#x26;type=date&#x26;legend=top-left" alt=""><figcaption></figcaption></figure>
-
-***
-
 ### Authentik Configuration Guide
 
 [Complete Authentik Installation & Cloudflare Integration Guide](authentik/authentik-installation.md)
