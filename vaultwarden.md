@@ -1,21 +1,59 @@
 ---
-description: Information how how to install Vaultwarden Docker Container
+description: >-
+  Recommended Vaultwarden Docker setup, official references, and a legacy config
+  example.
 ---
 
 # Vaultwarden
 
-> **Official Vaultwarden ENV File (Recommended Way)**
+### Overview
 
-> Recommended way to install
+Use the official Vaultwarden image and env template for Docker installs.
+
+That is the cleanest setup. It is also the most up to date.
+
+### Recommended setup
+
+For most installs:
+
+1. Start with the official Vaultwarden repo.
+2. Use the official `.env.template` as your base.
+3. Set values with Docker environment variables.
+4. Avoid a custom JSON config unless you need one.
+
+### Official references
 
 * [Dani Garcia Vaultwarden GitHub Repo](https://github.com/dani-garcia/vaultwarden)
 * [Dani Garcia Vaultwarden ENV File](https://github.com/dani-garcia/vaultwarden/blob/53f58b14d5626abfcefd52586ec9e78d067a2334/.env.template)
 
-> **Example Config File**
+{% hint style="info" %}
+Use the official env template as the source of truth. It usually reflects new options faster than older examples.
+{% endhint %}
 
-> To be honest, I am not sure this version still works as I have been experiencing issues with it and switched all my config variables to Docker variables. USE AT YOUR OWN RISK!
+### Settings worth reviewing first
 
-{% code expandable="true" %}
+When you build your config, review these first:
+
+* `DOMAIN`
+* Admin token
+* SMTP settings
+* Signup and invitation settings
+* 2FA options
+* Have I Been Pwned API key
+
+### Legacy JSON config example
+
+The example below is kept as a reference only.
+
+I moved away from this approach after hitting issues and now use Docker variables instead.
+
+If you use a JSON config, bind-mount it into the container and verify each value against the official docs first.
+
+{% hint style="warning" %}
+This example is not verified as current. Use it carefully and prefer environment variables when possible.
+{% endhint %}
+
+{% code title="config.json" expandable="true" %}
 ```json
 // EXAMPLE VAULTWARDEN CONFIG FILE
 // IF USING DOCKER, BIND MOUNT THE CONFIG FILE
