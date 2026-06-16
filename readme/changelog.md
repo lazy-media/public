@@ -5,6 +5,14 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-06-16" %}
+## Added Resource Link
+
+* Added a new footer link to a resources page for Subaru Impreza, WRX, and STI owners.
+  * The page includes publicly available owners and service manuals for select model years, with more years planned later.
+  * [Subaru Impreza, WRX & STI Owners and Service Manuals](https://site.lazymedia.media/subaru-manuals)
+{% endupdate %}
+
 {% update date="2026-03-14" %}
 ## Documentation Updates
 
