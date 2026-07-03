@@ -5,6 +5,12 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-07-03" %}
+## Updated Resource Link
+
+* Renamed the Subaru Impreza, WRX & STI Owners and Service Manuals link to [Subaru Manuals](https://site.lazymedia.media/subaru-manuals) to reflect expanded coverage, including Legacy and Outback resources as they become available.
+{% endupdate %}
+
 {% update date="2026-06-16" %}
 ## Added Resource Link
 
