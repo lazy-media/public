@@ -46,7 +46,7 @@ description: >-
   * Request another takeout, either for an entire year or in smaller increments.
   * Force the import of files despite the missing JSON. Use the option `-upload-when-missing-JSON`
 
-For insights into the reasoning behind this alternative to `immich-cli`, please read the motivation [here](../Google-Photos-Takeout/Immich-Go/docs/motivation.md).
+For insights into the reasoning behind this alternative to `immich-cli`, please read the motivation [here](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/docs/motivation.md).
 
 > ⚠️ This an early version, not yet extensively tested\
 > ⚠️ Keep a backup copy of your files for safety<br>
@@ -160,7 +160,7 @@ Specialized options for Google Photos management:
 | `-auto-archive`                    | Automatically archive photos that are also archived in Google Photos             | `TRUE`            |
 | `-upload-when-missing-JSON`        | Upload photos not associated with a JSON metadata file                           | `FALSE`           |
 
-Read [here](../Google-Photos-Takeout/Immich-Go/docs/google-takeout.md) to understand why Google Photos takeout isn't easy to handle.
+Read [here](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/docs/google-takeout.md) to understand why Google Photos takeout isn't easy to handle.
 
 #### Burst detection
 
@@ -336,8 +336,8 @@ Kudos to the Immich team for their stunning project! 🤩
 This program use following 3rd party libraries:
 
 * [https://github.com/rivo/tview](https://github.com/rivo/tview) the terminal user interface
-* [github.com/rwcarlsen/goexif](../Google-Photos-Takeout/Immich-Go/github.com/rwcarlsen/goexif/) to get date of capture from JPEG files
-* [github.com/thlib/go-timezone-local](../Google-Photos-Takeout/Immich-Go/github.com/thlib/go-timezone-local/) for its windows timezone management
+* [github.com/rwcarlsen/goexif](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/github.com/rwcarlsen/goexif/README.md) to get date of capture from JPEG files
+* [github.com/thlib/go-timezone-local](https://github.com/lazy-media/public/blob/main/Google-Photos-Takeout/Immich-Go/github.com/thlib/go-timezone-local/README.md) for its windows timezone management
 
 A big thank you to the project contributors:
 

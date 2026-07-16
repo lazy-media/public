@@ -53,6 +53,7 @@
     * [Portainer Docker Management](docker/docker-management-tools/portainer.md)
     * [WatchTower](docker/docker-management-tools/watchtower.md)
 * [FiveM Server Setup with TX Admin](fivem.md)
+* [Fluxer](fluxer.md)
 * [Gitlab](gitlab.md)
 * [Google Photos Takeout](google-photos-takeout/README.md)
   * [Google Photo Takeout Helper](google-photos-takeout/google-photo-takeout-helper.md)

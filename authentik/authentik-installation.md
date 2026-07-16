@@ -58,7 +58,7 @@ Please note that I can only provide support for products and services documented
 
 * Some knowledge of basic commands in Ubuntu and Docker are recommended.
 * Docker and Docker Compose must be installed.
-  * You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](../Docker/Installation/)
+  * You can follow this guide if you need help. [Docker Engine and Docker Compose Installation](https://github.com/lazy-media/public/blob/main/Docker/Installation/README.md)
 
 ***
 

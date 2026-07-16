@@ -5,6 +5,21 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-07-16" %}
+## Fluxer documentation and community links
+
+* Added the [Fluxer](../fluxer.md) self-hosting guide.
+  * Documents the Docker Compose deployment, required services, server requirements, and Docker installation checks.
+  * Covers hostname configuration for direct public deployments and Cloudflare Tunnel deployments.
+  * Includes secret generation, DNS, firewall, first startup, and health-check procedures.
+  * Documents owner-account setup, SMTP configuration, LiveKit voice and video ports, backups, and upgrades.
+  * Uses guided setup steps, configuration tabs, and callouts to improve readability without changing the underlying deployment process.
+* Updated [Donations & Sponsors](donations-and-sponsors.md) with Fluxer community links.
+  * Added a [Fluxer](https://link.lazymedia.media/fluxer) social badge.
+  * Added a [Fluxer Community Invite](https://link.lazymedia.media/fluxer-temp-invite) badge.
+  * Matched both new links to the existing compact Discord-style badge design.
+{% endupdate %}
+
 {% update date="2026-07-03" %}
 ## Updated Resource Link
 

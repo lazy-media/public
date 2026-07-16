@@ -55,7 +55,7 @@ It also covers binding access to groups.
    12. Set the `Internal Host` to the internal IP Address and Port Number of the service you want Proxied. (i.e. `http://192.168.1.10:8080`)
        1. <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p><strong>NOTE: If your internal service normally uses <code>https</code> instead of <code>http</code>, (i.e. <code>https://192.168.1.10:8443</code>), make sure you <code>DISABLE INTERNAL HOST SSL VALIDATION</code></strong></p></div>
    13. Expand `Advanced Protocol Settings` at the bottom
-       1. Under `Certificate`, choose your Cloudflare Certificate we created during [Authentik Installation](../Installation-Instructions/Authentik/#cloudflare-setup).
+       1. Under `Certificate`, choose your Cloudflare Certificate we created during [Authentik Installation](https://github.com/lazy-media/public/blob/main/Installation-Instructions/Authentik/README.md#cloudflare-setup).
    14. (Optional) For Testing, you can pass through the whole application you are trying to proxy by putting a `/` under the `Unauthenticated Paths` box.
    15. Click `Next` or `Finish`
    16. Navigate to `Applications > Outposts`

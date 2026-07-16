@@ -11,7 +11,7 @@ description: Information on how to setup GitLab OAuth with Authentik
 
 ## Original documentation
 
-* [My Gitlab Installation](../Authentik/Gitlab/Installation-Instructions/Gitlab/)
+* [My Gitlab Installation](https://github.com/lazy-media/public/blob/main/Authentik/Gitlab/Installation-Instructions/Gitlab/README.md)
 * [Gitlab Omnibus Installation](https://about.gitlab.com/install/#ubuntu)
 * [Authentik Setup](https://docs.goauthentik.io/integrations/services/gitlab/)
 

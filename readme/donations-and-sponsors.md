@@ -42,6 +42,8 @@ Not sure what to pick? Monthly support helps the most.
 #### Social
 
 * [![Mastodon](https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge\&logo=mastodon\&logoColor=white)](https://links.lazymedia.media/q/KYzXR0BHZ)
+* [![Fluxer](https://img.shields.io/badge/Fluxer-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://link.lazymedia.media/fluxer)
+* [![Fluxer Community Invite](https://img.shields.io/badge/Fluxer_Community_Invite-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://link.lazymedia.media/fluxer-temp-invite)
 * [![Reactive Resume Discord](https://img.shields.io/badge/Reactive_Resume_Discord-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://links.lazymedia.media/q/hAIAIcX8q)
 * [![Gaming Community](https://img.shields.io/badge/Gaming_Community-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://links.lazymedia.media/q/SQzOdS0Qn)
 
@@ -66,13 +68,10 @@ Crypto transfers are irreversible. Double-check the address before sending.
 {% column width="50%" %}
 #### BTCPay
 
-* [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/2WvVG6qpeyeqezbFrNhP5LvyJ4vj/crowdfund)
-* [![BTCPay Store](https://img.shields.io/badge/BTCPay-Store-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/apps/3ex1xZfqP6HCMaGgk2CjVQNrhhx/pos)
-* [![BTCPay Contact Form](https://img.shields.io/badge/BTCPay-Contact_Form-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://btcpay.lazymedia.media/forms/53ed4ed4-2906-4d29-9770-254215fd149f)
+* [![BTCPay Crowdfund](https://img.shields.io/badge/BTCPay-Crowdfund-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://link.lazymedia.media/btcpay-crowdfund)
+* [![BTCPay Store](https://img.shields.io/badge/BTCPay-Store-51B13E?style=for-the-badge\&logo=btcpayserver\&logoColor=white)](https://link.lazymedia.media/btcpay)
 
-Scan this QR code to open the BTCPay donation flow:
-
-<div data-with-frame="true"><img src="../.gitbook/assets/BTCPay.png" alt="Bitcoin donation QR (BTC Pay Link)"></div>
+Scan this QR code to open the BTCPay donation flow: (Coming Soon)
 {% endcolumn %}
 
 {% column width="50%" %}
