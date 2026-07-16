@@ -17,7 +17,7 @@ _**We’re currently in the middle of a dramatic, tear-filled overhaul to make t
 
 _**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed in everything from Arabic to Vietnamese. You’re welcome.**_
 
-_**If you found any of this documentation helpful, please consider**_ <a href="https://github.com/lazy-media/public" class="button primary">Starring the GitHub Repo!</a>
+_**If you found any of this documentation helpful, please consider**_ <a href="https://github.com/lazy-media/public" class="button primary small">Starring the GitHub Repo!</a>
 
 {% hint style="info" %}
 Updates to the docs are a deliberate, thoughtful process. Patience is not just a virtue; it is a requirement.
