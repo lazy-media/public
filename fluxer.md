@@ -7,7 +7,13 @@ description: >-
 
 # Fluxer
 
-## Get Started
+## Self-host Fluxer with Docker Compose
+
+Fluxer is a free, open-source chat and VoIP platform. This guide deploys a complete instance for communities and groups.
+
+Use the [Fluxer website](https://fluxer.app) for product information. Refer to the [official Fluxer documentation](https://docs.fluxer.app) for platform details.
+
+### Overview
 
 Run your own Fluxer instance with Docker Compose. This guide takes you from a fresh server to a working self-hosted instance with the web app, API, gateway, admin dashboard, media uploads, search, storage, and voice signaling behind one public hostname.
 
@@ -15,7 +21,7 @@ Run your own Fluxer instance with Docker Compose. This guide takes you from a fr
 Replace `chat.example.com` with your hostname throughout.
 {% endhint %}
 
-### What you'll run
+### Services included
 
 The self-hosted stack is one Docker Compose project:
 
@@ -32,7 +38,7 @@ The self-hosted stack is one Docker Compose project:
 
 The app bundle is served by the self-host app-proxy image. Shared static assets are served by the standalone `static-proxy` container. The stack does not depend on Fluxer's public static asset host.
 
-### Requirements
+### Prerequisites
 
 * A Linux server or VM that can run Docker Engine.
 * Docker Engine plus the Docker Compose plugin.
@@ -56,11 +62,11 @@ docker --version
 docker compose version
 ```
 
-### Install Fluxer
+### Deploy Fluxer
 
 {% stepper %}
 {% step %}
-#### Download the stack
+#### Download the deployment files
 
 Create a working directory and download the stack files:
 
@@ -145,7 +151,7 @@ Keep these defaults unless you know you need to change them:
 {% endstep %}
 
 {% step %}
-#### Publish the hostname
+#### Configure DNS and TLS
 
 Create DNS records for the hostname:
 
@@ -162,7 +168,7 @@ Docker-published ports can bypass host firewalls such as UFW. Prefer your cloud 
 {% endstep %}
 
 {% step %}
-#### Open the firewall
+#### Configure the firewall
 
 If you are using a direct public server, allow inbound:
 
@@ -174,7 +180,7 @@ If you are using a Cloudflare Tunnel for web traffic, you can block inbound `80/
 {% endstep %}
 
 {% step %}
-#### Start the stack
+#### Start the services
 
 Start Fluxer:
 
@@ -199,7 +205,7 @@ The first start can take several minutes while images download and services init
 {% endstep %}
 {% endstepper %}
 
-### Verify the instance
+### Verify the deployment
 
 Set your domain in the shell:
 
@@ -327,4 +333,3 @@ docker compose up -d
 The `fluxer-static` image is part of the default stack, so static asset updates are picked up by the same pull-and-restart flow.
 
 To pin a specific release, set `FLUXER_IMAGE_TAG` in `.env` to the release tag you want, then pull and restart.
-
