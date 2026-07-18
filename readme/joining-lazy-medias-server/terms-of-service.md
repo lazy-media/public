@@ -4,6 +4,10 @@ description: Terms for using Lazy Media hosted apps, SSO, and community services
 
 # Terms of Service
 
+{% hint style="warning" %}
+### For an always up-to-date version of this document, please visit [https://site.lazymedia.media/lazymedia-legal/](https://site.lazymedia.media/lazymedia-legal/)
+{% endhint %}
+
 ### Last updated
 
 2026-02-23
