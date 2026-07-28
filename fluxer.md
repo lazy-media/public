@@ -160,7 +160,9 @@ Create DNS records for the hostname:
 
 Leave `FLUXER_CADDY_SITE_ADDRESS=chat.example.com`. Caddy requests and renews certificates automatically when `80/tcp` and `443/tcp` can reach the server.
 
+{% hint style="info" %}
 If you use a reverse proxy, set `FLUXER_CADDY_SITE_ADDRESS=http://chat.example.com`. The `http://` prefix tells Caddy that another proxy handles certificates.
+{% endhint %}
 
 {% hint style="warning" %}
 Docker-published ports can bypass host firewalls such as UFW. Prefer your cloud provider's firewall or security group for internet-facing policy.
