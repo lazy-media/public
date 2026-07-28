@@ -5,6 +5,13 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-07-28" %}
+## Legal pages moved
+
+* Replaced the content on the Cookie Policy, Privacy Policy, and Terms of Service pages with a notification to users letting them know this page has moved.
+* Each page now links to the [Lazy Media Legal Page](https://link.lazymedia.media/lazymedia-legal/) for the most up-to-date version.
+{% endupdate %}
+
 {% update date="2026-07-16" %}
 ## Fluxer documentation and community links
 
