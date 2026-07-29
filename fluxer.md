@@ -335,3 +335,7 @@ docker compose up -d
 The `fluxer-static` image is part of the default stack, so static asset updates are picked up by the same pull-and-restart flow.
 
 To pin a specific release, set `FLUXER_IMAGE_TAG` in `.env` to the release tag you want, then pull and restart.
+
+### Custom CSS Files
+
+Please visit [Lazy Media's Patreon](https://link.lazymedia.media/patreon) for Fluxer Custom CSS Files
