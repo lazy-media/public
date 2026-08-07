@@ -30,7 +30,7 @@ Updates to the docs are a deliberate, thoughtful process. Patience is not just a
 {% hint style="warning" %}
 **Current Service Status:**
 
-* Plex Media Server: ![](https://status.lazymedia.media/api/badge/27/status)
+* Plex Media Server: ![](https://status.lazymedia.media/api/badge/79/status) ![](https://status.lazymedia.media/api/badge/79/uptime)
 * New Plex registrations: **Temporarily suspended** until further notice
 {% endhint %}
 
