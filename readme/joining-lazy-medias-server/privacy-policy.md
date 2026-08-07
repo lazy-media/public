@@ -2,6 +2,7 @@
 description: >-
   How Lazy Media collects, uses, and protects data across Lazy Media apps and
   services.
+hidden: true
 ---
 
 # Privacy Policy

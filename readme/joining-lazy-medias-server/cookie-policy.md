@@ -2,6 +2,7 @@
 description: >-
   How Lazy Media uses cookies and similar technologies across hosted apps, SSO,
   and related services.
+hidden: true
 ---
 
 # Cookie Policy
