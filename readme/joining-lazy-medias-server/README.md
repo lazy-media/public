@@ -40,7 +40,7 @@ Fill out the [Server Access Request Form](https://link.lazymedia.media/cwAP1)
 _(Extremely Limited to Family Members and Close Friends)_
 
 {% hint style="danger" %}
-_This is currently disabled..._
+_This is currently disabled to the general public..._
 {% endhint %}
 
 Automations are being built around the form and Discord role assignments.
