@@ -11,9 +11,9 @@ If these docs saved you time, consider supporting the project.
 Support helps cover hosting, tooling, and time spent improving guides.
 
 {% hint style="info" %}
-Want my N8N automations? They live on Patreon.
+Want my N8N automations or Custom CSS Files? They live on Patreon.
 
-[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://links.lazymedia.media/q/arP6BMfAL)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://link.lazymedia.media/patreon)
 {% endhint %}
 
 {% columns %}
