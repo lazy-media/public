@@ -1,34 +1,66 @@
 ---
-description: Information on how to setup Jellyfin TV Guide
+description: >-
+  Configure Jellyfin access, XMLTV guide data, Live TV, and interface
+  customization.
 ---
 
 # Jellyfin
 
-## Initial Setup and TV Guide Setup
+## Jellyfin setup guide
 
-## Original Creator / Content
+Configure Jellyfin access, XMLTV guide data, Live TV, and login-page customization.
 
-* [Jellyfin TV Guide Script](https://gist.github.com/idolpx/c82747bb740c303f56ad8a1e8f17d575)
-* [TV Guide Site Used](https://tvtv.us)
+### Jellyfin setup
 
-## Assumptions
+Complete these prerequisites before configuring Jellyfin:
 
-* You already have Jellyfin Installed and Working
-* You have a web server running PHP
+* A working Jellyfin server with administrator access.
+* A PHP-enabled web server that Jellyfin can reach.
+* A TVTV lineup ID for your location.
 
-## TV Guide Setup
+### Jellyfin configuration
 
-* Login to your Web server running PHP
-* Navigate to a folder that is publicly accessible.
-  * Usually something like `/var/www/YOURWEBSITE/`
-* Create a new file and name it something like `tvxml.php`
-* Paste the contents of [TVXML.php](https://github.com/lazy-media/public/blob/main/Installation-Instructions/Jellyfin/tvxml.php) into this newly created file.
-* Save the file and exit
+#### Configure Quick Connect
 
-{% tabs %}
-{% tab title="Example TVXML.php" %}
-{% code expandable="true" %}
-```xml
+Quick Connect lets compatible devices sign in without a browser-based login flow.
+
+1. Open **Administration → Dashboard → General**.
+2. Find **Quick Connect**.
+3. Enable the setting and save your changes.
+
+#### Configure single sign-on
+
+Configure an external identity provider when you want centralized user access. Follow the [Authentik Jellyfin OpenID setup](authentik/jellyfin.md) for an Authentik-based configuration.
+
+### Guide source configuration
+
+Create an XMLTV endpoint before adding guide data to Jellyfin. This configuration uses the following sources:
+
+* [Jellyfin TV guide script](https://gist.github.com/idolpx/c82747bb740c303f56ad8a1e8f17d575)
+* [TVTV](https://tvtv.us) for listing data.
+
+{% stepper %}
+{% step %}
+#### Create the guide file
+
+Sign in to your PHP web server. Open a public directory, such as `/var/www/YOURWEBSITE/`.
+
+Create a file named `tvxml.php`.
+{% endstep %}
+
+{% step %}
+#### Configure XMLTV
+
+Copy the script below into `tvxml.php`. Set `$timezone` and `$lineUpID` for your location.
+
+Set `$days` to the required guide duration. TVTV supports up to eight days.
+
+{% hint style="warning" %}
+This script may no longer work. TVTV has restricted access to its API and XMLTV files. You may need an alternative guide-data source.
+{% endhint %}
+
+{% code title="tvxml.php" expandable="true" collapsedlinecount="20" %}
+```php
 <?php
 //
 // tvtv2xmltv Guide Data
@@ -168,21 +200,75 @@ echo("</tv>");
 
 ```
 {% endcode %}
-{% endtab %}
-{% endtabs %}
+{% endstep %}
 
-### Jellyfin Setup
+{% step %}
+#### Validate the guide endpoint
 
-* Navigate to your `Jellyfin Admin Panel > Live TV > Live TV`
-* Add a new TV Provider
-* Use a custom or XMLTV file
-* In the File or URL spot, insert the local address or public address of the file you created on your PHP enabled web server.
-  * This should be something like `http://192.168.1.10/tvxml.php` or `https://web.domain.example/tvxml.php`
+Open `http://YOUR-SERVER/tvxml.php` in a browser. The server should download an XMLTV file.
+{% endstep %}
+{% endstepper %}
 
-### Jellyfin Authentik OpenID Setup
+### Jellyfin Live TV setup
 
-> [Authentik Jellyfin OpenID Setup](authentik/jellyfin.md)
+1. Open **Administration → Dashboard → Live TV**.
+2. Select **Add TV Guide Data Source**.
+3. Choose **Custom XMLTV**.
+4. Enter the XMLTV URL from your PHP web server, such as `http://192.168.1.10/tvxml.php`.
+5. Save the provider, then refresh the guide.
+6. Select the **three vertical dots** beside the provider.
+7. Select **Map Channels** and map each guide channel to its Jellyfin channel.
 
-### Conclusion
+{% hint style="info" %}
+Jellyfin must reach the guide URL. Use an address accessible from the Jellyfin server, not only from your browser.
+{% endhint %}
 
-That's it, you should now be able to view a TV Guide in Jellyfin.
+{% hint style="warning" %}
+Channel mapping is required for guide data to appear against the correct channels. Complete **Map Channels** after adding or changing a guide provider.
+{% endhint %}
+
+### Jellyfin customization
+
+#### Customize the login page
+
+This optional CSS places **Quick Connect** beside the sign-in buttons. It hides the manual sign-in form and password controls.
+
+In Jellyfin, open **Administration → Dashboard → General → Branding**. Paste the following into **Custom CSS code**, then save your changes.
+
+{% hint style="warning" %}
+Keep a tested SSO or Quick Connect path before applying this CSS. It removes Jellyfin’s local login form and password-reset controls.
+{% endhint %}
+
+```css
+/* ==========================================================================
+Removes Main Login Form and Forgot Password Button. Shows Quick Connect at the top
+of the page with the other Login and SSO Buttons.
+========================================================================== */
+
+#loginPage .quickConnectContainer,
+#loginPage .btnQuickConnect {
+  order: 1; /* pin Quick Connect up with Sign In / other login buttons */
+}
+
+#loginPage .manualLoginForm {
+  display: none !important;
+}
+
+#loginPage .btnForgotPassword {
+  display: none !important;
+}
+
+#userProfilePage .updatePasswordForm {
+  display: none !important;
+}
+
+.customMenuOptions a[href*="SSOViews"] {
+  display: none !important;
+}
+```
+
+### Verify and maintain the setup
+
+Open **Live TV → Guide** to confirm that listings load correctly. Refresh guide data after changing the PHP script or its lineup configuration.
+
+Review the login page after applying custom CSS. Confirm that each intended sign-in method remains available.

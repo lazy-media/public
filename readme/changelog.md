@@ -5,6 +5,16 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-08-18" %}
+## Jellyfin setup guide improvements
+
+* Reorganized the [Jellyfin](../jellyfin.md) guide into dedicated setup, configuration, guide source, Live TV, customization, and verification sections.
+* Added Quick Connect and optional Authentik SSO configuration guidance.
+* Improved the XMLTV workflow with a PHP script label, endpoint validation, and a TVTV availability warning.
+* Documented the required **Map Channels** step for Live TV guide providers.
+* Added optional login-page CSS that promotes Quick Connect and hides manual login controls.
+{% endupdate %}
+
 {% update date="2026-07-28" %}
 ## Legal pages moved
 
