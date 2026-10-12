@@ -2303,6 +2303,6 @@ text-transform: capitalize !important;
    ![](<../.gitbook/assets/image (1) (1) (1).png>)
 4. Expand `Branding Settings` \
    ![](<../.gitbook/assets/image (2) (1) (1).png>)
-   1. Find the
+   1. Find the `Custom CSS` section.
 5. Paste in your custom CSS
 6. Click on Update
