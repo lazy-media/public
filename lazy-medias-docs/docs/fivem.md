@@ -1,0 +1,10 @@
+---
+description: Information on how to setup a Self Hosted GTA V FiveM Server
+---
+
+# FiveM Server Setup with TX Admin
+
+## Please refer to the following links
+
+* [Lazy Media's FiveM GitHub (Recommended)](https://link.lazymedia.media/github-fivem)
+* [Lazy Media's FiveM GitLab (Not Up to Date)](https://link.lazymedia.media/gitlab-fivem)
