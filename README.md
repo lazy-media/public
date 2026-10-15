@@ -2,25 +2,27 @@
 description: >-
   The collective brain of our self-hosting adventures. May contain traces of
   coffee, solved errors, and glorious documentation. Now hosted by GitBook for a
-  professional look. Please use the new site.
+  professional look.
 ---
 
 # Lazy Media's Docs
 
-### Documentation Update Status:
+### Welcome
 
-_**Well, look who finally decided to be useful.**_
+Lazy Media documents the self-hosted services, configurations, and fixes used in its home lab.
 
-_**The Lazy Media Public Repository has stumbled into the 21st century and is now masquerading as an actual documentation site at**_ [_**https://docs.lazymedia.media**_](https://docs.lazymedia.media/) _**(yes, we used GitBook, we weren’t that motivated).**_
+The guides are practical references. They cover deployments, integrations, and common troubleshooting steps.
 
-_**We’re currently in the middle of a dramatic, tear-filled overhaul to make things marginally less confusing and slightly more up-to-date—think of it as putting lipstick on a very technical pig. And because misery loves company, we’re even letting you help edit the docs!**_
-
-_**Oh, and it now speaks over 30 languages, so you can be thoroughly perplexed in everything from Arabic to Vietnamese. You’re welcome.**_
-
-_**If you found any of this documentation helpful, please consider**_ <a href="https://github.com/lazy-media/public" class="button primary small">Starring the GitHub Repo!</a>
+If this documentation helps, <a href="https://github.com/lazy-media/public" class="button primary small">star the GitHub repository</a>.
 
 {% hint style="info" %}
 Updates to the docs are a deliberate, thoughtful process. Patience is not just a virtue; it is a requirement.
+{% endhint %}
+
+Need support? Email [support@lazymedia.media](mailto:support@lazymedia.media). Zammad will dutifully create an account and ticket, because apparently even the homelab has a help desk now. View your ticket at [Lazy Media's Help Desk](https://link.lazymedia.media/helpdesk).
+
+{% hint style="info" %}
+Please include enough detail to save us from deploying the ancient troubleshooting ritual: guessing.
 {% endhint %}
 
 ***

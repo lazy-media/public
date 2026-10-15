@@ -5,6 +5,14 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-10-15" %}
+## Documentation homepage refresh
+
+* Updated the [Lazy Media's Docs](../) homepage with a concise overview of the documentation.
+* Replaced outdated migration messaging with a clear update notice.
+* Updated the homepage description to better reflect the available guides and references.
+{% endupdate %}
+
 {% update date="2026-08-18" %}
 ## Jellyfin setup guide improvements
 
