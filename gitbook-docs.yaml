@@ -1,0 +1,278 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Lazy Media's Docs
+  structure:
+    - type: section
+      key: section-1
+      title: Lazy Media Docs
+      path: lazy-medias-docs
+      description: The collective brain of our self-hosting adventures. May contain traces of coffee, solved errors, and glorious documentation. Patience is not just a virtue; it is a requirement.
+      default: true
+      children:
+        - type: space
+          key: space-1
+          title: English
+          path: docs
+          default: true
+          content:
+            directory: ./lazy-medias-docs/docs
+            language: en
+        - type: space
+          key: space-13
+          title: عَرَبِيّ (Arabic)
+          path: docs-ar
+          content:
+            directory: ./lazy-medias-docs/docs-ar
+            language: ar
+        - type: space
+          key: space-33
+          title: Български (Bulgarian)
+          path: docs-bg
+          content:
+            directory: ./lazy-medias-docs/docs-bg
+            language: bg
+        - type: space
+          key: space-11
+          title: 廣東話 (Cantonese)
+          path: docs-yue
+          content:
+            directory: ./lazy-medias-docs/docs-yue
+            language: yue
+        - type: space
+          key: space-10
+          title: 中文 (Chinese)
+          path: docs-zh
+          content:
+            directory: ./lazy-medias-docs/docs-zh
+            language: zh
+        - type: space
+          key: space-34
+          title: Hrvatski (Croatian)
+          path: docs-hr
+          content:
+            directory: ./lazy-medias-docs/docs-hr
+            language: hr
+        - type: space
+          key: space-23
+          title: Čeština (Czech)
+          path: docs-cs
+          content:
+            directory: ./lazy-medias-docs/docs-cs
+            language: cs
+        - type: space
+          key: space-20
+          title: Dansk (Danish)
+          path: docs-da
+          content:
+            directory: ./lazy-medias-docs/docs-da
+            language: da
+        - type: space
+          key: space-15
+          title: Nederlands (Dutch)
+          path: docs-nl
+          content:
+            directory: ./lazy-medias-docs/docs-nl
+            language: nl
+        - type: space
+          key: space-37
+          title: Eesti (Estonian)
+          path: docs-et
+          content:
+            directory: ./lazy-medias-docs/docs-et
+            language: et
+        - type: space
+          key: space-21
+          title: Suomi (Finnish)
+          path: docs-fi
+          content:
+            directory: ./lazy-medias-docs/docs-fi
+            language: fi
+        - type: space
+          key: space-2
+          title: Français (French)
+          path: docs-fr
+          content:
+            directory: ./lazy-medias-docs/docs-fr
+            language: fr
+        - type: space
+          key: space-3
+          title: Deutsch (German)
+          path: docs-de
+          content:
+            directory: ./lazy-medias-docs/docs-de
+            language: de
+        - type: space
+          key: space-22
+          title: Ελληνικά (Greek)
+          path: docs-el
+          content:
+            directory: ./lazy-medias-docs/docs-el
+            language: el
+        - type: space
+          key: space-30
+          title: עברית (Hebrew)
+          path: docs-he
+          content:
+            directory: ./lazy-medias-docs/docs-he
+            language: he
+        - type: space
+          key: space-14
+          title: हिन्दी (Hindi)
+          path: docs-hi
+          content:
+            directory: ./lazy-medias-docs/docs-hi
+            language: hi
+        - type: space
+          key: space-24
+          title: Magyar (Hungarian)
+          path: docs-hu
+          content:
+            directory: ./lazy-medias-docs/docs-hu
+            language: hu
+        - type: space
+          key: space-28
+          title: Bahasa Indonesia (Indonesian)
+          path: docs-id
+          content:
+            directory: ./lazy-medias-docs/docs-id
+            language: id
+        - type: space
+          key: space-5
+          title: Italiano (Italian)
+          path: docs-it
+          content:
+            directory: ./lazy-medias-docs/docs-it
+            language: it
+        - type: space
+          key: space-9
+          title: 日本語 (Japanese)
+          path: docs-ja
+          content:
+            directory: ./lazy-medias-docs/docs-ja
+            language: ja
+        - type: space
+          key: space-12
+          title: 한국어 (Korean)
+          path: docs-ko
+          content:
+            directory: ./lazy-medias-docs/docs-ko
+            language: ko
+        - type: space
+          key: space-36
+          title: Latviešu (Latvian)
+          path: docs-lv
+          content:
+            directory: ./lazy-medias-docs/docs-lv
+            language: lv
+        - type: space
+          key: space-35
+          title: Lietuvių (Lithuanian)
+          path: docs-lt
+          content:
+            directory: ./lazy-medias-docs/docs-lt
+            language: lt
+        - type: space
+          key: space-29
+          title: Bahasa Melayu (Malay)
+          path: docs-ms
+          content:
+            directory: ./lazy-medias-docs/docs-ms
+            language: ms
+        - type: space
+          key: space-19
+          title: Norsk (Norwegian)
+          path: docs-no
+          content:
+            directory: ./lazy-medias-docs/docs-no
+            language: "no"
+        - type: space
+          key: space-16
+          title: Polski (Polish)
+          path: docs-pl
+          content:
+            directory: ./lazy-medias-docs/docs-pl
+            language: pl
+        - type: space
+          key: space-7
+          title: Português Brasileiro (Brazillian Portuguese)
+          path: docs-pt-br
+          content:
+            directory: ./lazy-medias-docs/docs-pt-br
+            language: pt-br
+        - type: space
+          key: space-6
+          title: Português (Portuguese)
+          path: docs-pt
+          content:
+            directory: ./lazy-medias-docs/docs-pt
+            language: pt
+        - type: space
+          key: space-25
+          title: Română (Romanian)
+          path: docs-ro
+          content:
+            directory: ./lazy-medias-docs/docs-ro
+            language: ro
+        - type: space
+          key: space-8
+          title: Русский (Russian)
+          path: docs-ru
+          content:
+            directory: ./lazy-medias-docs/docs-ru
+            language: ru
+        - type: space
+          key: space-32
+          title: Slovenčina (Slovak)
+          path: docs-sk
+          content:
+            directory: ./lazy-medias-docs/docs-sk
+            language: sk
+        - type: space
+          key: space-38
+          title: Slovenščina (Slovenian)
+          path: docs-sl
+          content:
+            directory: ./lazy-medias-docs/docs-sl
+            language: sl
+        - type: space
+          key: space-4
+          title: Español (Spanish)
+          path: docs-es
+          content:
+            directory: ./lazy-medias-docs/docs-es
+            language: es
+        - type: space
+          key: space-18
+          title: Svenska (Swedish)
+          path: docs-sv
+          content:
+            directory: ./lazy-medias-docs/docs-sv
+            language: sv
+        - type: space
+          key: space-26
+          title: ไทย (Thai)
+          path: docs-th
+          content:
+            directory: ./lazy-medias-docs/docs-th
+            language: th
+        - type: space
+          key: space-17
+          title: Türkçe (Turkish)
+          path: docs-tr
+          content:
+            directory: ./lazy-medias-docs/docs-tr
+            language: tr
+        - type: space
+          key: space-31
+          title: Українська (Ukrainian)
+          path: docs-uk
+          content:
+            directory: ./lazy-medias-docs/docs-uk
+            language: uk
+        - type: space
+          key: space-27
+          title: Tiếng Việt (Vietnamese)
+          path: docs-vi
+          content:
+            directory: ./lazy-medias-docs/docs-vi
+            language: vi
