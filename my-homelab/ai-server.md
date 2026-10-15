@@ -1,5 +1,6 @@
 ---
 description: If you can call it that...
+hidden: true
 ---
 
 # AI-Server

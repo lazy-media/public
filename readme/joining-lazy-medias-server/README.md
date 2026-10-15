@@ -14,8 +14,7 @@ It also covers the recommended login method.
 
 Read these before you request access:
 
-* [Privacy Policy](privacy-policy.md)
-* [Terms of Service](terms-of-service.md)
+* [Privacy Policy, Terms of Service, Cookie Policy & User Agreement](https://link.lazymedia.media/lazymedia-legal)
 
 ### Recommended login method (best experience)
 

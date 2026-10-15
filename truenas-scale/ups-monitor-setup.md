@@ -22,6 +22,7 @@ Menu names can shift between SCALE releases. If you do not see **System Settings
 
 * Plug the UPS into the TrueNAS host via USB.
 * Know your UPS vendor and model.
+  * If you need to find your UPS vendor and model, open the TrueNAS SCALE shell console under System > Shell and enter `nut-scanner -U` to list available UPS devices.
 * Plan a safe shutdown behavior for your environment.
 
 {% hint style="warning" %}
@@ -106,8 +107,6 @@ Peanut (often styled **PeaNUT**) is a lightweight web UI for NUT. It connects to
 
 1. Go to **Apps**.
 2.  Install **Peanut / PeaNUT** from your catalog.
-
-
 
     <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Use your normal Apps storage pattern (pool + dataset).
