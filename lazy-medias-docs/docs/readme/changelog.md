@@ -5,6 +5,13 @@ description: Logs changes made to the documentation
 # Changelog
 
 {% updates format="full" %}
+{% update date="2026-10-17" %}
+## Knowledge base site added
+
+* Added a link to the new [Knowledge Base](https://link.lazymedia.media/knowledgebase) from the [Lazy Media's Docs](../) homepage.
+* The Knowledge Base provides another place to find Lazy Media information and resources.
+{% endupdate %}
+
 {% update date="2026-10-15" %}
 ## Documentation homepage refresh
 
